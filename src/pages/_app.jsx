@@ -2,13 +2,22 @@
 /* eslint-disable react/prop-types */
 import React from "react";
 import { Chakra_Petch } from "next/font/google";
+import { IBM_Plex_Mono } from "next/font/google";
 import LocalFont from "next/font/local";
 import "../styles/global.css";
+import Navbar from "@/components/navbar";
+import Home from ".";
 
 const font_chakra = Chakra_Petch({
   subsets: ["latin"],
   weight: ["400", "700"],
   variable: "--font-chakra",
+});
+
+const font_ibm = IBM_Plex_Mono({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-ibm",
 });
 
 const font_clash_display = LocalFont({
@@ -17,7 +26,9 @@ const font_clash_display = LocalFont({
 });
 export default function MyApp({ Component, pageProps }) {
   return (
-    <main className={`${font_chakra.variable} ${font_clash_display.variable}`}>
+    <main className={`${font_chakra.variable} ${font_clash_display.variable} ${font_ibm.variable}`}>
+      <Navbar />
+      <Home />
       <Component {...pageProps} />
     </main>
   );

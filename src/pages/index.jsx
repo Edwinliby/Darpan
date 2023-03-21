@@ -1,12 +1,13 @@
-//write a sample home page
-
-import BannerComponent from "@/components/home/banner";
 import React from "react";
+import Head from "next/head";
 
 const Home = () => {
   return (
-    <div className="flex flex-col w-full h-full">
-      <BannerComponent />
+    <div>
+      <Head>
+        <title>Darpan</title>
+        <link rel="shortcut icon" href="/Darpan.png" type="image/x-icon" />
+      </Head>
     </div>
   );
 };

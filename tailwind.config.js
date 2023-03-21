@@ -6,8 +6,12 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        header: ["var(--font-clash-display) serif"],
+        header: ["var(--font-clash-display)"],
         primary: ["var(--font-chakra)"],
+        ibm: ["var(--font-ibm)"],
+      },
+      colors: {
+        violot: "#9747FF",
       },
     },
   },
