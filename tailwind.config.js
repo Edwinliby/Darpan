@@ -14,6 +14,7 @@ module.exports = {
         soothing_black: "#0E1111",
         primary:"#9747FF",
         gray: "#868888",
+        footer:"#1B1B1B",
       },
     },
   },

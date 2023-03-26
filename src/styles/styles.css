@@ -6,6 +6,7 @@
         1px 1px 0 #000;
 }
 
+/* Tech Fest Marquee start*/
 .marquee {
     width: 100%;
     margin: 2rem auto;
@@ -23,10 +24,10 @@
 .marquee .text {
     display: flex;
     align-items: center;
-    gap:2rem;
+    gap: 2rem;
     padding-left: 3rem;
     text-indent: 0;
-    animation: marquee  3s linear infinite;
+    animation: marquee 3s linear infinite;
     font-weight: bold;
     font-size: 2.2rem;
     line-height: 125%;
@@ -45,4 +46,40 @@
     }
 }
 
+/* Tech Fest Marquee end*/
 
+
+/* Footer css Start */
+/* .social-links::after{
+    content: '';
+    min-width: 5rem;
+    min-height: 15rem;
+    display: flex;
+    flex-grow: 1;
+    background-color: #9747FF;
+    color: white;
+    transform: translateY(-50px);
+    transition: .5s transform;
+}
+
+.social-links::before:hover{
+    transform: translateY(0);
+} */
+
+@media (width<450px) {
+
+    .footer-mail {
+        width: 100%;
+        border-bottom: 1.5px gray solid;
+    }
+
+    .quick-links {
+        gap: 2rem;
+    }
+
+    .footer-tag {
+        width: 100%;
+        border-top: 1.5px gray solid;
+    }
+}
+/* Footer css End */

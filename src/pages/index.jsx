@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Marque from "@/components/Marque"
+import Footer from "@/components/Footer";
 import { motion } from "framer-motion";
 
 const Home = () => {
@@ -41,6 +42,7 @@ const Home = () => {
       {/*faq*/}
 
       {/*footer*/}
+      <Footer/>
     </div>
   );
 };
