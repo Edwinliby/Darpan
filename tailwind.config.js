@@ -6,12 +6,14 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        header: ["var(--font-clash-display)"],
-        primary: ["var(--font-chakra)"],
+        clash: ["var(--font-clash-display)"],
+        chakra: ["var(--font-chakra)"],
         ibm: ["var(--font-ibm)"],
       },
       colors: {
-        violot: "#9747FF",
+        soothing_black: "#0E1111",
+        primary:"#9747FF",
+        gray: "#868888",
       },
     },
   },

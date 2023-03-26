@@ -1,0 +1,48 @@
+.text-stroke-black {
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+.marquee {
+    width: 100%;
+    margin: 2rem auto;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 40px;
+    background: #9747FF;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 10px 5px #9747FF;
+}
+
+.marquee .text {
+    display: flex;
+    align-items: center;
+    gap:2rem;
+    padding-left: 3rem;
+    text-indent: 0;
+    animation: marquee  3s linear infinite;
+    font-weight: bold;
+    font-size: 2.2rem;
+    line-height: 125%;
+    letter-spacing: -0.04;
+    text-transform: uppercase;
+    color: white;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+
+
