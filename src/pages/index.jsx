@@ -3,9 +3,9 @@ import Head from "next/head";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
-import Marque from "@/components/Marque"
+import Marque from "@/components/Marque";
 import Footer from "@/components/Footer";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 
 const Home = () => {
   return (
@@ -16,7 +16,7 @@ const Home = () => {
       </Head>
       <Header />
 
-      <motion.section id="hero"
+      {/* <motion.section id="hero"
         initial={{
           margin: 0,
         }}
@@ -28,12 +28,12 @@ const Home = () => {
           duration: 1,
         }}>
         <Hero />
-      </motion.section>
+      </motion.section> */}
+      <Hero />
 
       <Marque />
 
-      <section id="about"
-        className="about">
+      <section id="about" className="about">
         <About />
       </section>
 
@@ -42,7 +42,7 @@ const Home = () => {
       {/*faq*/}
 
       {/*footer*/}
-      <Footer/>
+      <Footer />
     </div>
   );
 };
