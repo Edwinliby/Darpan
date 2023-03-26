@@ -5,7 +5,9 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Marque from "@/components/Marque"
 import Footer from "@/components/Footer";
-import { motion } from "framer-motion";
+import CoverflowEffect from "@/components/CoverflowEffect";
+
+import Navbar from "@/components/Navbar";
 
 const Home = () => {
   return (
@@ -14,21 +16,13 @@ const Home = () => {
         <title>Darpan</title>
         <link rel="shortcut icon" href="/Darpan.png" type="image/png" />
       </Head>
-      <Header />
+      {/* <Header id="nav" /> */}
 
-      <motion.section id="hero"
-        initial={{
-          margin: 0,
-        }}
-        animate={{
-          margin: 10,
-        }}
-        transition={{
-          delay: 1.5,
-          duration: 1,
-        }}>
+      <Navbar/>
+
+      <section id="hero">
         <Hero />
-      </motion.section>
+      </section>
 
       <Marque />
 
@@ -38,11 +32,12 @@ const Home = () => {
       </section>
 
       {/*events*/}
+      <CoverflowEffect />
 
       {/*faq*/}
 
       {/*footer*/}
-      <Footer/>
+      <Footer />
     </div>
   );
 };

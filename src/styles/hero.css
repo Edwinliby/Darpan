@@ -2,21 +2,22 @@
 .hero {
     background-color: #ffffff;
     background-image: linear-gradient(#c4c4c4 1px, transparent 1px), linear-gradient(to right, #c4c4c4 1px, #ffffff 1px);
-    background-size: 100px 100px;
+    background-size: 90px 90px;
 }
 
 .hero-content {
     text-transform: uppercase;
     font-weight: bolder;
     position: relative;
+    top: 1rem;
     padding: 0 4rem;
 }
 
 .hero-text-1 {
     position: relative;
-    top: 2rem;
-    font-size: 1.5rem;
-    letter-spacing: .1rem;
+    top: 2.5rem;
+    font-size: 25px;
+    font-weight: bolder;
 }
 
 .hero-text-2 {
