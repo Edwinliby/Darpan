@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function Header() {
   return (
-    <header className="flex flex-row sticky top-0 border-b border-gray z-10 bg-soothing_black text-white py-3 items-center justify-center w-full gap-12 text-[.8rem] font-ibm uppercase tracking-[.08rem] font-semibold">
+    <header className="flex flex-row sticky top-0 border-b border-gray z-10 bg-soothing_black text-white py-3 items-center justify-center w-full gap-12 !text-[.8rem] font-ibm uppercase tracking-[.08rem] font-semibold">
       <motion.div
         initial={{
           x: -500,
