@@ -1,73 +1,9 @@
+:root {
+    --soothing-black: "#0E1111"
+}
 
 .hero {
-    background-color: #ffffff;
-    background-image: linear-gradient(#c4c4c4 1px, transparent 1px), linear-gradient(to right, #c4c4c4 1px, #ffffff 1px);
-    background-size: 90px 90px;
-}
-
-.hero-content {
-    text-transform: uppercase;
-    font-weight: bolder;
-    position: relative;
-    top: 1rem;
-    padding: 0 4rem;
-}
-
-.hero-text-1 {
-    position: relative;
-    top: 2.5rem;
-    font-size: 25px;
-    font-weight: bolder;
-}
-
-.hero-text-2 {
-    font-size: 10rem;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.hero-text-3 {
-    font-size: 8rem;
-    position: relative;
-    bottom: 5rem;
-}
-
-@media (width<764){
-    
-}
-
-@media (width<640px) {
-    .hero-content{
-        padding: 0 1rem;
-    }
-
-    .hero-text-1{
-        font-size: .8rem;
-        top: 1rem;
-    }
-
-    .hero-text-2{
-        font-size: 6rem;
-    }
-
-    .hero-text-2 span:nth-child(2){
-        font-size: 8rem;
-        position: relative;
-        top: -5rem;
-    }
-
-    .hero-text-3 {
-        font-size: 3.9rem;
-        bottom: 7rem;
-    }
-}
-
-@media (width<400px) {
-    .hero-text-2 {
-        font-size: 5rem;
-    }
-
-    .hero-text-3 {
-        font-size: 3.3rem;
-    }
+    background-color: var(--soothing-black);
+    background-image: linear-gradient(#272727 1px, transparent 1px), linear-gradient(to right, #272727 1px, #0E1111 1px);
+    background-size: 100px 100px;
 }

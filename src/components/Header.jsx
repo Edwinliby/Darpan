@@ -1,11 +1,11 @@
 import React from 'react'
 import Link from 'next/link'
-import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 export default function Header() {
     return (
-        <header className='flex flex-row fixed top-0 border-b border-gray z-10 bg-soothing_black text-white py-3 items-center justify-center w-full gap-12 text-lg font-ibm uppercase'>
-            <motion.div
+        <header className='flex fixed top-0 z-10 border-b-[.1px] border-white/30 backdrop-blur-md text-white bg-soothing_black/50 py-3 items-center justify-center w-full gap-12 text-[1.1rem] font-ibm uppercase'>
+            {/* <motion.div
                 initial={{
                     x: -500,
                     opacity: 0,
@@ -23,26 +23,19 @@ export default function Header() {
                 <Link className='hover:text-primary' href="/">Home</Link>
                 <Link className='hover:text-primary' href="/">Events</Link>
                 <Link className='hover:text-primary' href="/">Downloads</Link>
-            </motion.div>
-            <motion.div
-                initial={{
-                    y: -300,
-                    opacity: 0,
-                    scale: .5
-                }}
-                animate={{
-                    y: 0,
-                    opacity: 1,
-                    scale: 1.1,
-                }}
-                transition={{
-                    delay: .8,
-                    duration: .5,
-                }}
-                className='w-8 md:w-12' >
-                <Link href="/"><img src="/Darpan.png" alt="Logo" /></Link>
-            </motion.div>
-            <motion.div
+            </motion.div> */}
+
+            <Link href="/">
+                <Image
+                    src="/Darpan.png"
+                    width={40}
+                    height={40}
+                    alt="logo"
+                    className='w-auto h-auto'
+                />
+            </Link>
+
+            {/* <motion.div
                 initial={{
                     x: 500,
                     opacity: 0,
@@ -61,7 +54,7 @@ export default function Header() {
                 <Link className='hover:text-primary' href="/">Gallery</Link>
                 <Link className='hover:text-primary' href="/">Contact</Link>
                 <Link className='text-primary' href="/">Register</Link>
-            </motion.div>
+            </motion.div> */}
         </header>
     )
 }

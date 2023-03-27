@@ -12,9 +12,16 @@ module.exports = {
       },
       colors: {
         soothing_black: "#0E1111",
-        primary:"#9747FF",
+        primary: "#9747FF",
         gray: "#868888",
-        footer:"#1B1B1B",
+        footer: "#1B1B1B",
+      },
+      screens: {
+        sm: "496px",
+        md: "712px",
+        lg: "900px",
+        xl: "1280px",
+        '2xl': "1536px",
       },
     },
   },
