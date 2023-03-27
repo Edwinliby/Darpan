@@ -5,9 +5,6 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Marque from "@/components/Marque"
 import Footer from "@/components/Footer";
-import CoverflowEffect from "@/components/CoverflowEffect";
-
-import Navbar from "@/components/Navbar";
 
 const Home = () => {
   return (
@@ -16,9 +13,7 @@ const Home = () => {
         <title>Darpan</title>
         <link rel="shortcut icon" href="/Darpan.png" type="image/png" />
       </Head>
-      {/* <Header id="nav" /> */}
-
-      <Navbar/>
+      <Header id="nav" />
 
       <section id="hero">
         <Hero />
@@ -32,7 +27,6 @@ const Home = () => {
       </section>
 
       {/*events*/}
-      <CoverflowEffect />
 
       {/*faq*/}
 
