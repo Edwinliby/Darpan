@@ -4,7 +4,7 @@ import Image from 'next/image'
 export default function About() {
   return (
     <div className='h-fit relative bg-primary pt-4 px-2 xl:px-8'>
-      <div className='flex flex-wrap uppercase text-[3.3rem] sm:text-[4.5rem] md:text-[6.3rem] lg:text-[5.5rem] xl:text-[7rem]  leading-[4rem] md:leading-[5.5rem] font-clash font-bold'>
+      <div className='flex flex-wrap uppercase text-[3.2rem] sm:text-[4.5rem] md:text-[6.3rem] lg:text-[5.5rem] xl:text-[7rem]  leading-[4rem] md:leading-[5.5rem] font-clash font-bold'>
         <span>You might be</span>
         <span>thinking what is</span>
         <span className='text-white text-[4rem] sm:text-[5.5rem] md:text-[7.5rem] lg:text-[9.5rem] xl:text-[12.5rem] md:mt-4 lg:mt-8 '>DARPAN <span>?</span></span>

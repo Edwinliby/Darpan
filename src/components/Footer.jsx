@@ -30,7 +30,7 @@ export default function Footer() {
         <div className='min-w-[18rem] grow-[2]'>
             <div className='flex justify-between border-gray/70 border-b-[1.5px] lg:border-t-[1.5px] xl:border-t-0 min-h-[7rem] items-center font-bold text-4xl pl-5 pr-2'>
                 <span className='font-chakra italic'>#DARPAN2023</span>
-                <Link href="#hero" className='hover:-rotate-90 transform transition duration-500 ease-in-out'><FiArrowDownRight size="4rem"/></Link>
+                <Link href="#hero" className='hover:-rotate-90 transform transition duration-500 ease-in-out scroll-smooth'><FiArrowDownRight size="4rem"/></Link>
             </div>
             <div>
                 <div className='flex'>
