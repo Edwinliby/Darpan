@@ -48,24 +48,28 @@
 
 /* Tech Fest Marquee end*/
 
-
-/* Footer css Start */
-
-@media (width<450px) {
-
-    .footer-mail {
-        width: 100%;
-        border-bottom: 1.5px gray solid;
-    }
-
-    .quick-links {
-        gap: 2rem;
-    }
-
-    .footer-tag {
-        width: 100%;
-        border-top: 1.5px gray solid;
-    }
+.lbl-toggle::before {
+    content: ' ';
+    float: right;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 8px solid currentColor;
+    vertical-align: middle;
+    margin-right: .7rem;
+    transform: translateY(6px);
+    transition: transform .2s ease-out;
 }
 
-/* Footer css End */
+.toggle:checked+.lbl-toggle::before {
+    transform: rotate(90deg) translateX(-3px);
+}
+
+.collapsible-content {
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height .25s ease-in-out;
+}
+
+.toggle:checked+.lbl-toggle+.collapsible-content {
+    max-height: fit-content;
+}

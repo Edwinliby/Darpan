@@ -30,7 +30,7 @@ export default function About() {
           width={500}
           height={500}
           alt='Video Frame'
-          className='grow-[1] w-auto h-auto lg:w-[22rem] xl:w-[26rem]'
+          className='grow-[1] w-[21.5rem] h-auto lg:w-[22rem] xl:w-[26rem]'
         />
       </div>
     </div>

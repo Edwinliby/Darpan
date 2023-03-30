@@ -39,9 +39,9 @@ function Hero() {
             <div ref={date} className='relative top-12 md:top-6 xl:top-8 md:ml-4'>
                 <div className='flex flex-col font-bold text-soothing_black text-2xl absolute left-8 lg:ml-[1.5rem] top-0 md:text-3xl  z-10'>
                     <span className='font-chakra text-soothing_black'>2023 <span className='font-clash'>April</span></span>
-                    <span className='flex gap-2 text-[2rem] font-chakra font-bold'>17
+                    <span className='flex gap-2 text-[2rem] font-chakra font-bold'>26
                         <b className='text-[16px]'>TH</b>
-                        18
+                        27
                         <b className='text-[16px]'>TH</b>
                     </span>
                 </div>

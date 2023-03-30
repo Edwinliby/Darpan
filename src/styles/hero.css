@@ -1,9 +1,0 @@
-:root {
-    --soothing-black: "#0E1111"
-}
-
-.hero {
-    background-color: var(--soothing-black);
-    background-image: linear-gradient(#272727 1px, transparent 1px), linear-gradient(to right, #272727 1px, #0E1111 1px);
-    background-size: 100px 100px;
-}

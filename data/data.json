@@ -2,17 +2,12 @@
   "posts": [
     {
       "id": 1,
-      "img": "/thugofwar.jpg"
+      "img": "/assects/thugofwar.jpg"
     },
     {
       "id": 2,
       "img": "/cricket.jpg",
       "content": "This is the full content of post 2"
-    },
-    {
-      "id": 3,
-      "img": "/thugofwar.jpg",
-      "content": "This is the full content of post 3"
     }
   ]
 }

@@ -6,7 +6,6 @@ import { IBM_Plex_Mono } from "next/font/google";
 import LocalFont from "next/font/local";
 import "../styles/global.css";
 import "../styles/styles.css";
-import "../styles/hero.css";
 
 const font_chakra = Chakra_Petch({
   subsets: ["latin"],
