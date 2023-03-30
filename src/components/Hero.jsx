@@ -36,7 +36,7 @@ function Hero() {
                 <span ref={subtitle2} className='relative bottom-[5.5rem] sm:bottom-[6.5rem] md:bottom-[10.5rem] xl:bottom-[5rem] text-[3.5rem] sm:text-[5rem] md:text-[7rem] font-clash'>TECH FEST</span>
             </div>
 
-            <div ref={date} className='relative top-12 md:top-6 xl:top-8 md:ml-4'>
+            <div             className='relative top-12 md:top-6 xl:top-8 md:ml-4'>
                 <div className='flex flex-col font-bold text-soothing_black text-2xl absolute left-8 lg:ml-[1.5rem] top-0 md:text-3xl  z-10'>
                     <span className='font-chakra text-soothing_black'>2023 <span className='font-clash'>April</span></span>
                     <span className='flex gap-2 text-[2rem] font-chakra font-bold'>26

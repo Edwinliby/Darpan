@@ -1,13 +1,38 @@
-import React from 'react';
+import { useEffect, useRef } from 'react';
 import Image from 'next/image'
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function About() {
+  const trigger = useRef(null);
+
+  useEffect(() => {
+    gsap.fromTo(trigger.current, {
+      opacity: 0,
+      y: -100,
+    },
+      {
+        opacity: 1,
+        y: 0,
+        scrollTrigger: {
+          markers: true,
+          trigger: trigger.current,
+          start: "top center",
+          end: "bottom top",
+          scrub: true,
+          ease: "power4.eae-InOut"
+        },
+      });
+  }, []);
+
   return (
     <div className='h-fit relative bg-primary pt-4 px-2 xl:px-8'>
-      <div className='flex flex-wrap uppercase text-[3.2rem] sm:text-[4.5rem] md:text-[6.3rem] lg:text-[5.5rem] xl:text-[7rem]  leading-[4rem] md:leading-[5.5rem] font-clash font-bold'>
+      <div className='flex flex-wrap uppercase text-[3.1rem] sm:text-[4.5rem] md:text-[6.3rem] lg:text-[5.5rem] xl:text-[7rem]  leading-[4rem] md:leading-[5.5rem] font-clash font-bold'>
         <span>You might be</span>
         <span>thinking what is</span>
-        <span className='text-white text-[4rem] sm:text-[5.5rem] md:text-[7.5rem] lg:text-[9.5rem] xl:text-[12.5rem] md:mt-4 lg:mt-8 '>DARPAN <span>?</span></span>
+        <span ref={trigger} className='text-white text-[4rem] sm:text-[5.5rem] md:text-[7.5rem] lg:text-[9.5rem] xl:text-[12.5rem] md:mt-4 lg:mt-8 '>DARPAN <span>?</span></span>
       </div>
       <div className='font-chakra text-base py-8 leading-[5px] xl:mt-4'>
         <span className='text-center font-bold text-white text-[2rem] xl:text-[4rem]'>⁕⁕⁕

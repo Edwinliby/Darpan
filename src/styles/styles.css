@@ -47,6 +47,9 @@
 }
 
 /* Tech Fest Marquee end*/
+.lbl-toggle {
+    transition: all 0.25s ease-in-out;
+}
 
 .lbl-toggle::before {
     content: ' ';
@@ -67,7 +70,7 @@
 .collapsible-content {
     max-height: 0px;
     overflow: hidden;
-    transition: max-height .25s ease-in-out;
+    transition: max-height .5s ease-in-out;
 }
 
 .toggle:checked+.lbl-toggle+.collapsible-content {
