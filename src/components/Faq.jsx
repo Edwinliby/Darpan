@@ -13,7 +13,7 @@ export default function Faq() {
                     <div className='border-t-2 border-b-2 border-gray/60'>
                         <input id="collapsible1" className="toggle hidden" type="checkbox" />
                         <label for="collapsible1" className="lbl-toggle block cursor-pointer font-semibold text-white text-2xl p-7 ease-out duration-300">
-                            What is Darpan? Why should i come their?
+                            What is Darpan? Why should i be there?
                         </label>
                         <div className="collapsible-content">
                             <div className="content-inner text-white px-4 text-lg">
@@ -30,7 +30,7 @@ export default function Faq() {
                     <div className='border-t-2 border-b-2  border-gray/60'>
                         <input id="collapsible2" className="toggle hidden" type="checkbox" />
                         <label for="collapsible2" className="lbl-toggle block cursor-pointer font-semibold text-white text-2xl p-7 ease-out duration-300">
-                            What is Darpan? Why should i come their?
+                            What is Darpan? Why should i be there?
                         </label>
                         <div className="collapsible-content">
                             <div className="content-inner text-white px-4">

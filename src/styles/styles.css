@@ -73,3 +73,4 @@
 .toggle:checked+.lbl-toggle+.collapsible-content {
     max-height: fit-content;
 }
+
