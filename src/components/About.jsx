@@ -15,9 +15,9 @@ export default function About() {
             reflection. Borrowed from Sanskrit (darpaṇa), and some more description about the name.</span>
         </span>
       </div>
-      <div className='relative font-clash text-[3.5rem] sm:text-[4rem] md:text-[4.5rem] lg:text-[5rem] xl:text-[5.5rem] font-bold text-white'>
-        <span>ABOUT</span>
-        <span className='absolute text-white/30 text-[4rem] sm:text-[4.5rem] md:text-[5rem] lg:text-[5.5rem] xl:text-[6rem] left-5 xl:left-11 xl:top-6 top-4'>ABOUT</span>
+      <div className='relative font-clash font-bold text-white'>
+        <span className='text-[3.5rem] sm:text-[4rem] md:text-[4.5rem] lg:text-[5rem] xl:text-[5.5rem]'>ABOUT</span>
+        <span className='absolute text-white/30 text-[4rem] sm:text-[4.5rem] md:text-[5rem] lg:text-[5.5rem] xl:text-[7rem] left-5 xl:left-11 xl:top-5 top-4'>ABOUT</span>
       </div>
       <div className='flex flex-col lg:flex-row items-center gap-8 py-8'>
         <p className='text-white  flex grow-[2] text-base xl:text-2xl font-chakra font-medium'>

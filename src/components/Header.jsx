@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 export default function Header() {
     return (
-        <header className='flex fixed top-0 z-10 border-b-[.1px] border-white/30 backdrop-blur-[12px] text-white bg-soothing_black/50 py-3 items-center justify-center w-full gap-12 text-[1.1rem] font-ibm uppercase'>
+        <header className='flex fixed top-0 z-50 border-b-[.1px] border-white/30 backdrop-blur-[12px] text-white bg-soothing_black/50 py-3 items-center justify-center w-full gap-12 text-[1.1rem] font-ibm uppercase'>
             {/* <motion.div
                 initial={{
                     x: -500,
