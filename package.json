@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@splidejs/react-splide": "^0.7.12",
     "framer-motion": "^10.9.1",
     "fs.promises": "^0.1.2",
     "gsap": "^3.11.5",

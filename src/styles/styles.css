@@ -12,13 +12,11 @@
     margin: 2rem auto;
     white-space: nowrap;
     overflow: hidden;
-    height: 40px;
-    background: #9747FF;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    height: fit-content;
+    background: #1E0B37;
     display: flex;
     align-items: center;
-    box-shadow: 0 0 10px 5px #9747FF;
+    box-shadow: 0 0 20px 5px #2e0168;
 }
 
 .marquee .text {
@@ -32,7 +30,6 @@
     font-size: 2.2rem;
     line-height: 125%;
     letter-spacing: -0.04;
-    text-transform: uppercase;
     color: white;
 }
 
@@ -47,6 +44,79 @@
 }
 
 /* Tech Fest Marquee end*/
+
+/* Tech Fest Marquee2 start*/
+.marquee2 {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    height: fit-content;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    transform: rotate(-5deg);
+}
+
+.marquee2 .text {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding-left: 3rem;
+    animation: marquee 6s linear infinite;
+    font-size: 5rem;
+    line-height: 125%;
+}
+
+@keyframes marquee2 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+
+/* Tech Fest Marquee2 end*/
+
+/* Tech Fest Marquee3 start*/
+.marquee3 {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    height: fit-content;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    transform: rotate(-5deg);
+}
+
+.marquee3 .text {
+    position: relative;
+    top: -1rem;
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
+    animation: marquee 5s linear infinite;
+    font-size: 3rem;
+}
+
+.textStroke{
+    -webkit-text-stroke: .3px white;
+}
+
+@keyframes marquee3 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+
+/* Tech Fest Marquee3 end*/
+
 .lbl-toggle {
     transition: all 0.25s ease-in-out;
 }
@@ -76,4 +146,3 @@
 .toggle:checked+.lbl-toggle+.collapsible-content {
     max-height: fit-content;
 }
-
