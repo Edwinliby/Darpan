@@ -10,7 +10,7 @@ import Faq from "@/components/Faq";
 import Image from "next/image";
 import Link from "next/link";
 
-import Events from "@/components/Event/Events";
+// import Events from "@/components/Event/Events";
 
 
 const Home = (props) => {
