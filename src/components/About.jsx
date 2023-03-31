@@ -17,7 +17,6 @@ export default function About() {
         opacity: 1,
         y: 0,
         scrollTrigger: {
-          markers: true,
           trigger: trigger.current,
           start: "top center",
           end: "bottom top",
@@ -32,7 +31,10 @@ export default function About() {
       <div className='flex flex-wrap uppercase text-[3.1rem] sm:text-[4.5rem] md:text-[6.3rem] lg:text-[5.5rem] xl:text-[7rem]  leading-[4rem] md:leading-[5.5rem] font-clash font-bold'>
         <span>You might be</span>
         <span>thinking what is</span>
-        <span ref={trigger} className='text-white text-[4rem] sm:text-[5.5rem] md:text-[7.5rem] lg:text-[9.5rem] xl:text-[12.5rem] md:mt-4 lg:mt-8 '>DARPAN <span>?</span></span>
+        <span className='text-[4rem] sm:text-[5.5rem] md:text-[7.5rem] lg:text-[9.5rem] xl:text-[12.5rem] md:mt-4 lg:mt-8 '>
+          <span ref={trigger} className='text-white overflow-hidden'>DARPAN</span>
+          <span className=''>?</span>
+        </span>
       </div>
       <div className='font-chakra text-base py-8 leading-[5px] xl:mt-4'>
         <span className='text-center font-bold text-white text-[2rem] xl:text-[4rem]'>⁕⁕⁕
