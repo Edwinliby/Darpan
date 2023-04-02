@@ -6,10 +6,10 @@ import { FaWhatsapp, FaInstagram, FaFacebookF } from "react-icons/fa";
 export default function Footer() {
     return (
         <footer className='h-fit flex flex-col bg-footer text-white px-0 flex-wrap'>
-            <div className='flex'>
+            <div className='flex flex-wrap'>
                 <div className='border-gray/70 border-b-[1.5px] w-full lg:w-[22rem] lg:border-b-0 lg:border-r-[1.5px] flex flex-col p-10 min-w-[18rem] min-h-[14rem] items-start md:items-center justify-center'>
                     <p className='font-ibm text-stone-500'>Get in Touch</p>
-                    <span className='font-chakra font-semibold italic text-3xl'>darpan@aec.ac.in</span>
+                    <Link href="mailto:darpan@cearanmula.ac.in" className='font-chakra font-semibold italic text-2xl'>darpan@cearanmula.ac.in</Link>
                 </div>
 
                 <div className='font-ibm border-gray/70 border-b-[1.5px] sm:border-b-[1.5px] md:border-r-[1.5px] md:border-b-0 min-w-[18rem] grow-[1] flex flex-col gap-5 p-10 justify-center'>
@@ -35,15 +35,15 @@ export default function Footer() {
                     </div>
                     <div>
                         <div className='flex'>
-                            <Link href="https://www.facebook.com/profile.php?id=100090947657195" className='social-links flex items-center justify-center grow-[1] min-w-[5rem] min-h-[12rem]'><FaWhatsapp size="3rem" /></Link>
-                            <Link href="https://instagram.com/darpan_2023?igshid=YmMyMTA2M2Y=" className='social-links flex items-center justify-center grow-[1] min-w-[5rem] min-h-[12rem]'><FaInstagram size="3rem" /></Link>
-                            <Link href="https://www.facebook.com/profile.php?id=100090947657195" className='social-links flex items-center justify-center grow-[1] min-w-[5rem] min-h-[12rem]'><FaFacebookF size="3rem" /></Link>
+                            <Link href="https://www.facebook.com/profile.php?id=100090947657195" className='social-links flex items-center justify-center grow-[1] min-w-[5rem] min-h-[12rem] hover:text-main_primary'><FaWhatsapp size="3rem" /></Link>
+                            <Link href="https://instagram.com/darpan_2023?igshid=YmMyMTA2M2Y=" className='social-links flex items-center justify-center grow-[1] min-w-[5rem] min-h-[12rem] hover:text-main_primary'><FaInstagram size="3rem" /></Link>
+                            <Link href="https://www.facebook.com/profile.php?id=100090947657195" className='social-links flex items-center justify-center grow-[1] min-w-[5rem] min-h-[12rem] hover:text-main_primary'><FaFacebookF size="3rem" /></Link>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div className='font-clash flex justify-between py-2 text-xs px-4 border-t-[1.5px] border-gray/70'>
+            <div className='font-clash flex justify-between py-2 text-[10px] md:text-xs px-4 border-t-[1.5px] border-gray/70'>
                 <p>©2023 - DARPAN AEC </p>
                 <span className='flex gap-4'>
                     <p>Terms & Conditions</p>

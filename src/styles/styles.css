@@ -54,7 +54,7 @@
     background: transparent;
     display: flex;
     align-items: center;
-    transform: rotate(-5deg);
+    transform: rotate(-3deg);
 }
 
 .marquee2 .text {
@@ -88,7 +88,7 @@
     background: transparent;
     display: flex;
     align-items: center;
-    transform: rotate(-5deg);
+    transform: rotate(-3deg);
 }
 
 .marquee3 .text {
@@ -101,7 +101,7 @@
     font-size: 3rem;
 }
 
-.textStroke{
+.textStroke {
     -webkit-text-stroke: .3px white;
 }
 
