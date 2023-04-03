@@ -7,7 +7,7 @@ import Marque from "@/components/Marque"
 import Marque2 from "@/components/Marque2"
 import Footer from "@/components/Footer";
 import Faq from "@/components/Faq";
-import Events from "@/components/Events";
+// import Events from "@/components/Events";
 
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/all";
