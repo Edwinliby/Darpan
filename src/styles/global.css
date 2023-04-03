@@ -6,6 +6,10 @@
     --soothing-black: "#0E1111"
 }
 
+*{
+    user-select: none;
+}
+
 ::-webkit-scrollbar {
     height: 0px;
     width: 0px;
@@ -14,7 +18,7 @@
 progress {
     position: fixed;
     top: 4.5rem;
-    z-index: 31;
+    z-index: 24;
     -webkit-appearance: none;
     appearance: none;
     width: 100%;

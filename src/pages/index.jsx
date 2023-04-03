@@ -7,7 +7,6 @@ import Marque from "@/components/Marque"
 import Marque2 from "@/components/Marque2"
 import Footer from "@/components/Footer";
 import Faq from "@/components/Faq";
-// import Events from "@/components/Events";
 
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/all";
@@ -34,6 +33,7 @@ const Home = (props) => {
 
   return (
     <div className="bg-soothing_black h-fit">
+      
       <Head>
         <title>Darpan</title>
         <link rel="shortcut icon" href="/Darpan.png" type="image/png" />
@@ -43,7 +43,7 @@ const Home = (props) => {
       <AnimatedCursor
         innerSize={12}
         outerSize={27}
-        trailingSpeed={18}
+        trailingSpeed={15}
         color='151, 71, 255'
         outerAlpha={0.7}
         innerScale={1.5}
