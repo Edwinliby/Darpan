@@ -41,8 +41,8 @@ function Navlink(
 
     return (
         <div>
-            <Link href={link} >
-                <h1 className="text-white text-2xl font-bold hover:text-main_primary" ref={element} data-value={name}>{name}</h1>
+            <Link href={link} ref={element} data-value={name}>
+                {name}
             </Link>
         </div>
     )

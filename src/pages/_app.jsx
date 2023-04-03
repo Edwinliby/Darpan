@@ -36,7 +36,6 @@ export default function MyApp({ Component, pageProps }) {
 
   return (
     <main className={`${font_chakra.variable} ${font_clash_display.variable} ${font_ibm.variable}`}>
-      {/* {loading ? <Loader /> : motion.div(<Component {...pageProps} />, { initial: "pageInitial", animate: "pageAnimate", variants: { pageInitial: { opacity: 0 }, pageAnimate: { opacity: 1 } } })} */}
       {loading ? <Loader /> : <Component {...pageProps} />}
     </main>
   );

@@ -29,7 +29,7 @@ export default function About() {
 
   return (
     <div className='h-fit relative bg-gradient-to-b from-primary to-transparent pt-4 px-2 xl:px-8'>
-      <div className='flex flex-wrap text-white tracking-wide xl:tracking-[.5rem] uppercase text-[3.1rem] sm:text-[4.5rem] md:text-[6.3rem] lg:text-[5.5rem] xl:text-[7rem]  leading-[4rem] md:leading-[5.5rem] font-clash font-bold'>
+      <div className='about flex flex-wrap text-white tracking-wide xl:tracking-[.5rem] uppercase text-[3.1rem] sm:text-[4.5rem] md:text-[6.3rem] lg:text-[5.5rem] xl:text-[7rem]  leading-[4rem] md:leading-[5.5rem] font-clash font-bold'>
         <span>You might be</span>
         <span>thinking what is</span>
         <span ref={trigger} className='text-[4rem] sm:text-[5.5rem] md:text-[7.5rem] lg:text-[9.5rem] xl:text-[12.5rem] md:mt-4 lg:mt-8'>
