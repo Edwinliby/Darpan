@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 
 function Navlink(
-    { name, link }
+    { name, link, setToggle }
 ) {
     const element = React.useRef(null);
 
@@ -41,7 +41,7 @@ function Navlink(
 
     return (
         <div>
-            <Link href={link} ref={element} data-value={name}>
+            <Link href={link} ref={element} data-value={name} onClick={() => setToggle(false)}>
                 {name}
             </Link>
         </div>
