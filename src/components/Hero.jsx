@@ -24,7 +24,7 @@ function Hero() {
                 <h1 ref={title} className='relative font-chakra top-[1rem] sm:top-[1.5rem] sm:text-2xl opacity-0'>College of Engineering Aranmula Presents</h1>
                 <div ref={subtitle} className='font-clash flex flex-wrap opacity-0'>
                     <span className='text-[4.5rem] sm:text-[6.5rem] md:text-[9rem] lg:text-[10rem]'>DARPAN</span>
-                    <span className='text-main_primary relative font-chakra text-stroke-black text-[7rem] md:text-[9rem] top-[-3rem] md:top-[-6rem] xl:top-[.8rem]'>2023</span>
+                    <span className='text-main_primary relative font-chakra text-stroke-black text-[7rem] md:text-[9rem] top-[-3rem] md:top-[-6rem] xl:top-[.8rem] xl:left-4'>2023</span>
                 </div>
                 <span ref={subtitle2} className='relative opacity-0 bottom-[5.5rem] sm:bottom-[6.5rem] md:bottom-[10.5rem] xl:bottom-[5rem] text-[3.5rem] sm:text-[5rem] md:text-[7rem] font-clash'>TECH FEST</span>
             </div>
@@ -38,13 +38,16 @@ function Hero() {
                         <b className='text-[16px]'>TH</b>
                     </span>
                 </div>
+                <div className='relative'>
                 <Image
                     src="/Eventdate2.png"
                     width={250}
                     height={250}
                     alt="Event-Date"
-                    className=" top-[-2.5rem] ml-5 lg:ml-[2.5rem] w-44 h-[5rem] md:w-56 z-0"
+                    className="absolute"
                 />
+                <span className=''>Events</span>
+                </div>
             </div>
 
         </div>

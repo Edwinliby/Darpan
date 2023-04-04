@@ -1,5 +1,3 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable react/prop-types */
 import React from "react";
 import { Chakra_Petch } from "next/font/google";
 import { IBM_Plex_Mono } from "next/font/google";
@@ -7,6 +5,9 @@ import LocalFont from "next/font/local";
 import "../styles/global.css";
 import "../styles/styles.css";
 import Loader from "@/components/Loader";
+import dynamic from "next/dynamic";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/dist/all";
 import { AppWrapper } from "@/context/AppContext";
 
 const font_chakra = Chakra_Petch({
@@ -26,13 +27,27 @@ const font_clash_display = LocalFont({
   variable: "--font-clash-display",
 });
 
+const AnimatedCursor = dynamic(() => import("react-animated-cursor"), {
+  ssr: false,
+});
+
 export default function MyApp({ Component, pageProps }) {
   const [loading, setLoading] = React.useState(true);
 
   React.useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 2000);
+    }, 2500);
+  }, []);
+
+  React.useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.to("progress", {
+      value: 100,
+      scrollTrigger: {
+        scrub: 0.5,
+      },
+    });
   }, []);
 
   return (

@@ -6,7 +6,7 @@ import { FaWhatsapp, FaInstagram, FaFacebookF } from "react-icons/fa";
 
 export default function Footer() {
     return (
-        <footer className='h-fit flex flex-col bg-footer text-white px-0 flex-wrap'>
+        <footer className=' h-fit flex flex-col bg-footer text-white px-0 flex-wrap'>
             <div className='flex flex-wrap'>
                 <div className='border-gray/70 border-b-[1.5px] w-full lg:w-[22rem] lg:border-b-0 lg:border-r-[1.5px] flex flex-col p-10 min-w-[18rem] min-h-[14rem] items-start md:items-center justify-center'>
                     <p className='font-ibm text-stone-500'>Get in Touch</p>
@@ -19,7 +19,7 @@ export default function Footer() {
                         <div className='flex flex-col gap-2'>
                         <Navlink name={'Home'} link={'/'} />
                         <Navlink name={'Events'} link={'/'} />
-                        <Navlink name={'Downloads'} link={'/'} />
+                        <Navlink name={'Brochure'} link={'/'} />
                         </div>
                         <div className='flex flex-col gap-2'>
                         <Navlink name={'Team'} link={'/'} />                            {/* <Link className='hover:text-violet-600' href="">Newsletter</Link> */}

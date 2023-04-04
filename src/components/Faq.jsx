@@ -12,7 +12,7 @@ export default function Faq() {
                     <div className='border-t-2 border-b-2 border-gray/60'>
                         <input id="collapsible1" className="toggle hidden" type="checkbox" />
                         <label htmlFor="collapsible1" className="lbl-toggle block cursor-pointer font-semibold text-white text-2xl p-7">
-                            What is Darpan? Why should i be there?
+                            What are the available transportation options for commuting to college?
                         </label>
                         <div className="collapsible-content">
                             <div className="content-inner text-white px-4 text-lg">
@@ -29,7 +29,7 @@ export default function Faq() {
                     <div className='border-t-2 border-b-2  border-gray/60'>
                         <input id="collapsible2" className="toggle hidden" type="checkbox" />
                         <label htmlFor="collapsible2" className="lbl-toggle block cursor-pointer font-semibold text-white text-2xl p-7">
-                            What is Darpan? Why should i be there?
+                            What is the allocation of activity points for individuals who participate in the event?
                         </label>
                         <div className="collapsible-content">
                             <div className="content-inner text-white px-4">

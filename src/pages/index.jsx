@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Head from "next/head";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
@@ -8,62 +8,20 @@ import Marque2 from "@/components/Marque2"
 import Footer from "@/components/Footer";
 import Faq from "@/components/Faq";
 
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/dist/all";
 import Image from "next/image";
 import Link from "next/link";
 
-import dynamic from 'next/dynamic'
-
-const AnimatedCursor = dynamic(() => import('react-animated-cursor'), {
-  ssr: false
-});
-
 const Home = (props) => {
   const { posts } = props;
-  useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
-    gsap.to("progress", {
-      value: 100,
-      scrollTrigger: {
-        scrub: 0.5,
-      },
-    });
-  }, []);
 
   return (
     <div className="bg-soothing_black h-fit">
-      
       <Head>
         <title>Darpan</title>
         <link rel="shortcut icon" href="/Darpan.png" type="image/png" />
       </Head>
-      <progress max="100" value="0"></progress>
 
-      <AnimatedCursor
-        innerSize={12}
-        outerSize={27}
-        trailingSpeed={15}
-        color='151, 71, 255'
-        outerAlpha={0.7}
-        innerScale={1.5}
-        outerScale={2.5}
-        clickables={[
-          'a',
-          'input[type="text"]',
-          'input[type="email"]',
-          'input[type="number"]',
-          'input[type="submit"]',
-          'input[type="image"]',
-          'label[for]',
-          'select',
-          'textarea',
-          'button',
-          '.link'
-        ]}
-      />
-
-      <Header id="nav" />
+      <Header />
 
       <section id="hero">
         <Hero />
@@ -85,7 +43,6 @@ const Home = (props) => {
             <span className='absolute text-white/10 text-[4rem] sm:text-[4.5rem] md:text-[5rem] lg:text-[5.5rem] xl:text-[7rem]  xl:top-2 top-3'>EVENTS</span>
           </div>
 
-
           <div className="flex flex-wrap relative py-8 xl:py-10 items-center justify-center gap-8">
             {posts.map(post =>
               <div className="relative"
@@ -106,7 +63,6 @@ const Home = (props) => {
               </div>
             )}
           </div>
-
         </div>
       </section>
 
@@ -122,7 +78,6 @@ const Home = (props) => {
 };
 
 export default Home;
-
 
 // Fetching data from the JSON file
 import fsPromises from 'fs/promises';
