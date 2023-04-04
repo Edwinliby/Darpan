@@ -26,7 +26,7 @@ export default function Header() {
                 </Link>
             </header>
             {isOpen && (
-                <motion.div className='fixed top-0 left-0 w-[65vh] h-full md:ml-8 md:my-4 bg-black z-[26] backdrop-blur-sm rounded-xl' initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.5 }}>
+                <motion.div className='fixed top-0 left-0 w-[65vh] h-screen md:ml-8 md:my-4 bg-black z-[26] backdrop-blur-sm rounded-xl' initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.5 }}>
                     <div className='relative flex flex-col'>
                         <div className='pl-4 z-[26] h-[4.5rem] flex items-center border-b-[1.5px] border-gray/40'>
                             <Hamburger color='white' label='Show menu' direction='right' size={50} rounded={true} toggle={setOpen} toggled={isOpen} />
