@@ -25,7 +25,8 @@ export default function Header() {
                     <Hamburger color='white' label='Show menu' direction='right' size={30} rounded={true} toggle={setOpen} toggled={isOpen} />
                 </div>
 
-                <Link className='absolute left-1/2 -translate-x-1/2 -translate-y-1/2 top-1/2' href="/">
+                <Link className='absolute left-1/2 -translate-x-1/2 -translate-y-1/2 top-1/2 hover:scale-110  transition duration-300 ease-in-out
+                ' href="/">
                     <Image
                         src="/Darpan.png"
                         width={40}

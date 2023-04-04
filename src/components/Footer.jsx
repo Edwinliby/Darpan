@@ -17,20 +17,21 @@ export default function Footer() {
                     <p className=' font-semibold text-[25px]'>Quick Links</p>
                     <div className='flex gap-10 text-[16px] font-ibm'>
                         <div className='flex flex-col gap-2'>
-                        <Navlink name={'Home'} link={'/'} />
-                        <Navlink name={'Events'} link={'/'} />
-                        <Navlink name={'Brochure'} link={'/'} />
+                            <Navlink name={'Home'} link={'/'} />
+                            <Navlink name={'Events'} link={'/'} />
+                            <Navlink name={'Brochure'} link={'/'} />
                         </div>
                         <div className='flex flex-col gap-2'>
-                        <Navlink name={'Team'} link={'/'} />                            {/* <Link className='hover:text-violet-600' href="">Newsletter</Link> */}
-                        <Navlink name={'Contact'} link={'/'} />   
+                            <Navlink name={'Team'} link={'/'} />                            {/* <Link className='hover:text-violet-600' href="">Newsletter</Link> */}
+                            <Navlink name={'Contact'} link={'/'} />
                         </div>
                     </div>
                 </div>
 
                 <div className='min-w-[18rem] grow-[2]'>
                     <div className='flex font-chakra italic justify-between border-gray/70 border-b-[1.5px] lg:border-t-[1.5px] xl:border-t-0 min-h-[7rem] items-center font-bold text-4xl pl-5 pr-4'>
-                    <Navlink name={'#DARPAN2023'} link={'/'} />                           <Link href="#hero" className='hover:-rotate-90 transform transition duration-500 ease-in-out scroll-smooth'><FiArrowDownRight size="4rem" /></Link>
+                        <Navlink className="Z-50" name={'#DARPAN2023'} link={'/'} />
+                        <Link href="#hero" className='hover:-rotate-90 transform transition duration-500 ease-in-out scroll-smooth'><FiArrowDownRight size="4rem" /></Link>
                     </div>
                     <div>
                         <div className='flex'>

@@ -38,16 +38,13 @@ function Hero() {
                         <b className='text-[16px]'>TH</b>
                     </span>
                 </div>
-                <div className='relative'>
                 <Image
                     src="/Eventdate2.png"
                     width={250}
                     height={250}
                     alt="Event-Date"
-                    className="absolute"
+                    className=" top-[-2.5rem] ml-5 lg:ml-[2.5rem] w-44 h-[5rem] md:w-56 z-0"
                 />
-                <span className=''>Events</span>
-                </div>
             </div>
 
         </div>

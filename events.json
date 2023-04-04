@@ -1,0 +1,53 @@
+{
+  "posts": [
+    [
+      {
+        "id": 1,
+        "img": "/assects/thugofwar.jpg",
+        "content": "This is the full content of post 2"
+      },
+      {
+        "id": 2,
+        "img": "/assects/thugofwar.jpg",
+        "content": "This is the full content of post 2"
+      },
+      {
+        "id": 3,
+        "img": "/assects/thugofwar.jpg",
+        "content": "This is the full content of post 2"
+      },
+      {
+        "id": 4,
+        "img": "/assects/thugofwar.jpg",
+        "content": "This is the full content of post 2"
+      },
+      {
+        "id": 5,
+        "img": "/assects/thugofwar.jpg",
+        "content": "This is the full content of post 2"
+      }
+    ],
+    [
+      {
+        "id": 1,
+        "img": "/assects/cricket.jpg",
+        "content": "This is the full content of post 2"
+      },
+      {
+        "id": 2,
+        "img": "/assects/cricket.jpg",
+        "content": "This is the full content of post 2"
+      },
+      {
+        "id": 3,
+        "img": "/assects/cricket.jpg",
+        "content": "This is the full content of post 2"
+      },
+      {
+        "id": 4,
+        "img": "/assects/cricket.jpg",
+        "content": "This is the full content of post 2"
+      }
+    ]
+  ]
+}
