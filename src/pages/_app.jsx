@@ -7,6 +7,7 @@ import LocalFont from "next/font/local";
 import "../styles/global.css";
 import "../styles/styles.css";
 import Loader from "@/components/Loader";
+import { AppWrapper } from "@/context/AppContext";
 
 const font_chakra = Chakra_Petch({
   subsets: ["latin"],
@@ -35,8 +36,12 @@ export default function MyApp({ Component, pageProps }) {
   }, []);
 
   return (
-    <main className={`${font_chakra.variable} ${font_clash_display.variable} ${font_ibm.variable}`}>
-      {loading ? <Loader /> : <Component {...pageProps} />}
-    </main>
+    <AppWrapper>
+      <main
+        className={`${font_chakra.variable} ${font_clash_display.variable} ${font_ibm.variable}`}
+      >
+        {loading ? <Loader /> : <Component {...pageProps} />}
+      </main>
+    </AppWrapper>
   );
 }
