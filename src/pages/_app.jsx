@@ -33,12 +33,8 @@ export default function MyApp({ Component, pageProps }) {
   const router = useRouter();
   const [loading, setLoading] = React.useState(false);
 
-
-
-
-
   React.useEffect(() => {
-    const handleStart = (url) => {
+    const handleStart = () => {
       setLoading(true);
       setTimeout(() => {
         setLoading(false);
@@ -46,7 +42,6 @@ export default function MyApp({ Component, pageProps }) {
     }
 
     router.events.on("routeChangeStart", handleStart);
-
 
     return () => {
       router.events.off("routeChangeStart", handleStart);
@@ -57,15 +52,9 @@ export default function MyApp({ Component, pageProps }) {
     return <Loader />;
   }
 
-
-
-
   return (
     <>
-
-
       <main className={`${font_chakra.variable} ${font_clash_display.variable} ${font_ibm.variable}`}>
-
 
         <Component {...pageProps} />
         <AnimatedCursor

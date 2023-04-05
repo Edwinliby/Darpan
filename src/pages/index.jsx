@@ -11,10 +11,7 @@ import Countdown from "react-countdown";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/all";
 
-// import Image from "next/image";
-// import Link from "next/link";
-
-const Home = (props) => {
+const Home = () => {
   const [isLoaded, setIsLoaded] = React.useState(false);
 
   React.useEffect(() => {
@@ -61,44 +58,12 @@ const Home = (props) => {
 
       <Marque />
 
-
-
       {/* <Events /> */}
 
       <section id="about"
         className="about">
         <About />
       </section>
-
-      {/* <section className="text-white pt-4" id='events'>
-        <div className="relative">
-          <div className='relative top-[-1rem] px-2 xl:px-8 flex justify-center w-full font-clash font-bold'>
-            <span className='text-[3.5rem] sm:text-[4rem] md:text-[4.5rem] lg:text-[5rem] xl:text-[5.5rem] z-10'>EVENTS</span>
-            <span className='absolute text-white/10 text-[4rem] sm:text-[4.5rem] md:text-[5rem] lg:text-[5.5rem] xl:text-[7rem]  xl:top-2 top-3'>EVENTS</span>
-          </div>
-
-          <div className="flex flex-wrap relative py-8 xl:py-10 items-center justify-center gap-8">
-            {posts.map(post =>
-              <div className="relative"
-                key={post.id}>
-                <div className="bg-slate-200 w-21rem h-[20rem] flex items-center justify-center rounded-2xl hover:scale-100 hover:shadow-3xl hover:shadow-primary transform transition duration-500 ease-in-out">
-                  <Image
-                    src={post.img}
-                    width={500}
-                    height={500}
-                    alt="logo"
-                    className='w-[21rem] h-[20rem] rounded-xl'
-                  />
-                  <Link
-                    href={`/events/${post.id}`}
-                    className="absolute top-0 left-0 w-full h-full z-10"
-                  />
-                </div>
-              </div>
-            )}
-          </div>
-        </div>
-      </section> */}
 
       <Marque2 />
 
@@ -112,16 +77,3 @@ const Home = (props) => {
 };
 
 export default Home;
-
-// Fetching data from the JSON file
-// import fsPromises from 'fs/promises';
-// import path from 'path'
-// export async function getStaticProps() {
-//   const filePath = path.join(process.cwd(), '/data.json');
-//   const jsonData = await fsPromises.readFile(filePath);
-//   const objectData = JSON.parse(jsonData);
-
-//   return {
-//     props: objectData
-//   }
-// }
