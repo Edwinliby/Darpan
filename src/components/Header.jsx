@@ -25,7 +25,8 @@ export default function Header() {
                     <Hamburger color='white' label='Show menu' direction='right' size={30} rounded={true} toggle={setOpen} toggled={isOpen} />
                 </div>
 
-                <Link className='absolute left-1/2 -translate-x-1/2 -translate-y-1/2 top-1/2' href="/">
+                <Link className='absolute left-1/2 -translate-x-1/2 -translate-y-1/2 top-1/2 hover:scale-110 z-50 transition duration-300 ease-in-out
+                ' href="/">
                     <Image
                         src="/Darpan.png"
                         width={40}
@@ -34,11 +35,11 @@ export default function Header() {
                     />
                 </Link>
 
-                
-                <div className='absolute right-8 z-[26] ' style={{ opacity: isOpen ? 0 : 1 }}>
-                    
-                        <h3 className='text-white  hover:text-main_primary font-chakra tracking-wide font-bold text-lg cursor-pointer transition-all duration-300 ease-in-out' onClick={signInWithGoogle}>REGISTER</h3>
-                  
+                <div className='absolute right-2 z-[26] hidden md:block'>
+                    <div className='relative bg-main_primary text-white w-fit text-left pl-4 pr-2 py-1 rounded-[4px]'>
+                        <span className='text-white hover:text-black font-chakra tracking-wide font-bold text-base cursor-pointer transition-all duration-300 ease-in-out' onClick={signInWithGoogle}>REGISTER</span>
+                        <Image src='/edgeTriangleSvg.svg' width={20} height={20} alt='edge' className='absolute bottom-[-1px] left-[-2px] mix-blend-multiply' />
+                    </div>
                 </div>
             </header>
             {isOpen && (
@@ -60,7 +61,7 @@ export default function Header() {
                                 <p className='absolute right-[-2rem] top-[2px] text-[8px] font-bold text-transparent navPageNo'>PAGE <br /> 02</p>
                             </div>
                             <div className='relative hackNav hover:bg-white hover:text-black text-white w-fit text-left pl-2 pr-4 py-1 rounded-[4px]'>
-                                <Navlink name={'ABOUT'} link={'#about'} setToggle={setOpen} />
+                                <Navlink name={'ABOUT'} link={'/#about'} setToggle={setOpen} />
                                 <Image src='/edgeTriangle.png' width={20} height={20} alt='edge' className='absolute bottom-[-1px] right-[-1px]' />
                                 <p className='absolute right-[-2rem] top-[2px] text-[8px] font-bold text-transparent navPageNo'>PAGE <br /> 03</p>
                             </div>
