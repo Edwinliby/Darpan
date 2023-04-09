@@ -127,15 +127,16 @@
     float: right;
     border-top: 8px solid transparent;
     border-bottom: 8px solid transparent;
-    border-left: 8px solid currentColor;
+    border-right: 8px solid currentColor;
     vertical-align: middle;
     margin-right: .7rem;
     transform: translateY(6px);
+    rotate: -90deg;
     transition: transform .2s ease-out;
 }
 
 .toggle:checked+.lbl-toggle::before {
-    transform: rotate(90deg) translateX(-3px);
+    transform: rotate(-180deg) translateX(-3px);
 }
 
 .collapsible-content {

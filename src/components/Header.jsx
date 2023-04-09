@@ -42,8 +42,9 @@ export default function Header() {
                     </div>
                 </div>
             </header>
+
             {isOpen && (
-                <motion.div className='fixed top-0 left-0 w-[65vh] h-screen md:h-[95vh] md:ml-8 md:my-4 bg-black z-[26] backdrop-blur-sm rounded-xl border-[2px] border-gray/40' initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.5 }}>
+                <motion.div className='fixed top-0 left-0 w-[60vh] h-screen md:h-[95vh] md:ml-8 md:my-4 bg-black z-[26] backdrop-blur-sm rounded-xl border-[2px] border-gray/40' initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.5 }}>
                     <div className='relative flex flex-col'>
                         <div className='pl-4 z-[26] h-[4.5rem] flex items-center border-b-[1.5px] border-gray/40'>
                             <Hamburger color='white' label='Show menu' direction='right' size={50} rounded={true} toggle={setOpen} toggled={isOpen} />
@@ -79,6 +80,11 @@ export default function Header() {
                                 <Navlink name={'TEAMS'} link={'/teams'} setToggle={setOpen} />
                                 <Image src='/edgeTriangle.png' width={20} height={20} alt='edge' className='absolute bottom-[-1px] right-[-1px]' />
                                 <p className='absolute right-[-2rem] top-[2px] text-[8px] font-bold text-transparent navPageNo'>PAGE <br /> 06</p>
+                            </div>
+                            <div className='relative hackNav hover:bg-main_primary md:hidden text-white w-fit text-left pl-2 pr-4 py-1 rounded-[4px]'>
+                                <Navlink name={'REGISTER'} link={'/'} setToggle={setOpen} />
+                                <Image src='/edgeTriangle.png' width={20} height={20} alt='edge' className='absolute bottom-[-1px] right-[-1px]' />
+                                <p className='absolute right-[-2rem] top-[2px] text-[8px] font-bold text-transparent navPageNo'>PAGE <br /> 07</p>
                             </div>
                         </div>
                     </div>

@@ -9,12 +9,15 @@ export default function Marque2() {
                 <h4 className="text font-black">COME  EXPLORE  AND  DISCOVER </h4>
             </div>
 
-            <div className='marquee3 font-sans tracking-widest text-main_primary/50'>
+            <div className='marquee3 font-chakra tracking-widest text-main_primary/50'>
                 <h1 className="text font-black textStroke text-transparent">DARPAN RELOADED</h1>
                 <h1 className="text font-black">DARPAN RELOADED</h1>
                 <h1 className="text font-black textStroke text-transparent">DARPAN RELOADED</h1>
                 <h1 className="text font-black">DARPAN RELOADED</h1>
                 <h1 className="text font-black textStroke text-transparent">DARPAN RELOADED</h1>
+                <h1 className="text font-black">DARPAN RELOADED</h1>
+                <h1 className="text font-black textStroke text-transparent">DARPAN RELOADED</h1>
+                <h1 className="text font-black">DARPAN RELOADED</h1>
             </div>
         </section>
     )

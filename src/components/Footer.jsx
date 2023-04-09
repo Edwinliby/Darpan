@@ -1,6 +1,6 @@
 import React from 'react'
-import Link from 'next/link'
 import Navlink from './Navlink'
+import Link from 'next/link'
 import { FiArrowDownRight } from 'react-icons/fi';
 import { FaWhatsapp, FaInstagram, FaFacebookF } from "react-icons/fa";
 
@@ -13,9 +13,9 @@ export default function Footer() {
                     <Link href="mailto:darpan@cearanmula.ac.in" className='font-chakra font-semibold italic text-2xl'>darpan@cearanmula.ac.in</Link>
                 </div>
 
-                <div className='font-ibm border-gray/70 border-b-[1.5px] sm:border-b-[1.5px] md:border-r-[1.5px] md:border-b-0 min-w-[22rem] flex flex-col gap-5 p-10 justify-center'>
+                <div className='font-chakra grow-[1] text-white/70 md:grow-0 border-gray/70 border-b-[1.5px] sm:border-b-[1.5px] md:border-r-[1.5px] md:border-b-0 min-w-[22rem] xl:min-w-[25rem] flex flex-col gap-5 p-10 justify-center'>
                     <p className=' font-semibold text-[25px]'>Quick Links</p>
-                    <div className='flex gap-10 text-[16px] font-ibm'>
+                    <div className='flex gap-10 text-[17px] font-chakra'>
                         <div className='flex flex-col gap-2'>
                             <Navlink name={'Home'} link={'/'} />
                             <Navlink name={'Events'} link={'/events'} />
@@ -28,10 +28,10 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <div className='min-w-[18rem] grow-[1]'>
+                <div className='min-w-[18rem] grow-[1] text-white/70'>
                     <div className='flex font-chakra italic justify-between border-gray/70 border-b-[1.5px] lg:border-t-[1.5px] xl:border-t-0 min-h-[7rem] items-center font-bold text-4xl pl-5 pr-4'>
                         <Navlink name={'#DARPAN2023'} link={'/'} />
-                        <Link href="#hero" className='hover:-rotate-90 transform transition-all duration-500 ease-in-out'><FiArrowDownRight size="4rem" /></Link>
+                        <Link href="#navbar" className='text-white hover:-rotate-90 transform transition-all duration-500 ease-in-out'><FiArrowDownRight size="4rem" /></Link>
                     </div>
                     <div>
                         <div className='flex'>

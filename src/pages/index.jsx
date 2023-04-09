@@ -15,8 +15,6 @@ const Home = () => {
   const [isLoaded, setIsLoaded] = React.useState(false);
 
   React.useEffect(() => {
-
-
     gsap.registerPlugin(ScrollTrigger);
     gsap.to("progress", {
       value: 100,
@@ -34,7 +32,7 @@ const Home = () => {
         <link rel="shortcut icon" href="/Darpan.png" type="image/png" />
       </Head>
 
-      <Header />
+      <Header id="navbar"/>
       <progress max="100" value="0"></progress>
 
       <section id="hero">

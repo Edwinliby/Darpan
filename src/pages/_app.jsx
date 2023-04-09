@@ -2,11 +2,13 @@ import React from "react";
 import { Chakra_Petch } from "next/font/google";
 import { IBM_Plex_Mono } from "next/font/google";
 import LocalFont from "next/font/local";
-import "../styles/global.css";
-import "../styles/styles.css";
 import Loader from "@/components/Loader";
 import dynamic from 'next/dynamic'
 import { useRouter } from "next/router";
+import "../styles/global.css";
+import "../styles/styles.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const font_chakra = Chakra_Petch({
   subsets: ["latin"],
