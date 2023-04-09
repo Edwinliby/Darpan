@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import Image from 'next/image'
+import Link from 'next/link'
 import fsPromises from 'fs/promises'
 import path from 'path'
 import gsap from "gsap";
@@ -22,7 +23,8 @@ export default function Events({ posts }) {
   }, []);
 
 
-  console.log(posts[index]);
+  const animate = React.useRef(null);
+  gsap.fromTo(animate.current, { opacity: 0, y: 100 }, { opacity: 1, y: 0, duration: 1.5, delay: 1 });
 
 
   return (
@@ -31,45 +33,44 @@ export default function Events({ posts }) {
         <title>Darpan</title>
         <link rel="shortcut icon" href="/Darpan.png" type="image/png" />
       </Head>
-      <Header />
+      <Header id="navbar" />
       <progress max="100" value="0"></progress>
 
       <main>
-        <div className='text-[4rem] text-white font-clash tracking-wide font-bold relative flex items-center justify-center'>
-          <Image src="/Event_banner.png"
-            width={1920}
-            height={1080}
-            alt="Event Banner"
-          />
-          <span className='absolute'>EVENTS</span>
+        <div className='relative top-[4.5rem] py-4 text-[4rem] text-white font-chakra tracking-wide font-black flex flex-col items-center justify-center'>
+          <span className=''>DARPAN 2023</span>
+          <span className='text-[2.5rem] tracking-wider text-main_primary'>EVENTS</span>
         </div>
-        <div className='text-[1.5rem] font-semibold font-chakra flex flex-row gap-12 p-8 items-center justify-center text-white'>
-          <span className='' style={
-            { borderBottom: index === 0 ? '2px solid #FFD700' : 'none' }
-          } onClick={() => setIndex(0)}>Arts</span>
 
-          <span className='' style={
-            { borderBottom: index === 1 ? '2px solid #FFD700' : 'none' }
-          } onClick={() => setIndex(1)}>Sports</span>
+        <div className='relative top-[3rem] text-[1.3rem] font-semibold font-chakra flex flex-row gap-12 p-8 items-center justify-center text-white'>
+          <span className='rounded-full px-4 py-[.2rem] hover:bg-white/20  transition-all duration-500 ease-in-out' style={
+            { border: index === 0 ? '1.5px solid gray' : 'none' }
+          } onClick={() => setIndex(0)}>Games</span>
 
-          <span className='' style={
-            { borderBottom: index === 2 ? '2px solid #FFD700' : 'none' }
-          } onClick={() => setIndex(2)}>Literary</span>
+          <span className='rounded-full px-4 py-[.2rem] hover:bg-white/20 transition-all duration-500 ease-in-out' style={
+            { border: index === 1 ? '1.5px solid gray' : 'none' }
+          } onClick={() => setIndex(1)}>Cultural</span>
+
+          <span className='rounded-full px-4 py-[.2rem] hover:bg-white/20 transition-all duration-500 ease-in-out' style={
+            { border: index === 2 ? '1.5px solid gray' : 'none' }
+          } onClick={() => setIndex(2)}>Workshop</span>
 
         </div>
 
-        <div className='flex flex-wrap justify-center gap-8 p-6'>
+        <div className='flex flex-wrap justify-center gap-8 p-6 pt-14'>
           {
             posts[index].map(post =>
-              <div className='relative w-[21rem] h-[20rem] rounded-md overflow-hidden'
+              <div ref={animate}
+                className='relative w-[21rem] h-[20rem] rounded-md overflow-hidden hover:shadow-lg hover:shadow-main_primary/80 transition-all duration-500 ease-in-out'
                 key={post.id}>
-                <Image src={post.img}
-                  width={500}
-                  height={500}
-                  alt="Event Banner"
-                  className='hover:scale-110 transition-all duration-500 ease-in-out'
-                  
-                />
+                <Link href={`/events/${post.id}`}>
+                  <Image src={post.img}
+                    width={500}
+                    height={500}
+                    alt="Event's Image"
+                    className='cursor-pointer object-cover transform hover:scale-105 transition-all duration-500 ease-in-out'
+                  />
+                </Link>
               </div>
             )}
         </div>

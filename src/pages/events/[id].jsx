@@ -23,25 +23,28 @@ function EventsDetails(props) {
               height={500}
               className=''
             />
-            <div className='relative flex flex-col items-center px-2 md:p-8'>
-              <div className='flex relative'>
-                <div className='w-8 h-8 bg-white rounded-full border-[2px] border-white/70'></div>
-                <div className='absolute left-4 w-8 h-8 rounded-full border-[2px] border-white/70'></div>
+            <div className='relative flex flex-col justify-between px-2 md:p-8'>
+              <div>
+                <div className='flex relative'>
+                  <div className='w-8 h-8 bg-white rounded-full border-[2px] border-white/70'></div>
+                  <div className='absolute left-4 w-8 h-8 rounded-full border-[2px] border-white/70'></div>
+                </div>
+
+                <h3 className='font-semibold text-[2rem] pb-2'>About event</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia animi nobis similique veritatis,
+                  omnis dolor aut maxime eveniet ex ratione pariatur. Consectetur reiciendis distinctio saepe
+                  pariatur doloribus non possimus assumenda.
+                  dolor aut maxime eveniet ex ratione pariatur. Consectetur reiciendis distinctio saepe
+                  pariatur doloribus non possimus assumenda.
+                </p>
               </div>
 
-              <h3 className='font-semibold text-[2rem]'>About event</h3>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia animi nobis similique veritatis,
-                omnis dolor aut maxime eveniet ex ratione pariatur. Consectetur reiciendis distinctio saepe
-                pariatur doloribus non possimus assumenda.
-                dolor aut maxime eveniet ex ratione pariatur. Consectetur reiciendis distinctio saepe
-                pariatur doloribus non possimus assumenda.
-              </p>
-
-              <button className=' absolute bottom-5 bg-white text-black w-[80%]'>Register Now</button>
+              <button className='relative bottom-5 bg-white text-black w-full rounded-full p-2 font-medium hover:bg-gray hover:text-white transition duration-300 ease-in-out'>Register Now</button>
             </div>
           </div>
         </div>
       </div>
+
       <Footer />
     </setion>
   )
@@ -64,7 +67,6 @@ export async function getStaticPaths() {
     paths,
     fallback: false,
   };
-
 }
 
 export async function getStaticProps(context) {
@@ -86,7 +88,5 @@ export async function getStaticProps(context) {
   };
 
 }
-
-
 
 export default EventsDetails
