@@ -7,6 +7,7 @@ import "../styles/styles.css";
 import Loader from "@/components/Loader";
 import dynamic from "next/dynamic";
 import { useRouter } from "next/router";
+import { AuthWrapper } from "@/context/auth-context";
 
 const font_chakra = Chakra_Petch({
   subsets: ["latin"],
@@ -46,7 +47,7 @@ export default function MyApp({ Component, pageProps }) {
     return () => {
       router.events.off("routeChangeStart", handleStart);
     };
-  }, []);
+  }, [router.events]);
 
   if (loading) {
     return <Loader />;
@@ -57,7 +58,9 @@ export default function MyApp({ Component, pageProps }) {
       <main
         className={`${font_chakra.variable} ${font_clash_display.variable} ${font_ibm.variable}`}
       >
-        <Component {...pageProps} />
+        <AuthWrapper>
+          <Component {...pageProps} />
+        </AuthWrapper>
         <AnimatedCursor
           innerSize={12}
           outerSize={20}
