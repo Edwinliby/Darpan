@@ -18,12 +18,12 @@ export default function Header() {
     }
   }, [isOpen]);
 
-    return (
-        <>
-            <header className='w-full h-[4.5rem] flex items-center py-2 fixed z-[25] border-b-[1.5px] bg-soothing_black/60 border-gray/40 backdrop-blur-md'>
-                <div className='ml-4 z-[26] ' style={{ opacity: isOpen ? 0 : 1 }}>
-                    <Hamburger color='white' label='Show menu' direction='right' size={30} rounded={true} toggle={setOpen} toggled={isOpen} />
-                </div>
+  return (
+    <>
+      <header className='w-full h-[4.5rem] flex items-center py-2 fixed z-[25] border-b-[1.5px] bg-soothing_black/60 border-gray/40 backdrop-blur-md'>
+        <div className='ml-4 z-[26] ' style={{ opacity: isOpen ? 0 : 1 }}>
+          <Hamburger color='white' label='Show menu' direction='right' size={30} rounded={true} toggle={setOpen} toggled={isOpen} />
+        </div>
 
         <Link
           className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 top-1/2 hover:scale-110 z-50 transition duration-300 ease-in-out
