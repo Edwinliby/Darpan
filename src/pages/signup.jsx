@@ -17,7 +17,6 @@ function FormPage() {
       name,
       email,
       phoneNumber,
-      collegeSchool,
       institutionName,
       branch,
       semester,
