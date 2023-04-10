@@ -24,8 +24,8 @@ function EventsDetails(props) {
               className=''
             />
             <div className='relative flex flex-col justify-between px-2 md:p-8 gap-16'>
-              <div>
-                <div className='flex relative'>
+              <div className='flex flex-col gap-1'>
+                <div className='flex relative mt-6 md:mt-0'>
                   <div className='w-8 h-8 bg-white rounded-full border-[2px] border-white/70'></div>
                   <div className='absolute left-4 w-8 h-8 rounded-full border-[2px] border-white/70'></div>
                 </div>

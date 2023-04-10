@@ -37,9 +37,9 @@ export default function Events({ posts }) {
       <progress max="100" value="0"></progress>
 
       <main>
-        <div className='relative top-[4.5rem] py-4 text-[3rem] md:text-[4rem] text-white font-chakra tracking-wide font-black flex flex-col items-center justify-center'>
-          <span className=''>DARPAN 2023</span>
-          <span className='text-[2.5rem] tracking-wider text-main_primary'>EVENTS</span>
+        <div className='relative top-[4.5rem] py-4 bg-[url("/banner.png")] object-fill text-white font-clash tracking-wide font-black flex flex-col items-center justify-center'>
+          <span className='text-[1rem] md:text-[4rem]'>DARPAN 2023</span>
+          <span className='text-[2.5rem] tracking-wider'>EVENTS</span>
         </div>
 
         <div className='relative top-[3rem] text-[1.3rem] font-semibold font-chakra flex flex-row gap-4 md:gap-12 p-8 items-center justify-center text-white'>
@@ -61,14 +61,14 @@ export default function Events({ posts }) {
           {
             posts[index].map(post =>
               <div ref={animate}
-                className='relative w-[21rem] h-[20rem] rounded-md overflow-hidden hover:shadow-lg hover:shadow-main_primary/80 transition-all duration-500 ease-in-out'
+                className='relative w-[21rem] h-[20rem] hover:scale-105 rounded-md overflow-hidden hover:shadow-lg hover:shadow-main_primary/80 transition-all duration-500 ease-in-out'
                 key={post.id}>
                 <Link href={`/events/${post.id}`}>
                   <Image src={post.img}
                     width={500}
                     height={500}
                     alt="Event's Image"
-                    className='cursor-pointer object-cover transform hover:scale-105 transition-all duration-500 ease-in-out'
+                    className='cursor-pointer object-cover transform transition-all duration-500 ease-in-out'
                   />
                 </Link>
               </div>

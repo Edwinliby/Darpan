@@ -26,10 +26,8 @@ export default function Header() {
         </div>
 
         <Link
-          className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 top-1/2 hover:scale-110 z-50 transition duration-300 ease-in-out
-                "
-          href="/"
-        >
+          className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 top-1/2 hover:scale-110 z-50 transition duration-300 ease-in-out"
+          href="/">
           <Image src="/Darpan.png" width={40} height={40} alt="logo" />
         </Link>
 
@@ -38,8 +36,7 @@ export default function Header() {
             {appState.userAuth ? (
               <span
                 className="text-white hover:text-black font-chakra tracking-wide font-bold text-base cursor-pointer transition-all duration-300 ease-in-out"
-                onClick={signOut}
-              >
+                onClick={signOut}>
                 LOG OUT
               </span>
             ) : (
@@ -162,6 +159,19 @@ export default function Header() {
                 />
                 <p className="absolute right-[-2rem] top-[2px] text-[8px] font-bold text-transparent navPageNo">
                   PAGE <br /> 06
+                </p>
+              </div>
+              <div className="relative hackNav bg-white hover:bg-main_primary hover:text-white text-black w-fit text-left pl-2 pr-4 py-1 rounded-[4px]">
+                <Navlink name={"REGISTER"} link={"/teams"} setToggle={setOpen} />
+                <Image
+                  src="/edgeTriangle.png"
+                  width={20}
+                  height={20}
+                  alt="edge"
+                  className="absolute bottom-[-1px] right-[-1px]"
+                />
+                <p className="absolute right-[-2rem] top-[2px] text-[8px] font-bold text-transparent navPageNo">
+                  PAGE <br /> 07
                 </p>
               </div>
             </div>
