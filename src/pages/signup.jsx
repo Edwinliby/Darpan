@@ -7,7 +7,6 @@ function FormPage() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
-  const [collegeSchool, setCollegeSchool] = useState("");
   const [institutionName, setInstitutionName] = useState("");
   const [branch, setBranch] = useState("");
   const [semester, setSemester] = useState("");
@@ -28,8 +27,7 @@ function FormPage() {
   return (
     <div className="signup relative">
       <Head>
-        <title>Darpan</title>
-        <link rel="shortcut icon" href="/Darpan.png" type="image/png" />
+        <title>Sign Up</title>
       </Head>
       <Header />
 

@@ -42,9 +42,8 @@ export default function Header() {
             ) : (
               <span
                 className="text-white hover:text-black font-chakra tracking-wide font-bold text-base cursor-pointer transition-all duration-300 ease-in-out"
-                onClick={signInWithGoogle}
-              >
-                REGISTER
+                onClick={signInWithGoogle}>
+                LOG IN
               </span>
             )}
             <Image
@@ -57,6 +56,7 @@ export default function Header() {
           </div>
         </div>
       </header>
+
       {isOpen && (
         <motion.div
           className="fixed top-0 left-0 w-[65vh] h-screen md:h-[95vh] md:ml-8 md:my-4 bg-black z-[26] backdrop-blur-sm rounded-xl border-[2px] border-gray/40"
@@ -161,18 +161,37 @@ export default function Header() {
                   PAGE <br /> 06
                 </p>
               </div>
-              <div className="relative hackNav bg-white hover:bg-main_primary hover:text-white text-black w-fit text-left pl-2 pr-4 py-1 rounded-[4px]">
-                <Navlink name={"REGISTER"} link={"/teams"} setToggle={setOpen} />
-                <Image
-                  src="/edgeTriangle.png"
-                  width={20}
-                  height={20}
-                  alt="edge"
-                  className="absolute bottom-[-1px] right-[-1px]"
-                />
-                <p className="absolute right-[-2rem] top-[2px] text-[8px] font-bold text-transparent navPageNo">
-                  PAGE <br /> 07
-                </p>
+              <div className="block md:hidden relative hackNav bg-white hover:bg-main_primary hover:text-white text-black w-fit text-left pl-2 pr-4 py-1 rounded-[4px]">
+                {appState.userAuth ? (
+                  <div>
+                    <Navlink name={"Log out"} link={"/"} />
+                    <Image
+                      src="/edgeTriangle.png"
+                      width={20}
+                      height={20}
+                      alt="edge"
+                      className="absolute bottom-[-1px] right-[-1px]"
+                    />
+                    <p className="absolute right-[-2rem] top-[2px] text-[8px] font-bold text-transparent navPageNo">
+                      PAGE <br /> 07
+                    </p>
+                  </div>
+                ) : (
+                  <div>
+                    <Navlink name={"Log in"} link={"/"} />
+                    <Image
+                      src="/edgeTriangle.png"
+                      width={20}
+                      height={20}
+                      alt="edge"
+                      className="absolute bottom-[-1px] right-[-1px]"
+                    />
+                    <p className="absolute right-[-2rem] top-[2px] text-[8px] font-bold text-transparent navPageNo">
+                      PAGE <br /> 07
+                    </p>
+                  </div>
+                )}
+
               </div>
             </div>
           </div>

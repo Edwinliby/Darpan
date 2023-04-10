@@ -30,7 +30,7 @@ export default function Events({ posts }) {
   return (
     <div className='h-fit w-screen bg-soothing_black'>
       <Head>
-        <title>Darpan</title>
+        <title>Events</title>
         <link rel="shortcut icon" href="/Darpan.png" type="image/png" />
       </Head>
       <Header id="navbar" />

@@ -1,4 +1,5 @@
 import React from "react";
+import Head from "next/head";
 import { Chakra_Petch } from "next/font/google";
 import { IBM_Plex_Mono } from "next/font/google";
 import LocalFont from "next/font/local";
@@ -41,7 +42,7 @@ export default function MyApp({ Component, pageProps }) {
       setLoading(true);
       setTimeout(() => {
         setLoading(false);
-      }, 1000);
+      }, 1500);
     };
 
     router.events.on("routeChangeStart", handleStart);
@@ -57,6 +58,9 @@ export default function MyApp({ Component, pageProps }) {
 
   return (
     <>
+      <Head>
+        <link rel="shortcut icon" href="/Darpan.png" type="image/png" />
+      </Head>
       <main
         className={`${font_chakra.variable} ${font_clash_display.variable} ${font_ibm.variable}`}
       >
