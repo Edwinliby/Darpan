@@ -10,6 +10,7 @@ import Faq from "@/components/Faq";
 import Countdown from "react-countdown";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/all";
+// import Preloader from "@/components/Preloader";
 
 const Home = () => {
   const [isLoaded, setIsLoaded] = React.useState(false);
@@ -31,6 +32,7 @@ const Home = () => {
         <title>Darpan</title>
         <link rel="shortcut icon" href="/Darpan.png" type="image/png" />
       </Head>
+      {/* <Preloader/> */}
 
       <Header id="navbar"/>
       <progress max="100" value="0"></progress>

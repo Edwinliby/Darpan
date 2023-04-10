@@ -15,7 +15,7 @@ function EventsDetails(props) {
           <p className="text-xl font-medium font-clash text-center">Darpan presents</p>
           <h1 className="text-[3rem] xl:text-[4rem] font-clash font-semibold text-center">{props.title}</h1>
 
-          <div className="flex flex-col md:flex-row rounded-xl justify-center w-[100%] md:w-[90%] font-clash bg-gray/25">
+          <div className="flex flex-col mt-[2rem] md:flex-row rounded-xl justify-center w-[100%] md:w-[90%] font-clash bg-gray/25">
             <Image
               src={props.image}
               alt={props.title}
@@ -23,7 +23,7 @@ function EventsDetails(props) {
               height={500}
               className=''
             />
-            <div className='relative flex flex-col justify-between px-2 md:p-8'>
+            <div className='relative flex flex-col justify-between px-2 md:p-8 gap-16'>
               <div>
                 <div className='flex relative'>
                   <div className='w-8 h-8 bg-white rounded-full border-[2px] border-white/70'></div>

@@ -37,12 +37,12 @@ export default function Events({ posts }) {
       <progress max="100" value="0"></progress>
 
       <main>
-        <div className='relative top-[4.5rem] py-4 text-[4rem] text-white font-chakra tracking-wide font-black flex flex-col items-center justify-center'>
+        <div className='relative top-[4.5rem] py-4 text-[3rem] md:text-[4rem] text-white font-chakra tracking-wide font-black flex flex-col items-center justify-center'>
           <span className=''>DARPAN 2023</span>
           <span className='text-[2.5rem] tracking-wider text-main_primary'>EVENTS</span>
         </div>
 
-        <div className='relative top-[3rem] text-[1.3rem] font-semibold font-chakra flex flex-row gap-12 p-8 items-center justify-center text-white'>
+        <div className='relative top-[3rem] text-[1.3rem] font-semibold font-chakra flex flex-row gap-4 md:gap-12 p-8 items-center justify-center text-white'>
           <span className='rounded-full px-4 py-[.2rem] hover:bg-white/20  transition-all duration-500 ease-in-out' style={
             { border: index === 0 ? '1.5px solid gray' : 'none' }
           } onClick={() => setIndex(0)}>Games</span>
