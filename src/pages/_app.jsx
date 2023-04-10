@@ -2,6 +2,7 @@ import React from "react";
 import Head from "next/head";
 import { Chakra_Petch } from "next/font/google";
 import { IBM_Plex_Mono } from "next/font/google";
+import { Bebas_Neue } from 'next/font/google'
 import LocalFont from "next/font/local";
 import Loader from "@/components/Loader";
 import dynamic from "next/dynamic";
@@ -22,6 +23,12 @@ const font_ibm = IBM_Plex_Mono({
   subsets: ["latin"],
   weight: ["400", "700"],
   variable: "--font-ibm",
+});
+
+const font_bebas = Bebas_Neue({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-bebas",
 });
 
 const font_clash_display = LocalFont({
@@ -62,7 +69,7 @@ export default function MyApp({ Component, pageProps }) {
         <link rel="shortcut icon" href="/favicon.png" type="image/png" />
       </Head>
       <main
-        className={`${font_chakra.variable} ${font_clash_display.variable} ${font_ibm.variable}`}
+        className={`${font_chakra.variable} ${font_clash_display.variable} ${font_ibm.variable} ${font_bebas.variable}`}
       >
         <AuthWrapper>
           <Component {...pageProps} />

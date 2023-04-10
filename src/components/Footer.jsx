@@ -13,9 +13,9 @@ export default function Footer() {
   }
 
   return (
-    <footer className=" h-fit flex flex-col bg-footer text-white px-0 flex-wrap">
+    <footer className=" h-fit flex flex-col bg-soothing_black text-white px-0 flex-wrap overflow-hidden">
       <div className="flex flex-wrap">
-        <div className="border-gray/70 border-b-[1.5px] w-full lg:w-[22rem] lg:border-b-0 lg:border-r-[1.5px] flex flex-col p-10 min-w-[18rem] min-h-[14rem] items-start md:items-center justify-center">
+        <div className="border-gray/70 border-b-[1.5px] w-full lg:w-[22rem] lg:border-b-0 lg:border-r-[1.5px] flex flex-col p-10 min-w-[18rem] min-h-[14rem] items-start justify-center">
           <p className="font-ibm text-stone-500">Get in Touch</p>
           <Link
             href="mailto:darpan@cearanmula.ac.in"
@@ -25,7 +25,7 @@ export default function Footer() {
           </Link>
         </div>
 
-        <div className="font-chakra grow-[1] text-white/70 md:grow-0 border-gray/70 border-b-[1.5px] sm:border-b-[1.5px] md:border-r-[1.5px] md:border-b-0 min-w-[22rem] xl:min-w-[25rem] flex flex-col gap-5 p-10 justify-center">
+        <div className="font-chakra grow-[1] text-white/70 md:grow-0 border-gray/70 border-b-[1.5px] sm:border-b-[1.5px] md:border-r-[1.5px] md:border-b-0 min-w-[21rem] xl:min-w-[25rem] flex flex-col gap-5 p-10 justify-center">
           <p className=" font-semibold text-[25px]">Quick Links</p>
           <div className="flex gap-10 text-[17px] font-chakra">
             <div className="flex flex-col gap-2">
@@ -75,7 +75,7 @@ export default function Footer() {
       <div className="font-clash flex justify-between py-2 text-[10px] md:text-xs px-4 border-t-[1.5px] border-gray/70">
         <p>©2023 - DARPAN AEC </p>
         <span className="flex gap-4">
-          <p>Terms & Conditions</p>
+          <Link href="/404"><p>Terms & Conditions</p></Link>
           <p>Privacy Policy</p>
         </span>
       </div>

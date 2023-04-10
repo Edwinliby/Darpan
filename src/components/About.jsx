@@ -56,7 +56,7 @@ export default function About() {
         </span>
       </div>
       <div className='absolute font-clash font-bold text-white'>
-        <span className='flex gap-6 text-[3.5rem] sm:text-[4rem] md:text-[4.5rem] lg:text-[5rem] xl:text-[5.5rem]'>ABOUT <Navlink name={'AEC'} link={"/#about"} /> </span>
+        <span className='flex gap-6 text-[3.3rem] sm:text-[4rem] md:text-[4.5rem] lg:text-[5rem] xl:text-[5.5rem]'>ABOUT <Navlink name={'AEC'} link={"/#about"} /> </span>
         {/* <span className='absolute text-white/30 text-[4rem] sm:text-[4.5rem] md:text-[5rem] lg:text-[5.5rem] xl:text-[6rem] left-5 xl:left-9 xl:top-5 top-4'>ABOUT AEC</span> */}
       </div>
       <div ref={aboutaec} className='flex flex-col mt-8 lg:flex-row items-center gap-8 py-8'>

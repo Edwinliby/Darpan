@@ -18,7 +18,7 @@ function Hero() {
     }, []);
 
     return (
-        <div className='hero h-[100vh] flex flex-col uppercase justify-center'>
+        <div className='hero xl:hidden h-[100vh] flex flex-col uppercase justify-center'>
 
             <div className='text-white uppercase font-extrabold relative top-[5rem] md:top-[8rem] md:ml-[1rem] lg:ml-[2rem] px-5 '>
                 <h1 ref={title} className='relative font-chakra top-[1rem] sm:top-[1.5rem] sm:text-2xl opacity-0'>College of Engineering Aranmula Presents</h1>
@@ -30,8 +30,8 @@ function Hero() {
             </div>
 
             <div ref={date} className='relative top-12 md:top-6 xl:top-8 md:ml-4 opacity-0'>
-                <div className='flex flex-col font-bold text-soothing_black text-2xl absolute left-8 lg:ml-[1.5rem] top-0 md:text-3xl  z-10'>
-                    <span className='font-chakra text-soothing_black'>2023 <span className='font-clash'>April</span></span>
+                <div className='flex flex-col font-bold text-2xl absolute left-8 lg:ml-[1.5rem] top-0 md:text-3xl  z-10'>
+                    <span className='font-chakra'>2023 <span className='font-clash'>April</span></span>
                     <span className='flex gap-2 text-[2rem] font-chakra font-bold'>26
                         <b className='text-[16px]'>TH</b>
                         27

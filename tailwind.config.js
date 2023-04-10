@@ -9,6 +9,7 @@ module.exports = {
         clash: ["var(--font-clash-display)"],
         chakra: ["var(--font-chakra)"],
         ibm: ["var(--font-ibm)"],
+        bebas: ["var(--font-bebas)"],
       },
       colors: {
         soothing_black: "#0E1111",
