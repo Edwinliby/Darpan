@@ -29,10 +29,9 @@ const Home = () => {
     <div className="bg-soothing_black h-fit">
       <Head>
         <title>Darpan</title>
-        <link rel="shortcut icon" href="/Darpan.png" type="image/png" />
       </Head>
 
-      <Header id="navbar"/>
+      <Header id="navbar" />
       <progress max="100" value="0"></progress>
 
       <section id="hero">

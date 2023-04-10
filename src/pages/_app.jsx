@@ -59,7 +59,7 @@ export default function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <link rel="shortcut icon" href="/Darpan.png" type="image/png" />
+        <link rel="shortcut icon" href="/favicon.png" type="image/png" />
       </Head>
       <main
         className={`${font_chakra.variable} ${font_clash_display.variable} ${font_ibm.variable}`}
