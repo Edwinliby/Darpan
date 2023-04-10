@@ -3,12 +3,13 @@ import { Chakra_Petch } from "next/font/google";
 import { IBM_Plex_Mono } from "next/font/google";
 import LocalFont from "next/font/local";
 import Loader from "@/components/Loader";
-import dynamic from 'next/dynamic'
+import dynamic from "next/dynamic";
 import { useRouter } from "next/router";
 import "../styles/global.css";
 import "../styles/styles.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { AuthWrapper } from "@/context/auth-context";
 
 const font_chakra = Chakra_Petch({
   subsets: ["latin"],
@@ -27,8 +28,8 @@ const font_clash_display = LocalFont({
   variable: "--font-clash-display",
 });
 
-const AnimatedCursor = dynamic(() => import('react-animated-cursor'), {
-  ssr: false
+const AnimatedCursor = dynamic(() => import("react-animated-cursor"), {
+  ssr: false,
 });
 
 export default function MyApp({ Component, pageProps }) {
@@ -41,14 +42,14 @@ export default function MyApp({ Component, pageProps }) {
       setTimeout(() => {
         setLoading(false);
       }, 1000);
-    }
+    };
 
     router.events.on("routeChangeStart", handleStart);
 
     return () => {
       router.events.off("routeChangeStart", handleStart);
     };
-  }, []);
+  }, [router.events]);
 
   if (loading) {
     return <Loader />;
@@ -56,33 +57,35 @@ export default function MyApp({ Component, pageProps }) {
 
   return (
     <>
-      <main className={`${font_chakra.variable} ${font_clash_display.variable} ${font_ibm.variable}`}>
-
-        <Component {...pageProps} />
+      <main
+        className={`${font_chakra.variable} ${font_clash_display.variable} ${font_ibm.variable}`}
+      >
+        <AuthWrapper>
+          <Component {...pageProps} />
+        </AuthWrapper>
         <AnimatedCursor
           innerSize={12}
           outerSize={20}
           trailingSpeed={15}
-          color='151, 71, 255'
+          color="151, 71, 255"
           outerAlpha={0.7}
           innerScale={1.5}
           outerScale={2}
           clickables={[
-            'a',
+            "a",
             'input[type="text"]',
             'input[type="email"]',
             'input[type="number"]',
             'input[type="submit"]',
             'input[type="image"]',
-            'label[for]',
-            'select',
-            'textarea',
-            'button',
-            '.link'
+            "label[for]",
+            "select",
+            "textarea",
+            "button",
+            ".link",
           ]}
         />
       </main>
-
     </>
   );
 }
