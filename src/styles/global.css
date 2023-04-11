@@ -11,7 +11,7 @@ html {
 }
 
 * {
-    user-select: none;
+    /* user-select: none; */
     /* outline: red 1px solid; */
 }
 

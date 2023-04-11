@@ -3,12 +3,12 @@ import Link from "next/link";
 import Image from "next/image";
 import { Slant as Hamburger } from "hamburger-react";
 import { motion } from "framer-motion";
-import { useAuthContext } from "@/context/auth-context";
+// import { useAuthContext } from "@/context/auth-context";
 import Navlink from "@/components/Navlink";
 
 export default function Header() {
   const [isOpen, setOpen] = React.useState(false);
-  const { signInWithGoogle, appState, signOut } = useAuthContext();
+  // const { signInWithGoogle, appState, signOut } = useAuthContext();
 
   React.useEffect(() => {
     if (isOpen) {
@@ -22,7 +22,7 @@ export default function Header() {
     <>
       <header className='w-full h-[4.5rem] flex items-center py-2 fixed z-[25] border-b-[1.5px] bg-soothing_black/60 border-gray/40 backdrop-blur-md'>
         <div className='ml:2 md:ml-4 z-[26]' style={{ opacity: isOpen ? 0 : 1 }}>
-          <Hamburger color='white' label='Show menu' direction='right' size={20} rounded={true} toggle={setOpen} toggled={isOpen} />
+          <Hamburger color='white' label='Show menu' direction='right' size={25} rounded={true} toggle={setOpen} toggled={isOpen} />
         </div>
 
         <Link
@@ -31,7 +31,7 @@ export default function Header() {
           <Image src="/Darpan.png" width={40} height={40} alt="logo" className="opacity-70" />
         </Link>
 
-        <div className="absolute right-2 z-[26] hidden md:block">
+        {/* <div className="absolute right-2 z-[26] hidden md:block">
           <div className="relative bg-main_primary text-white w-fit text-left pl-4 pr-2 py-1 rounded-[4px]">
             {appState.userAuth ? (
               <span
@@ -54,7 +54,7 @@ export default function Header() {
               className="absolute bottom-[-1px] left-[-2px] mix-blend-multiply"
             />
           </div>
-        </div>
+        </div> */}
       </header>
 
       {isOpen && (
@@ -134,7 +134,7 @@ export default function Header() {
               <div className="relative hackNav hover:bg-white hover:text-black text-white w-fit text-left pl-2 pr-4 py-1 rounded-[4px]">
                 <Navlink
                   name={"BROCHURE"}
-                  link={"/downloads"}
+                  link={"/Brochure.pdf"}
                   setToggle={setOpen}
                 />
                 <Image
@@ -160,38 +160,6 @@ export default function Header() {
                 <p className="absolute right-[-2rem] top-[2px] text-[8px] font-bold text-transparent navPageNo">
                   PAGE <br /> 06
                 </p>
-              </div>
-              <div className="block md:hidden relative hackNav bg-white hover:bg-main_primary hover:text-white text-black w-fit text-left pl-2 pr-4 py-1 rounded-[4px]">
-                {appState.userAuth ? (
-                  <div>
-                    <Navlink name={"Log out"} link={"/"} />
-                    <Image
-                      src="/edgeTriangle.png"
-                      width={20}
-                      height={20}
-                      alt="edge"
-                      className="absolute bottom-[-1px] right-[-1px]"
-                    />
-                    <p className="absolute right-[-2rem] top-[2px] text-[8px] font-bold text-transparent navPageNo">
-                      PAGE <br /> 07
-                    </p>
-                  </div>
-                ) : (
-                  <div>
-                    <Navlink name={"Log in"} link={"/"} />
-                    <Image
-                      src="/edgeTriangle.png"
-                      width={20}
-                      height={20}
-                      alt="edge"
-                      className="absolute bottom-[-1px] right-[-1px]"
-                    />
-                    <p className="absolute right-[-2rem] top-[2px] text-[8px] font-bold text-transparent navPageNo">
-                      PAGE <br /> 07
-                    </p>
-                  </div>
-                )}
-
               </div>
             </div>
           </div>

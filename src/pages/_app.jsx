@@ -1,5 +1,5 @@
 import React from "react";
-import Head from "next/head";
+// import Head from "next/head";
 import { Chakra_Petch } from "next/font/google";
 import { IBM_Plex_Mono } from "next/font/google";
 import { Bebas_Neue } from 'next/font/google'
@@ -66,9 +66,9 @@ export default function MyApp({ Component, pageProps }) {
   );
   return (
     <>
-      <Head>
+      {/* <Head>
         <link rel="shortcut icon" href="/favicon.png" type="image/png" />
-      </Head>
+      </Head> */}
       {loading ? <Loader /> :
 
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.5 }}>
