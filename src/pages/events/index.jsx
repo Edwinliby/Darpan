@@ -31,7 +31,6 @@ export default function Events({ posts }) {
     <div className='h-fit w-screen bg-soothing_black'>
       <Head>
         <title>Events</title>
-        <link rel="shortcut icon" href="/Darpan.png" type="image/png" />
       </Head>
       <Header id="navbar" />
       <progress max="100" value="0"></progress>
@@ -68,7 +67,7 @@ export default function Events({ posts }) {
                     width={500}
                     height={500}
                     alt="Event's Image"
-                    className='cursor-pointer object-cover transform transition-all duration-500 ease-in-out'
+                    className='cursor-pointer object-fill transform transition-all duration-500 ease-in-out'
                   />
                 </Link>
               </div>

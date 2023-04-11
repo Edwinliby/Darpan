@@ -13,7 +13,7 @@ export default function Footer() {
   }
 
   return (
-    <footer className=" h-fit flex flex-col bg-soothing_black text-white px-0 flex-wrap overflow-hidden">
+    <footer className=" h-fit flex flex-col border-gray/70 border-t-[1.5px] bg-soothing_black text-white px-0 flex-wrap overflow-hidden">
       <div className="flex flex-wrap">
         <div className="border-gray/70 border-b-[1.5px] w-full lg:w-[22rem] lg:border-b-0 lg:border-r-[1.5px] flex flex-col p-10 min-w-[18rem] min-h-[14rem] items-start justify-center">
           <p className="font-ibm text-stone-500">Get in Touch</p>

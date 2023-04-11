@@ -4,84 +4,142 @@
       {
         "id": 1,
         "title": "Thug of War",
-        "img": "/assects/thugofwar.jpg",
+        "img": "/games/thugofwar.jpg",
         "content": "This is the full content of post 2"
       },
       {
         "id": 2,
-        "title": "This is the title of post 1",
-        "img": "/assects/thugofwar.jpg",
-        "content": "This is the full content of post 2"
-      },
-      {
-        "id": 3,
-        "title": "This is the title of post 1",
-        "img": "/assects/thugofwar.jpg",
-        "content": "This is the full content of post 2"
-      },
-      {
-        "id": 4,
-        "title": "This is the title of post 1",
-        "img": "/assects/thugofwar.jpg",
-        "content": "This is the full content of post 2"
-      },
-      {
-        "id": 5,
-        "title": "This is the title of post 1",
-        "img": "/assects/thugofwar.jpg",
+        "title": "Cricket Tournament",
+        "img": "/games/cricket.jpg",
         "content": "This is the full content of post 2"
       }
     ],
+
     [
       {
         "id": 6,
-        "title": "This is the title of post 1",
-        "img": "/assects/cricket.jpg",
-        "content": "This is the full content of post 2"
+        "title": "Euphoria",
+        "img": "/cultural/Euphoria.png",
+        "content": "Alone in Motion: A Solo Dance Performance",
+        "description": "Silent Expressions: The Art of Mime is a form of performance art that uses body movements and facial expressions to convey a story or emotion without using words. It requires great physical control, creativity, and imagination, making it a challenging yet captivating art form.",
+        "c1name": "Abijith G kaimal",
+        "c2name": "Gayathry",
+        "c1no": "7025743212",
+        "c2no": "7306715087",
+        "pricepool": "10000",
+        "regfee": "500",
+        "enddate": "2023-04-22"
       },
       {
         "id": 7,
-        "title": "This is the title of post 1",
-        "img": "/assects/cricket.jpg",
-        "content": "This is the full content of post 2"
+        "title": "Group Dance",
+        "img": "/cultural/groupdance.png",
+        "content": "Groove Clash: The Ultimate Group Dance Competition",
+        "description":"Groove Clash is a thrilling group dance competition where talented dance crews from all over the world battle it out to become the ultimate champions. With high energy performances, intricate choreography, and fierce competition, Groove Clash is a must-see event for fans of dance and entertainment.",
+        "c1name": "Kailas R. Pillai",
+        "c2name": "Rose Mary James",
+        "c1no": "7510462956",
+        "c2no": "6235805705",
+        "pricepool": "10000",
+        "regfee": "500",
+        "enddate": "2023-04-22"
       },
       {
         "id": 8,
-        "title": "This is the title of post 1",
-        "img": "/assects/cricket.jpg",
-        "content": "This is the full content of post 2"
+        "title": "Vanji Pattu",
+        "img": "/cultural/vanipattu.png",
+        "content": "This is the full content of post 2",
+        "description":"",
+        "c1name": "Ashtami S Kumar",
+        "c2name": "Nandu Krishnan U",
+        "c1no": "8078800372",
+        "c2no": "7994759456",
+        "pricepool": "5000",
+        "regfee": "150",
+        "enddate": "2023-04-22"
       },
       {
         "id": 9,
-        "title": "This is the title of post 1",
-        "img": "/assects/cricket.jpg",
-        "content": "This is the full content of post 2"
-      }
-    ],
-    [
+        "title": "Tharang Band",
+        "img": "/cultural/Tharang.png",
+        "content": "Battle of the Bands: The Ultimate Showdown",
+        "description":"Battle of the Bands: The Ultimate Showdown is a music competition where different bands compete against each other to win the title of the best band. The competition is known for its high energy performances and fierce competition, making it a thrilling experience for both the participating bands and the audience.",
+        "c1name": "Abijith G kaimal",
+        "c2name": "Gayathry",
+        "c1no": "7025743212",
+        "c2no": "7306715087",
+        "pricepool": "10000",
+        "regfee": "500",
+        "enddate": "2023-04-22"
+      },
       {
         "id": 10,
-        "title": "This is the title of post 1",
-        "img": "/assects/cricket.jpg",
-        "content": "This is the full content of post 2"
+        "title": "Humour",
+        "img": "/cultural/Humour.png",
+        "content": "Laugh Riot: The Stand-Up Comedy Showdown",
+        "description":"Laugh Riot: The Stand-Up Comedy Showdown is an exciting and hilarious competition that showcases the best of stand-up comedy. With top-notch comedians battling it out for laughs and glory, this show promises to keep you in stitches from start to finish.",
+        "c1name": "NAVYA.A.S",
+        "c2name": "Abhishek Krishnan UV",
+        "c1no": "9383433231",
+        "c2no": "9539254595",
+        "pricepool": "3000",
+        "regfee": "100",
+        "enddate": "2023-04-22"
       },
       {
         "id": 11,
-        "title": "This is the title of post 1",
-        "img": "/assects/cricket.jpg",
-        "content": "This is the full content of post 2"
+        "title": "Mute(Mime)",
+        "img": "/cultural/mime.png",
+        "content": "Silent Expressions :The Art of Mime",
+        "description":"Silent Expressions: The Art of Mime is a performance art form that uses movement, gestures, and facial expressions to tell a story without words. It is a unique and captivating form of expression that can convey a wide range of emotions and ideas.",
+        "c1name": "Lakshmipriya K B",
+        "c2name": "Sooraj Bal",
+        "c1no": "9633286201",
+        "c2no": "7306720859",
+        "pricepool": "5000",
+        "regfee": "150",
+        "enddate": "2023-04-22"
       },
       {
         "id": 12,
-        "title": "This is the title of post 1",
-        "img": "/assects/cricket.jpg",
-        "content": "This is the full content of post 2"
+        "title": "Voice of Darpan",
+        "img": "/cultural/voice.png",
+        "content": "Rising Stars: The idols of voice of campus",
+        "description":"Rising Stars: The idols of voice of campus is likely a title of a media piece or event that focuses on talented individuals in the realm of campus voice and performance. These individuals may include singers, public speakers, actors, or other performers who are gaining recognition and popularity within their college or university community.",
+        "c1name": "Sethulakshmi KS",
+        "c2name": "Aswin S",
+        "c1no": "9747795501",
+        "c2no": "9947012511",
+        "pricepool": "5000",
+        "regfee": "100",
+        "enddate": "2023-04-22"
       },
       {
         "id": 13,
+        "title": "NITHYARANGI 2023",
+        "img": "/cultural/themeshow.png",
+        "content": "Themed Extravaganza: A Showdown of Creativity and Entertainment",
+        "description":"Themed Extravaganza: A Showdown of Creativity and Entertainment promises to be an exciting event where creativity and entertainment will collide to create a spectacular showcase of talent and imagination.",
+        "c1name": "Abhishek Kumar",
+        "c2name": "Sherin Shaji",
+        "c1no": "9947561933",
+        "c2no": "9946560740",
+        "pricepool": "5000",
+        "regfee": "150",
+        "enddate": "2023-04-22"
+      }
+    ],
+
+    [
+      {
+        "id": 16,
         "title": "This is the title of post 1",
         "img": "/assects/cricket.jpg",
-        "content": "This is the full content of post 2"
+        "content": "This is the full content of post 2",
+        "c1name": "Abijith G kaimal",
+        "c2name": "Gayathry",
+        "c1no": "7025743212",
+        "c2no": "7306715087"
       }
     ]
   ]
