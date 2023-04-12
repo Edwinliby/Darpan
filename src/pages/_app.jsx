@@ -61,9 +61,6 @@ export default function MyApp({ Component, pageProps }) {
     };
   }, [router.events]);
 
-  console.log(
-    'dffsd'
-  );
   return (
     <>
       {/* <Head>

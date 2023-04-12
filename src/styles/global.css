@@ -41,8 +41,8 @@ progress::-webkit-progress-value {
 }
 
 .hero {
-    background-color: var(--soothing-black);
-    background-image: linear-gradient(#201f1f 1px, transparent 1px), linear-gradient(to right, #201f1f 1px, #0E1111 1px);
+    background-color: #000;
+    background-image: linear-gradient(#201f1f 1px, transparent 1px), linear-gradient(to right, #201f1f 1px, #000 1px);
     background-size: 100px 100px;
 }
 
@@ -62,8 +62,8 @@ progress::-webkit-progress-value {
     overflow: hidden;
     position: relative;
     width: 100%;
-    height: 88vh;
-    top: 5rem;
+    height: 75vh;
+    top: 7rem;
 }
 
 .video-section video {

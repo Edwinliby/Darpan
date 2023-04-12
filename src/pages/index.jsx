@@ -8,7 +8,7 @@ import Marque from "@/components/Marque"
 import Marque2 from "@/components/Marque2"
 import Footer from "@/components/Footer";
 import Faq from "@/components/Faq";
-import Countdown from "react-countdown";
+import Clock from "@/components/Clock";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/all";
 
@@ -39,35 +39,19 @@ const Home = () => {
       <Header id="navbar" />
       <progress max="100" value="0"></progress>
 
-      <section id="hero" className="relative top-8">
-        <p ref={stagger} className="hidden xl:block text-white relative pl-[1.5rem] top-[5rem] uppercase font-clash font-bold text-[2.5rem] tracking-wide">College of engineering aranmula <span className="pl-2 text-[1.5rem]">presents</span></p>
+      <section id="hero">
+        <p ref={stagger} className="hidden xl:block text-white relative pl-[1.5rem] top-[6rem] uppercase font-clash font-bold text-[2.5rem] tracking-wide">College of engineering aranmula <span className="pl-2 text-[1.5rem]">presents</span></p>
         <div id="hero">
           <Hero />
           <Video />
         </div>
       </section>
 
-
-      <div className="relative p-4 md:p-8 flex flex-col items-center justify-center text-white text-[3rem] md:text-[4rem] tracking-[1rem] font-clash">
-        <span className="italic text-[1.1rem] md:text-[1.5rem] tracking-wide font-chakra font-semibold">Get ready to witness the future at the ultimate tech
-          <span className="text-main_primary"> extravaganza!</span></span>
-
-        {isLoaded && <Countdown date={new Date("2023-04-26T00:00:00")} />}
-
-        <div className="text-[.8rem] md:text-lg bottom-0 relative -tracking-tight">
-          <span className="absolute left-[-9.5rem] md:left-[-13.5rem]">DAY</span>
-          <span className="absolute left-[-4.5rem] md:left-[-7.5rem]">HOURS</span>
-          <span className="absolute left-[.8rem] md:left-[.3rem]">MINUTES</span>
-          <span className="absolute left-[6.5rem] md:left-[9rem]">SECONDS</span>
-        </div>
-      </div>
+      {isLoaded && <Clock />}
 
       <Marque />
 
-      {/* <Events /> */}
-
-      <section id="about"
-        className="about">
+      <section id="about">
         <About />
       </section>
 

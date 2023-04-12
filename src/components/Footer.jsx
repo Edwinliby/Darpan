@@ -19,8 +19,7 @@ export default function Footer() {
           <p className="font-ibm text-stone-500">Get in Touch</p>
           <Link
             href="mailto:darpan@cearanmula.ac.in"
-            className="font-chakra font-semibold italic text-2xl"
-          >
+            className="font-chakra font-semibold italic text-2xl">
             darpan@cearanmula.ac.in
           </Link>
         </div>
