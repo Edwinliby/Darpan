@@ -18,7 +18,8 @@
         "c2no": "7994759456",
         "pricepool": "10000",
         "regfee": "500",
-        "enddate": "2023-04-22"
+        "enddate": "2023-04-22",
+        "reglink": "https://www.yepdesk.com/embed/buy-tickets/6435323046e0fb00018cfec3/private/hi1egcmmoc"
       },
       {
         "id": 7,
@@ -32,21 +33,23 @@
         "c2no": "6235805705",
         "pricepool": "10000",
         "regfee": "500",
-        "enddate": "2023-04-22"
+        "enddate": "2023-04-22",
+        "reglink": "https://www.yepdesk.com/embed/buy-tickets/64357f4746e0fb00018e3a85/private/burshlsf5t"
       },
       {
         "id": 8,
         "title": "Vanji Pattu",
         "img": "/cultural/vanipattu.png",
-        "content": "This is the full content of post 2",
-        "description": "",
+        "content": "Vanjipattu - Unleash Your Musical Talent",
+        "description": "Join us for an exciting Vanjipattu event and showcase your vocal, art of style. Get ready to immerse yourself in the lively rhythms and enchanting melodies of Kerala's traditional folk music.",
         "c1name": "Ashtami S Kumar",
         "c2name": "Nandu Krishnan U",
         "c1no": "8078800372",
         "c2no": "7994759456",
         "pricepool": "5000",
         "regfee": "150",
-        "enddate": "2023-04-22"
+        "enddate": "2023-04-22",
+        "reglink": "https://www.yepdesk.com/embed/buy-tickets/643700df46e0fb0001958547/private/f8clbhct8b"
       },
       {
         "id": 9,
@@ -60,7 +63,8 @@
         "c2no": "7306715087",
         "pricepool": "10000",
         "regfee": "500",
-        "enddate": "2023-04-22"
+        "enddate": "2023-04-22",
+        "reglink": "https://www.yepdesk.com/embed/buy-tickets/64371c6946e0fb000195aea5/private/mmk0m51ca9"
       },
       {
         "id": 10,
@@ -74,7 +78,8 @@
         "c2no": "9539254595",
         "pricepool": "3000",
         "regfee": "100",
-        "enddate": "2023-04-22"
+        "enddate": "2023-04-22",
+        "reglink": "https://www.yepdesk.com/embed/buy-tickets/64371e1a46e0fb000195cf33/private/8p0b414qef"
       },
       {
         "id": 11,

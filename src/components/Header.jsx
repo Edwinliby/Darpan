@@ -20,15 +20,33 @@ export default function Header() {
 
   return (
     <>
-      <header className='w-full h-[4.5rem] flex items-center py-2 fixed z-[25] border-b-[1.5px] bg-soothing_black/60 border-gray/40 backdrop-blur-md'>
-        <div className='ml:2 md:ml-4 z-[26]' style={{ opacity: isOpen ? 0 : 1 }}>
-          <Hamburger color='white' label='Show menu' direction='right' size={25} rounded={true} toggle={setOpen} toggled={isOpen} />
+      <header className="w-full h-[4.5rem] flex items-center py-2 fixed z-[25] border-b-[1.5px] bg-soothing_black/60 border-gray/40 backdrop-blur-md">
+        <div
+          className="ml:2 md:ml-4 z-[26]"
+          style={{ opacity: isOpen ? 0 : 1 }}
+        >
+          <Hamburger
+            color="white"
+            label="Show menu"
+            direction="right"
+            size={25}
+            rounded={true}
+            toggle={setOpen}
+            toggled={isOpen}
+          />
         </div>
 
         <Link
           className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 top-1/2 hover:scale-110 z-50 transition duration-300 ease-in-out"
-          href="/">
-          <Image src="/Darpan.png" width={40} height={40} alt="logo" className="opacity-70" />
+          href="/"
+        >
+          <Image
+            src="/Darpan.png"
+            width={50}
+            height={50}
+            alt="logo"
+            className="opacity-70"
+          />
         </Link>
 
         {/* <div className="absolute right-2 z-[26] hidden md:block">

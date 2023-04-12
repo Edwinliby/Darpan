@@ -81,7 +81,7 @@ progress::-webkit-progress-value {
   top: 0;
   left: 0;
   right: 0;
-  font-size: 45vw;
+  font-size: 40vw;
   margin-left: -3vw;
   background-color: rgb(0, 0, 0);
   user-select: none;

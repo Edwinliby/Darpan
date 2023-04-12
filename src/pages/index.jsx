@@ -43,14 +43,14 @@ const Home = () => {
       <progress max="100" value="0"></progress>
 
       <section id="hero">
-        <p
-          ref={stagger}
-          className="hidden xl:block text-white relative pl-[1.5rem] top-[6rem] uppercase font-clash font-bold text-[2.5rem] tracking-wide"
-        >
-          College of engineering aranmula{" "}
-          <span className="pl-2 text-[1.5rem]">presents</span>
-        </p>
         <div id="hero">
+          <p
+            ref={stagger}
+            className=" text-white relative pl-[1.5rem] top-[6rem] uppercase font-clash font-bold text-[2.5rem] tracking-wide"
+          >
+            College of engineering aranmula{" "}
+            <span className="pl-2 text-[1.5rem]">presents</span>
+          </p>
           <Hero />
           <Video />
         </div>
