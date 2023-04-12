@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import { useRef, useLayoutEffect, useEffect, useState } from "react";
 import Head from "next/head";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
@@ -14,9 +14,15 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/all";
 
 const Home = () => {
-  const [isLoaded, setIsLoaded] = React.useState(false);
+  const [isLoaded, setIsLoaded] = useState(false);
 
-  React.useEffect(() => {
+  useEffect(() => {
+    setIsLoaded(true);
+  }, []);
+
+  const stagger = useRef(null);
+
+  useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     gsap.to("progress", {
       value: 100,
@@ -24,15 +30,12 @@ const Home = () => {
         scrub: 0.5,
       },
     });
-    setIsLoaded(true);
+    gsap.fromTo(
+      stagger.current,
+      { opacity: 0, y: 100 },
+      { opacity: 1, y: 0, duration: 1.5 }
+    );
   }, []);
-
-  const stagger = useRef(null);
-  gsap.fromTo(
-    stagger.current,
-    { opacity: 0, y: 100 },
-    { opacity: 1, y: 0, duration: 1.5 }
-  );
 
   return (
     <div className="bg-black h-fit">
@@ -73,7 +76,6 @@ const Home = () => {
       <section id="faq">
         <Faq />
       </section>
-
       <Map />
 
       <Footer />

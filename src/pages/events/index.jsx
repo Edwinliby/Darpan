@@ -1,4 +1,4 @@
-import React from "react";
+import { useLayoutEffect, useRef, useState } from "react";
 import Head from "next/head";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -10,9 +10,11 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/all";
 
 export default function Events({ posts, names }) {
-  const [index, setIndex] = React.useState(0);
+  const [index, setIndex] = useState(0);
+  const individualPosts = posts[index];
+  const animate = useRef(null);
 
-  React.useEffect(() => {
+  useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     gsap.to("progress", {
       value: 100,
@@ -20,16 +22,12 @@ export default function Events({ posts, names }) {
         scrub: 0.5,
       },
     });
+    gsap.fromTo(
+      animate.current,
+      { opacity: 0, y: 100 },
+      { opacity: 1, y: 0, duration: 1.5, delay: 1 }
+    );
   }, []);
-
-  const individualPosts = posts[index];
-
-  const animate = React.useRef(null);
-  gsap.fromTo(
-    animate.current,
-    { opacity: 0, y: 100 },
-    { opacity: 1, y: 0, duration: 1.5, delay: 1 }
-  );
 
   return (
     <div className="h-fit w-screen bg-soothing_black">
@@ -40,24 +38,25 @@ export default function Events({ posts, names }) {
       <progress max="100" value="0"></progress>
 
       <main>
-        <div className='relative py-8 h-[15rem] md:h-[25rem] bg-[url("/banner.png")] object-fill text-white font-clash tracking-wide font-black flex flex-col items-center justify-center'>
-          <span className="text-[1.2rem] pt-10 md:text-[4rem]">DARPAN 2023</span>
+        <div className='relative top-[4.5rem] py-4 bg-[url("/banner.png")] object-fill text-white font-clash tracking-wide font-black flex flex-col items-center justify-center'>
+          <span className="text-[1rem] md:text-[4rem]">DARPAN 2023</span>
           <span className="text-[2.5rem] tracking-wider">EVENTS</span>
         </div>
 
-        <div className="text-[1rem] font-semibold font-chakra flex flex-row gap-4 md:gap-12 p-10 items-center justify-center text-white">
+        <div className="relative top-[4rem] text-[1rem] font-semibold font-chakra flex flex-row gap-4 md:gap-12 p-16 items-center justify-center text-white">
           {names.map((name, i) => (
             <span
               key={i}
               className="rounded-full px-4 py-[.3rem] hover:bg-white/20 transition-all duration-500 ease-in-out"
               style={{ border: index === i ? "1.75px solid #9747ff" : "none" }}
-              onClick={() => setIndex(i)}>
+              onClick={() => setIndex(i)}
+            >
               {name}
             </span>
           ))}
         </div>
 
-        <div className="flex flex-wrap justify-center gap-8 pb-8 ">
+        <div className="flex flex-wrap justify-center gap-8 p-6 pt-14">
           {individualPosts.length > 0 ? (
             individualPosts.map((post) => (
               <div

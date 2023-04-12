@@ -37,15 +37,15 @@ export default function Header() {
         </div>
 
         <Link
-          className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 top-1/2 hover:scale-110 z-50 transition duration-300 ease-in-out"
+          className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 top-1/2 hover:scale-110 z-50 transition duration-300  ease-in-out"
           href="/"
         >
           <Image
             src="/Darpan.png"
-            width={50}
-            height={50}
+            width={45}
+            height={45}
             alt="logo"
-            className="opacity-70"
+            className="opacity-80"
           />
         </Link>
 
