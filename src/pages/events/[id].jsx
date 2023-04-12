@@ -168,6 +168,7 @@ export async function getStaticProps(context) {
       regfee: post.regfee,
       pricepool: post.pricepool,
       enddate: post.enddate,
+      register: post.reg,
       reglink: post.reglink,
     },
   };

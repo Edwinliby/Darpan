@@ -40,12 +40,12 @@ progress::-webkit-progress-value {
   background-color: #9747ff;
 }
 
-.hero {
+/* .hero {
   background-color: #000;
   background-image: linear-gradient(#201f1f 1px, transparent 1px),
     linear-gradient(to right, #201f1f 1px, #000 1px);
   background-size: 100px 100px;
-}
+} */
 
 .hackNav:hover .navPageNo {
   color: #fff;
@@ -59,8 +59,9 @@ progress::-webkit-progress-value {
   overflow: hidden;
   position: relative;
   width: 100%;
-  height: 75vh;
+  height: 85vh;
   top: 7rem;
+  z-index: 1;
 }
 
 .video-section video {
@@ -81,7 +82,7 @@ progress::-webkit-progress-value {
   top: 0;
   left: 0;
   right: 0;
-  font-size: 40vw;
+  font-size: 47vw;
   margin-left: -3vw;
   background-color: rgb(0, 0, 0);
   user-select: none;
