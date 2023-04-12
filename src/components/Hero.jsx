@@ -36,7 +36,7 @@ function Hero() {
                     27
                     <b className='text-[16px]'>TH</b>
                 </span>
-                <Image src='/edgetriangle.png'
+                <Image src='/edgeTriangle.png'
                     width={30}
                     height={30}
                     alt='edgetriangle'
