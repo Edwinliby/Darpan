@@ -4,8 +4,8 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Video from "@/components/Video";
 import About from "@/components/About";
-import Marque from "@/components/Marque"
-import Marque2 from "@/components/Marque2"
+import Marque from "@/components/Marque";
+import Marque2 from "@/components/Marque2";
 import Footer from "@/components/Footer";
 import Faq from "@/components/Faq";
 import Clock from "@/components/Clock";
@@ -27,8 +27,11 @@ const Home = () => {
   }, []);
 
   const stagger = useRef(null);
-  gsap.fromTo(stagger.current, { opacity: 0, y: 100 }, { opacity: 1, y: 0, duration: 1.5, delay: 0.5 });
-
+  gsap.fromTo(
+    stagger.current,
+    { opacity: 0, y: 100 },
+    { opacity: 1, y: 0, duration: 1.5, delay: 0.5 }
+  );
 
   return (
     <div className="bg-black h-fit">
@@ -40,7 +43,13 @@ const Home = () => {
       <progress max="100" value="0"></progress>
 
       <section id="hero">
-        <p ref={stagger} className="hidden xl:block text-white relative pl-[1.5rem] top-[6rem] uppercase font-clash font-bold text-[2.5rem] tracking-wide">College of engineering aranmula <span className="pl-2 text-[1.5rem]">presents</span></p>
+        <p
+          ref={stagger}
+          className="hidden xl:block text-white relative pl-[1.5rem] top-[6rem] uppercase font-clash font-bold text-[2.5rem] tracking-wide"
+        >
+          College of engineering aranmula{" "}
+          <span className="pl-2 text-[1.5rem]">presents</span>
+        </p>
         <div id="hero">
           <Hero />
           <Video />

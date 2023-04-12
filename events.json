@@ -1,36 +1,10 @@
 {
+  "names": [
+    "CULTURAL",
+    "GAMES",
+    "WORKSHOPS"
+  ],
   "posts": [
-    [
-      {
-        "id": 1,
-        "title": "Thug of War",
-        "img": "/games/thugofwar.jpg",
-        "content": "This is the full content of post 2",
-        "description": "Silent Expressions: The Art of Mime is a form of performance art that uses body movements and facial expressions to convey a story or emotion without using words. It requires great physical control, creativity, and imagination, making it a challenging yet captivating art form.",
-        "c1name": "Abijith G kaimal",
-        "c2name": "Gayathry",
-        "c1no": "7025743212",
-        "c2no": "7306715087",
-        "pricepool": "10000",
-        "regfee": "500",
-        "enddate": "2023-04-22"
-      },
-      {
-        "id": 2,
-        "title": "Cricket Tournament",
-        "img": "/games/cricket.jpg",
-        "content": "This is the full content of post 2",
-        "description": "Silent Expressions: The Art of Mime is a form of performance art that uses body movements and facial expressions to convey a story or emotion without using words. It requires great physical control, creativity, and imagination, making it a challenging yet captivating art form.",
-        "c1name": "Abijith G kaimal",
-        "c2name": "Gayathry",
-        "c1no": "7025743212",
-        "c2no": "7306715087",
-        "pricepool": "10000",
-        "regfee": "500",
-        "enddate": "2023-04-22"
-      }
-    ],
-
     [
       {
         "id": 6,
@@ -145,22 +119,36 @@
         "enddate": "2023-04-22"
       }
     ],
-
     [
       {
-        "id": 16,
-        "title": "This is the title of post 1",
-        "img": "/assects/cricket.jpg",
+        "id": 1,
+        "title": "Thug of War",
+        "img": "/games/thugofwar.jpg",
         "content": "This is the full content of post 2",
-        "description": "Themed Extravaganza: A Showdown of Creativity and Entertainment promises to be an exciting event where creativity and entertainment will collide to create a spectacular showcase of talent and imagination.",
+        "description": "Silent Expressions: The Art of Mime is a form of performance art that uses body movements and facial expressions to convey a story or emotion without using words. It requires great physical control, creativity, and imagination, making it a challenging yet captivating art form.",
         "c1name": "Abijith G kaimal",
         "c2name": "Gayathry",
         "c1no": "7025743212",
         "c2no": "7306715087",
-        "pricepool": "5000",
-        "regfee": "150",
+        "pricepool": "10000",
+        "regfee": "500",
+        "enddate": "2023-04-22"
+      },
+      {
+        "id": 2,
+        "title": "Cricket Tournament",
+        "img": "/games/cricket.jpg",
+        "content": "This is the full content of post 2",
+        "description": "Silent Expressions: The Art of Mime is a form of performance art that uses body movements and facial expressions to convey a story or emotion without using words. It requires great physical control, creativity, and imagination, making it a challenging yet captivating art form.",
+        "c1name": "Abijith G kaimal",
+        "c2name": "Gayathry",
+        "c1no": "7025743212",
+        "c2no": "7306715087",
+        "pricepool": "10000",
+        "regfee": "500",
         "enddate": "2023-04-22"
       }
-    ]
+    ],
+    []
   ]
 }
