@@ -20,7 +20,6 @@ export function AuthWrapper({ children }) {
     const unsubscribe = auth.onAuthStateChanged((user) => {
       if (user) {
         getUserDetails(user).then((userDetails) => {
-          console.log(userDetails);
           setAppState({
             userAuth: user,
             userDetails,

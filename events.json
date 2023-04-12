@@ -99,7 +99,7 @@
         "pricepool": "5000",
         "regfee": "150",
         "enddate": "2023-04-22",
-        "link": "https://www.yepdesk.com/mute-mime-/private/ktoj0r03rv",
+        "reglink": "https://www.yepdesk.com/mute-mime-/private/ktoj0r03rv",
         "reg": "Register Now"
       },
       {
@@ -115,7 +115,7 @@
         "pricepool": "5000",
         "regfee": "100",
         "enddate": "2023-04-22",
-        "link": "https://www.yepdesk.com/voice-of-darpan/private/c3e95vtbj3",
+        "reglink": "https://www.yepdesk.com/voice-of-darpan/private/c3e95vtbj3",
         "reg": "Register Now"
       },
       {
@@ -131,7 +131,7 @@
         "pricepool": "5000",
         "regfee": "150",
         "enddate": "2023-04-22",
-        "link": "",
+        "reglink": "",
         "reg": "Register Now"
       }
     ],
@@ -149,7 +149,7 @@
         "pricepool": "10000",
         "regfee": "500",
         "enddate": "2023-04-22",
-        "link": "",
+        "reglink": "",
         "reg": "Register Closed"
       },
       {
@@ -165,7 +165,7 @@
         "pricepool": "10000",
         "regfee": "500",
         "enddate": "2023-04-22",
-        "link": "",
+        "reglink": "",
         "reg": "Register Closed"
       }
     ],

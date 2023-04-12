@@ -11,7 +11,6 @@ import "../styles/global.css";
 import "../styles/styles.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { AuthWrapper } from "@/context/auth-context";
 import { motion } from "framer-motion";
 
 const font_chakra = Chakra_Petch({
@@ -71,9 +70,9 @@ export default function MyApp({ Component, pageProps }) {
           <main
             className={`${font_chakra.variable} ${font_clash_display.variable} ${font_ibm.variable} ${font_bebas.variable}`}
           >
-            <AuthWrapper>
+          
               <Component {...pageProps} />
-            </AuthWrapper>
+   
             <AnimatedCursor
               innerSize={12}
               outerSize={20}
