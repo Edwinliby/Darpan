@@ -9,6 +9,7 @@ import Marque2 from "@/components/Marque2";
 import Footer from "@/components/Footer";
 import Faq from "@/components/Faq";
 import Clock from "@/components/Clock";
+import Map from "@/components/Map";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/all";
 
@@ -30,7 +31,7 @@ const Home = () => {
   gsap.fromTo(
     stagger.current,
     { opacity: 0, y: 100 },
-    { opacity: 1, y: 0, duration: 1.5, delay: 0.5 }
+    { opacity: 1, y: 0, duration: 1.5 }
   );
 
   return (
@@ -43,14 +44,14 @@ const Home = () => {
       <progress max="100" value="0"></progress>
 
       <section id="hero">
-        <p
-          ref={stagger}
-          className="hidden xl:block text-white relative pl-[1.5rem] top-[6rem] uppercase font-clash font-bold text-[2.5rem] tracking-wide"
-        >
-          College of engineering aranmula{" "}
-          <span className="pl-2 text-[1.5rem]">presents</span>
-        </p>
-        <div id="hero">
+        <div ref={stagger} className="hidden xl:block italic relative w-full text-center top-[7rem] z-[10]">
+          <p className="text-white pl-[1.5rem] top-[6rem] uppercase font-clash font-bold text-[2.5rem] tracking-wide">
+            COLLEGE OF ENGINEERING ARANMULA
+          </p>
+          <p className="text-white font-clash text-xl">PRESENTS</p>
+        </div>
+
+        <div>
           <Hero />
           <Video />
         </div>
@@ -69,6 +70,8 @@ const Home = () => {
       <section id="faq">
         <Faq />
       </section>
+
+      <Map />
 
       <Footer />
     </div>

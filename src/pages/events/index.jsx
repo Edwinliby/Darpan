@@ -40,25 +40,24 @@ export default function Events({ posts, names }) {
       <progress max="100" value="0"></progress>
 
       <main>
-        <div className='relative top-[4.5rem] py-4 bg-[url("/banner.png")] object-fill text-white font-clash tracking-wide font-black flex flex-col items-center justify-center'>
-          <span className="text-[1rem] md:text-[4rem]">DARPAN 2023</span>
+        <div className='relative py-8 h-[15rem] md:h-[25rem] bg-[url("/banner.png")] object-fill text-white font-clash tracking-wide font-black flex flex-col items-center justify-center'>
+          <span className="text-[1.2rem] pt-10 md:text-[4rem]">DARPAN 2023</span>
           <span className="text-[2.5rem] tracking-wider">EVENTS</span>
         </div>
 
-        <div className="relative top-[4rem] text-[1rem] font-semibold font-chakra flex flex-row gap-4 md:gap-12 p-16 items-center justify-center text-white">
+        <div className="text-[1rem] font-semibold font-chakra flex flex-row gap-4 md:gap-12 p-10 items-center justify-center text-white">
           {names.map((name, i) => (
             <span
               key={i}
               className="rounded-full px-4 py-[.3rem] hover:bg-white/20 transition-all duration-500 ease-in-out"
               style={{ border: index === i ? "1.75px solid #9747ff" : "none" }}
-              onClick={() => setIndex(i)}
-            >
+              onClick={() => setIndex(i)}>
               {name}
             </span>
           ))}
         </div>
 
-        <div className="flex flex-wrap justify-center gap-8 p-6 pt-14">
+        <div className="flex flex-wrap justify-center gap-8 pb-8 ">
           {individualPosts.length > 0 ? (
             individualPosts.map((post) => (
               <div

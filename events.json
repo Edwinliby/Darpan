@@ -1,13 +1,9 @@
 {
-  "names": [
-    "CULTURAL",
-    "GAMES",
-    "WORKSHOPS"
-  ],
+  "names": ["CULTURAL", "GAMES", "WORKSHOPS"],
   "posts": [
     [
       {
-        "id": 6,
+        "id": 1,
         "title": "Euphoria",
         "img": "/cultural/Euphoria.png",
         "content": "Alone in Motion: A Solo Dance Performance",
@@ -18,10 +14,12 @@
         "c2no": "7994759456",
         "pricepool": "10000",
         "regfee": "500",
-        "enddate": "2023-04-22"
+        "enddate": "2023-04-22",
+        "link": "https://www.yepdesk.com/euphoria/private/hi1egcmmoc",
+        "reg": "Register Now"
       },
       {
-        "id": 7,
+        "id": 2,
         "title": "Group Dance",
         "img": "/cultural/groupdance.png",
         "content": "Groove Clash: The Ultimate Group Dance Competition",
@@ -32,24 +30,28 @@
         "c2no": "6235805705",
         "pricepool": "10000",
         "regfee": "500",
-        "enddate": "2023-04-22"
+        "enddate": "2023-04-22",
+        "link": "https://www.yepdesk.com/mime7/private/burshlsf5t",
+        "reg": "Register Now"
       },
       {
-        "id": 8,
+        "id": 3,
         "title": "Vanji Pattu",
         "img": "/cultural/vanipattu.png",
-        "content": "This is the full content of post 2",
-        "description": "",
+        "content": "Unleash Your Musical Talent",
+        "description": "Unleashing your musical talent can be a deeply fulfilling and rewarding experience, allowing you to express yourself creatively and connect with others on a profound level. With dedication, practice, and the right resources, anyone can unlock their musical potential and create beautiful music.",
         "c1name": "Ashtami S Kumar",
         "c2name": "Nandu Krishnan U",
         "c1no": "8078800372",
         "c2no": "7994759456",
         "pricepool": "5000",
         "regfee": "150",
-        "enddate": "2023-04-22"
+        "enddate": "2023-04-22",
+        "link": "https://www.yepdesk.com/vanji-pattu/private/f8clbhct8b",
+        "reg": "Register Now"
       },
       {
-        "id": 9,
+        "id": 4,
         "title": "Tharang Band",
         "img": "/cultural/Tharang.png",
         "content": "Battle of the Bands: The Ultimate Showdown",
@@ -60,10 +62,12 @@
         "c2no": "7306715087",
         "pricepool": "10000",
         "regfee": "500",
-        "enddate": "2023-04-22"
+        "enddate": "2023-04-22",
+        "link": "https://www.yepdesk.com/tharang-band1/private/mmk0m51ca9",
+        "reg": "Register Now"
       },
       {
-        "id": 10,
+        "id": 5,
         "title": "Humour",
         "img": "/cultural/Humour.png",
         "content": "Laugh Riot: The Stand-Up Comedy Showdown",
@@ -74,10 +78,12 @@
         "c2no": "9539254595",
         "pricepool": "3000",
         "regfee": "100",
-        "enddate": "2023-04-22"
+        "enddate": "2023-04-22",
+        "link": "https://www.yepdesk.com/tharang-band/private/1mjjqo4k4g",
+        "reg": "Register Now"
       },
       {
-        "id": 11,
+        "id": 6,
         "title": "Mute(Mime)",
         "img": "/cultural/mime.png",
         "content": "Silent Expressions :The Art of Mime",
@@ -88,10 +94,12 @@
         "c2no": "7306720859",
         "pricepool": "5000",
         "regfee": "150",
-        "enddate": "2023-04-22"
+        "enddate": "2023-04-22",
+        "link": "https://www.yepdesk.com/mute-mime-/private/ktoj0r03rv",
+        "reg": "Register Now"
       },
       {
-        "id": 12,
+        "id": 7,
         "title": "Voice of Darpan",
         "img": "/cultural/voice.png",
         "content": "Rising Stars: The idols of voice of campus",
@@ -102,10 +110,12 @@
         "c2no": "9947012511",
         "pricepool": "5000",
         "regfee": "100",
-        "enddate": "2023-04-22"
+        "enddate": "2023-04-22",
+        "link": "https://www.yepdesk.com/voice-of-darpan/private/c3e95vtbj3",
+        "reg": "Register Now"
       },
       {
-        "id": 13,
+        "id": 8,
         "title": "NITHYARANGI 2023",
         "img": "/cultural/themeshow.png",
         "content": "Themed Extravaganza: A Showdown of Creativity and Entertainment",
@@ -116,12 +126,14 @@
         "c2no": "9946560740",
         "pricepool": "5000",
         "regfee": "150",
-        "enddate": "2023-04-22"
+        "enddate": "2023-04-22",
+        "link": "",
+        "reg": "Register Now"
       }
     ],
     [
       {
-        "id": 1,
+        "id": 9,
         "title": "Thug of War",
         "img": "/games/thugofwar.jpg",
         "content": "This is the full content of post 2",
@@ -132,10 +144,12 @@
         "c2no": "7306715087",
         "pricepool": "10000",
         "regfee": "500",
-        "enddate": "2023-04-22"
+        "enddate": "2023-04-22",
+        "link": "",
+        "reg": "Register Closed"
       },
       {
-        "id": 2,
+        "id": 10,
         "title": "Cricket Tournament",
         "img": "/games/cricket.jpg",
         "content": "This is the full content of post 2",
@@ -146,7 +160,9 @@
         "c2no": "7306715087",
         "pricepool": "10000",
         "regfee": "500",
-        "enddate": "2023-04-22"
+        "enddate": "2023-04-22",
+        "link": "",
+        "reg": "Register Closed"
       }
     ],
     []

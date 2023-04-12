@@ -53,7 +53,7 @@ function EventsDetails(props) {
                   </div>
                 </div>
 
-                <button className='relative bottom-5 bg-white text-black w-full rounded-full p-2 font-medium hover:bg-gray hover:text-white transition duration-300 ease-in-out'>Register Now</button>
+                <Link href={props.link} className='relative bottom-5 text-center bg-white text-black w-full rounded-full p-2 font-medium hover:bg-gray hover:text-white transition duration-300 ease-in-out'>{props.register}</Link>
               </div>
             </div>
           </div>
@@ -106,7 +106,9 @@ export async function getStaticProps(context) {
       c2number: post.c2no,
       regfee: post.regfee,
       pricepool: post.pricepool,
-      enddate: post.enddate
+      enddate: post.enddate,
+      register: post.reg,
+      link: post.link
     },
   };
 
