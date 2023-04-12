@@ -60,17 +60,13 @@ export default function About() {
         {/* <span className='absolute text-white/30 text-[4rem] sm:text-[4.5rem] md:text-[5rem] lg:text-[5.5rem] xl:text-[6rem] left-5 xl:left-9 xl:top-5 top-4'>ABOUT AEC</span> */}
       </div>
       <div ref={aboutaec} className='flex flex-col mt-8 lg:flex-row items-center gap-8 py-8'>
-        <p className='text-white grow-[2] text-base xl:text-2xl font-chakra font-medium'>
+        <p className='text-white text-base xl:text-2xl font-chakra font-medium'>
           The College of Engineering Aranmula established in 2014 is the 8th Engineering College under the Co-operative Academy of Professional Educaation. <b>CAPE</b> was formed to establish educational institutions to provide education and trianing,
           research and development and consultancy. The society is promoted by the Co-operative Department of the government of Kerala and is an autonomous society.
         </p>
-        <Image
-          src='/VideoFrame.png'
-          width={500}
-          height={500}
-          alt='Video Frame'
-          className='grow-[1] w-[21.5rem] h-auto lg:w-[22rem] xl:w-[26rem]'
-        />
+
+        <video src="/About.mp4" autoPlay loop muted className='abvideo w-[22rem] h-[20rem] md:w-[24rem] object-cover rounded-2xl'></video>
+
       </div>
     </div>
   )
