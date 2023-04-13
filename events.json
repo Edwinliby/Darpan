@@ -1,5 +1,9 @@
 {
-  "names": ["CULTURAL", "GAMES", "WORKSHOPS"],
+  "names": [
+    "CULTURAL",
+    "GAMES",
+    "WORKSHOPS"
+  ],
   "posts": [
     [
       {
@@ -15,7 +19,7 @@
         "pricepool": "10000",
         "regfee": "500",
         "enddate": "2023-04-22",
-        "link": "https://www.yepdesk.com/euphoria/private/hi1egcmmoc",
+        "reglink": "https://www.yepdesk.com/embed/buy-tickets/6435323046e0fb00018cfec3/private/hi1egcmmoc",
         "reg": "Register Now"
       },
       {
@@ -31,8 +35,8 @@
         "pricepool": "10000",
         "regfee": "500",
         "enddate": "2023-04-22",
-        "link": "https://www.yepdesk.com/mime7/private/burshlsf5t",
-        "reg": "Register Now"
+        "reg": "Register Now",
+        "reglink": "https://www.yepdesk.com/embed/buy-tickets/64357f4746e0fb00018e3a85/private/burshlsf5t"
       },
       {
         "id": 3,
@@ -47,8 +51,8 @@
         "pricepool": "5000",
         "regfee": "150",
         "enddate": "2023-04-22",
-        "link": "https://www.yepdesk.com/vanji-pattu/private/f8clbhct8b",
-        "reg": "Register Now"
+        "reg": "Register Now",
+        "reglink": "https://www.yepdesk.com/embed/buy-tickets/643700df46e0fb0001958547/private/f8clbhct8b"
       },
       {
         "id": 4,
@@ -63,8 +67,8 @@
         "pricepool": "10000",
         "regfee": "500",
         "enddate": "2023-04-22",
-        "link": "https://www.yepdesk.com/tharang-band1/private/mmk0m51ca9",
-        "reg": "Register Now"
+        "reg": "Register Now",
+        "reglink": "https://www.yepdesk.com/embed/buy-tickets/64371c6946e0fb000195aea5/private/mmk0m51ca9"
       },
       {
         "id": 5,
@@ -79,8 +83,8 @@
         "pricepool": "3000",
         "regfee": "100",
         "enddate": "2023-04-22",
-        "link": "https://www.yepdesk.com/tharang-band/private/1mjjqo4k4g",
-        "reg": "Register Now"
+        "reg": "Register Now",
+        "reglink": "https://www.yepdesk.com/embed/buy-tickets/64371e1a46e0fb000195cf33/private/8p0b414qef"
       },
       {
         "id": 6,
@@ -95,7 +99,7 @@
         "pricepool": "5000",
         "regfee": "150",
         "enddate": "2023-04-22",
-        "link": "https://www.yepdesk.com/mute-mime-/private/ktoj0r03rv",
+        "reglink": "https://www.yepdesk.com/embed/buy-tickets/64371e2d46e0fb000195cf87/private/ktoj0r03rv",
         "reg": "Register Now"
       },
       {
@@ -111,7 +115,7 @@
         "pricepool": "5000",
         "regfee": "100",
         "enddate": "2023-04-22",
-        "link": "https://www.yepdesk.com/voice-of-darpan/private/c3e95vtbj3",
+        "reglink": "https://www.yepdesk.com/embed/buy-tickets/64371f0a46e0fb000195d0d2/private/c3e95vtbj3",
         "reg": "Register Now"
       },
       {
@@ -127,7 +131,7 @@
         "pricepool": "5000",
         "regfee": "150",
         "enddate": "2023-04-22",
-        "link": "",
+        "reglink": "https://www.yepdesk.com/embed/buy-tickets/6437308946e0fb000195e02b/private/gc938ro17f",
         "reg": "Register Now"
       }
     ],
@@ -145,7 +149,7 @@
         "pricepool": "10000",
         "regfee": "500",
         "enddate": "2023-04-22",
-        "link": "",
+        "reglink": "",
         "reg": "Register Closed"
       },
       {
@@ -161,7 +165,7 @@
         "pricepool": "10000",
         "regfee": "500",
         "enddate": "2023-04-22",
-        "link": "",
+        "reglink": "",
         "reg": "Register Closed"
       }
     ],

@@ -1,15 +1,25 @@
-import React from "react";
+import { useEffect, useRef, useLayoutEffect } from "react";
 import Image from "next/image";
 import { gsap } from "gsap";
 
 function Hero() {
-  const title = React.useRef(null);
-  const subtitle = React.useRef(null);
-  const subtitle2 = React.useRef(null);
-  const date = React.useRef(null);
-  const render = React.useRef(null);
+  const title = useRef(null);
+  const subtitle = useRef(null);
+  const subtitle2 = useRef(null);
+  const date = useRef(null);
+  const render = useRef(null);
 
-  React.useEffect(() => {
+  useEffect(() => {
+    //loop the video from 0:03 to 0:06
+    render.current.currentTime = 0.5;
+    render.current.addEventListener("timeupdate", function () {
+      if (this.currentTime > 9) {
+        this.currentTime = 0.5;
+      }
+    });
+  }, []);
+
+  useLayoutEffect(() => {
     gsap.fromTo(
       title.current,
       { opacity: 0, y: 100 },
@@ -30,22 +40,16 @@ function Hero() {
       { opacity: 0, y: 100 },
       { opacity: 1, y: 0, duration: 1.5, delay: 3 }
     );
-
-
-    //loop the video from 0:03 to 0:06
-    render.current.currentTime = 0.5;
-    render.current.addEventListener("timeupdate", function () {
-      if (this.currentTime > 9) {
-        this.currentTime = 0.5;
-      }
-    });
-
-  }, []);
+  });
 
   return (
     <div className="hero xl:hidden py-8 h-fit flex flex-col uppercase justify-center">
-
-      <video ref={render} src="/render.mp4" loop autoPlay muted
+      <video
+        ref={render}
+        src="/render.mp4"
+        loop
+        autoPlay
+        muted
         className="absolute top-0 left-0 w-full h-full object-cover opacity-50"
       ></video>
 
@@ -63,7 +67,8 @@ function Hero() {
         </div>
         <span
           ref={subtitle2}
-          className="opacity-0 relative top-[-5rem] text-[3.5rem] sm:text-[5rem] md:text-[7rem] font-clash">
+          className="opacity-0 relative top-[-5rem] text-[3.5rem] sm:text-[5rem] md:text-[7rem] font-clash"
+        >
           TECH FEST
         </span>
       </div>

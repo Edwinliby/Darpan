@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useLayoutEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
@@ -10,6 +10,14 @@ function Video() {
   const triggerRef = useRef(null);
 
   useEffect(() => {
+    videoRef.current.addEventListener("ended", () => {
+      console.log("video ended");
+      videoRef.current.currentTime = 10;
+      videoRef.current.play();
+    });
+  }, []);
+
+  useLayoutEffect(() => {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: triggerRef.current,
@@ -32,11 +40,6 @@ function Video() {
       },
       0
     );
-    videoRef.current.addEventListener("ended", () => {
-      console.log("video ended");
-      videoRef.current.currentTime = 10;
-      videoRef.current.play();
-    });
   }, []);
 
   return (
