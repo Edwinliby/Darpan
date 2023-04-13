@@ -119,7 +119,7 @@
 
 /* FAQ */
 .lbl-toggle {
-    transition: all 0.25s ease-in-out;
+    transition: all 0.1s ease-in;
 }
 
 .lbl-toggle::before {
@@ -132,17 +132,23 @@
     margin-right: .7rem;
     transform: translateY(6px);
     rotate: -90deg;
-    transition: transform .2s ease-out;
+    transition: transform .2s ease-in-out;
 }
 
 .toggle:checked+.lbl-toggle::before {
+    color: white;
     transform: rotate(-180deg) translateX(-3px);
+    transition: all 0.25s ease-in-out;
+}
+
+.toggle:checked+.lbl-toggle {
+    color: white;
 }
 
 .collapsible-content {
     max-height: 0px;
     overflow: hidden;
-    transition: max-height .5s ease-in-out;
+    transition: all .5s ease-in-out;
 }
 
 .toggle:checked+.lbl-toggle+.collapsible-content {
@@ -150,4 +156,3 @@
 }
 
 /* FAQ end */
-

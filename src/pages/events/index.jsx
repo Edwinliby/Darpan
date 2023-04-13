@@ -38,12 +38,12 @@ export default function Events({ posts, names }) {
       <progress max="100" value="0"></progress>
 
       <main>
-        <div className='relative top-[4.5rem] py-4 bg-[url("/banner.png")] object-fill text-white font-clash tracking-wide font-black flex flex-col items-center justify-center'>
-          <span className="text-[1rem] md:text-[4rem]">DARPAN 2023</span>
+        <div className='h-[15rem] md:h-[20rem] bg-[url("/banner.png")] object-fill text-white font-clash tracking-wide font-black flex flex-col items-center justify-center'>
+          <span className="text-[1rem] pt-12 md:pt-16 md:text-[4rem]">DARPAN 2023</span>
           <span className="text-[2.5rem] tracking-wider">EVENTS</span>
         </div>
 
-        <div className="relative top-[4rem] text-[1rem] font-semibold font-chakra flex flex-row gap-4 md:gap-12 p-16 items-center justify-center text-white">
+        <div className=" text-[1rem] p-8 font-semibold font-chakra flex flex-row gap-4 md:gap-12 items-center justify-center text-white">
           {names.map((name, i) => (
             <span
               key={i}
@@ -56,7 +56,7 @@ export default function Events({ posts, names }) {
           ))}
         </div>
 
-        <div className="flex flex-wrap justify-center gap-8 p-6 pt-14">
+        <div className="flex flex-wrap justify-center gap-8 p-6">
           {individualPosts.length > 0 ? (
             individualPosts.map((post) => (
               <div
