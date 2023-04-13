@@ -2,7 +2,8 @@ import React from "react";
 import Navlink from "./Navlink";
 import Link from "next/link";
 import { FiArrowDownRight } from "react-icons/fi";
-import { FaWhatsapp, FaInstagram, FaFacebookF } from "react-icons/fa";
+import { FaInstagram, FaFacebookF } from "react-icons/fa";
+import {AiOutlineGlobal} from "react-icons/ai"
 
 export default function Footer() {
   function scrollToTop() {
@@ -49,10 +50,10 @@ export default function Footer() {
           <div>
             <div className="flex">
               <Link
-                href="https://www.facebook.com/profile.php?id=100090947657195"
+                href="https://cearanmula.ac.in/"
                 className="social-links flex items-center justify-center grow-[1] min-w-[5rem] min-h-[12rem] hover:text-main_primary"
               >
-                <FaWhatsapp size="3rem" />
+                <AiOutlineGlobal size="3rem" />
               </Link>
               <Link
                 href="https://instagram.com/darpan_2023?igshid=YmMyMTA2M2Y="
