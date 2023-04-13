@@ -11,8 +11,7 @@ html {
 }
 
 * {
-  /* user-select: none; */
-  /* outline: red 1px solid; */
+  user-select: none;
 }
 
 ::-webkit-scrollbar {

@@ -152,7 +152,7 @@ export default function Header() {
               <div className="relative hackNav hover:bg-white hover:text-black text-white w-fit text-left pl-2 pr-4 py-1 rounded-[4px]">
                 <Navlink
                   name={"BROCHURE"}
-                  link={"/Brochure.pdf"}
+                  link={"/"}
                   setToggle={setOpen}
                 />
                 <Image
