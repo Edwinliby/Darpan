@@ -1,10 +1,10 @@
-import { useLayoutEffect, useState } from "react";
-import { FaInstagram} from "react-icons/fa";
-import Head from 'next/head'
-import Link from 'next/link'
-import Image from 'next/image'
-import Header from '@/components/Header'
-import Footer from '@/components/Footer'
+import { useEffect, useState } from "react";
+import { FaInstagram } from "react-icons/fa";
+import Head from "next/head";
+import Link from "next/link";
+import Image from "next/image";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import fsPromises from "fs/promises";
 import path from "path";
 import gsap from "gsap";
@@ -14,7 +14,7 @@ function Team({ posts, names }) {
   const [index, setIndex] = useState(0);
   const individualPosts = posts[index];
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     gsap.to("progress", {
       value: 100,
@@ -53,39 +53,46 @@ function Team({ posts, names }) {
         </div>
 
         <div className="flex flex-wrap justify-center gap-10 pb-10 md:p-6">
-          {
-            individualPosts.map((post) => (
-              <div key={post.id}
-                className="relative w-fit flex flex-col h-fit rounded-sm overflow-hidden">
-                <div className="relative teamCard">
-                  <Image
-                    src={post.img}
-                    alt={post.name}
-                    width={300}
-                    height={300}
-                    className="teamImage"
-                  />
-                </div>
-                <div className="flex justify-between items-end gap-3">
-                  <div>
-                    <h1 className=" text-white font-chakra font-semibold text-[1.5rem] pt-4">{post.name}</h1>
-                    <p className="text-white font-chakra font-medium text-[1rem]">{post.post}</p>
-                  </div>
-                  <Link href={`${post.insta}`}>
-                    <FaInstagram size="2rem" className="text-white hover:text-[#9747ff] transition-all duration-500 ease-in-out" />
-                  </Link>
-                </div>
+          {individualPosts.map((post) => (
+            <div
+              key={post.id}
+              className="relative w-fit flex flex-col h-fit rounded-sm overflow-hidden shadow-2xl hover:shadow-yellow-300/50 transition-all duration-500 ease-in-out"
+            >
+              <div className={index == 2 ? "relative teamCard" : "relative"}>
+                <Image
+                  src={post.img}
+                  alt={post.name}
+                  width={300}
+                  height={300}
+                  className="teamImage"
+                />
               </div>
-            ))
-          }
+              <div className="flex justify-between items-end p-4 bg-black bg-opacity-20 ">
+                <div>
+                  <h1 className=" text-white font-chakra font-semibold text-[1.5rem] pt-4">
+                    {post.name}
+                  </h1>
+                  <p className="text-white font-chakra font-medium text-[1rem]">
+                    {post.post}
+                  </p>
+                </div>
+                <Link href={`${post.insta}`}>
+                  <FaInstagram
+                    size="2rem"
+                    className="text-white hover:text-[#9747ff] transition-all duration-500 ease-in-out"
+                  />
+                </Link>
+              </div>
+            </div>
+          ))}
         </div>
       </main>
       <Footer />
     </div>
-  )
+  );
 }
 
-export default Team
+export default Team;
 
 export async function getStaticProps() {
   const filePath = path.join(process.cwd(), "/teams.json");

@@ -6,10 +6,33 @@ import Link from "next/link";
 import Head from "next/head";
 import fsPromises from "fs/promises";
 import path from "path";
+import { gsap } from "gsap";
 
 function EventsDetails(props) {
   //create a pop up for the event Registration showing the embeded form
   const [popUp, setPopUp] = React.useState(false);
+
+  const card = React.useRef(null);
+  const title = React.useRef(null);
+  const subtitle = React.useRef(null);
+
+  React.useEffect(() => {
+    gsap.fromTo(
+      subtitle.current,
+      { opacity: 0, y: 10 },
+      { opacity: 1, y: 0, duration: 1, delay: 0.2 }
+    );
+    gsap.fromTo(
+      title.current,
+      { opacity: 0, y: 5 },
+      { opacity: 1, y: 0, duration: 1, delay: 0.7 }
+    );
+    gsap.fromTo(
+      card.current,
+      { opacity: 0, scale: 0.95 },
+      { opacity: 1, scale: 1, duration: 1, delay: 0.7, ease: "back.out(1.7)" }
+    );
+  }, []);
 
   React.useEffect(() => {
     if (popUp) {
@@ -28,14 +51,23 @@ function EventsDetails(props) {
         <Header />
         <div className="h-fit pt-24 p-6 bg-black text-white">
           <div className="flex flex-col items-center ">
-            <p className="text-xl font-medium font-clash text-center">
+            <p
+              className="text-xl font-medium font-clash text-center"
+              ref={subtitle}
+            >
               Darpan presents
             </p>
-            <h1 className="text-[3rem] xl:text-[4rem] font-clash font-semibold text-center">
+            <h1
+              className="text-[3rem] xl:text-[4rem] font-clash font-semibold text-center"
+              ref={title}
+            >
               {props.title}
             </h1>
 
-            <div className="flex flex-col mt-[2rem] md:flex-row rounded-xl justify-between w-full md:w-[90%] font-clash bg-gray/25">
+            <div
+              className="flex flex-col mt-[2rem] md:flex-row rounded-xl justify-between w-full md:w-[90%] font-clash bg-gray/25"
+              ref={card}
+            >
               <Image
                 src={props.image}
                 alt={props.title}
@@ -46,8 +78,8 @@ function EventsDetails(props) {
               <div className="relative flex flex-col justify-between w-full px-2 md:p-8 gap-16">
                 <div className="flex flex-col gap-1">
                   <div className="flex relative mt-6 md:mt-0 pb-2">
-                    <div className="w-8 h-8 bg-white rounded-full border-[2px] border-white/70"></div>
-                    <div className="absolute left-4 w-8 h-8 rounded-full border-[2px] border-white/70"></div>
+                    <div className="w-8 h-7 bg-white rounded-full border-[2px] border-white/70"></div>
+                    <div className="absolute left-4 w-8 h-7 rounded-full border-[2px] border-white/70"></div>
                   </div>
 
                   <h3 className="font-medium text-[1.5rem] md:text-8 pb-2">
@@ -55,34 +87,36 @@ function EventsDetails(props) {
                   </h3>
                   <p>{props.description}</p>
 
-                  <div className="flex flex-col font-chakra font-semibold gap-4 pt-6">
-                    <div className="flex flex-col">
-                      <span>
-                        Price pool :{" "}
-                        <span className="font-medium">{props.pricepool}</span>
-                      </span>
-                      <span>
-                        Reg fee :{" "}
-                        <span className="font-medium">{props.regfee}</span>
-                      </span>
-                      <span>
-                        End date :{" "}
-                        <span className="font-medium">{props.enddate}</span>
-                      </span>
+                  <div className="grid grid-cols-2 pt-6 text-[1.1rem] tracking-wide w-fit font-medium">
+                    <div className="flex flex-col pr-4">
+                      <span>Prize Pool :</span>
+                      <span>Reg Fee :</span>
+                      <span>End Date :</span>
                     </div>
-                    <div className="flex flex-col">
-                      <span className="text-main_primary text-[1.5rem]">
-                        Co-ordinators
-                      </span>
-                      <Link href="tel:">
-                        {props.c1name} :{" "}
-                        <span className="font-medium hover:text-main_primary transition duration-300 ease-in-out">
+                    <div className="flex flex-col text-white font-bold">
+                      <span className="font-normal"> ₹{props.pricepool}</span>
+                      <span className="font-normal"> ₹{props.regfee}</span>
+                      <span className="font-normal"> {props.enddate}</span>
+                    </div>
+                  </div>
+
+                  <h3 className="text-white text-[1.5rem] font-sans font-bold mb-2 mt-4">
+                    Coordinator Details
+                  </h3>
+
+                  <div className="grid grid-cols-2 text-[1.1rem] tracking-wide w-fit font-medium">
+                    <div className="flex flex-col pr-4">
+                      <span>{props.c1name} :</span>
+                      <span>{props.c2name} :</span>
+                    </div>
+                    <div className="flex flex-col text-white font-bold">
+                      <Link href={`tel:${props.c1number}`}>
+                        <span className="font-normal hover:text-main_primary transition duration-300 ease-in-out">
                           {props.c1number}
                         </span>
                       </Link>
-                      <Link href="tel:">
-                        {props.c2name} :{" "}
-                        <span className="font-medium hover:text-main_primary transition duration-300 ease-in-out">
+                      <Link href={`tel:${props.c2number}`}>
+                        <span className="font-normal hover:text-main_primary transition duration-300 ease-in-out">
                           {props.c2number}
                         </span>
                       </Link>

@@ -1,9 +1,13 @@
 {
-  "names": ["CULTURAL", "GAMES", "WORKSHOPS"],
+  "names": [
+    "CULTURAL",
+    "GAMES",
+    "WORKSHOPS"
+  ],
   "posts": [
     [
       {
-        "id": 1,
+        "id": "euphoria",
         "title": "Euphoria",
         "img": "/cultural/Euphoria.png",
         "content": "Alone in Motion: A Solo Dance Performance",
@@ -19,7 +23,7 @@
         "reg": "Register Now"
       },
       {
-        "id": 2,
+        "id": "groupDance",
         "title": "Group Dance",
         "img": "/cultural/groupdance.png",
         "content": "Groove Clash: The Ultimate Group Dance Competition",
@@ -35,7 +39,7 @@
         "reglink": "https://www.yepdesk.com/embed/buy-tickets/64357f4746e0fb00018e3a85/private/burshlsf5t"
       },
       {
-        "id": 3,
+        "id": "vanjiPattu",
         "title": "Vanji Pattu",
         "img": "/cultural/vanipattu.png",
         "content": "Unleash Your Musical Talent",
@@ -51,7 +55,7 @@
         "reglink": "https://www.yepdesk.com/embed/buy-tickets/643700df46e0fb0001958547/private/f8clbhct8b"
       },
       {
-        "id": 4,
+        "id": "tharangBand",
         "title": "Tharang Band",
         "img": "/cultural/tharangnew.png",
         "content": "Battle of the Bands: The Ultimate Showdown",
@@ -67,7 +71,7 @@
         "reglink": "https://www.yepdesk.com/embed/buy-tickets/64371c6946e0fb000195aea5/private/mmk0m51ca9"
       },
       {
-        "id": 5,
+        "id": "humour",
         "title": "Humour",
         "img": "/cultural/Humour.png",
         "content": "Laugh Riot: The Stand-Up Comedy Showdown",
@@ -83,7 +87,7 @@
         "reglink": "https://www.yepdesk.com/embed/buy-tickets/64371e1a46e0fb000195cf33/private/8p0b414qef"
       },
       {
-        "id": 6,
+        "id": "mime",
         "title": "Mute(Mime)",
         "img": "/cultural/mime.png",
         "content": "Silent Expressions :The Art of Mime",
@@ -99,7 +103,7 @@
         "reg": "Register Now"
       },
       {
-        "id": 7,
+        "id": "voiceOfDarpan",
         "title": "Voice of Darpan",
         "img": "/cultural/voice.png",
         "content": "Rising Stars: The idols of voice of campus",
@@ -115,7 +119,7 @@
         "reg": "Register Now"
       },
       {
-        "id": 8,
+        "id": "nithyarangi",
         "title": "NITHYARANGI 2023",
         "img": "/cultural/themeshow.png",
         "content": "Themed Extravaganza: A Showdown of Creativity and Entertainment",
@@ -133,7 +137,7 @@
     ],
     [
       {
-        "id": 9,
+        "id": "thugofwar",
         "title": "Thug of War",
         "img": "/games/thugofwar.jpg",
         "content": "This is the full content of post 2",
@@ -149,7 +153,7 @@
         "reg": "Register Closed"
       },
       {
-        "id": 10,
+        "id": "cricket",
         "title": "Cricket Tournament",
         "img": "/games/cricket.jpg",
         "content": "This is the full content of post 2",

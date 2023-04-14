@@ -1,4 +1,4 @@
-import { useRef, useLayoutEffect, useEffect, useState } from "react";
+import { useRef, useEffect, useState } from "react";
 import Head from "next/head";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
@@ -22,7 +22,7 @@ const Home = () => {
 
   const stagger = useRef(null);
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     gsap.to("progress", {
       value: 100,

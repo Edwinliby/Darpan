@@ -1,4 +1,4 @@
-import { useEffect as useLayoutEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import Navlink from "./Navlink";
@@ -8,7 +8,7 @@ gsap.registerPlugin(ScrollTrigger);
 export default function About() {
   const trigger = useRef(null);
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     gsap.fromTo(
       trigger.current,
       {
@@ -33,7 +33,7 @@ export default function About() {
   const aboutdarpan = useRef(null);
   const aboutaec = useRef(null);
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     gsap.fromTo(
       aboutdarpan.current,
       { opacity: 0, y: 100 },
@@ -81,11 +81,21 @@ export default function About() {
           ?
         </span>
       </div>
-      <div className='font-chakra text-base py-8 leading-[5px] xl:mt-4'>
-        <span ref={aboutdarpan} className='text-base font-medium text-white xl:text-xl'>
-          <b>DARPAN'23</b> the annual techno - cultural fest organized by College of Engineering Aranmula, is an exiting event that celebrates the technical expertise and artistic talents of aspiring engineers.
-          The event brings together participants from across the state, making it one of the most prestigious event of it's kind. The <b>two-day</b> mega event is a visual treat for attendees, transporting them to another world with a variety of captivity performances by aspiring engineers and artists.
-          From technical competitions to cultural events <b>DARPAN'23</b> offers a diverse range of activities that cater to everyone's interests.
+      <div className="font-chakra text-base py-8 leading-[5px] xl:mt-4">
+        <span
+          ref={aboutdarpan}
+          className="text-base font-medium text-white xl:text-xl"
+        >
+          <b>DARPAN'23</b> the annual techno - cultural fest organized by
+          College of Engineering Aranmula, is an exiting event that celebrates
+          the technical expertise and artistic talents of aspiring engineers.
+          The event brings together participants from across the state, making
+          it one of the most prestigious event of it's kind. The <b>two-day</b>{" "}
+          mega event is a visual treat for attendees, transporting them to
+          another world with a variety of captivity performances by aspiring
+          engineers and artists. From technical competitions to cultural events{" "}
+          <b>DARPAN'23</b> offers a diverse range of activities that cater to
+          everyone's interests.
         </span>
       </div>
       <div className="absolute font-clash font-bold text-white">
@@ -93,10 +103,18 @@ export default function About() {
           ABOUT <Navlink name={"AEC"} link={"/#about"} />{" "}
         </span>
       </div>
-      <div ref={aboutaec} className='flex flex-col mt-8 lg:flex-row items-center gap-8 py-8'>
-        <p className='text-white text-base xl:text-xl font-chakra font-medium'>
-          The College of Engineering Aranmula established in 2014 is the 8th Engineering College under the Co-operative Academy of Professional Education. <b>CAPE</b> was formed to establish educational institutions to provide education and training,
-          research and development and consultancy. The society is promoted by the Co-operative Department of the government of Kerala and is an autonomous society.
+      <div
+        ref={aboutaec}
+        className="flex flex-col mt-8 lg:flex-row items-center gap-8 py-8"
+      >
+        <p className="text-white text-base xl:text-xl font-chakra font-medium">
+          The College of Engineering Aranmula established in 2014 is the 8th
+          Engineering College under the Co-operative Academy of Professional
+          Education. <b>CAPE</b> was formed to establish educational
+          institutions to provide education and training, research and
+          development and consultancy. The society is promoted by the
+          Co-operative Department of the government of Kerala and is an
+          autonomous society.
         </p>
 
         <video

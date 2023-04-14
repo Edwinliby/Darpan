@@ -1,4 +1,4 @@
-import { useEffect, useRef, useLayoutEffect } from "react";
+import { useEffect, useRef } from "react";
 import Image from "next/image";
 import { gsap } from "gsap";
 
@@ -19,7 +19,7 @@ function Hero() {
     });
   }, []);
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     gsap.fromTo(
       title.current,
       { opacity: 0, y: 100 },
