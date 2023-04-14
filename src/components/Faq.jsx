@@ -4,7 +4,7 @@ export default function Faq() {
   return (
     <div className="px-2 py-4 xl:px-20">
       <div className="flex justify-start w-full font-clash font-bold">
-        <span className="text-white/30 text-[5.5rem] xl:text-[7rem]">FAQs</span>
+        <span className="text-white/50 text-[5.5rem] xl:text-[7rem]">FAQs</span>
       </div>
 
       <div className="flex flex-col gap-4 xl:p-2">
@@ -17,7 +17,7 @@ export default function Faq() {
             />
             <label
               htmlFor="collapsible1"
-              className="lbl-toggle block cursor-pointer font-semibold text-white/30 text-xl md:text-2xl p-7"
+              className="lbl-toggle block cursor-pointer font-semibold text-white/40 text-xl md:text-2xl p-7"
             >
               What are the prerequisites for darpan?
             </label>
@@ -42,7 +42,7 @@ export default function Faq() {
             />
             <label
               htmlFor="collapsible2"
-              className="lbl-toggle block cursor-pointer font-semibold text-white/30 text-xl md:text-2xl p-7"
+              className="lbl-toggle block cursor-pointer font-semibold text-white/40 text-xl md:text-2xl p-7"
             >
               Is there any hostel facilities available?
             </label>

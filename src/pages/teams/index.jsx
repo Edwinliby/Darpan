@@ -1,18 +1,18 @@
-import { useLayoutEffect, useRef, useState } from "react";
-import Head from "next/head";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import Image from "next/image";
-import Link from "next/link";
+import { useLayoutEffect, useState } from "react";
+import { FaInstagram} from "react-icons/fa";
+import Head from 'next/head'
+import Link from 'next/link'
+import Image from 'next/image'
+import Header from '@/components/Header'
+import Footer from '@/components/Footer'
 import fsPromises from "fs/promises";
 import path from "path";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/all";
 
-export default function Events({ posts, names }) {
+function Team({ posts, names }) {
   const [index, setIndex] = useState(0);
   const individualPosts = posts[index];
-  const animate = useRef(null);
 
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -22,27 +22,21 @@ export default function Events({ posts, names }) {
         scrub: 0.5,
       },
     });
-    gsap.fromTo(
-      animate.current,
-      { opacity: 0, y: 100 },
-      { opacity: 1, y: 0, duration: 1.5, delay: 1 }
-    );
   }, []);
 
   return (
     <div className="h-fit w-screen bg-soothing_black">
       <Head>
-        <title>Events</title>
+        <title>Teams</title>
       </Head>
       <Header id="navbar" />
       <progress max="100" value="0"></progress>
-     
       <main>
         <div className='h-[15rem] md:h-[20rem] bg-[url("/banner.png")] object-fill text-white font-clash tracking-wide font-black flex flex-col items-center justify-center'>
           <span className="text-[1rem] pt-12 md:pt-16 md:text-[4rem]">
             DARPAN 2023
           </span>
-          <span className="text-[2.5rem] tracking-wider">EVENTS</span>
+          <span className="text-[2.5rem] tracking-wider">TEAM</span>
         </div>
 
         <div className=" text-[1rem] p-8 font-semibold font-chakra flex flex-row gap-4 md:gap-12 items-center justify-center text-white">
@@ -58,39 +52,43 @@ export default function Events({ posts, names }) {
           ))}
         </div>
 
-        <div className="flex flex-wrap justify-center gap-8 p-6">
-          {individualPosts.length > 0 ? (
+        <div className="flex flex-wrap justify-center gap-10 p-6">
+          {
             individualPosts.map((post) => (
-              <div
-                ref={animate}
-                className="relative w-[21rem] h-[20rem] hover:scale-105 rounded-md overflow-hidden hover:shadow-lg hover:shadow-main_primary/80 transition-all duration-500 ease-in-out"
-                key={post.id}
-              >
-                <Link href={`/events/${post.id}`}>
+              <div key={post.id}
+                className="relative w-fit flex flex-col h-fit rounded-sm overflow-hidden">
+                <div className="relative teamCard">
                   <Image
                     src={post.img}
-                    width={500}
-                    height={500}
-                    alt="Event's Image"
-                    className="cursor-pointer object-fill transform transition-all duration-500 ease-in-out"
+                    alt={post.name}
+                    width={300}
+                    height={300}
+                    className="teamImage"
                   />
-                </Link>
+                </div>
+                <div className="flex justify-between items-end gap-3">
+                  <div>
+                    <h1 className=" text-white font-chakra font-semibold text-[1.5rem] pt-4">{post.name}</h1>
+                    <p className="text-white font-chakra font-medium text-[1rem]">{post.post}</p>
+                  </div>
+                  <Link href={`${post.insta}`}>
+                    <FaInstagram size="2rem" className="text-white hover:text-[#9747ff] transition-all duration-500 ease-in-out" />
+                  </Link>
+                </div>
               </div>
             ))
-          ) : (
-            <div className="text-white font-semibold font-chakra text-2xl py-8">
-              Coming Soon...
-            </div>
-          )}
+          }
         </div>
       </main>
       <Footer />
     </div>
-  );
+  )
 }
 
+export default Team
+
 export async function getStaticProps() {
-  const filePath = path.join(process.cwd(), "/events.json");
+  const filePath = path.join(process.cwd(), "/teams.json");
   const jsonData = await fsPromises.readFile(filePath);
   const objectData = JSON.parse(jsonData);
 

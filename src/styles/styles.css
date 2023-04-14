@@ -118,9 +118,6 @@
 
 
 /* FAQ */
-.lbl-toggle {
-    transition: all 0.1s ease-in;
-}
 
 .lbl-toggle::before {
     content: ' ';
