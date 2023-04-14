@@ -39,7 +39,7 @@ function Team({ posts, names }) {
           <span className="text-[2.5rem] tracking-wider">TEAM</span>
         </div>
 
-        <div className=" text-[1rem] p-8 font-semibold font-chakra flex flex-row gap-4 md:gap-12 items-center justify-center text-white">
+        <div className="text-[.6rem] md:text-[1rem] p-8 font-semibold font-chakra flex flex-row gap-4 md:gap-12 items-center justify-center text-white">
           {names.map((name, i) => (
             <span
               key={i}
@@ -52,7 +52,7 @@ function Team({ posts, names }) {
           ))}
         </div>
 
-        <div className="flex flex-wrap justify-center gap-10 p-6">
+        <div className="flex flex-wrap justify-center gap-10 pb-10 md:p-6">
           {
             individualPosts.map((post) => (
               <div key={post.id}

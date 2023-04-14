@@ -1,5 +1,5 @@
 {
-  "names": ["CO-ORDINATORS", "DESIGN-TEAM", "WEB-TEAM"],
+  "names": ["COORDINATORS", "DESIGN-TEAM", "WEB-TEAM"],
   "posts": [
     [
       {
@@ -54,11 +54,11 @@
     [
       {
         "id": "1",
-        "name": "Aswin George Thomas",
-        "post": "Design Lead",
-        "img": "/teams/Aswin.png",
-        "insta": "https://www.instagram.com/aswin_thomas_369/",
-        "linkedin": "https://www.linkedin.com/in/aswingt65/"
+        "name": "Devaraj (DRJ)",
+        "post": "Design Lead Coordinator",
+        "img": "/teams/Drj.png",
+        "insta": "https://instagram.com/drj.____?igshid=MWYxNmZkY2Y=",
+        "linkedin": ""
       },
       {
         "id": "2",
