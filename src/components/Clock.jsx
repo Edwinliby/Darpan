@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Countdown from "react-countdown";
 
 function Clock() {
@@ -21,13 +20,13 @@ function Clock() {
           <span className="absolute left-[6.5rem] md:left-[9rem]">SECONDS</span>
         </div>
       </div>
-      <Image
+      {/* <Image
         src="/QR.png"
         alt="barcode"
         width={150}
         height={150}
         className="hidden xl:block object-contain px-4 mt-[8rem] border border-gray/50"
-      />
+      /> */}
 
       <div className="hidden xl:block pl-4 border  min-w-min-[3rem] border-gray/50 p-3 mt-[8rem] text-white">
         <div className="flex flex-col gap-2 justify-center items-center h-[100%]">
