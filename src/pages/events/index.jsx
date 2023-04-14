@@ -8,6 +8,7 @@ import fsPromises from "fs/promises";
 import path from "path";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/all";
+import Preloader from "@/components/Preloader";
 
 export default function Events({ posts, names }) {
   const [index, setIndex] = useState(0);
@@ -36,10 +37,12 @@ export default function Events({ posts, names }) {
       </Head>
       <Header id="navbar" />
       <progress max="100" value="0"></progress>
-
+      {/* <Preloader></Preloader> */}
       <main>
         <div className='h-[15rem] md:h-[20rem] bg-[url("/banner.png")] object-fill text-white font-clash tracking-wide font-black flex flex-col items-center justify-center'>
-          <span className="text-[1rem] pt-12 md:pt-16 md:text-[4rem]">DARPAN 2023</span>
+          <span className="text-[1rem] pt-12 md:pt-16 md:text-[4rem]">
+            DARPAN 2023
+          </span>
           <span className="text-[2.5rem] tracking-wider">EVENTS</span>
         </div>
 
