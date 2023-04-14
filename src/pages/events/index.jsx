@@ -8,7 +8,7 @@ import fsPromises from "fs/promises";
 import path from "path";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/all";
-import Preloader from "@/components/Preloader";
+// import Preloader from "@/components/Preloader";
 
 export default function Events({ posts, names }) {
   const [index, setIndex] = useState(0);
