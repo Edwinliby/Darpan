@@ -28,7 +28,7 @@ export default function Footer() {
         <div className="font-chakra grow-[1] text-white/70 md:grow-0 border-gray/40 border-b-[1.5px] sm:border-b-[1.5px] md:border-r-[1.5px] md:border-b-0 min-w-[21rem] xl:min-w-[25rem] flex flex-col gap-5 p-10 justify-center">
           <p className=" font-semibold text-[25px]">Quick Links</p>
           <div className="flex gap-10 text-[17px] font-chakra">
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2 w-[6rem]">
               <Navlink name={"Home"} link={"/"} />
               <Navlink name={"Events"} link={"/events"} />
               <Navlink name={"Brochure"} link={"/"} />
