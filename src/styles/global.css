@@ -59,7 +59,7 @@ progress::-webkit-progress-value {
   position: relative;
   width: 100%;
   height: 85vh;
-  top: 7rem;
+  top: 5rem;
   z-index: 1;
 }
 

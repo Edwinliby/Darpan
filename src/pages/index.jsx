@@ -4,7 +4,7 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Video from "@/components/Video";
 import About from "@/components/About";
-import Marque from "@/components/Marque";
+// import Marque from "@/components/Marque";
 import Marque2 from "@/components/Marque2";
 import Footer from "@/components/Footer";
 import Faq from "@/components/Faq";
@@ -65,7 +65,7 @@ const Home = () => {
 
       {isLoaded && <Clock />}
 
-      <Marque />
+      {/* <Marque /> */}
 
       <section id="about">
         <About />
