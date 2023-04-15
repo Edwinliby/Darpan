@@ -34,7 +34,7 @@ export default function Footer() {
               <Navlink name={"Brochure"} link={"/"} />
             </div>
             <div className="flex flex-col gap-2">
-              <Navlink name={"Team"} link={"/teams"} />
+              <Navlink name={"Team"} link={"/soon"} />
               <Navlink name={"Contact"} link={"/contact"} />
             </div>
           </div>

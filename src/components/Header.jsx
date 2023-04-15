@@ -167,7 +167,7 @@ export default function Header() {
                 </p>
               </div>
               <div className="relative hackNav hover:bg-white hover:text-black text-white w-fit text-left pl-2 pr-4 py-1 rounded-[4px]">
-                <Navlink name={"TEAMS"} link={"/teams"} setToggle={setOpen} />
+                <Navlink name={"TEAMS"} link={"/soon"} setToggle={setOpen} />
                 <Image
                   src="/edgeTriangle.png"
                   width={20}
