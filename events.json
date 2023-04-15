@@ -1,9 +1,5 @@
 {
-  "names": [
-    "CULTURAL",
-    "GAMES",
-    "WORKSHOPS"
-  ],
+  "names": ["CULTURAL", "GAMES", "WORKSHOPS"],
   "posts": [
     [
       {
@@ -169,6 +165,87 @@
         "reg": "Register Closed"
       }
     ],
-    []
+    [
+      {
+        "id": "Arduino Workshop",
+        "title": "ARDUINO 💻Workshop",
+        "img": "/workshop/Arduino.jpg",
+        "content": "ARDUINO Workshop to upskill your skills",
+        "description": "📌 We strongly encourage participants to bring their own laptops to the event. However, if you are unable to bring your own laptop, our coordinators will be happy to provide you with one. Additionally, spot registration will be available for those who wish to register on the day of the event.\n❕Seize the opportunity to enhance your skills and earn 30 KTU activity points by attending our event. Don't miss out on this chance to take your abilities to the next level!",
+        "c1name": "Philip",
+        "c2name": "Akhil",
+        "c1no": "9744754670",
+        "c2no": "9605984093",
+        "pricepool": "Nil",
+        "regfee": "150",
+        "enddate": "2023-04-26",
+        "reglink": "https://www.yepdesk.com/arduino-workshop2/private/qq1p42cs2i",
+        "reg": "Register"
+      },
+      {
+        "id": "Ai/ML Workshop",
+        "title": "AI/ML 🖥Workshop",
+        "img": "/workshop/ai.jpg",
+        "content": "AI/ML workshop where you will learn how to collect and analyze data",
+        "description": "📌 We strongly encourage participants to bring their own laptops to the event. However, if you are unable to bring your own laptop, our coordinators will be happy to provide you with one. Additionally, spot registration will be available for those who wish to register on the day of the event.\n❕Seize the opportunity to enhance your skills and earn 30 KTU activity points by attending our event. Don't miss out on this chance to take your abilities to the next level!",
+        "c1name": "Alan",
+        "c2name": "Melvin",
+        "c1no": "8590790018",
+        "c2no": "9354367826",
+        "pricepool": "Nil",
+        "regfee": "150",
+        "enddate": "2023-04-26",
+        "reglink": "https://www.yepdesk.com/ai-ml-workshop/private/c309hbspvj",
+        "reg": "Register"
+      },
+      {
+        "id": "Cyber Security Workshop",
+        "title": "CYBER SECURITY👾 Workshop",
+        "img": "/workshop/cyber.jpg",
+        "content": "ARDUINO Workshop to upskill your skills",
+        "description": "📌 We strongly encourage participants to bring their own laptops to the event. However, if you are unable to bring your own laptop, our coordinators will be happy to provide you with one. Additionally, spot registration will be available for those who wish to register on the day of the event.\n❕Seize the opportunity to enhance your skills and earn 30 KTU activity points by attending our event. Don't miss out on this chance to take your abilities to the next level!",
+        "c1name": "Alan",
+        "c2name": "Melvin",
+        "c1no": "8590790018",
+        "c2no": "9354367826",
+        "pricepool": "Nil",
+        "regfee": "150",
+        "enddate": "2023-04-27",
+        "reglink": "https://www.yepdesk.com/cyber-security-workshop7/private/rcvj736p5f",
+        "reg": "Register"
+      },
+      {
+        "id": "Stock Trading Workshop",
+        "title": "STOCK TRADING 🪙 Workshop",
+        "img": "/workshop/stock.jpg",
+        "content": "Workshop where you will learn the essential skills and strategies to become a successful investor",
+        "description": "Seize the opportunity to enhance your skills and earn 30 KTU activity points by attending our event. Don't miss out on this chance to take your abilities to the next level!",
+        "c1name": "Alwin",
+        "c2name": "Amal",
+        "c1no": "9746693561",
+        "c2no": "9645677249",
+        "pricepool": "Nil",
+        "regfee": "Free",
+        "enddate": "2023-04-23",
+        "reglink": "https://www.yepdesk.com/stock-trading-workshop/private/n72bmhmuas",
+        "reg": "Register"
+      },
+      {
+        "id": "PLC Workshop",
+        "title": "PLC PROGRAMMING💻 Workshop",
+        "img": "/workshop/plc.jpg",
+        "content": "Workshop designed to provide participants with a comprehensive understanding of programmable logic circuits",
+        "description": "📌 We strongly encourage participants to bring their own laptops to the event. However, if you are unable to bring your own laptop, our coordinators will be happy to provide you with one. Additionally, spot registration will be available for those who wish to register on the day of the event.\n📌 Participants will receive certificates from MITSUBISHI ELECTRIC channel partners upon completion of the program.\n Seize the opportunity to enhance your skills and earn 30 KTU activity points by attending our event. Don't miss out on this chance to take your abilities to the next level!",
+        "c1name": "Alan",
+        "c2name": "Aravind",
+        "c1no": "8590790018",
+        "c2no": "9526857109",
+        "pricepool": "Nil",
+        "regfee": "500",
+        "enddate": "2023-04-27",
+        "reglink": "https://www.yepdesk.com/plc-workshop/private/uekhfgevom",
+        "reg": "Register"
+      }
+    ]
   ]
 }
