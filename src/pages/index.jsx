@@ -18,11 +18,6 @@ const Home = () => {
 
   useEffect(() => {
     setIsLoaded(true);
-  }, []);
-
-  const stagger = useRef(null);
-
-  useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     gsap.to("progress", {
       value: 100,
@@ -36,6 +31,8 @@ const Home = () => {
       { opacity: 1, y: 0, duration: 1.5 }
     );
   }, []);
+
+  const stagger = useRef(null);
 
   return (
     <div className="bg-black h-fit">

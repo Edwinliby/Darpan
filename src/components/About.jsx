@@ -7,6 +7,8 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function About() {
   const trigger = useRef(null);
+  const aboutdarpan = useRef(null);
+  const aboutaec = useRef(null);
 
   useEffect(() => {
     gsap.fromTo(
@@ -28,12 +30,6 @@ export default function About() {
         },
       }
     );
-  }, []);
-
-  const aboutdarpan = useRef(null);
-  const aboutaec = useRef(null);
-
-  useEffect(() => {
     gsap.fromTo(
       aboutdarpan.current,
       { opacity: 0, y: 100 },

@@ -15,9 +15,6 @@ function Video() {
       videoRef.current.currentTime = 10;
       videoRef.current.play();
     });
-  }, []);
-
-  useEffect(() => {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: triggerRef.current,

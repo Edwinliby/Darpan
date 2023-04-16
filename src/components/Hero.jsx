@@ -17,9 +17,6 @@ function Hero() {
         this.currentTime = 0.5;
       }
     });
-  }, []);
-
-  useEffect(() => {
     gsap.fromTo(
       title.current,
       { opacity: 0, y: 100 },
@@ -40,7 +37,7 @@ function Hero() {
       { opacity: 0, y: 100 },
       { opacity: 1, y: 0, duration: 1.5, delay: 3 }
     );
-  });
+  }, []);
 
   return (
     <div className="hero xl:hidden py-8 h-fit flex flex-col uppercase justify-center">
