@@ -1,5 +1,9 @@
 {
-  "names": ["CULTURAL", "GAMES", "WORKSHOPS"],
+  "names": [
+    "CULTURAL",
+    "GAMES",
+    "WORKSHOPS"
+  ],
   "posts": [
     [
       {
@@ -176,10 +180,10 @@
         "c2name": "Akhil",
         "c1no": "9744754670",
         "c2no": "9605984093",
-        "pricepool": "Nil",
+        "pricepool": false,
         "regfee": "150",
         "enddate": "2023-04-26",
-        "reglink": "https://www.yepdesk.com/arduino-workshop2/private/qq1p42cs2i",
+        "reglink": "https://www.yepdesk.com/embed/arduino-workshop2/private/qq1p42cs2i",
         "reg": "Register"
       },
       {
@@ -192,10 +196,10 @@
         "c2name": "Melvin",
         "c1no": "8590790018",
         "c2no": "9354367826",
-        "pricepool": "Nil",
+        "pricepool": false,
         "regfee": "150",
         "enddate": "2023-04-27",
-        "reglink": "https://www.yepdesk.com/cyber-security-workshop7/private/rcvj736p5f",
+        "reglink": "https://www.yepdesk.com/embed/cyber-security-workshop7/private/rcvj736p5f",
         "reg": "Register"
       },
       {
@@ -208,10 +212,10 @@
         "c2name": "Melvin",
         "c1no": "8590790018",
         "c2no": "9354367826",
-        "pricepool": "Nil",
+        "pricepool": false,
         "regfee": "150",
         "enddate": "2023-04-26",
-        "reglink": "https://www.yepdesk.com/ai-ml-workshop/private/c309hbspvj",
+        "reglink": "https://www.yepdesk.com/embed/ai-ml-workshop/private/c309hbspvj",
         "reg": "Register"
       },
       {
@@ -224,10 +228,10 @@
         "c2name": "Amal",
         "c1no": "9746693561",
         "c2no": "9645677249",
-        "pricepool": "Nil",
+        "pricepool": false,
         "regfee": "Free",
         "enddate": "2023-04-23",
-        "reglink": "https://www.yepdesk.com/stock-trading-workshop/private/n72bmhmuas",
+        "reglink": "https://www.yepdesk.com/embed/stock-trading-workshop/private/n72bmhmuas",
         "reg": "Register"
       },
       {
@@ -240,10 +244,10 @@
         "c2name": "Aravind",
         "c1no": "8590790018",
         "c2no": "9526857109",
-        "pricepool": "Nil",
+        "pricepool": false,
         "regfee": "500",
         "enddate": "2023-04-27",
-        "reglink": "https://www.yepdesk.com/plc-workshop/private/uekhfgevom",
+        "reglink": "https://www.yepdesk.com/embed/plc-workshop/private/uekhfgevom",
         "reg": "Register"
       }
     ]

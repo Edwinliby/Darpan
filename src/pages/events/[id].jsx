@@ -89,12 +89,14 @@ function EventsDetails(props) {
 
                   <div className="grid grid-cols-2 pt-6 text-[1.1rem] tracking-wide w-fit font-medium">
                     <div className="flex flex-col pr-4">
-                      <span>Prize Pool :</span>
+                      {props.pricepool != false && <span>Prize Pool :</span>}
                       <span>Reg Fee :</span>
                       <span>End Date :</span>
                     </div>
                     <div className="flex flex-col text-white font-bold">
-                      <span className="font-normal"> ₹{props.pricepool}</span>
+                      {props.pricepool != false && (
+                        <span className="font-normal"> ₹{props.pricepool}</span>
+                      )}
                       <span className="font-normal"> ₹{props.regfee}</span>
                       <span className="font-normal"> {props.enddate}</span>
                     </div>
