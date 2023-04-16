@@ -1,9 +1,5 @@
 {
-  "names": [
-    "CULTURAL",
-    "GAMES",
-    "WORKSHOPS"
-  ],
+  "names": ["CULTURAL", "GAMES", "WORKSHOPS"],
   "posts": [
     [
       {
@@ -20,7 +16,18 @@
         "regfee": "150",
         "enddate": "2023-04-22",
         "reglink": "https://www.yepdesk.com/embed/buy-tickets/6435323046e0fb00018cfec3/private/hi1egcmmoc",
-        "reg": "Register Now"
+        "reg": "Register Now",
+        "ruleheader": "",
+        "rules": {
+          "rule1": "",
+          "rule2": "",
+          "rule3": "",
+          "rule4": "",
+          "rule5": "",
+          "rule6": "",
+          "rule7": "",
+          "rule8": ""
+        }
       },
       {
         "id": "groupDance",
@@ -36,7 +43,18 @@
         "regfee": "500",
         "enddate": "2023-04-22",
         "reg": "Register Now",
-        "reglink": "https://www.yepdesk.com/embed/buy-tickets/64357f4746e0fb00018e3a85/private/burshlsf5t"
+        "reglink": "https://www.yepdesk.com/embed/buy-tickets/64357f4746e0fb00018e3a85/private/burshlsf5t",
+        "ruleheader": "",
+        "rules": {
+          "rule1": "",
+          "rule2": "",
+          "rule3": "",
+          "rule4": "",
+          "rule5": "",
+          "rule6": "",
+          "rule7": "",
+          "rule8": ""
+        }
       },
       {
         "id": "vanjiPattu",
@@ -52,7 +70,18 @@
         "regfee": "150",
         "enddate": "2023-04-22",
         "reg": "Register Now",
-        "reglink": "https://www.yepdesk.com/embed/buy-tickets/643700df46e0fb0001958547/private/f8clbhct8b"
+        "reglink": "https://www.yepdesk.com/embed/buy-tickets/643700df46e0fb0001958547/private/f8clbhct8b",
+        "ruleheader": "",
+        "rules": {
+          "rule1": "",
+          "rule2": "",
+          "rule3": "",
+          "rule4": "",
+          "rule5": "",
+          "rule6": "",
+          "rule7": "",
+          "rule8": ""
+        }
       },
       {
         "id": "tharangBand",
@@ -64,11 +93,22 @@
         "c2name": "Gayathry",
         "c1no": "7025743212",
         "c2no": "7306715087",
-        "pricepool": "5000",
+        "pricepool": "10000",
         "regfee": "250",
         "enddate": "2023-04-22",
         "reg": "Register Now",
-        "reglink": "https://www.yepdesk.com/embed/buy-tickets/64371c6946e0fb000195aea5/private/mmk0m51ca9"
+        "reglink": "https://www.yepdesk.com/embed/buy-tickets/64371c6946e0fb000195aea5/private/mmk0m51ca9",
+        "ruleheader": "",
+        "rules": {
+          "rule1": "",
+          "rule2": "",
+          "rule3": "",
+          "rule4": "",
+          "rule5": "",
+          "rule6": "",
+          "rule7": "",
+          "rule8": ""
+        }
       },
       {
         "id": "humour",
@@ -84,7 +124,18 @@
         "regfee": "100",
         "enddate": "2023-04-22",
         "reg": "Register Now",
-        "reglink": "https://www.yepdesk.com/embed/buy-tickets/64371e1a46e0fb000195cf33/private/8p0b414qef"
+        "reglink": "https://www.yepdesk.com/embed/buy-tickets/64371e1a46e0fb000195cf33/private/8p0b414qef",
+        "ruleheader": "",
+        "rules": {
+          "rule1": "",
+          "rule2": "",
+          "rule3": "",
+          "rule4": "",
+          "rule5": "",
+          "rule6": "",
+          "rule7": "",
+          "rule8": ""
+        }
       },
       {
         "id": "mime",
@@ -100,7 +151,18 @@
         "regfee": "150",
         "enddate": "2023-04-22",
         "reglink": "https://www.yepdesk.com/embed/buy-tickets/64371e2d46e0fb000195cf87/private/ktoj0r03rv",
-        "reg": "Register Now"
+        "reg": "Register Now",
+        "ruleheader": "",
+        "rules": {
+          "rule1": "",
+          "rule2": "",
+          "rule3": "",
+          "rule4": "",
+          "rule5": "",
+          "rule6": "",
+          "rule7": "",
+          "rule8": ""
+        }
       },
       {
         "id": "voiceOfDarpan",
@@ -116,7 +178,18 @@
         "regfee": "100",
         "enddate": "2023-04-22",
         "reglink": "https://www.yepdesk.com/embed/buy-tickets/64371f0a46e0fb000195d0d2/private/c3e95vtbj3",
-        "reg": "Register Now"
+        "reg": "Register Now",
+        "ruleheader": "",
+        "rules": {
+          "rule1": "",
+          "rule2": "",
+          "rule3": "",
+          "rule4": "",
+          "rule5": "",
+          "rule6": "",
+          "rule7": "",
+          "rule8": ""
+        }
       },
       {
         "id": "nithyarangi",
@@ -132,41 +205,155 @@
         "regfee": "1500",
         "enddate": "2023-04-26",
         "reglink": "https://www.yepdesk.com/embed/buy-tickets/6437308946e0fb000195e02b/private/gc938ro17f",
-        "reg": "Register Now"
+        "reg": "Register Now",
+        "ruleheader": "",
+        "rules": {
+          "rule1": "",
+          "rule2": "",
+          "rule3": "",
+          "rule4": "",
+          "rule5": "",
+          "rule6": "",
+          "rule7": "",
+          "rule8": ""
+        }
       }
     ],
     [
       {
-        "id": "thugofwar",
-        "title": "Thug of War",
+        "id": "Treasure-Hunt",
+        "title": "Treasure Hunt",
+        "img": "/games/hunt.jpg",
+        "content": "Embark on the ultimate adventure",
+        "description": "Immerse yourself in the thrill of the chase as you crack clues and decipher codes to reach your treasure.🔍",
+        "c1name": "Philip Varghese",
+        "c2name": "Amal Babu",
+        "c1no": "9744754670",
+        "c2no": "9645677249",
+        "pricepool": "3500",
+        "regfee": "150",
+        "enddate": "2023-04-27",
+        "reglink": "https://www.yepdesk.com/treasure-hunt9/private/o3m2960t98",
+        "reg": "Register",
+        "ruleheader": "RULES",
+        "rules": {
+          "rule1": "📍A group of maximum 4 members can participate.",
+          "rule2": "📍Each team should have a name.",
+          "rule3": "📍Materials given during the game should be kept safe also donot cause any damage to other team members or their properties.",
+          "rule4": "📍You will get a maximum of 3 hours to find the treassure🏴‍☠.",
+          "rule5": "📍Time schedule will be informed  via whatsapp group after the registration.",
+          "rule6": "📍If the no: of participating teams are less than 5, then the prize pool will be deducted to 75%.",
+          "rule7": "📍ID cards are mandatory",
+          "rule8": ""
+        }
+      },
+      {
+        "id": "Neon-Football",
+        "title": "Neon Football",
+        "img": "/games/neon.jpg",
+        "content": "Neon Football Tournament",
+        "description": "Experience football like never before with the Neon Football Tournament! The College of Engineering Aranmula is proud to present this thrilling event on behalf of DARPAN'23.⚽",
+        "c1name": "Gayathri S",
+        "c2name": "Aswin P",
+        "c1no": "9074148080",
+        "c2no": "8137070831",
+        "pricepool": "2000",
+        "regfee": "100",
+        "enddate": "2023-04-27",
+        "reglink": "https://www.yepdesk.com/neon-football/private/j95en57bf4",
+        "reg": "Register",
+        "ruleheader": "RULES",
+        "rules": {
+          "rule1": "📍Teams will be told which way they are kicking at start of game.",
+          "rule2": "📍Teams cannot score directly from a kick off.",
+          "rule3": "📍There is no offside",
+          "rule4": "📍All free kicks and corners are direct and opposition must be 3 metres away",
+          "rule5": "📍Goal kicks to be taken anywhere inside penalty area. Opposition must be 3 metres away and ball must leave penalty area for play to recommended.",
+          "rule6": "📍Substitutions can be made at any time from the half way line. Substituted player must leave the pitch before replacement goes on. Compulsory line up and handshake to finish.",
+          "rule7": "📍 Games will be 10 minutes each way in duration with a 2 minute half time",
+          "rule8": "📍There is a 6 minute gap between each game."
+        }
+      },
+      {
+        "id": "Robo-Race",
+        "title": "Robo Race",
+        "img": "/games/robo.jpg",
+        "content": "Robo Race Competition",
+        "description": "Looking for an exciting and futuristic way to showcase your skills and compete against other racing enthusiasts? 🚗Look no further than the Robo Race Game Competition! 🎮",
+        "c1name": "Pavi Prasad",
+        "c2name": "Abhijith H",
+        "c1no": "8281769058",
+        "c2no": "9188357614",
+        "pricepool": "3500",
+        "regfee": "150",
+        "enddate": "2023-04-27",
+        "reglink": "https://www.yepdesk.com/robo-race/private/nb0b8a8aof",
+        "reg": "Register",
+        "ruleheader": "RULES",
+        "rules": {
+          "rule1": "📍Students belonging to 11th/12th/Degree/Diploma/B.Tech can participate.",
+          "rule2": "📍Each participant should carry their respective Student Identity Proof.",
+          "rule3": "📍If participants car get un-routed, then they will get only three chances to reroute.",
+          "rule4": "📍The track provided will include various obstacles on route and the  car completing the track in the shortest amount of time will be the winner.",
+          "rule5": "📍A team can comprise 1-2 people.",
+          "rule6": "📍Rules are subject to change depending on the degree of participation.",
+          "rule7": "📍The Committee’s decision shall be final.",
+          "rule8":""
+        }
+      },
+      {
+        "id": "tugofwar",
+        "title": "Tug of War",
         "img": "/games/thugofwar.jpg",
-        "content": "This is the full content of post 2",
-        "description": "Silent Expressions: The Art of Mime is a form of performance art that uses body movements and facial expressions to convey a story or emotion without using words. It requires great physical control, creativity, and imagination, making it a challenging yet captivating art form.",
-        "c1name": "Abijith G kaimal",
-        "c2name": "Gayathry",
-        "c1no": "7025743212",
-        "c2no": "7306715087",
-        "pricepool": "10000",
-        "regfee": "500",
-        "enddate": "2023-04-22",
+        "content": "Inter College Tug of War",
+        "description": "Tug of War is a competitive sport where two teams pull opposite ends of a rope, with the goal of pulling the other team over a center line. It requires teamwork, strength, and strategy to win.",
+        "c1name": "Sujith",
+        "c2name": "Gokul",
+        "c1no": "7356380486",
+        "c2no": "9745507855",
+        "pricepool": "5000",
+        "regfee": "600",
+        "enddate": "2023-04-3",
         "reglink": "",
-        "reg": "Register Closed"
+        "reg": "Register Closed",
+        "ruleheader": "",
+        "rules": {
+          "rule1": "",
+          "rule2": "",
+          "rule3": "",
+          "rule4": "",
+          "rule5": "",
+          "rule6": "",
+          "rule7": "",
+          "rule8": ""
+        }
       },
       {
         "id": "cricket",
         "title": "Cricket Tournament",
         "img": "/games/cricket.jpg",
-        "content": "This is the full content of post 2",
-        "description": "Silent Expressions: The Art of Mime is a form of performance art that uses body movements and facial expressions to convey a story or emotion without using words. It requires great physical control, creativity, and imagination, making it a challenging yet captivating art form.",
-        "c1name": "Abijith G kaimal",
-        "c2name": "Gayathry",
-        "c1no": "7025743212",
-        "c2no": "7306715087",
-        "pricepool": "10000",
-        "regfee": "500",
-        "enddate": "2023-04-22",
+        "content": "Inter College Cricket Tournament",
+        "description": "The cricket tournament is a popular sporting event that brings together teams from different countries or regions to compete against each other. It is known for its intense matches, passionate fans, and the opportunity it provides for players to showcase their skills on a global stage.",
+        "c1name": "Abhin",
+        "c2name": "Ashik",
+        "c1no": "8590468064",
+        "c2no": "9188146261",
+        "pricepool": "5000",
+        "regfee": "800",
+        "enddate": "2023-04-1",
         "reglink": "",
-        "reg": "Register Closed"
+        "reg": "Register Closed",
+        "ruleheader": "",
+        "rules": {
+          "rule1": "",
+          "rule2": "",
+          "rule3": "",
+          "rule4": "",
+          "rule5": "",
+          "rule6": "",
+          "rule7": "",
+          "rule8": ""
+        }
       }
     ],
     [
@@ -174,8 +361,8 @@
         "id": "Arduino Workshop",
         "title": "ARDUINO 💻Workshop",
         "img": "/workshop/Arduino.jpg",
-        "content": "ARDUINO Workshop to upskill your skills",
-        "description": "📌 We strongly encourage participants to bring their own laptops to the event. However, if you are unable to bring your own laptop, our coordinators will be happy to provide you with one. Additionally, spot registration will be available for those who wish to register on the day of the event.\n❕Seize the opportunity to enhance your skills and earn 30 KTU activity points by attending our event. Don't miss out on this chance to take your abilities to the next level!",
+        "content": "Hands-On Learning with Arduino Microcontrollers 🗄",
+        "description": "DARPAN'23, the National level Technocultural fest hosted by College of Engineering Aranmula, brings you an edifying 💻 ARDUINO 💻Workshop to upskill youon how to build and program your own electronics projects using the popular Arduino platform.",
         "c1name": "Philip",
         "c2name": "Akhil",
         "c1no": "9744754670",
@@ -184,14 +371,25 @@
         "regfee": "150",
         "enddate": "2023-04-26",
         "reglink": "https://www.yepdesk.com/embed/arduino-workshop2/private/qq1p42cs2i",
-        "reg": "Register"
+        "reg": "Register",
+        "ruleheader": "Guildelines",
+        "rules": {
+          "rule1": "📌 We strongly encourage participants to bring their own laptops to the event. However, if you are unable to bring your own laptop, our coordinators will be happy to provide you with one. Additionally, spot registration will be available for those who wish to register on the day of the event.❕",
+          "rule2": "Seize the opportunity to enhance your skills and earn 30 KTU activity points by attending our event. Don't miss out on this chance to take your abilities to the next level! 🫱🏼‍🫲🏼",
+          "rule3": "",
+          "rule4": "",
+          "rule5": "",
+          "rule6": "",
+          "rule7": "",
+          "rule8": ""
+        }
       },
       {
         "id": "Cyber Security Workshop",
         "title": "CYBER SECURITY👾 Workshop",
         "img": "/workshop/cyber.jpg",
-        "content": "ARDUINO Workshop to upskill your skills",
-        "description": "📌 We strongly encourage participants to bring their own laptops to the event. However, if you are unable to bring your own laptop, our coordinators will be happy to provide you with one. Additionally, spot registration will be available for those who wish to register on the day of the event.\n❕Seize the opportunity to enhance your skills and earn 30 KTU activity points by attending our event. Don't miss out on this chance to take your abilities to the next level!",
+        "content": "Looking to enhance your online security? Look no further! 💻",
+        "description": "DARPAN'23, the National level Technocultural fest hosted by College of Engineering Aranmula, brings you an interactive and informative 👾CYBER SECURITY👾 workshop that is designed to equip you with the latest techniques and best practices to protect yourself and your digital assets from cyber threats.",
         "c1name": "Alan",
         "c2name": "Melvin",
         "c1no": "8590790018",
@@ -200,14 +398,25 @@
         "regfee": "150",
         "enddate": "2023-04-27",
         "reglink": "https://www.yepdesk.com/embed/cyber-security-workshop7/private/rcvj736p5f",
-        "reg": "Register"
+        "reg": "Register",
+        "ruleheader": "Guildelines",
+        "rules": {
+          "rule1": "📌 We strongly encourage participants to bring their own laptops to the event. However, if you are unable to bring your own laptop, our coordinators will be happy to provide you with one. Additionally, spot registration will be available for those who wish to register on the day of the event.❕",
+          "rule2": "Seize the opportunity to enhance your skills and earn 30 KTU activity points by attending our event. Don't miss out on this chance to take your abilities to the next level!🫱🏼‍🫲🏼",
+          "rule3": "",
+          "rule4": "",
+          "rule5": "",
+          "rule6": "",
+          "rule7": "",
+          "rule8": ""
+        }
       },
       {
         "id": "Ai Workshop",
         "title": "AI/ML 🖥Workshop",
         "img": "/workshop/ai.jpg",
         "content": "AI/ML workshop where you will learn how to collect and analyze data",
-        "description": "📌 We strongly encourage participants to bring their own laptops to the event. However, if you are unable to bring your own laptop, our coordinators will be happy to provide you with one. Additionally, spot registration will be available for those who wish to register on the day of the event.\n❕Seize the opportunity to enhance your skills and earn 30 KTU activity points by attending our event. Don't miss out on this chance to take your abilities to the next level!",
+        "description": "DARPAN'23, the National level Technocultural fest hosted by College of Engineering Aranmula, brings you an interactive and informative 🖥 AI/ML 🖥workshop where you will  learn how to collect and analyze data, train your model, and test its accuracy.",
         "c1name": "Alan",
         "c2name": "Melvin",
         "c1no": "8590790018",
@@ -216,14 +425,25 @@
         "regfee": "150",
         "enddate": "2023-04-26",
         "reglink": "https://www.yepdesk.com/embed/ai-ml-workshop/private/c309hbspvj",
-        "reg": "Register"
+        "reg": "Register",
+        "ruleheader": "Guildelines",
+        "rules": {
+          "rule1": "📌 We strongly encourage participants to bring their own laptops to the event. However, if you are unable to bring your own laptop, our coordinators will be happy to provide you with one. Additionally, spot registration will be available for those who wish to register on the day of the event.❕",
+          "rule2": "Seize the opportunity to enhance your skills and earn 30 KTU activity points by attending our event. Don't miss out on this chance to take your abilities to the next level!🫱🏼‍🫲🏼",
+          "rule3": "",
+          "rule4": "",
+          "rule5": "",
+          "rule6": "",
+          "rule7": "",
+          "rule8": ""
+        }
       },
       {
         "id": "Stock Trading Workshop",
         "title": "STOCK TRADING 🪙 Workshop",
         "img": "/workshop/stock.jpg",
-        "content": "Workshop where you will learn the essential skills and strategies to become a successful investor",
-        "description": "Seize the opportunity to enhance your skills and earn 30 KTU activity points by attending our event. Don't miss out on this chance to take your abilities to the next level!",
+        "content": "Learn the art of trading stocks and become a successful investor!! 💰💷",
+        "description": "DARPAN'23, the National level Technocultural fest hosted by College of Engineering Aranmula, brings you an interactive and informative 🪙STOCK TRADING 🪙 Workshop where you will learn the essential skills and strategies to become a successful investor. This workshop is perfect for anyone who wants to improve their understanding of the stock market and make informed decisions when investing.",
         "c1name": "Alwin",
         "c2name": "Amal",
         "c1no": "9746693561",
@@ -232,14 +452,25 @@
         "regfee": "Free",
         "enddate": "2023-04-23",
         "reglink": "https://www.yepdesk.com/embed/stock-trading-workshop/private/n72bmhmuas",
-        "reg": "Register"
+        "reg": "Register",
+        "ruleheader": "Guildelines",
+        "rules": {
+          "rule1": "Seize the opportunity to enhance your skills and earn 30 KTU activity points by attending our event. Don't miss out on this chance to take your abilities to the next level! 🫱🏼‍🫲🏼",
+          "rule2": "",
+          "rule3": "",
+          "rule4": "",
+          "rule5": "",
+          "rule6": "",
+          "rule7": "",
+          "rule8": ""
+        }
       },
       {
         "id": "PLC Workshop",
         "title": "PLC PROGRAMMING💻 Workshop",
         "img": "/workshop/plc.jpg",
-        "content": "Workshop designed to provide participants with a comprehensive understanding of programmable logic circuits",
-        "description": "📌 We strongly encourage participants to bring their own laptops to the event. However, if you are unable to bring your own laptop, our coordinators will be happy to provide you with one. Additionally, spot registration will be available for those who wish to register on the day of the event.\n📌 Participants will receive certificates from MITSUBISHI ELECTRIC channel partners upon completion of the program.\n Seize the opportunity to enhance your skills and earn 30 KTU activity points by attending our event. Don't miss out on this chance to take your abilities to the next level!",
+        "content": "Hey techies out there 🙋🏻‍♀!! Ready to learn to Design and Implement Digital Logic Circuits 🎛",
+        "description": "DARPAN'23, the National level Technocultural fest hosted by College of Engineering Aranmula, brings you an edifying 🖥 PLC PROGRAMMING💻 Workshop designed to provide participants with a comprehensive understanding of programmable logic circuits",
         "c1name": "Alan",
         "c2name": "Aravind",
         "c1no": "8590790018",
@@ -248,7 +479,18 @@
         "regfee": "500",
         "enddate": "2023-04-27",
         "reglink": "https://www.yepdesk.com/embed/plc-workshop/private/uekhfgevom",
-        "reg": "Register"
+        "reg": "Register",
+        "ruleheader": "Guildelines",
+        "rules": {
+          "rule1": "📌 We strongly encourage participants to bring their own laptops to the event. However, if you are unable to bring your own laptop, our coordinators will be happy to provide you with one. Additionally, spot registration will be available for those who wish to register on the day of the event. ❕",
+          "rule2": "📌 Participants will receive certificates from MITSUBISHI ELECTRIC channel partners upon completion of the program.",
+          "rule3": "Seize the opportunity to enhance your skills and earn 30 KTU activity points by attending our event. Don't miss out on this chance to take your abilities to the next level! 🫱🏼‍🫲🏼",
+          "rule4": "",
+          "rule5": "",
+          "rule6": "",
+          "rule7": "",
+          "rule8": ""
+        }
       }
     ]
   ]

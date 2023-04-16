@@ -64,16 +64,13 @@ function EventsDetails(props) {
               {props.title}
             </h1>
 
-            <div
-              className="flex flex-col mt-[2rem] md:flex-row rounded-xl justify-between w-full md:w-[90%] font-clash bg-gray/25"
-              ref={card}
-            >
+            <div className="flex flex-col mt-[2rem] md:flex-row rounded-xl justify-between w-full md:w-[90%] font-clash bg-gray/25"
+              ref={card}>
               <Image
                 src={props.image}
                 alt={props.title}
                 width={500}
                 height={500}
-                className=""
               />
               <div className="relative flex flex-col justify-between w-full px-2 md:p-8 gap-16">
                 <div className="flex flex-col gap-1">
@@ -128,12 +125,31 @@ function EventsDetails(props) {
 
                 <button
                   className="relative bottom-5 bg-white text-black w-full rounded-full p-2 font-medium hover:bg-gray hover:text-white transition duration-300 ease-in-out"
-                  onClick={() => setPopUp(true)}
-                >
-                  Register Now
+                  onClick={() => {
+                    (props.reg == "Register Closed" ? null : setPopUp(true));
+                  }}>
+                  {props.reg}
                 </button>
               </div>
             </div>
+
+            {
+              (props.rulehead == "" ? null
+                : <div className="font-clash flex flex-col mt-[2rem] p-6 rounded-xl justify-between w-full md:w-[90%] bg-gray/25">
+                  <h1 className="font-semibold text-3xl">{props.rulehead}</h1>
+                  <div className="flex flex-col gap-2 pt-4 text-lg md:text-xl">
+                    <p>{props.rule1}</p>
+                    <p>{props.rule2}</p>
+                    <p>{props.rule3}</p>
+                    <p>{props.rule4}</p>
+                    <p>{props.rule5}</p>
+                    <p>{props.rule6}</p>
+                    <p>{props.rule7}</p>
+                    <p>{props.rule8}</p>
+                  </div>
+                </div>)
+            }
+
           </div>
         </div>
 
@@ -206,6 +222,16 @@ export async function getStaticProps(context) {
       enddate: post.enddate,
       register: post.reg,
       reglink: post.reglink,
+      reg: post.reg,
+      rulehead: post.ruleheader,
+      rule1: post.rules.rule1,
+      rule2: post.rules.rule2,
+      rule3: post.rules.rule3,
+      rule4: post.rules.rule4,
+      rule5: post.rules.rule5,
+      rule6: post.rules.rule6,
+      rule7: post.rules.rule7,
+      rule8: post.rules.rule8,
     },
   };
 }
