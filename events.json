@@ -126,7 +126,7 @@
         "c2no": "9946560740",
         "pricepool": "30000",
         "regfee": "1500",
-        "enddate": "2023-04-22",
+        "enddate": "2023-04-26",
         "reglink": "https://www.yepdesk.com/embed/buy-tickets/6437308946e0fb000195e02b/private/gc938ro17f",
         "reg": "Register Now"
       }
@@ -183,22 +183,6 @@
         "reg": "Register"
       },
       {
-        "id": "Ai/ML Workshop",
-        "title": "AI/ML 🖥Workshop",
-        "img": "/workshop/ai.jpg",
-        "content": "AI/ML workshop where you will learn how to collect and analyze data",
-        "description": "📌 We strongly encourage participants to bring their own laptops to the event. However, if you are unable to bring your own laptop, our coordinators will be happy to provide you with one. Additionally, spot registration will be available for those who wish to register on the day of the event.\n❕Seize the opportunity to enhance your skills and earn 30 KTU activity points by attending our event. Don't miss out on this chance to take your abilities to the next level!",
-        "c1name": "Alan",
-        "c2name": "Melvin",
-        "c1no": "8590790018",
-        "c2no": "9354367826",
-        "pricepool": "Nil",
-        "regfee": "150",
-        "enddate": "2023-04-26",
-        "reglink": "https://www.yepdesk.com/ai-ml-workshop/private/c309hbspvj",
-        "reg": "Register"
-      },
-      {
         "id": "Cyber Security Workshop",
         "title": "CYBER SECURITY👾 Workshop",
         "img": "/workshop/cyber.jpg",
@@ -212,6 +196,22 @@
         "regfee": "150",
         "enddate": "2023-04-27",
         "reglink": "https://www.yepdesk.com/cyber-security-workshop7/private/rcvj736p5f",
+        "reg": "Register"
+      },
+      {
+        "id": "Ai Workshop",
+        "title": "AI/ML 🖥Workshop",
+        "img": "/workshop/ai.jpg",
+        "content": "AI/ML workshop where you will learn how to collect and analyze data",
+        "description": "📌 We strongly encourage participants to bring their own laptops to the event. However, if you are unable to bring your own laptop, our coordinators will be happy to provide you with one. Additionally, spot registration will be available for those who wish to register on the day of the event.\n❕Seize the opportunity to enhance your skills and earn 30 KTU activity points by attending our event. Don't miss out on this chance to take your abilities to the next level!",
+        "c1name": "Alan",
+        "c2name": "Melvin",
+        "c1no": "8590790018",
+        "c2no": "9354367826",
+        "pricepool": "Nil",
+        "regfee": "150",
+        "enddate": "2023-04-26",
+        "reglink": "https://www.yepdesk.com/ai-ml-workshop/private/c309hbspvj",
         "reg": "Register"
       },
       {
