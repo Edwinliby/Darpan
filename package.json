@@ -14,6 +14,7 @@
     "fs.promises": "^0.1.2",
     "gsap": "^3.11.5",
     "hamburger-react": "^2.5.0",
+    "horizontal-scroll": "^1.1.0",
     "next": "13.2.4",
     "react": "18.2.0",
     "react-animated-cursor": "^2.5.2",

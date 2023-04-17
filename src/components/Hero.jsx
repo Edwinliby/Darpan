@@ -40,14 +40,14 @@ function Hero() {
   }, []);
 
   return (
-    <div className="hero xl:hidden py-8 h-fit flex flex-col uppercase justify-center">
+    <div className="hero relative xl:hidden py-8 h-fit flex flex-col uppercase justify-center">
       <video
         ref={render}
         src="/render.mp4"
         loop
         autoPlay
         muted
-        className="absolute top-0 left-0 w-full h-full object-cover opacity-50"
+        className="absolute top-0 left-0 w-full h-full object-cover bg-slate-300 opacity-50"
       ></video>
 
       <div className="text-white flex flex-col pt-[8rem] uppercase font-extrabold md:ml-[1rem] lg:ml-[2rem] px-5 ">
