@@ -14,7 +14,6 @@
     "fs.promises": "^0.1.2",
     "gsap": "^3.11.5",
     "hamburger-react": "^2.5.0",
-    "horizontal-scroll": "^1.1.0",
     "next": "13.2.4",
     "react": "18.2.0",
     "react-animated-cursor": "^2.5.2",
@@ -25,7 +24,8 @@
     "react-intersection-observer": "^9.4.3",
     "react-scroll": "^1.8.9",
     "react-slick": "^0.29.0",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "vanilla-tilt": "^1.8.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",

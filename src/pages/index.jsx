@@ -12,7 +12,7 @@ import Clock from "@/components/Clock";
 import Map from "@/components/Map";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/all";
-// import EventSlider from "@/components/EventSlider";
+import EventSlider from "@/components/EventSlider";
 
 const Home = () => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -65,7 +65,7 @@ const Home = () => {
 
       {/* <Marque /> */}
 
-      {/* <EventSlider/> */}
+      <EventSlider/>
 
       <section id="about">
         <About />
