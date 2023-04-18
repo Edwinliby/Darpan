@@ -49,7 +49,7 @@ export default function MyApp({ Component, pageProps }) {
       setLoading(true);
       setTimeout(() => {
         setLoading(false);
-      }, 3000);
+      }, 2700);
     };
 
     router.events.on("routeChangeStart", handleStart);

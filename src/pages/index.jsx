@@ -65,7 +65,7 @@ const Home = () => {
 
       {/* <Marque /> */}
 
-      <EventSlider/>
+      <EventSlider />
 
       <section id="about">
         <About />

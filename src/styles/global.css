@@ -101,10 +101,23 @@ progress::-webkit-progress-value {
   transition: all 0.5s ease;
 }
 
-
 .menuPop {
   background: url("/menu.gif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.updown {
+  animation: mover 2s infinite alternate;
+}
+
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-6px);
+  }
 }

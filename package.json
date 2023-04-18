@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@splidejs/react-splide": "^0.7.12",
     "framer-motion": "^10.9.1",
     "fs.promises": "^0.1.2",
     "gsap": "^3.11.5",
@@ -25,6 +24,7 @@
     "react-scroll": "^1.8.9",
     "react-slick": "^0.29.0",
     "slick-carousel": "^1.8.1",
+    "swiper": "^9.2.3",
     "vanilla-tilt": "^1.8.0"
   },
   "devDependencies": {
