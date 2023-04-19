@@ -1,5 +1,5 @@
 {
-  "names": ["CULTURAL", "GAMES", "WORKSHOPS"],
+  "names": ["CULTURAL", "TECHNICALS", "GAMES", "WORKSHOPS"],
   "posts": [
     [
       {
@@ -219,6 +219,7 @@
         }
       }
     ],
+    [],
     [
       {
         "id": "Treasure-Hunt",
@@ -298,7 +299,7 @@
           "rule5": "📍A team can comprise 1-2 people.",
           "rule6": "📍Rules are subject to change depending on the degree of participation.",
           "rule7": "📍The Committee’s decision shall be final.",
-          "rule8":""
+          "rule8": ""
         }
       },
       {

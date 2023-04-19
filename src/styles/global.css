@@ -12,6 +12,7 @@ html {
 
 * {
   user-select: none;
+  /* outline: 1px red solid; */
 }
 
 ::-webkit-scrollbar {

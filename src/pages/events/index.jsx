@@ -45,14 +45,11 @@ export default function Events({ posts, names }) {
           <span className="text-[2.5rem] tracking-wider">EVENTS</span>
         </div>
 
-        <div className=" text-[1rem] p-8 font-semibold font-chakra flex flex-row gap-4 md:gap-12 items-center justify-center text-white">
+        <div className="overflow-x-scroll text-[1rem] p-8 font-semibold font-chakra flex flex-row gap-4 md:gap-12 items-center md:justify-center text-white">
           {names.map((name, i) => (
-            <span
-              key={i}
+            <span key={i}
               className="rounded-full px-4 py-[.3rem] hover:bg-white/20 transition-all duration-500 ease-in-out"
-              style={{ border: index === i ? "1.75px solid #9747ff" : "none" }}
-              onClick={() => setIndex(i)}
-            >
+              style={{ border: index === i ? "1.75px solid #9747ff" : "none" }} onClick={() => setIndex(i)}>
               {name}
             </span>
           ))}
@@ -61,11 +58,9 @@ export default function Events({ posts, names }) {
         <div className="flex flex-wrap justify-center gap-8 p-6">
           {individualPosts.length > 0 ? (
             individualPosts.map((post) => (
-              <div
-                ref={animate}
+              <div ref={animate}
                 className="relative w-[21rem] h-[20rem] hover:scale-105 rounded-md overflow-hidden hover:shadow-lg hover:shadow-main_primary/80 transition-all duration-500 ease-in-out"
-                key={post.id}
-              >
+                key={post.id}>
                 <Link href={`/events/${post.id}`}>
                   <Image
                     src={post.img}
