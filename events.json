@@ -306,6 +306,115 @@
           "rule8": ""
         }
       }
+    
+      {
+        "id": "Pixellate",
+        "title": "Pixellate",
+        "img": "/general_tech_events/Pixellate.png",
+        "content": "Digital painting competition  PIXELLATE  organized by DARPAN'23",
+        "description": "The competition is open to all skill levels, from beginners to advanced artists. So, whether you're just starting or a seasoned pro, this is the perfect opportunity to showcase your digital art skills. 🎭",
+        "c1name": "Aravind",
+        "c2name": "",
+        "c1no": "9526857109",
+        "c2no": "",
+        "pricepool": "2000",
+        "regfee": "100",
+        "enddate": "2023-04-27",
+        "reglink": "https://www.yepdesk.com/pixellate/private/3550oblkp8",
+        "reg": "Register Now",
+        "ruleheader": "RULES",
+        "rules": {
+          "rule1": "📍Eligibility: The competition is open to all individuals who are proficient in using Gimp software to create digital drawings.",
+          "rule2": "📍Theme: The competition can have a specific theme or be open to any subject matter.",
+          "rule3": "📍Submission: Participants must submit their digital drawing in PNG or JPG format Also.",
+          "rule4": "",
+          "rule5": "",
+          "rule6": "",
+          "rule7": "",
+          "rule8": ""
+        }
+      },
+      {
+        "id": "Circuit-Debugging",
+        "title": "Circuit Debugging Competition",
+        "img": "/general_tech_events/circuit.png",
+        "content": "Ultimate Circuit Debugging Challenge and Win Big! 🔃",
+        "description": "Look no further than the upcoming CIRCUIT DEBUGGING COMPETITION organized by DARPAN'23 at the College of Engineering Aranmula. 🤩",
+        "c1name": "Anandhu",
+        "c2name": "Keerthana",
+        "c1no": "8075184395",
+        "c2no": "8606537785",
+        "pricepool": "3000",
+        "regfee": "100",
+        "enddate": "2023-04-26",
+        "reglink": "https://www.yepdesk.com/electric-expedition/private/pgq7br3t29",
+        "reg": "Register Now",
+        "ruleheader": "RULES",
+        "rules": {
+          "rule1": "The competition will consist of two challenging rounds: simple & Complex Circuit Debugging Round. Here are the essential rules you need to know before registering:",
+          "rule2": "📍 Single participant only",
+          "rule3": "📍Mobile phones or any other reference materials are not allowed, but calculators can be used.",
+          "rule4": "📍 Completion consist of two challenging rounds ",
+          "rule5": "📍All rounds are time-bound, and the decisions of the judges and coordinators.",
+          "rule6": "",
+          "rule7": "",
+          "rule8": ""
+        }
+      },
+      {
+        "id": "Zero-Error",
+        "title": "Zero Error Coding",
+        "img": "/general_tech_events/ZERO_ERROR.png",
+        "content": "Do you thrive under pressure and enjoy pushing the limits of your programming abilities ",
+        "description": "This is a rare opportunity to showcase your skills to some of the most respected names in the tech world and receive valuable insights into how you can take your programming to the next level.",
+        "c1name": "Saeed",
+        "c2name": "Bincy",
+        "c1no": "6235769847",
+        "c2no": "9061463931",
+        "pricepool": "3000",
+        "regfee": "100",
+        "enddate": "2023-04-26",
+        "reglink": "https://www.yepdesk.com/zer0-err0r/private/c37iaiut2l",
+        "reg": "Register Now",
+        "ruleheader": "RULES",
+        "rules": {
+          "rule1": "📍 Participants can only edit the sourcecode. They cannot enter their own code other than the above.",
+          "rule2": "📍 Sample inputs will be provided. Output should match the given output.",
+          "rule3": "📍 Special cases would also be considered.",
+          "rule4": "",
+          "rule5": "",
+          "rule6": "",
+          "rule7": "",
+          "rule8": ""
+        }
+      },
+      {
+        "id": "Best-Manager",
+        "title": "Best Manager",
+        "img": "/general_tech_events/Best_Manager.png",
+        "content": "Calling all leaders! Are you the best manager in town? Prove it in our upcoming competition! 🤩",
+        "description": "Gear up to compete and win the title of BEST MANAGER organised by DARPAN'23 at College of Engineering Aranmula.If you're a natural born leader who can motivate a team to success, this is your chance to showcase your skills and win big.🫵🏼",
+        "c1name": "Saeed",
+        "c2name": "Bincy",
+        "c1no": "6235769847",
+        "c2no": "9061463931",
+        "pricepool": "3000",
+        "regfee": "100",
+        "enddate": "2023-04-27",
+        "reglink": "https://www.yepdesk.com/best-manager3/private/8gkqbfi18t",
+        "reg": "Register Now",
+        "ruleheader": "RULES",
+        "rules": {
+          "rule1": "The event will consist of 2 rounds.",
+          "rule2": "Round 1- General Quiz ",
+          "rule3": "Round 2 - Sell me a Pen ",
+          "rule4": "",
+          "rule5": "",
+          "rule6": "",
+          "rule7": "",
+          "rule8": ""
+        }
+      }
     ],
     [
       {
@@ -328,7 +437,7 @@
           "rule1": "📍A group of maximum 4 members can participate.",
           "rule2": "📍Each team should have a name.",
           "rule3": "📍Materials given during the game should be kept safe also donot cause any damage to other team members or their properties.",
-          "rule4": "📍You will get a maximum of 3 hours to find the treassure🏴‍☠.",
+          "rule4": "📍You will get a maximum of 3 hours to find the treassure 🏴‍☠.",
           "rule5": "📍Time schedule will be informed  via whatsapp group after the registration.",
           "rule6": "📍If the no: of participating teams are less than 5, then the prize pool will be deducted to 75%.",
           "rule7": "📍ID cards are mandatory",
