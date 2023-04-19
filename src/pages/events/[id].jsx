@@ -106,7 +106,7 @@ function EventsDetails(props) {
                   <div className="grid grid-cols-2 text-[1.1rem] tracking-wide w-fit font-medium">
                     <div className="flex flex-col pr-4">
                       <span>{props.c1name} :</span>
-                      <span>{props.c2name} :</span>
+                      {props.c2name != false && <span>{props.c2name} :</span>}
                     </div>
                     <div className="flex flex-col text-white font-bold">
                       <Link href={`tel:${props.c1number}`}>
