@@ -1,5 +1,10 @@
 {
-  "names": ["CULTURAL", "TECHNICALS", "GAMES", "WORKSHOPS"],
+  "names": [
+    "CULTURAL",
+    "GENERAL & TECHNICAL",
+    "GAMES",
+    "WORKSHOP"
+  ],
   "posts": [
     [
       {
@@ -219,7 +224,89 @@
         }
       }
     ],
-    [],
+    [
+      {
+        "id": "speedTyping",
+        "title": "Speed Typing",
+        "img": "/general_tech_events/Speed_Typing.png",
+        "content": "Speed Typing",
+        "description": "Your Way to Victory: Join Our Speed Typing Competition Today!⌨⌨ Look no further than the upcoming competition SPEED TYPING organized by DARPAN'23 at the College of Engineering Aranmula 🤩. In this exhilarating competition, participants will compete head-to-head to see who can type the most words accurately in the shortest amount of time.",
+        "c1name": "Albin",
+        "c2name": "Noufiya",
+        "c1no": "7510903774",
+        "c2no": "8590302241",
+        "pricepool": "1500",
+        "regfee": "50",
+        "enddate": "2023-04-25",
+        "reglink": "https://www.yepdesk.com/embed/speed-typing/private/b7djccm53s",
+        "reg": "Register",
+        "ruleheader": "RULES",
+        "rules": {
+          "rule1": "1. Contestants can use their personal laptops otherwise one shall be provided by the college",
+          "rule2": "2. Should have a strong internet connection as the competition was taken on a speed typing website",
+          "rule3": "3. You will be given a copy of the content to be typed",
+          "rule4": "4. All the rules are based on the number of participating participants and can be changed if participants are less",
+          "rule5": "5. The time, content and threshold for the first round will be revealed during the event",
+          "rule6": "",
+          "rule7": "",
+          "rule8": ""
+        }
+      },
+      {
+        "id": "agentsOfAec",
+        "title": "Agents Of AEC",
+        "img": "/general_tech_events/Agents_of_aec.png",
+        "content": "Are you ready to test your investigative skills and become the ultimate crime scene solver?",
+        "description": "Gear up for our crime scene investigation AGENTS OF AEC organized by DARPAN'23 at the College of Engineering Aranmula. 🤩. This event is designed for those who have a passion for detective work and want to put their skills to the test. 🔍",
+        "c1name": "Sufiyan",
+        "c2name": "Adarsh",
+        "c1no": "9778304797",
+        "c2no": "8921620248",
+        "pricepool": "2500",
+        "regfee": "100",
+        "enddate": "2023-04-26",
+        "reglink": "https://www.yepdesk.com/agents-of-aec/private/btbdd85ur0",
+        "reg": "Register",
+        "ruleheader": "RULES",
+        "rules": {
+          "rule1": "📍Id cards are compulsory.",
+          "rule2": "📍Interaction between other team members are not allowed",
+          "rule3": "📍Any proof of registration should be shown before entering.",
+          "rule4": "📍Electronic gadgets are prohibited.",
+          "rule5": "📍Each team should have 2-3 members",
+          "rule6": "📍Each round will contain a time limit and each team are requested to complete the task within the given time.",
+          "rule7": "📍Any team who violates the rules will be disqualified.",
+          "rule8": ""
+        }
+      },
+      {
+        "id": "anime",
+        "title": "Anime Mania Quiz",
+        "img": "/general_tech_events/anime.png",
+        "content": "Are you an anime enthusiast? 💜 Do you think you know everything there is to know about your favorite anime series?",
+        "description": "Look no further than the upcoming quiz competition ANIME MANIA organized by DARPAN'23 at the College of Engineering Aranmula. 🤩. It's an exciting quiz competition that will challenge your knowledge of anime like never before. Compete with fellow anime fans and showcase your expertise in the world of anime",
+        "c1name": "Aparna",
+        "c2name": "Arya",
+        "c1no": "7510243275",
+        "c2no": "7736836930",
+        "pricepool": "2000",
+        "regfee": "100",
+        "enddate": "2023-04-25",
+        "reglink": "https://www.yepdesk.com/anime-mania/private/cmtqv6jpi0",
+        "reg": "Register",
+        "ruleheader": "",
+        "rules": {
+          "rule1": "",
+          "rule2": "",
+          "rule3": "",
+          "rule4": "",
+          "rule5": "",
+          "rule6": "",
+          "rule7": "",
+          "rule8": ""
+        }
+      }
+    ],
     [
       {
         "id": "Treasure-Hunt",
