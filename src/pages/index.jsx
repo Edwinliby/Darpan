@@ -11,10 +11,10 @@ import Clock from "@/components/Clock";
 import Map from "@/components/Map";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/all";
-import EventSlider from "@/components/EventSlider";
-import Slider from "react-slick"
-import Image from 'next/image'
-import Link from 'next/link'
+// import EventSlider from "@/components/EventSlider";
+import Slider from "react-slick";
+import Image from "next/image";
+import Link from "next/link";
 
 const Home = (props) => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -37,7 +37,6 @@ const Home = (props) => {
 
   const stagger = useRef(null);
 
-
   const settings = {
     infinite: true,
     slidesToShow: 4,
@@ -54,19 +53,18 @@ const Home = (props) => {
           slidesToShow: 3,
           slidesToScroll: 1,
           infinite: true,
-        }
+        },
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
   const posts = props.posts;
-
 
   return (
     <div className="bg-black h-fit">
@@ -97,11 +95,15 @@ const Home = (props) => {
       {isLoaded && <Clock />}
 
       <div className=" h-fit py-5 w-[40vh] sm:w-[55vh] md:w-[100vh] lg:w-[130vh] xl:w-[170vh]  mx-auto">
-        <h1 className='text-[2.7rem] md:text-[4rem] text-white font-clash font-bold tracking-wider uppercase'>Events</h1>
+        <h1 className="text-[2.7rem] md:text-[4rem] text-white font-clash font-bold tracking-wider uppercase">
+          Events
+        </h1>
         <Slider {...settings}>
-          {posts.map(post =>
-            <div key={post.id}
-              className="flex justify-center border-0 hover:scale-110 transition-all duration-300 ease-in-out">
+          {posts.map((post) => (
+            <div
+              key={post.id}
+              className="flex justify-center border-0 hover:scale-110 transition-all duration-300 ease-in-out"
+            >
               <Link href={`/events/${post.id}`}>
                 <Image
                   src={post.img}
@@ -111,11 +113,12 @@ const Home = (props) => {
                   className="object-cover p-2"
                 />
               </Link>
-            </div>)}
+            </div>
+          ))}
         </Slider>
       </div>
 
-      <EventSlider />
+      {/* <EventSlider /> */}
 
       <section id="about">
         <About />
@@ -135,17 +138,14 @@ const Home = (props) => {
 
 export default Home;
 
-
-
-
-import fsPromises from 'fs/promises'
-import path from 'path'
+import fsPromises from "fs/promises";
+import path from "path";
 export async function getStaticProps() {
-  const filePath = path.join(process.cwd(), '/data.json');
+  const filePath = path.join(process.cwd(), "/data.json");
   const jsonData = await fsPromises.readFile(filePath);
   const objectData = JSON.parse(jsonData);
 
   return {
-    props: objectData
-  }
+    props: objectData,
+  };
 }
