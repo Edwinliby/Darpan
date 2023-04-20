@@ -146,6 +146,11 @@ function EventsDetails(props) {
                     <p>{props.rule6}</p>
                     <p>{props.rule7}</p>
                     <p>{props.rule8}</p>
+                    <p>{props.rule9}</p>
+                    <p>{props.rule10}</p>
+                    <p>{props.rule11}</p>
+                    <p>{props.rule12}</p>
+                    <p>{props.rule13}</p>
                   </div>
                 </div>)
             }
@@ -232,6 +237,11 @@ export async function getStaticProps(context) {
       rule6: post.rules.rule6,
       rule7: post.rules.rule7,
       rule8: post.rules.rule8,
+      rule9: post.rules.rule9,
+      rule10: post.rules.rule10,
+      rule11: post.rules.rule11,
+      rule12: post.rules.rule12,
+      rule13: post.rules.rule13
     },
   };
 }

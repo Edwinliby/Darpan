@@ -1,10 +1,5 @@
 {
-  "names": [
-    "CULTURAL",
-    "TECHNICAL",
-    "GAMES",
-    "WORKSHOP"
-  ],
+  "names": ["CULTURAL", "TECHNICAL", "GAMES", "WORKSHOP"],
   "posts": [
     [
       {
@@ -22,16 +17,21 @@
         "enddate": "2023-04-22",
         "reglink": "https://www.yepdesk.com/embed/buy-tickets/6435323046e0fb00018cfec3/private/hi1egcmmoc",
         "reg": "Register Now",
-        "ruleheader": "",
+        "ruleheader": "Rules and regulations ",
         "rules": {
-          "rule1": "",
-          "rule2": "",
-          "rule3": "",
-          "rule4": "",
-          "rule5": "",
-          "rule6": "",
-          "rule7": "",
-          "rule8": ""
+          "rule1": "1.The competition will be conducted in two rounds 1.Preliminary Round 2. Spot choreography",
+          "rule2": "2.In the preliminary round, the participant must dance on a song of their choice which should not exceed 5 minutes.",
+          "rule3": "3.In the second round,spot choreography participant should dance on the song given to them .",
+          "rule4": "4.Classical dance is not permitted.",
+          "rule5": "5.The song selection can be from any language.",
+          "rule6": "6.The participants exceeding the assigned time will be disqualified. ",
+          "rule7": "7.The performance will be evaluated based on the choreography, presentation,rhythm,expressions and costume.",
+          "rule8": "8.Properties ,if any ,should be arranged by themselves and if any special arrangements are required the coordinators should be informed prior to the competition. ",
+          "rule9": "9.The decisions of the judges will be final.",
+          "rule10": "",
+          "rule11": "",
+          "rule12": "",
+          "rule13": ""
         }
       },
       {
@@ -49,16 +49,21 @@
         "enddate": "2023-04-22",
         "reg": "Register Now",
         "reglink": "https://www.yepdesk.com/embed/buy-tickets/64357f4746e0fb00018e3a85/private/burshlsf5t",
-        "ruleheader": "",
+        "ruleheader": " Rules and Regulations",
         "rules": {
-          "rule1": "",
-          "rule2": "",
-          "rule3": "",
-          "rule4": "",
-          "rule5": "",
-          "rule6": "",
-          "rule7": "",
-          "rule8": ""
+          "rule1": "1.There can be a maximum of 8 members and can have 2 teams from each college.",
+          "rule2": "2.The performance should not convey any indecent gestures.",
+          "rule3": "3.Dress Code and Makeup are not compulsory for the performance.",
+          "rule4": "4.Each team should report and Submit the music for performance to committee members before an hour of program.",
+          "rule5": "5.Green rooms will be provided.",
+          "rule6": "6.The song for performance will be of any language.",
+          "rule7": "7.The judgement will be based on choreography, synchronisation and overall performance of the team.",
+          "rule8": "8.The decision of the judges will be final.",
+          "rule9": "9.Maximum 8 minutes of performance will be allowed",
+          "rule10": "",
+          "rule11": "",
+          "rule12": "",
+          "rule13": ""
         }
       },
       {
@@ -76,16 +81,21 @@
         "enddate": "2023-04-22",
         "reg": "Register Now",
         "reglink": "https://www.yepdesk.com/embed/buy-tickets/643700df46e0fb0001958547/private/f8clbhct8b",
-        "ruleheader": "",
+        "ruleheader": "Rules and Regulations",
         "rules": {
-          "rule1": "",
-          "rule2": "",
-          "rule3": "",
-          "rule4": "",
-          "rule5": "",
+          "rule1": "1.Maximum no. of participants allowed is 10 including the 1 lead.",
+          "rule2": "2.Maximum 10 minutes of performance is allowed.",
+          "rule3": "3.The judgement will be based on quality of singing.",
+          "rule4": "4.Sruthi,Tal,Rhythm,Co-ordination, Synchronisation etc. will also be considered for the judgment.",
+          "rule5": "5.The decision of the judges will be final.",
           "rule6": "",
           "rule7": "",
-          "rule8": ""
+          "rule8": "",
+          "rule9": "",
+          "rule10": "",
+          "rule11": "",
+          "rule12": "",
+          "rule13": ""
         }
       },
       {
@@ -103,16 +113,21 @@
         "enddate": "2023-04-22",
         "reg": "Register Now",
         "reglink": "https://www.yepdesk.com/embed/buy-tickets/64371c6946e0fb000195aea5/private/mmk0m51ca9",
-        "ruleheader": "",
+        "ruleheader": "Rules and regulations ",
         "rules": {
-          "rule1": "",
-          "rule2": "",
-          "rule3": "",
-          "rule4": "",
-          "rule5": "",
-          "rule6": "",
-          "rule7": "",
-          "rule8": ""
+          "rule1": "1.The competition will be conducted in one round.",
+          "rule2": "2. Band will have 5 minutes to set up the instruments and 10 minutes to perform",
+          "rule3": "3.No lip-syncing and tracking vocals",
+          "rule4": "4.All the members in a band should report backstage atleast 10 minutes prior to the scheduled time.",
+          "rule5": "5.Instruments should be arranged by themselves. No instruments willl be provided by the coordinators",
+          "rule6": "6.Each band  should comprise a maximum of 10 members with atleast 3 instruments.",
+          "rule7": "7. Each members must carry their ID card with them.",
+          "rule8": "8.The organizer' s has the discretion to alter the rules at any time.",
+          "rule9": "9. Decision of the judges will be final and binding.",
+          "rule10": "",
+          "rule11": "",
+          "rule12": "",
+          "rule13": ""
         }
       },
       {
@@ -130,16 +145,21 @@
         "enddate": "2023-04-22",
         "reg": "Register Now",
         "reglink": "https://www.yepdesk.com/embed/buy-tickets/64371e1a46e0fb000195cf33/private/8p0b414qef",
-        "ruleheader": "",
+        "ruleheader": "Rules and Regulations",
         "rules": {
-          "rule1": "",
-          "rule2": "",
-          "rule3": "",
-          "rule4": "",
-          "rule5": "",
-          "rule6": "",
-          "rule7": "",
-          "rule8": ""
+          "rule1": "1.Each comedian will be given a   maximum of 5 minutes to perform their set. Going over the time limit may result in deduction in points.",
+          "rule2": "2.The comedian must perform original material. Plagiarism or using another comedian's material may result in disqualification.",
+          "rule3": "3.The content of the comedian's set must be appropriate for a general audience. The use of hate speech, slurs, or any material deemed offensive may result in disqualification.",
+          "rule4": "4.The use of light props or costumes can used upto a limit for the performance.",
+          "rule5": "5.Each contestant will be judged on the basis of their content, presentation, instincts & sense of humour.",
+          "rule6": "6.The judges' decisions are final and cannot be appealed.",
+          "rule7": "7.Any violation of the rules may result in disqualification from the competition.",
+          "rule8": "",
+          "rule9": "",
+          "rule10": "",
+          "rule11": "",
+          "rule12": "",
+          "rule13": ""
         }
       },
       {
@@ -157,16 +177,21 @@
         "enddate": "2023-04-22",
         "reglink": "https://www.yepdesk.com/embed/buy-tickets/64371e2d46e0fb000195cf87/private/ktoj0r03rv",
         "reg": "Register Now",
-        "ruleheader": "",
+        "ruleheader": "Rules and Regulations",
         "rules": {
-          "rule1": "",
-          "rule2": "",
-          "rule3": "",
-          "rule4": "",
-          "rule5": "",
-          "rule6": "",
+          "rule1": "1.Maximum no. of participants allowed is 6.",
+          "rule2": "2.Maximum time allotted for each team is 5 minutes.",
+          "rule3": "3.Judgment will most likely be based on the qualities like idea, creativity of presentation, use of make-up, music,general impression,depiction of the situation,team work and expressions.",
+          "rule4": "4.The act should not contain any lyrics,dialogue or lip sync.",
+          "rule5": "5.Obscenity will lead to disqualification. ",
+          "rule6": "6.The decision of the judges will be final.",
           "rule7": "",
-          "rule8": ""
+          "rule8": "",
+          "rule9": "",
+          "rule10": "",
+          "rule11": "",
+          "rule12": "",
+          "rule13": ""
         }
       },
       {
@@ -184,22 +209,27 @@
         "enddate": "2023-04-22",
         "reglink": "https://www.yepdesk.com/embed/buy-tickets/64371f0a46e0fb000195d0d2/private/c3e95vtbj3",
         "reg": "Register Now",
-        "ruleheader": "",
+        "ruleheader": "Rules and Regulations",
         "rules": {
-          "rule1": "",
-          "rule2": "",
-          "rule3": "",
-          "rule4": "",
+          "rule1": "1.Malayalam, English, Hindi, Tamil songs are only allowed.",
+          "rule2": "2.The contestants can sing any song of their choice without karaoke or with one instrument or Shruti box.",
+          "rule3": "3.Time limit :5 minutes (exceeding this time limit lead to negative marking) ",
+          "rule4": "4.The decision of the judging panel shall be final in all matters",
           "rule5": "",
           "rule6": "",
           "rule7": "",
-          "rule8": ""
+          "rule8": "",
+          "rule9": "",
+          "rule10": "",
+          "rule11": "",
+          "rule12": "",
+          "rule13": ""
         }
       },
       {
         "id": "nithyarangi",
         "title": "NITHYARANGI 2023",
-        "img": "/cultural/themeshow.png",
+        "img": "/cultural/themesho.jpg",
         "content": "Themed Extravaganza: A Showdown of Creativity and Entertainment",
         "description": "Themed Extravaganza: A Showdown of Creativity and Entertainment promises to be an exciting event where creativity and entertainment will collide to create a spectacular showcase of talent and imagination.",
         "c1name": "Abhishek Kumar",
@@ -208,19 +238,24 @@
         "c2no": "9946560740",
         "pricepool": "30000",
         "regfee": "1500",
-        "enddate": "2023-04-26",
+        "enddate": "2023-04-24",
         "reglink": "https://www.yepdesk.com/embed/buy-tickets/6437308946e0fb000195e02b/private/gc938ro17f",
         "reg": "Register Now",
-        "ruleheader": "",
+        "ruleheader": "Rules and regulations ",
         "rules": {
-          "rule1": "",
-          "rule2": "",
-          "rule3": "",
-          "rule4": "",
-          "rule5": "",
-          "rule6": "",
-          "rule7": "",
-          "rule8": ""
+          "rule1": "° This is a group event, the group can include 10-15members!! (Including participants, choreographer and coordinator)",
+          "rule2": "°Multiple entries from the same institute are allowed.",
+          "rule3": "°The fashion show does not follow any particular theme. It is an open theme event.",
+          "rule4": "°Each group will be allotted a time limit of 10-15 minutes. ",
+          "rule5": "°Negative marking will be done if this time limit is exceeded.",
+          "rule6": "°Teams should report at the backstage 15min prior to the scheduled time.",
+          "rule7": "°Participants should carry thier own inventories(music, costumes and presentation will be their own)",
+          "rule8": "°Background music must be submitted in a USB or Google drive prior to the event.",
+          "rule9": "°Any indecency in costumes or perfomance by the members will not be tolerated.",
+          "rule10": "°Teams will be judged according to not only their outfit, but also the way they carry themselves on stage.",
+          "rule11":"°Theme, hair, makeup and attitude on stage will also be considered by the judges.",
+          "rule12":"°Judges decision would be final.",
+          "rule13":"NB: If the competing groups is less than 3, only the first place will be awarded."
         }
       }
     ],
@@ -249,7 +284,12 @@
           "rule5": "5. The time, content and threshold for the first round will be revealed during the event",
           "rule6": "",
           "rule7": "",
-          "rule8": ""
+          "rule8": "",
+          "rule9": "",
+          "rule10": "",
+          "rule11": "",
+          "rule12": "",
+          "rule13": ""
         }
       },
       {
@@ -276,7 +316,12 @@
           "rule5": "📍Each team should have 2-3 members",
           "rule6": "📍Each round will contain a time limit and each team are requested to complete the task within the given time.",
           "rule7": "📍Any team who violates the rules will be disqualified.",
-          "rule8": ""
+          "rule8": "",
+          "rule9": "",
+          "rule10": "",
+          "rule11": "",
+          "rule12": "",
+          "rule13": ""
         }
       },
       {
@@ -303,7 +348,12 @@
           "rule5": "",
           "rule6": "",
           "rule7": "",
-          "rule8": ""
+          "rule8": "",
+          "rule9": "",
+          "rule10": "",
+          "rule11": "",
+          "rule12": "",
+          "rule13": ""
         }
       },
       {
@@ -330,7 +380,12 @@
           "rule5": "",
           "rule6": "",
           "rule7": "",
-          "rule8": ""
+          "rule8": "",
+          "rule9": "",
+          "rule10": "",
+          "rule11": "",
+          "rule12": "",
+          "rule13": ""
         }
       },
       {
@@ -357,7 +412,12 @@
           "rule5": "📍All rounds are time-bound, and the decisions of the judges and coordinators.",
           "rule6": "",
           "rule7": "",
-          "rule8": ""
+          "rule8": "",
+          "rule9": "",
+          "rule10": "",
+          "rule11": "",
+          "rule12": "",
+          "rule13": ""
         }
       },
       {
@@ -384,7 +444,12 @@
           "rule5": "",
           "rule6": "",
           "rule7": "",
-          "rule8": ""
+          "rule8": "",
+          "rule9": "",
+          "rule10": "",
+          "rule11": "",
+          "rule12": "",
+          "rule13": ""
         }
       },
       {
@@ -411,7 +476,12 @@
           "rule5": "",
           "rule6": "",
           "rule7": "",
-          "rule8": ""
+          "rule8": "",
+          "rule9": "",
+          "rule10": "",
+          "rule11": "",
+          "rule12": "",
+          "rule13": ""
         }
       }
     ],
@@ -440,7 +510,12 @@
           "rule5": "📍Time schedule will be informed  via whatsapp group after the registration.",
           "rule6": "📍If the no: of participating teams are less than 5, then the prize pool will be deducted to 75%.",
           "rule7": "📍ID cards are mandatory",
-          "rule8": ""
+          "rule8": "",
+          "rule9": "",
+          "rule10": "",
+          "rule11": "",
+          "rule12": "",
+          "rule13": ""
         }
       },
       {
@@ -467,7 +542,12 @@
           "rule5": "📍Goal kicks to be taken anywhere inside penalty area. Opposition must be 3 metres away and ball must leave penalty area for play to recommended.",
           "rule6": "📍Substitutions can be made at any time from the half way line. Substituted player must leave the pitch before replacement goes on. Compulsory line up and handshake to finish.",
           "rule7": "📍 Games will be 10 minutes each way in duration with a 2 minute half time",
-          "rule8": "📍There is a 6 minute gap between each game."
+          "rule8": "📍There is a 6 minute gap between each game.",
+          "rule9":"",
+          "rule10": "",
+          "rule11": "",
+          "rule12": "",
+          "rule13": ""
         }
       },
       {
@@ -494,7 +574,11 @@
           "rule5": "📍A team can comprise 1-2 people.",
           "rule6": "📍Rules are subject to change depending on the degree of participation.",
           "rule7": "📍The Committee’s decision shall be final.",
-          "rule8": ""
+          "rule8": "",
+          "rule10": "",
+          "rule11": "",
+          "rule12": "",
+          "rule13": ""
         }
       },
       {
@@ -521,7 +605,11 @@
           "rule5": "",
           "rule6": "",
           "rule7": "",
-          "rule8": ""
+          "rule8": "",
+          "rule10": "",
+          "rule11": "",
+          "rule12": "",
+          "rule13": ""
         }
       },
       {
@@ -548,7 +636,11 @@
           "rule5": "",
           "rule6": "",
           "rule7": "",
-          "rule8": ""
+          "rule8": "",
+          "rule10": "",
+          "rule11": "",
+          "rule12": "",
+          "rule13": ""
         }
       }
     ],
@@ -577,7 +669,11 @@
           "rule5": "",
           "rule6": "",
           "rule7": "",
-          "rule8": ""
+          "rule8": "",
+          "rule10": "",
+          "rule11": "",
+          "rule12": "",
+          "rule13": ""
         }
       },
       {
@@ -604,7 +700,11 @@
           "rule5": "",
           "rule6": "",
           "rule7": "",
-          "rule8": ""
+          "rule8": "",
+          "rule10": "",
+          "rule11": "",
+          "rule12": "",
+          "rule13": ""
         }
       },
       {
@@ -631,7 +731,11 @@
           "rule5": "",
           "rule6": "",
           "rule7": "",
-          "rule8": ""
+          "rule8": "",
+          "rule10": "",
+          "rule11": "",
+          "rule12": "",
+          "rule13": ""
         }
       },
       {
@@ -658,7 +762,11 @@
           "rule5": "",
           "rule6": "",
           "rule7": "",
-          "rule8": ""
+          "rule8": "",
+          "rule10": "",
+          "rule11": "",
+          "rule12": "",
+          "rule13": ""
         }
       },
       {
@@ -685,7 +793,11 @@
           "rule5": "",
           "rule6": "",
           "rule7": "",
-          "rule8": ""
+          "rule8": "",
+          "rule10": "",
+          "rule11": "",
+          "rule12": "",
+          "rule13": ""
         }
       }
     ]
