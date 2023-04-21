@@ -1,5 +1,5 @@
 {
-  "names": ["CULTURAL", "TECHNICALS", "GAMES", "CIVIL-DEPT", "WORKSHOP"],
+  "names": ["CULTURAL", "TECHNICALS", "GAMES", "CIVIL~DEPT", "WORKSHOP"],
   "posts": [
     [
       {
@@ -683,7 +683,7 @@
       {
         "id": "Mould-IT-Again",
         "title": "MOULD IT AGAIN",
-        "img": "/civil/mould.jpg",
+        "img": "/civil/mould.png",
         "content": "Starve your distractions,feed your focus...🚨",
         "description": "Civil Engineering Department of College of Engineering Aranmula is conducting a Remoulding Game.",
         "c1name": "Sajin Mol",

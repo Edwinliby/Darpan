@@ -48,7 +48,7 @@ export default function Events({ posts, names }) {
         <div className="overflow-x-scroll text-[1rem] p-8 font-semibold font-chakra flex flex-row gap-4 md:gap-12 items-center md:justify-center text-white">
           {names.map((name, i) => (
             <span key={i}
-              className="rounded-full px-4 py-[.3rem] hover:bg-white/20 transition-all duration-500 ease-in-out"
+              className="rounded-full px-4 py-[.3rem] hover:bg-white/20 transition-all duration-500 ease-in-out "
               style={{ border: index === i ? "1.75px solid #9747ff" : "none" }} onClick={() => setIndex(i)}>
               {name}
             </span>
