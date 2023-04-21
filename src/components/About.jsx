@@ -118,7 +118,7 @@ export default function About() {
           autoPlay
           loop
           muted
-          className="abvideo w-[22rem] h-[20rem] md:w-[24rem] xl:w-[28rem] xl:h-[18rem] object-cover rounded-2xl border border-gray/20"
+          className="abvideo w-[22rem] h-[20rem] md:w-[24rem] xl:w-[28rem] xl:h-[18rem] object-cover rounded-2xl border border-gray/50"
         ></video>
       </div>
     </div>
