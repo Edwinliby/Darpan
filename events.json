@@ -1,5 +1,5 @@
 {
-  "names": ["CULTURAL", "TECHNICAL", "GAMES", "WORKSHOP"],
+  "names": ["CULTURAL", "TECHNICALS", "GAMES", "CIVIL-DEPT", "WORKSHOP"],
   "posts": [
     [
       {
@@ -93,9 +93,9 @@
           "rule8": "°Background music must be submitted in a USB or Google drive prior to the event.",
           "rule9": "°Any indecency in costumes or perfomance by the members will not be tolerated.",
           "rule10": "°Teams will be judged according to not only their outfit, but also the way they carry themselves on stage.",
-          "rule11":"°Theme, hair, makeup and attitude on stage will also be considered by the judges.",
-          "rule12":"°Judges decision would be final.",
-          "rule13":"NB: If the competing groups is less than 3, only the first place will be awarded."
+          "rule11": "°Theme, hair, makeup and attitude on stage will also be considered by the judges.",
+          "rule12": "°Judges decision would be final.",
+          "rule13": "NB: If the competing groups is less than 3, only the first place will be awarded."
         }
       },
       {
@@ -103,7 +103,7 @@
         "title": "Polaroid",
         "img": "/cultural/spot.jpg",
         "content": "SPOT Photography Competition, presented by DARPAN'23 in collaboration with the College of Engineering Aranmula.📸",
-        "description": "This competition is open to both amateur and professional photographers, and offers a unique opportunity to capture and share your perspective on the world around you. THEME 🪄 : FACE OF DARPAN 🖼",
+        "description": "This competition is open to both amateur and professional photographers, and offers a unique opportunity to capture and share your perspective on the world around you.\n THEME🪄 : FACE OF DARPAN 🖼",
         "c1name": "Muhammed Bilal",
         "c2name": "Gowri",
         "c1no": "7559915238",
@@ -125,9 +125,9 @@
           "rule8": "",
           "rule9": "",
           "rule10": "",
-          "rule11":"",
-          "rule12":"",
-          "rule13":""
+          "rule11": "",
+          "rule12": "",
+          "rule13": ""
         }
       },
       {
@@ -672,6 +672,136 @@
           "rule7": "",
           "rule8": "",
           "rule9": "",
+          "rule10": "",
+          "rule11": "",
+          "rule12": "",
+          "rule13": ""
+        }
+      }
+    ],
+    [
+      {
+        "id": "Mould-IT-Again",
+        "title": "MOULD IT AGAIN",
+        "img": "/civil/mould.jpg",
+        "content": "Starve your distractions,feed your focus...🚨",
+        "description": "Civil Engineering Department of College of Engineering Aranmula is conducting a Remoulding Game.",
+        "c1name": "Sajin Mol",
+        "c2name": "Arya Chandran",
+        "c1no": "8078806373",
+        "c2no": "8606728926",
+        "pricepool": "1000",
+        "regfee": "100",
+        "enddate": "2023-04-26",
+        "reglink": "https://www.yepdesk.com/mould-it-again/private/8j6qu0c5pc",
+        "reg": "Register",
+        "ruleheader": "Rules and regulations ",
+        "rules": {
+          "rule1": "💎Unmoulded moulds will be given in the spot.",
+          "rule2": "💎Participants should  set up them.",
+          "rule3": "💎Only  provided equipments are allowed to use.",
+          "rule4": "💎Only individual participation is allowed.",
+          "rule5": "💎Maximum Duration is 30 minutes.",
+          "rule6": "💎Moulds should be tightened within the specified time.",
+          "rule7": "💎Any kind of malpractices will be lead to direct disqualification.",
+          "rule8": "💎One who complety set up the cube first will be the winner.",
+          "rule9": "",
+          "rule10": "",
+          "rule11": "",
+          "rule12": "",
+          "rule13": ""
+        }
+      },
+      {
+        "id": "Bridge-It",
+        "title": "BRIDGE IT",
+        "img": "/civil/bridge.jpg",
+        "content": "🕸Bridgelt- The popsicle bridge  competition 🕸",
+        "description": "💥Play to win but, enjoy the fun💥 Department Of Civil Engineering🤩  College Of  Aranmula Is conducting a  Popsicle Bridge  Competition🥳",
+        "c1name": "Meenu",
+        "c2name": "Baghya",
+        "c1no": "6282236406",
+        "c2no": "9207042895",
+        "pricepool": "1000",
+        "regfee": "100",
+        "enddate": "2023-04-26",
+        "reglink": "https://www.yepdesk.com/bridge-it1/private/u80p7mp051",
+        "reg": "Register",
+        "ruleheader": "Rules and regulations ",
+        "rules": {
+          "rule1": "✒ The bridge should have a clear span of 1 M and a width of at least 5 CM.",
+          "rule2": "✒All required Materials will be provided at the venue.  Use of Materials other than that supplied will result in disqualification.",
+          "rule3": "✒Initially 15mins will be provided for planning out the course of action and after that, 2 hour will be given for completing the construction.",
+          "rule4": "✒ The bridge will be graded based on the appearance and the maximum load it carries.",
+          "rule5": "✒Maximum members in a team is limited to 3.",
+          "rule6": "✒ It is mandatory for the participants to bring their id cards of respected college/school.",
+          "rule7": "✒Participants are requested to report at least half an hour before each event at the venue",
+          "rule8": "",
+          "rule9": "",
+          "rule10": "",
+          "rule11": "",
+          "rule12": "",
+          "rule13": ""
+        }
+      },
+      {
+        "id": "Civil-Quiz",
+        "title": "CIVIL QUIZ",
+        "img": "/civil/quiz.jpg",
+        "content": "✨CIVIZ QUIZ✨",
+        "description": "🌟It's okay to not know; but it's not okay to not try🌟 Department of Civil Engineering, College Of Engineering Aranmula is conducting a Technical Quiz",
+        "c1name": "Divya Raj",
+        "c2name": "Anuja A",
+        "c1no": "8157910815",
+        "c2no": "90722151177",
+        "pricepool": "1000",
+        "regfee": "50",
+        "enddate": "2023-04-26",
+        "reglink": "https://www.yepdesk.com/civiz-quiz/private/nnq0uu87ft",
+        "reg": "Register",
+        "ruleheader": "Rules and regulations ",
+        "rules": {
+          "rule1": "📌A team consist of maximum 2 persons.",
+          "rule2": "📌Lone wolves and cross colleges are allowed",
+          "rule3": "📌Identity card are mandatory",
+          "rule4": "📌Each team would be given a set of question paper containing 15 objective type questions",
+          "rule5": "📌Time limit :15 minitues",
+          "rule6": "📌There will be no negative marks",
+          "rule7": "📌In case of tie between 2 or more teams, the next section will be conducted once again for them alone",
+          "rule8": "📌The participants are not allowed to use mobile phone or other electronic gadgets",
+          "rule9": "📌The decision of the quiz Master will be final and will not be subjected to any change",
+          "rule10": "",
+          "rule11": "",
+          "rule12": "",
+          "rule13": ""
+        }
+      },
+      {
+        "id": "2-D-Spot",
+        "title": "2 D. SPOT",
+        "img": "/civil/spot.jpg",
+        "content": "2D SPOT",
+        "description": "💫💫A dream is just a dream. A goal is a dream with a plan and deadline..... 💫💫 Department of Civil Engineering, College of Engineering Aranmula is conducting a fun and interesting game on behalf of DARPAN'23 💫💫💫",
+        "c1name": "Sidharth",
+        "c2name": "Anupama",
+        "c1no": "9946798035",
+        "c2no": "9495916408",
+        "pricepool": "1000",
+        "regfee": "100",
+        "enddate": "2023-04-26",
+        "reglink": "https://www.yepdesk.com/2-d-spot/private/joj1nijnn9",
+        "reg": "Register",
+        "ruleheader": "Rules and regulations ",
+        "rules": {
+          "rule1": "📌 Participants have to register as a team consisting of 2 students",
+          "rule2": "📌 A drawing will be given to the  participants & they will have to draft the same drawing on AUTOCAD",
+          "rule3": "📌 The drawings should be made with proper dimensions",
+          "rule4": "📌 Any kind of violation of the rules and regulations leads to disqualification of the team ",
+          "rule5": "📌 Total time allotted for the event is 30 minutes including  5 minutes of preparation time",
+          "rule6": "📌 There will be 2 rounds including the first and the final round",
+          "rule7": "📌The first team to complete the task will be the winner",
+          "rule8": "📌The participants are not allowed to use mobile phone or other electronic gadgets",
+          "rule9": "📌The prize will be awarded to first and second positions",
           "rule10": "",
           "rule11": "",
           "rule12": "",
