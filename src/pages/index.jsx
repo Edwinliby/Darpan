@@ -19,7 +19,7 @@ import path from "path";
 // import Image from "next/image";
 // import Link from "next/link";
 
-const Home = (props) => {
+const Home = () => {
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
@@ -40,7 +40,7 @@ const Home = (props) => {
 
   const stagger = useRef(null);
 
-  const posts = props.posts;
+  // const posts = props.posts;
 
   return (
     <div className="bg-black h-fit">
