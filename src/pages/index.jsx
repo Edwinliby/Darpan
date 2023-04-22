@@ -12,11 +12,11 @@ import Map from "@/components/Map";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/all";
 // import EventSlider from "@/components/EventSlider";
-import Slider from "react-slick";
-import Image from "next/image";
-import Link from "next/link";
+// import Slider from "react-slick";
+// import Image from "next/image";
+// import Link from "next/link";
 
-const Home = (props) => {
+const Home = () => {
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
@@ -37,34 +37,34 @@ const Home = (props) => {
 
   const stagger = useRef(null);
 
-  const settings = {
-    infinite: true,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    swipeToSlide: true,
-    speed: 1500,
-    autoplaySpeed: 0,
-    cssEase: "linear",
-    pauseOnHover: true,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          infinite: true,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
-  const posts = props.posts;
+  // const settings = {
+  //   infinite: true,
+  //   slidesToShow: 4,
+  //   slidesToScroll: 1,
+  //   swipeToSlide: true,
+  //   speed: 1500,
+  //   autoplaySpeed: 0,
+  //   cssEase: "linear",
+  //   pauseOnHover: true,
+  //   responsive: [
+  //     {
+  //       breakpoint: 1024,
+  //       settings: {
+  //         slidesToShow: 3,
+  //         slidesToScroll: 1,
+  //         infinite: true,
+  //       },
+  //     },
+  //     {
+  //       breakpoint: 480,
+  //       settings: {
+  //         slidesToShow: 1,
+  //         slidesToScroll: 1,
+  //       },
+  //     },
+  //   ],
+  // };
+  // const posts = props.posts;
 
   return (
     <div className="bg-black h-fit">
@@ -98,7 +98,7 @@ const Home = (props) => {
         <h1 className="text-[2.7rem] md:text-[4rem] text-white font-clash font-bold tracking-wider uppercase">
           Events
         </h1>
-        <Slider {...settings}>
+        {/* <Slider {...settings}>
           {posts.map((post) => (
             <div
               key={post.id}
@@ -115,7 +115,8 @@ const Home = (props) => {
               </Link>
             </div>
           ))}
-        </Slider>
+        </Slider> */}
+        <EventsSliderComponent />
       </div>
 
       {/* <EventSlider /> */}
@@ -140,6 +141,7 @@ export default Home;
 
 import fsPromises from "fs/promises";
 import path from "path";
+import EventsSliderComponent from "@/components/EventsSliderComponent";
 export async function getStaticProps() {
   const filePath = path.join(process.cwd(), "/data.json");
   const jsonData = await fsPromises.readFile(filePath);
