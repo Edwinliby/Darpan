@@ -10,10 +10,10 @@ import path from "path";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/all";
 
-function Team({ posts, names }) {
+function Team(props) {
   const [index, setIndex] = useState(0);
-  const individualPosts = posts[index];
-
+  const tabs = props.tabs;
+  console.log("tabs", tabs);
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     gsap.to("progress", {
@@ -40,49 +40,59 @@ function Team({ posts, names }) {
         </div>
 
         <div className="text-[.6rem] md:text-[1rem] p-8 font-semibold font-chakra flex flex-row gap-4 md:gap-12 items-center justify-center text-white">
-          {names.map((name, i) => (
+          {tabs.map((tab, i) => (
             <span
               key={i}
               className="rounded-full px-4 py-[.3rem] hover:bg-white/20 transition-all duration-500 ease-in-out"
               style={{ border: index === i ? "1.75px solid #9747ff" : "none" }}
               onClick={() => setIndex(i)}
             >
-              {name}
+              {tab.name}
             </span>
           ))}
         </div>
 
         <div className="flex flex-wrap justify-center gap-10 pb-10 md:p-6">
-          {individualPosts.map((post) => (
+          {tabs[index].sections.map((section) => (
             <div
-              key={post.id}
+              key={section.id}
               className="relative w-fit flex flex-col h-fit rounded-sm overflow-hidden shadow-2xl hover:shadow-yellow-300/50 transition-all duration-500 ease-in-out"
             >
-              <div className={index == 2 ? "relative teamCard" : "relative"}>
-                <Image
-                  src={post.img}
-                  alt={post.name}
-                  width={300}
-                  height={300}
-                  className="teamImage"
-                />
-              </div>
-              <div className="flex justify-between items-end p-4 bg-black bg-opacity-20 ">
-                <div>
-                  <h1 className=" text-white font-chakra font-semibold text-[1.5rem] pt-4">
-                    {post.name}
-                  </h1>
-                  <p className="text-white font-chakra font-medium text-[1rem]">
-                    {post.post}
-                  </p>
+              <h1 className="text-white font-chakra font-semibold text-[1.5rem] pt-4">
+                {section.name}
+              </h1>
+
+              {section.members.map((member) => (
+                <div key={member.id}>
+                  <div
+                    className={index == 2 ? "relative teamCard" : "relative"}
+                  >
+                    <Image
+                      src={member.img}
+                      alt={member.name}
+                      width={300}
+                      height={300}
+                      className="teamImage"
+                    />
+                  </div>
+                  <div className="flex justify-between items-end p-4 bg-black bg-opacity-20 ">
+                    <div>
+                      <h1 className=" text-white font-chakra font-semibold text-[1.5rem] pt-4">
+                        {member.name}
+                      </h1>
+                      <p className="text-white font-chakra font-medium text-[1rem]">
+                        {member.post}
+                      </p>
+                    </div>
+                    <Link href={`${member.insta}`}>
+                      <FaInstagram
+                        size="2rem"
+                        className="text-white hover:text-[#9747ff] transition-all duration-500 ease-in-out"
+                      />
+                    </Link>
+                  </div>
                 </div>
-                <Link href={`${post.insta}`}>
-                  <FaInstagram
-                    size="2rem"
-                    className="text-white hover:text-[#9747ff] transition-all duration-500 ease-in-out"
-                  />
-                </Link>
-              </div>
+              ))}
             </div>
           ))}
         </div>
@@ -100,9 +110,6 @@ export async function getStaticProps() {
   const objectData = JSON.parse(jsonData);
 
   return {
-    props: {
-      posts: objectData.posts,
-      names: objectData.names,
-    },
+    props: objectData,
   };
 }
