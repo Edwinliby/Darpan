@@ -1,7 +1,8 @@
 import React from "react";
 import gsap from "gsap";
+import Image from "next/image";
 
-export default function SliderThree() {
+export default function Sliderthree() {
   React.useEffect(() => {
     const $menu = document.querySelector(".menuu");
     const $items = document.querySelectorAll(".menu--item");
@@ -58,6 +59,7 @@ export default function SliderThree() {
     const handleTouchStart = (e) => {
       touchStart = e.clientX || e.touches[0].clientX;
       isDragging = true;
+      $menu.classList.add("is-dragging");
     };
     const handleTouchMove = (e) => {
       if (!isDragging) return;
@@ -67,8 +69,12 @@ export default function SliderThree() {
     };
     const handleTouchEnd = () => {
       isDragging = false;
+      $menu.classList.remove("is-dragging");
     };
 
+    /*--------------------
+        Listeners
+        --------------------*/
     $menu.addEventListener("mousewheel", handleMouseWheel);
 
     $menu.addEventListener("touchstart", handleTouchStart);
@@ -83,11 +89,20 @@ export default function SliderThree() {
     $menu.addEventListener("selectstart", () => {
       return false;
     });
-    window.addEventListener("resize", () => {
+
+    /*--------------------
+        Resize
+        --------------------*/
+    const handleResize = () => {
       itemWidth = $items[0].clientWidth;
       wrapWidth = $items.length * itemWidth;
-    });
+      dispose(y);
+    };
+    window.addEventListener("resize", handleResize);
 
+    /*--------------------
+        Render
+        --------------------*/
     const render = () => {
       requestAnimationFrame(render);
       y = lerp(y, scrollY, 0.1);
@@ -103,85 +118,45 @@ export default function SliderThree() {
       });
     };
     render();
-
-    //auto Scroll to center
-    gsap.to($menu, {
-      duration: 1,
-      scrollTo: {
-        y: ".menu--item:nth-child(3)",
-        offsetY: 100,
-      },
-      ease: "power2.out",
-    });
   }, []);
 
   return (
-    <div
-      className="w-full h-screen flex flex-col items-center"
-      style={{
-        backgroundImage: "url(/bg_events.webp)",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-      }}
-    >
-      <h1 className="text-[2.7rem] md:text-[3rem]  font-clash font-bold tracking-wider uppercase my-10 text-white">
-        THE COLORS
-      </h1>
-
+    <div>
       <div className="menuu">
         <div className="menu--wrapper">
           <div className="menu--item">
             <figure>
-              <img
-                src="https://images.unsplash.com/photo-1595265677860-9a3168007dc0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
-                alt=""
-              />
+              <Image src="/talk-2.png" alt="" width={500} height={500} />
             </figure>
           </div>
 
           <div className="menu--item">
             <figure>
-              <img
-                src="https://images.unsplash.com/photo-1594786118579-95ba90c801ec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
-                alt=""
-              />
+              <Image src="/talk-2.png" alt="" width={500} height={500} />
             </figure>
           </div>
 
           <div className="menu--item">
             <figure>
-              <img
-                src="https://images.unsplash.com/photo-1509339022327-1e1e25360a41?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
-                alt=""
-              />
+              <Image src="/talk-2.png" alt="" width={500} height={500} />
             </figure>
           </div>
 
           <div className="menu--item">
             <figure>
-              <img
-                src="https://images.unsplash.com/photo-1525417071002-5ee4e6bb44f7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
-                alt=""
-              />
+              <Image src="/talk-2.png" alt="" width={500} height={500} />
             </figure>
           </div>
 
           <div className="menu--item">
             <figure>
-              <img
-                src="https://images.unsplash.com/photo-1594072702031-f0e2a602dd2c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
-                alt=""
-              />
+              <Image src="/talk-2.png" alt="" width={500} height={500} />
             </figure>
           </div>
 
           <div className="menu--item">
             <figure>
-              <img
-                src="https://images.unsplash.com/photo-1592989819277-a3aafa40c66a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
-                alt=""
-              />
+              <Image src="/talk-2.png" alt="" width={500} height={500} />
             </figure>
           </div>
         </div>
