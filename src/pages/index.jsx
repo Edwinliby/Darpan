@@ -95,13 +95,15 @@ const Home = () => {
         </Slider> */}
       </div>
 
-      {/* <SliderThree /> */}
-      <RitModel />
-      {/* <EventSlider /> */}
+      <div className="bg-gradient-to-b from-primary to-transparent rounded-t-[0px]">
+        {/* <SliderThree /> */}
+        {/* <RitModel /> */}
+        {/* <EventSlider /> */}
 
-      <section id="about">
-        <About />
-      </section>
+        <section id="about">
+          <About />
+        </section>
+      </div>
 
       <Marque2 />
 

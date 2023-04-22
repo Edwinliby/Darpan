@@ -27,27 +27,27 @@ export default function RitModel() {
   }, []);
 
   return (
-    <div className="flex justify-center py-8">
-      <section class="flex items-stretch justify-between w-[90%] max-w-[60rem] h-[70vh] max-h-[50vh]">
-        <article class="flex-card-container bg-[url('/rock-meme.gif')] bg-cover bg-no-repeat">
+    <div className="flex justify-center items-center flex-col py-8">
+      <h1 className="text-6xl font-bold text-center uppercase text-white mt-2 font-clash">
+        Events
+      </h1>
+
+      <section class="flex items-stretch justify-between w-[90%] max-w-[60rem] h-[65vh]  my-20">
+        <article class="flex-card-container bg-[url('/slider/cultural.jpg')] bg-cover bg-no-repeat">
           <div class="overlay"></div>
         </article>
 
-        <article class="flex-card-container bg-[url('/talk-2.png')] bg-cover bg-no-repeat">
+        <article class="flex-card-container bg-[url('/slider/events.jpg')] bg-cover bg-no-repeat">
           <div class="overlay"></div>
         </article>
 
-        <article class="flex-card-container bg-[url('/talk-1.png')] bg-cover bg-no-repeat">
+        <article class="flex-card-container bg-[url('/slider/games.jpg')] bg-cover bg-no-repeat">
           <div class="overlay"></div>
         </article>
 
-        {/* <article class="flex-card-container">
-                    <div class="overlay">
-
-                        <h3>Beispielbild 1</h3>
-                        <p>Dazu eine kleine coole beschreibung zu diesem Article.</p>
-                    </div>
-                </article> */}
+        <article class="flex-card-container bg-[url('/slider/workshop.avif')] bg-cover bg-no-repeat">
+          <div class="overlay"></div>
+        </article>
       </section>
     </div>
   );

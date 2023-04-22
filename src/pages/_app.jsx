@@ -2,7 +2,7 @@ import React from "react";
 import Head from "next/head";
 import { Chakra_Petch } from "next/font/google";
 import { IBM_Plex_Mono } from "next/font/google";
-import { Bebas_Neue } from 'next/font/google'
+import { Bebas_Neue } from "next/font/google";
 import LocalFont from "next/font/local";
 import Loader from "@/components/Loader";
 import dynamic from "next/dynamic";
@@ -12,7 +12,8 @@ import "../styles/styles.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { motion } from "framer-motion";
-import { Analytics } from '@vercel/analytics/react';
+import { Analytics } from "@vercel/analytics/react";
+import InitialLoader from "@/components/InitialLoader";
 
 const font_chakra = Chakra_Petch({
   subsets: ["latin"],
@@ -44,8 +45,13 @@ const AnimatedCursor = dynamic(() => import("react-animated-cursor"), {
 export default function MyApp({ Component, pageProps }) {
   const router = useRouter();
   const [loading, setLoading] = React.useState(false);
+  const [initialLoading, setInitialLoading] = React.useState(true);
 
   React.useEffect(() => {
+    setTimeout(() => {
+      setInitialLoading(false);
+    }, 2700);
+
     const handleStart = () => {
       setLoading(true);
       setTimeout(() => {
@@ -53,25 +59,40 @@ export default function MyApp({ Component, pageProps }) {
       }, 2700);
     };
 
-    router.events.on("routeChangeStart", handleStart);
-
+    router.events.on(
+      "routeChangeStart",
+      (url) => url != router.asPath && handleStart()
+    );
 
     return () => {
-      router.events.off("routeChangeStart", handleStart);
+      router.events.off(
+        "routeChangeStart",
+        (url) => url != router.asPath && handleStart()
+      );
     };
-  }, [router.events]);
+  }, [router.asPath, router.events]);
+
+  if (initialLoading) {
+    return <InitialLoader />;
+  }
 
   return (
     <>
       <Head>
         <link rel="shortcut icon" href="/favicon.ico" type="image/png" />
       </Head>
-      {loading ? <Loader /> :
-        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.5 }}>
+      {loading ? (
+        <Loader />
+      ) : (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.5 }}
+        >
           <main
             className={`${font_chakra.variable} ${font_clash_display.variable} ${font_ibm.variable} ${font_bebas.variable}`}
           >
-
             <Component {...pageProps} />
             <Analytics />
 
@@ -99,7 +120,7 @@ export default function MyApp({ Component, pageProps }) {
             />
           </main>
         </motion.div>
-      }
+      )}
     </>
   );
 }

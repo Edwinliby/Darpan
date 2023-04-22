@@ -63,7 +63,7 @@ export default function About() {
   }, []);
 
   return (
-    <div className="h-fit relative pt-4 px-2 xl:px-20  bg-gradient-to-b from-primary to-transparent">
+    <div className="h-fit relative pt-4 px-2 xl:px-20  ">
       <div className="about flex flex-wrap text-white tracking-wide xl:tracking-[.5rem] uppercase text-[2.7rem] sm:text-[4.3rem] md:text-[6rem] lg:text-[5.5rem] xl:text-[6.7rem]  leading-[3rem] md:leading-[5rem] font-clash font-bold mt-16">
         <span>You might be</span>
         <span>thinking what is</span>
