@@ -13,7 +13,8 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/all";
 import fsPromises from "fs/promises";
 import path from "path";
-// import Sliderthree from "@/components/Sliderthree";
+// import SliderThree from "@/components/SliderThree";
+import RitModel from "@/components/RitModel";
 // import EventSlider from "@/components/EventSlider";
 // import Slider from "react-slick";
 // import Image from "next/image";
@@ -94,8 +95,8 @@ const Home = () => {
         </Slider> */}
       </div>
 
-      {/* <Sliderthree /> */}
-      {/* <RitModel /> */}
+      {/* <SliderThree /> */}
+      <RitModel />
       {/* <EventSlider /> */}
 
       <section id="about">
