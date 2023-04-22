@@ -105,7 +105,7 @@ function EventsDetails(props) {
                     Coordinator Details
                   </h3>
 
-                  <div className="grid grid-cols-2 text-[1.1rem] tracking-wide w-fit font-medium">
+                  <div className="flex gap-2 text-[1.1rem] tracking-wide w-fit font-medium">
                     <div className="flex flex-col pr-4">
                       <span>{props.c1name} :</span>
                       {props.c2name != false && <span>{props.c2name} :</span>}
@@ -139,20 +139,20 @@ function EventsDetails(props) {
             {props.rulehead == "" ? null : (
               <div className="font-clash flex flex-col mt-[2rem] p-6 rounded-xl justify-between w-full md:w-[90%] bg-gray/25">
                 <h1 className="font-semibold text-3xl">{props.rulehead}</h1>
-                <div className="flex flex-col gap-2 pt-4 text-lg  tracking-wider w-fit font-medium">
-                  <p>{props.rule1}</p>
-                  <p>{props.rule2}</p>
-                  <p>{props.rule3}</p>
-                  <p>{props.rule4}</p>
-                  <p>{props.rule5}</p>
-                  <p>{props.rule6}</p>
-                  <p>{props.rule7}</p>
-                  <p>{props.rule8}</p>
-                  <p>{props.rule9}</p>
-                  <p>{props.rule10}</p>
-                  <p>{props.rule11}</p>
-                  <p>{props.rule12}</p>
-                  <p>{props.rule13}</p>
+                <div className="flex flex-col gap-2 pt-4 text-lg md:text-xl">
+                  {props.rule1 == "" ? null : <p>{props.rule1}</p>}
+                  {props.rule2 == "" ? null : <p>{props.rule2}</p>}
+                  {props.rule3 == "" ? null : <p>{props.rule3}</p>}
+                  {props.rule4 == "" ? null : <p>{props.rule4}</p>}
+                  {props.rule5 == "" ? null : <p>{props.rule5}</p>}
+                  {props.rule6 == "" ? null : <p>{props.rule6}</p>}
+                  {props.rule7 == "" ? null : <p>{props.rule7}</p>}
+                  {props.rule8 == "" ? null : <p>{props.rule8}</p>}
+                  {props.rule9 == "" ? null : <p>{props.rule9}</p>}
+                  {props.rule10 == "" ? null : <p>{props.rule10}</p>}
+                  {props.rule11 == "" ? null : <p>{props.rule11}</p>}
+                  {props.rule12 == "" ? null : <p>{props.rule12}</p>}
+                  {props.rule13 == "" ? null : <p>{props.rule13}</p>}
                 </div>
               </div>
             )}
