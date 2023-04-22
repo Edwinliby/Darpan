@@ -50,7 +50,6 @@ const Home = () => {
       </Head>
 
       <Header id="navbar" />
-      <progress max="100" value="0"></progress>
 
       <section id="hero">
         <div
@@ -95,9 +94,9 @@ const Home = () => {
         </Slider> */}
       </div>
 
-      <div className="bg-gradient-to-b from-primary to-transparent rounded-t-[0px]">
+      <div className="bg-gradient-to-b from-primary to-transparent rounded-t-[20px]">
         {/* <SliderThree /> */}
-        {/* <RitModel /> */}
+        <RitModel />
         {/* <EventSlider /> */}
 
         <section id="about">

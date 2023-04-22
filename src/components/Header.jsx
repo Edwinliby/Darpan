@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 import Navlink from "@/components/Navlink";
 
 export default function Header() {
+  const [isVisible, setIsVisible] = React.useState(true);
   const [isOpen, setOpen] = React.useState(false);
   // const { signInWithGoogle, appState, signOut } = useAuthContext();
 
@@ -16,11 +17,28 @@ export default function Header() {
     } else {
       document.body.style.overflow = "unset";
     }
+
+    //on  scroll down direction
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      if (currentScrollY > window.innerHeight) {
+        setIsVisible(false);
+      } else {
+        setIsVisible(true);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => window.removeEventListener("scroll", handleScroll);
   }, [isOpen]);
 
   return (
     <>
-      <header className="w-full h-[4.5rem] flex items-center py-2 fixed z-[25] border-b-[1.5px] bg-soothing_black/60 border-gray/40 backdrop-blur-md">
+      <header
+        className="w-full h-[4.5rem] flex items-center py-2 fixed z-[25] border-b-[1.5px] bg-soothing_black/60 border-gray/40 backdrop-blur-md transition-all duration-300 ease-in-out"
+        style={{ opacity: isVisible ? 1 : 0 }}
+      >
         <div
           className="ml:2 md:ml-4 z-[26]"
           style={{ opacity: isOpen ? 0 : 1 }}
@@ -73,6 +91,7 @@ export default function Header() {
             />
           </div>
         </div> */}
+        <progress max="100" value="0"></progress>
       </header>
 
       {isOpen && (

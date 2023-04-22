@@ -116,40 +116,43 @@ progress::-webkit-progress-value {
   }
 }
 
-
-
-
-
 .flex-card-container {
   margin: 0 10px 0 0;
   height: 100%;
   width: 10%;
   transition: 450ms all ease-in-out;
-  border-radius: 20px;
+  border-radius: 16px;
   cursor: pointer;
   overflow: hidden;
   position: relative;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+  writing-mode: vertical-rl;
+  text-orientation: sideways;
 }
 
 .flex-card-container.active {
   width: 70%;
+
+  z-index: 2;
 }
 
-.flex-card-container .overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 2;
-  height: 9rem;
-  padding: 0 0 2rem 1.5rem;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
-  width: 100%;
+.flex-card-container.active h1 {
+  text-orientation: mixed;
+  writing-mode: horizontal-tb;
+  rotate: 180deg;
   transition: 450ms all ease-in-out;
-  background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+flex-card-container.active .register {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .flex-card-container {
+    width: 80vw;
+    height: 100%;
+    margin: 0 0 10px 0;
+  }
 }

@@ -21,11 +21,10 @@ export default function About() {
         opacity: 1,
         y: 0,
         scrollTrigger: {
-          // markers: true,
           trigger: trigger.current,
-          start: "top 80%",
+          start: "top 20%",
           end: "bottom 80%",
-          scrub: true,
+
           ease: "power4.eae-InOut",
         },
       }
@@ -38,8 +37,7 @@ export default function About() {
         y: 0,
         scrollTrigger: {
           trigger: aboutdarpan.current,
-          start: "top 80%",
-          end: "bottom 80%",
+          start: "top 70%",
           scrub: true,
           ease: "expo.eae-InOut",
         },
@@ -64,9 +62,9 @@ export default function About() {
 
   return (
     <div className="h-fit relative pt-4 px-2 xl:px-20  ">
-      <div className="about flex flex-wrap text-white tracking-wide xl:tracking-[.5rem] uppercase text-[2.7rem] sm:text-[4.3rem] md:text-[6rem] lg:text-[5.5rem] xl:text-[6.7rem]  leading-[3rem] md:leading-[5rem] font-clash font-bold mt-16">
+      <div className="about flex flex-wrap text-white tracking-wide xl:tracking-[.5rem]  text-[2.7rem] sm:text-[4.3rem] md:text-[6rem] lg:text-[5.5rem] xl:text-[6.7rem]  leading-[3rem] md:leading-[5rem] font-clash font-bold mt-16">
         <span>You might be</span>
-        <span>thinking what is</span>
+        <span>Thinking what is</span>
         <span
           ref={trigger}
           className="text-[4rem] sm:text-[5.5rem] md:text-[7.5rem] lg:text-[9.5rem] xl:text-[12.5rem] md:mt-4 lg:mt-8"
@@ -96,7 +94,7 @@ export default function About() {
       </div>
       <div className="absolute font-clash font-bold text-white">
         <span className="flex gap-6 text-[3.3rem] sm:text-[4rem] md:text-[4.5rem] lg:text-[5rem] xl:text-[5.5rem]">
-          ABOUT <Navlink name={"AEC"} link={"/#about"} />{" "}
+          About <Navlink name={"AEC"} link={"/#about"} />{" "}
         </span>
       </div>
       <div
