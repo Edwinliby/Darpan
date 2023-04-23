@@ -25,13 +25,7 @@ const Home = () => {
 
   useEffect(() => {
     setIsLoaded(true);
-    gsap.registerPlugin(ScrollTrigger);
-    gsap.to("progress", {
-      value: 100,
-      scrollTrigger: {
-        scrub: 0.5,
-      },
-    });
+
     gsap.fromTo(
       stagger.current,
       { opacity: 0, y: 100 },
