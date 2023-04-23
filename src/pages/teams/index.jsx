@@ -44,13 +44,12 @@ function Team(props) {
         <div className="w-full h-fit pb-10 flex justify-center">
           <div className="flex flex-col gap-10 px-4 lg:px-[6rem] md:pt-6 ">
             {tabs[index].sections.map((section) => (
-              <div>
-                <h1 key={section.id} className="text-white font-clash uppercase font-semibold text-4xl py-4 pb-8">
+              <div key={section.id}>
+                <h1 className="text-white font-clash uppercase font-semibold text-4xl py-4 pb-8">
                   {section.name}
                 </h1>
 
-                <div key={section.id}
-                  className="flex flex-wrap  justify-center gap-16 w-fit h-fit pt-6 rounded-sm">
+                <div className="flex flex-wrap  justify-center gap-16 w-fit h-fit pt-6 rounded-sm">
 
                   {section.members.map((member) => (
                     <div key={member.id} className=" shadow-2xl hover:shadow-main_primary transition-all duration-500 ease-in-out">
