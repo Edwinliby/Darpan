@@ -1,11 +1,11 @@
 {
   "names": [
     "CULTURAL",
-    "TECHNICALS",
+    "TECHNICAL",
     "GAMES",
     "CE DEPT",
     "CSE DEPT",
-    "ECE DEPT",
+    "EEE DEPT",
     "WORKSHOP"
   ],
   "posts": [
@@ -18,8 +18,8 @@
         "description": "Alone in Motion: A Solo Dance Performance is a captivating display of an individual's movement and expression. Through fluid choreography and emotive gestures, the performer takes the audience on a journey of self-discovery and introspection.",
         "c1name": "Pooja",
         "c2name": "Firos",
-        "c1no": "8078800372",
-        "c2no": "7994759456",
+        "c1no": "9207311282",
+        "c2no": "9544495458",
         "pricepool": "5000",
         "regfee": "150",
         "enddate": "2023-04-25",
@@ -815,7 +815,7 @@
           "rule12": "",
           "rule13": ""
         }
-      }
+      }      
     ],
     [
       {
@@ -884,6 +884,38 @@
       }
     ],
     [
+      {
+        "id": "EEE-Expo",
+        "title": "EEE EXPO",
+        "img": "/eee/eee-expo.jpg",
+        "content": "EEE EXHIBITION",
+        "description": "Electrify Your Imagination - Discover the Latest in Electrical Engineering✨ Are you interested in the latest innovations in electrical engineering? Do you want to see what the future holds in terms of electricity and electronics? Look no further than DARPAN'23's EEE exhibition! This event is the perfect opportunity for electrical engineering students to showcase their latest projects and compete for amazing prizes. With a registration fee of just Rs 100 💰,you could win a prize pool of Rs 2500😱. Join us for an Electrifying Experience at DARPAN'23 of College of Engineering Aranmula on April 26, 2023 🥳",
+        "c1name": "Aswin",
+        "c2name": "Sufiyan",
+        "c1no": "9847151730",
+        "c2no": "9778304797",
+        "pricepool": "2500",
+        "regfee": "100",
+        "enddate": "2023-04-26",
+        "reglink": "https://www.yepdesk.com/embed/eee-exhibition-/private/mb6mvri3pl",
+        "reg": "Register",
+        "ruleheader": "",
+        "rules": {
+          "rule1": "",
+          "rule2": "",
+          "rule3": "",
+          "rule4": "",
+          "rule5": "",
+          "rule6": "",
+          "rule7": "",
+          "rule8": "",
+          "rule9": "",
+          "rule10": "",
+          "rule11": "",
+          "rule12": "",
+          "rule13": ""
+        }
+      },
       {
         "id": "Circuit-Debugging",
         "title": "Circuit Debugging Competition",
