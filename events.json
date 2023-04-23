@@ -1,9 +1,9 @@
 {
   "names": [
     "CULTURAL",
-    "TECHNICALS",
+    "TECHNICAL",
     "GAMES",
-    "CIVIL DEPT",
+    "DEPARTMENT",
     "WORKSHOP"
   ],
   "posts": [
@@ -808,6 +808,38 @@
           "rule7": "📌 The first team to complete the task will be the winner",
           "rule8": "📌 The participants are not allowed to use mobile phone or other electronic gadgets",
           "rule9": "📌 The prize will be awarded to first and second positions",
+          "rule10": "",
+          "rule11": "",
+          "rule12": "",
+          "rule13": ""
+        }
+      },
+      {
+        "id": "EEE-Expo",
+        "title": "EEE EXPO",
+        "img": "/eee/eee-expo.jpg",
+        "content": "EEE EXHIBITION",
+        "description": "Electrify Your Imagination - Discover the Latest in Electrical Engineering✨ Are you interested in the latest innovations in electrical engineering? Do you want to see what the future holds in terms of electricity and electronics? Look no further than DARPAN'23's EEE exhibition! This event is the perfect opportunity for electrical engineering students to showcase their latest projects and compete for amazing prizes. With a registration fee of just Rs 100 💰,you could win a prize pool of Rs 2500😱. Join us for an Electrifying Experience at DARPAN'23 of College of Engineering Aranmula on April 26, 2023 🥳",
+        "c1name": "Aswin",
+        "c2name": "Sufiyan",
+        "c1no": "9847151730",
+        "c2no": "9778304797",
+        "pricepool": "2500",
+        "regfee": "100",
+        "enddate": "2023-04-26",
+        "reglink": "https://www.yepdesk.com/embed/eee-exhibition-/private/mb6mvri3pl",
+        "reg": "Register",
+        "ruleheader": "",
+        "rules": {
+          "rule1": "",
+          "rule2": "",
+          "rule3": "",
+          "rule4": "",
+          "rule5": "",
+          "rule6": "",
+          "rule7": "",
+          "rule8": "",
+          "rule9": "",
           "rule10": "",
           "rule11": "",
           "rule12": "",
