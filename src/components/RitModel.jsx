@@ -43,21 +43,19 @@ export default function RitModel() {
       }
     }
 
-    function addClass($event) {
-      $event.stopPropagation();
+    const t1 = setInterval(() => {
+      const current = document.querySelector(`.${ACTIVECLASS}`);
+      const next = current.nextElementSibling;
       removeActiveClass();
-      const target = $event.currentTarget;
-      target.classList.add(ACTIVECLASS);
-    }
-
-    IMAGES.forEach((image) => {
-      image.addEventListener("click", addClass);
-    });
+      if (next) {
+        next.classList.add(ACTIVECLASS);
+      } else {
+        IMAGES[0].classList.add(ACTIVECLASS);
+      }
+    }, 3000);
 
     return () => {
-      IMAGES.forEach((image) => {
-        image.removeEventListener("click", addClass);
-      });
+      clearInterval(t1);
     };
   }, []);
 
@@ -80,10 +78,10 @@ export default function RitModel() {
               <h1 className=" text-xl lg:text-4xl font-bold text-center uppercase text-white mt-2 font-clash absolute bottom-0 left-0 rotate-180 w-full py-4 px-2 ">
                 {item.title}
               </h1>
-              <Link href={`/events`} className="h-full w-full">
-                <div className="h-full w-full"></div>
-              </Link>
             </div>
+            <Link href={`/events`} className="absolute inset-0">
+              <div className="h-full w-full"></div>
+            </Link>
           </article>
         ))}
       </section>
