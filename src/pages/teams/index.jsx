@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { FaInstagram } from "react-icons/fa";
 import Head from "next/head";
 import Link from "next/link";
@@ -45,11 +45,11 @@ function Team(props) {
           <div className="flex flex-col gap-10 px-4 lg:px-[6rem] md:pt-6 ">
             {tabs[index].sections.map((section) => (
               <div>
-                <h1 className="text-white font-clash uppercase font-semibold text-4xl py-4 pb-8">
+                <h1 key={section.id} className="text-white font-clash uppercase font-semibold text-4xl py-4 pb-8">
                   {section.name}
                 </h1>
 
-                <div key={section.id}
+                <div
                   className="flex flex-wrap  justify-center gap-16 w-fit h-fit pt-6 rounded-sm">
 
                   {section.members.map((member) => (
