@@ -49,7 +49,7 @@ function Team(props) {
                   {section.name}
                 </h1>
 
-                <div
+                <div key={section.id}
                   className="flex flex-wrap  justify-center gap-16 w-fit h-fit pt-6 rounded-sm">
 
                   {section.members.map((member) => (
