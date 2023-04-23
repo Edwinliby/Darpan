@@ -19,8 +19,8 @@ export default function EventSlider() {
                     <div className='updown'>
                         <div className="flex items-center justify-center w-full h-[22rem] xl:h-[30rem] rounded-sm bg-main_primary/50 backdrop:blur-xl hover:-skew-x-6 skew-y-3 transition-all duration-300 ease-in-out">
                             <div className='w-full h-[22rem] xl:h-[30rem] rounded-sm  bg-gray hover:skew-x-6 hover:scale-105 transition-all duration-300 ease-in-out'>
-                                <span className='text-3xl font-clash font-semibold px-4 py-2 absolute left-[-2rem] top-4 bg-main_primary text-white'>UPDATING SOON</span>
-                                <Image src="/coming.png"
+                                <span className='text-3xl font-clash font-semibold px-4 py-2 absolute left-[-2rem] top-4 bg-main_primary text-white'>CHIEF GUEST</span>
+                                <Image src="/chef.jpg"
                                     alt="talk show"
                                     width={500}
                                     height={500}
@@ -33,14 +33,14 @@ export default function EventSlider() {
 
                 <div data-tilt className='w-fit relative scale-105'>
                     <div className='updown'>
-                        <div className="flex items-center justify-center w-full h-[22rem] xl:h-[30rem] rounded-sm bg-main_primary/50 backdrop:blur-xl hover:-skew-x-6 skew-y-3 transition-all duration-300 ease-in-out">
-                            <div className='w-full h-[22rem] xl:h-[30rem] rounded-sm  bg-gray hover:skew-x-6 hover:scale-105 transition-all duration-300 ease-in-out'>
-                                <span className='text-3xl font-clash font-semibold px-4 py-2 absolute left-[-2rem] top-4 bg-main_primary text-white'>UPDATING SOON</span>
-                                <Image src="/coming.png"
+                        <div className="flex items-center justify-center w-[15rem] lg:w-full h-[22rem] xl:h-[30rem] rounded-sm bg-main_primary/50 backdrop:blur-xl hover:-skew-x-6 skew-y-3 transition-all duration-300 ease-in-out">
+                            <div className='w-[15rem] lg:w-full h-[22rem] xl:h-[30rem] rounded-sm  bg-gray hover:skew-x-6 hover:scale-105 transition-all duration-300 ease-in-out'>
+                                <span className='text-3xl font-clash font-semibold px-4 py-2 absolute left-[-2rem] top-4 bg-main_primary text-white'>TALK SHOW</span>
+                                <Image src="/talk-2.png"
                                     alt="talk show"
-                                    width={500}
-                                    height={500}
-                                    className='w-full h-full object-cover'
+                                    width={400}
+                                    height={400}
+                                    className='w-[15rem] lg:w-full h-full object-cover'
                                 />
                             </div>
                         </div>
@@ -51,8 +51,8 @@ export default function EventSlider() {
                     <div className='updown'>
                         <div className="flex items-center justify-center w-full h-[22rem] xl:h-[30rem] rounded-sm bg-main_primary/50 backdrop:blur-xl hover:-skew-x-6 skew-y-3 transition-all duration-300 ease-in-out">
                             <div className='w-full h-[22rem] xl:h-[30rem] rounded-sm  bg-gray hover:skew-x-6 hover:scale-105 transition-all duration-300 ease-in-out'>
-                                <span className='text-3xl font-clash font-semibold px-4 py-2 absolute left-[-2rem] top-4 bg-main_primary text-white'>UPDATING SOON</span>
-                                <Image src="/coming.png"
+                                <span className='text-3xl font-clash font-semibold px-4 py-2 absolute left-[-2rem] top-4 bg-main_primary text-white'>PRO SHOW</span>
+                                <Image src="/pro.jpg"
                                     alt="talk show"
                                     width={500}
                                     height={500}

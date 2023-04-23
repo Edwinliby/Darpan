@@ -137,7 +137,7 @@ function EventsDetails(props) {
             </div>
 
             {props.rulehead == "" ? null : (
-              <div className="font-clash flex flex-col mt-[2rem] p-6 rounded-xl justify-between w-full md:w-[90%] bg-gray/25">
+              <div className="font-clash flex flex-col mt-[2rem] p-3 md:p-6 rounded-xl justify-between w-full md:w-[90%] bg-gray/25">
                 <h1 className="font-semibold text-3xl">{props.rulehead}</h1>
                 <div className="flex flex-col gap-2 pt-4 text-lg md:text-xl">
                   {props.rule1 == "" ? null : <p>{props.rule1}</p>}

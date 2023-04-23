@@ -15,7 +15,7 @@ import fsPromises from "fs/promises";
 import path from "path";
 // import SliderThree from "@/components/SliderThree";
 import RitModel from "@/components/RitModel";
-// import EventSlider from "@/components/EventSlider";
+import EventSlider from "@/components/EventSlider";
 // import Slider from "react-slick";
 // import Image from "next/image";
 // import Link from "next/link";
@@ -94,11 +94,11 @@ const Home = () => {
         </Slider> */}
       </div>
 
-      <div className="bg-gradient-to-b from-primary to-transparent rounded-t-[20px]">
+      <EventSlider />
+
+      <div className="bg-gradient-to-b from-primary to-transparent">
         {/* <SliderThree /> */}
         <RitModel />
-        {/* <EventSlider /> */}
-
         <section id="about">
           <About />
         </section>

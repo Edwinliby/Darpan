@@ -9,30 +9,54 @@
             {
               "id": "1",
               "name": "Ajish S",
-              "post": "Darpan Co-Coordinator",
+              "post": "Darpan Coordinator",
               "img": "/teams/unknown.png",
               "insta": ""
             },
             {
               "id": "2",
               "name": "Sherin V Thomas",
-              "post": "Student Co-Coordinator",
-              "img": "/teams/Sherin.png",
+              "post": "Student Coordinator",
+              "img": "/teams/sherin.jpg",
               "linkedin": "https://www.linkedin.com/in/sherin-thomas-",
               "insta": "https://instagram.com/sherin._.thomas?igshid=ZDdkNTZiNTM="
             }
           ]
         },
         {
-          "name": "Treasurer",
+          "name": "Treasurers",
           "members": [
             {
-              "id": "3",
+              "id": "t1",
               "name": "Gladson T Lalu",
               "post": "Treasurer",
-              "img": "/teams/Gladson.png",
+              "img": "/teams/glad.jpeg",
               "insta": "https://www.instagram.com/__gladson",
-              "linkedin": "https://in.linkedin.com/in/gladsontlalu"
+              "linkedin": ""
+            },
+            {
+              "id": "t2",
+              "name": "Tijin Idiculla Thomas",
+              "post": "Treasurer",
+              "img": "/teams/Tijin_Thomas.jpg",
+              "insta": "https://www.instagram.com/tjn_thomas",
+              "linkedin": ""
+            },
+            {
+              "id": "t3",
+              "name": "Aleena Reji",
+              "post": "Treasurer",
+              "img": "/teams/Aleena_Reji.jpg",
+              "insta": "https://www.instagram.com/al_ee_na_2000/",
+              "linkedin": ""
+            },
+            {
+              "id": "t4",
+              "name": "Sreejith C S",
+              "post": "Treasurer",
+              "img": "/teams/Sreejith_CS.jpg",
+              "insta": "https://www.instagram.com/ft.sre_th/",
+              "linkedin": ""
             }
           ]
         },
@@ -40,12 +64,605 @@
           "name": "Technical Event Manager",
           "members": [
             {
-              "id": "4",
+              "id": "e1",
               "name": "Albin Mathews Joseph",
               "post": "Technical Event Manager",
-              "img": "/teams/Albin.png",
+              "img": "/teams/albin.jpg",
               "insta": "https://www.instagram.com/albinmathewsjoseph/",
               "linkedin": "https://www.linkedin.com/in/albin-mathews-joseph-4b4b1b1b4/"
+            },
+            {
+              "id": "e2",
+              "name": "Alwin",
+              "post": "Technical Event Manager",
+              "img": "/teams/ALWIN 2344.jpg",
+              "insta": "https://instagram.com/a1_wiin?igshid=ZDdkNTZiNTM=",
+              "linkedin": ""
+            },
+            {
+              "id": "e3",
+              "name": "Keerthana Suresh ",
+              "post": "Technical Event Manager",
+              "img": "/teams/Keerthana S.jpg",
+              "insta": "",
+              "linkedin": ""
+            },
+            {
+              "id": "e4",
+              "name": "Preethi Sara George ",
+              "post": "Technical Event Manager",
+              "img": "/teams/Preethi.jpg",
+              "insta": "https://instagram.com/preethi_geo?igshid=ZDdkNTZiNTM=",
+              "linkedin": ""
+            },
+            {
+              "id": "e5",
+              "name": "Anandhu CA ",
+              "post": "Technical Event Manager",
+              "img": "/teams/Anandhu C.jpg",
+              "insta": "https://instagram.com/anandhuca_006",
+              "linkedin": ""
+            },
+            {
+              "id": "e6",
+              "name": "Varsha v pillai",
+              "post": "Technical Event Manager",
+              "img": "/teams/Varsha V pillai.png",
+              "insta": "https://instagram.com/Va_r_sha._",
+              "linkedin": ""
+            }
+          ]
+        },
+        {
+          "name": "Cultural Event Manager",
+          "members": [
+            {
+              "id": "ce1",
+              "name": "BS Adhithya",
+              "post": "Cultural Event Manager",
+              "img": "/teams/BS Adhithya.jpg",
+              "insta": "https://instagram.com/_adhithya_bhaskar?igshid=ZDdkNTZiNTM=",
+              "linkedin": ""
+            },
+            {
+              "id": "ce2",
+              "name": "Abhijith G Kaimal",
+              "post": "Cultural Event Manager",
+              "img": "/teams/ABIJITH.jpg",
+              "insta": "https://instagram.com/__abi.j.ith__",
+              "linkedin": ""
+            },
+            {
+              "id": "ce3",
+              "name": "Rose MJ",
+              "post": "Cultural Event Manager",
+              "img": "/teams/ROSE MJ.jpg",
+              "insta": "https://instagram.com/_.ro.se",
+              "linkedin": ""
+            },
+            {
+              "id": "ce4",
+              "name": "Abhishek Kumar",
+              "post": "Cultural Event Manager",
+              "img": "/teams/Abhishek Kumar.jpg",
+              "insta": "https://instagram.com/s_c_o__o_b_y?igshid=ZDdkNTZiNTM=",
+              "linkedin": ""
+            },
+            {
+              "id": "ce5",
+              "name": "Sherin Shaji",
+              "post": "Cultural Event Manager",
+              "img": "/teams/Sherin Shaji.jpg",
+              "insta": "https://instagram.com/__sherin_shaji_?igshid=ZDdkNTZiNTM=",
+              "linkedin": ""
+            },
+            {
+              "id": "ce6",
+              "name": "Sooraj Bal",
+              "post": "Cultural Event Manager",
+              "img": "/teams/Sooraj Bal.jpg",
+              "insta": "https://instagram.com/soorajbal",
+              "linkedin": ""
+            },
+            {
+              "id": "ce7",
+              "name": "Kailas R. Pillai",
+              "post": "Cultural Event Manager",
+              "img": "/teams/KAILAS R PILLAI.jpg",
+              "insta": "https://instagram.com/senor_lancelot",
+              "linkedin": ""
+            },
+            {
+              "id": "ce8",
+              "name": "Sayona C Sajan",
+              "post": "Cultural Event Manager",
+              "img": "/teams/Sayona C Sajan.JPG",
+              "insta": "https://instagram.com/sayonacsajan?igshid=ZDdkNTZiNTM=",
+              "linkedin": ""
+            },
+            {
+              "id": "ce9",
+              "name": "Renjini Raju",
+              "post": "Cultural Event Manager",
+              "img": "/teams/Renjini Raju.jpeg",
+              "insta": "https://instagram.com/__.fairy_princess.___",
+              "linkedin": ""
+            },
+            {
+              "id": "ce10",
+              "name": "Ashtami S. Kumar",
+              "post": "Cultural Event Manager",
+              "img": "/teams/Ashtami S Kumar.jpg",
+              "insta": "https://instagram.com/__asht.ami__",
+              "linkedin": ""
+            },
+            {
+              "id": "ce11",
+              "name": "Aswin s",
+              "post": "Cultural Event Manager",
+              "img": "/teams/Aswin s.jpg",
+              "insta": "https://instagram.com/exception_06?igshid=ZDdkNTZiNTM=",
+              "linkedin": ""
+            },
+            {
+              "id": "ce12",
+              "name": "Nandu krishnan U",
+              "post": "Cultural Event Manager",
+              "img": "/teams/Nandu krishnan.jpg",
+              "insta": "https://instagram.com/n_a_ndu_k",
+              "linkedin": ""
+            },
+            {
+              "id": "ce13",
+              "name": "Christo Mathew George ",
+              "post": "Cultural Event Manager",
+              "img": "/teams/Christo Mathew.jpg",
+              "insta": "https://instagram.com/Christo_mathew7",
+              "linkedin": ""
+            },
+            {
+              "id": "ce14",
+              "name": "Muhammed Bilal",
+              "post": "Cultural Event Manager",
+              "img": "/teams/Muhammed Bilal.jpg",
+              "insta": "https://instagram.com/m.__.bilal",
+              "linkedin": ""
+            },
+            {
+              "id": "ce15",
+              "name": "Abhishek krishnan U V",
+              "post": "Cultural Event Manager",
+              "img": "/teams/abhishek krishnan.jpeg",
+              "insta": "https://instagram.com/ab_h_ishek___",
+              "linkedin": ""
+            },
+            {
+              "id": "ce16",
+              "name": "Pooja Jyothi kumar",
+              "post": "Cultural Event Manager",
+              "img": "/teams/pooja.jpg",
+              "insta": "https://instagram.com/__pooja__24",
+              "linkedin": ""
+            },
+            {
+              "id": "ce17",
+              "name": "Gayathry ",
+              "post": "Cultural Event Manager",
+              "img": "/teams/Gayathry.jpg",
+              "insta": "https://instagram.com/_ga_ya_th_ry_",
+              "linkedin": ""
+            },
+            {
+              "id": "ce18",
+              "name": "Gowri G ",
+              "post": "Cultural Event Manager",
+              "img": "/teams/Gowri G.jpg",
+              "insta": "https://instagram.com/_gowri_amzz",
+              "linkedin": ""
+            },
+            {
+              "id": "ce19",
+              "name": "Lakshmipriya K B",
+              "post": "Cultural Event Manager",
+              "img": "/teams/Lakshmipriya KB.jpg",
+              "insta": "https://instagram.com/_lakshmi_binoy_",
+              "linkedin": ""
+            },
+            {
+              "id": "ce20",
+              "name": "Sethulakshmi K S",
+              "post": "Cultural Event Manager",
+              "img": "/teams/Sethulakshmi Ks.jpg",
+              "insta": "https://instagram.com/_laxhhmee_?igshid=ZDdkNTZiNTM=",
+              "linkedin": ""
+            }
+          ]
+        },
+        {
+          "name": "Exhibition Department",
+          "members": [
+            {
+              "id": "ex1",
+              "name": "Sneha S Nair",
+              "post": "Exhibition Coordinator",
+              "img": "/teams/Sneha S Nair.jpg",
+              "insta": "https://instagram.com/_s.neha.a_?igshid=ZDdkNTZiNTM=",
+              "linkedin": ""
+            },
+            {
+              "id": "ex2",
+              "name": "Jeena Joy",
+              "post": "Exhibition Coordinator",
+              "img": "/teams/jeena dep coord - Jeena Joy.jpg",
+              "insta": "https://instagram.com/je_ena_joy?igshid=ZDdkNTZiNTM=",
+              "linkedin": ""
+            },
+            {
+              "id": "ex3",
+              "name": "Varsha v pillai",
+              "post": "Exhibition Coordinator",
+              "img": "/teams/Varsha V pillai.png",
+              "insta": "https://instagram.com/Va_r_sha._",
+              "linkedin": ""
+            },
+            {
+              "id": "ex4",
+              "name": "Aadithya Binu",
+              "post": "Exhibition Coordinator",
+              "img": "/teams/Aadithya Binu.jpg",
+              "insta": "https://instagram.com/_aadithyabinu_11",
+              "linkedin": ""
+            },
+            {
+              "id": "ex5",
+              "name": "Kasinath P",
+              "post": "Exhibition Coordinator",
+              "img": "/teams/Kasinath P.jpg",
+              "insta": "https://instagram.com/_kasi.___?igshid=ZDdkNTZiNTM=",
+              "linkedin": ""
+            },
+            {
+              "id": "ex6",
+              "name": "Sooraj K B",
+              "post": "Exhibition Coordinator",
+              "img": "/teams/SOORAJ K.B.jpeg",
+              "insta": "https://instagram.com/hidden_mind166_",
+              "linkedin": ""
+            },
+            {
+              "id": "ex7",
+              "name": "Akhil Kumar",
+              "post": "Exhibition Coordinator",
+              "img": "/teams/AK Drawings.jpg",
+              "insta": "https://instagram.com/_artist_akhil_",
+              "linkedin": ""
+            },
+            {
+              "id": "ex8",
+              "name": "Vismaya Anil",
+              "post": "Exhibition Coordinator",
+              "img": "/teams/vismaya.jpg",
+              "insta": "https://instagram.com/_v1smaya._?igshid=YmMyMTA2M2Y=",
+              "linkedin": ""
+            },
+            {
+              "id": "ex9",
+              "name": "Sujith Kumar KS ",
+              "post": "Exhibition Coordinator",
+              "img": "/teams/Sujith.jpg",
+              "insta": "https://instagram.com/s_u__j_i_t_h?igshid=YmMyMTA2M2Y=",
+              "linkedin": ""
+            }
+          ]
+        },
+        {
+          "name": "Registration Team",
+          "members": [
+            {
+              "id": "rg1",
+              "name": "Jissa Varghese",
+              "post": "Registration Coordinator",
+              "img": "/teams/JISSA VARGHESE.jpg",
+              "insta": "https://instagram.com/jissa.varghese.2510?igshid=ZDdkNTZiNTM=",
+              "linkedin": ""
+            },
+            {
+              "id": "rg2",
+              "name": "Selma v s",
+              "post": "Registration Coordinator",
+              "img": "/teams/Sushama v k.jpg",
+              "insta": "https://instagram.com/zzelma_",
+              "linkedin": ""
+            },
+            {
+              "id": "rg3",
+              "name": "Justin Biju Varghese ",
+              "post": "Registration Coordinator",
+              "img": "/teams/Justin.jpeg",
+              "insta": "https://instagram.com/Its_me_jus_tin_",
+              "linkedin": ""
+            },
+            {
+              "id": "rg4",
+              "name": "Anusree S",
+              "post": "Registration Coordinator",
+              "img": "/teams/Anusree S.jpg",
+              "insta": "https://instagram.com/anu_sree_d_j",
+              "linkedin": ""
+            },
+            {
+              "id": "rg5",
+              "name": "Aliya Baisal Mathew",
+              "post": "Registration Coordinator",
+              "img": "/teams/ALIYA BAISAL MATHEW.jpg",
+              "insta": "https://instagram.com/aliya_baisal",
+              "linkedin": ""
+            }
+          ]
+        },
+        {
+          "name": "Games Event Management",
+          "members": [
+            {
+              "id": "gg1",
+              "name": "Nandana A.S",
+              "post": "Games Coordinator",
+              "img": "/teams/nandana as.jpg",
+              "insta": "https://instagram.com/Nanduzz_024",
+              "linkedin": ""
+            },
+            {
+              "id": "gg2",
+              "name": "Philip Varghese",
+              "post": "Games Coordinator",
+              "img": "/teams/Philip Varghese.jpg",
+              "insta": "https://instagram.com/philip.varghese_hooman",
+              "linkedin": ""
+            }     
+          ]
+        },
+        {
+          "name": "Inauguration and Validatory Team",
+          "members": [
+            {
+              "id": "i1",
+              "name": "Akhil Anil",
+              "post": "Inaguration Coordinator",
+              "img": "/teams/Akhil Anil.jpg",
+              "insta": "https://instagram.com/_spry_zen_",
+              "linkedin": ""
+            },
+            {
+              "id": "i2",
+              "name": "Aleena M.A ",
+              "post": "Games Coordinator",
+              "img": "/teams/Aleena M.A.jpeg",
+              "insta": "https://instagram.com/___july___miracle",
+              "linkedin": ""
+            },
+            {
+              "id": "i3",
+              "name": "Anaswara viswanath ",
+              "post": "Games Coordinator",
+              "img": "/teams/Anaswara.jpg",
+              "insta": "https://www.instagram.com/anaswara_viswanath/",
+              "linkedin": ""
+            },
+            {
+              "id": "i4",
+              "name": "Adil A",
+              "post": "Games Coordinator",
+              "img": "/teams/ADIL ALAMEEN.jpg",
+              "insta": "https://www.instagram.com/Hackhunter",
+              "linkedin": ""
+            },
+            {
+              "id": "i5",
+              "name": "Anandhu S Nair",
+              "post": "Games Coordinator",
+              "img": "/teams/anasth.jpg",
+              "insta": "https://instagram.com/mr.classic.no_10?igshid=ZDdkNTZiNTM=",
+              "linkedin": ""
+            }           
+          ]
+        },
+        {
+          "name": "Light and Sound",
+          "members": [
+            {
+              "id": "l1",
+              "name": "Harith mohan",
+              "post": "Light & Sound Coordinator",
+              "img": "/teams/harith.jpg",
+              "insta": "https://instagram.com/hari. _.99",
+              "linkedin": ""
+            }  
+          ]
+        },
+        {
+          "name": "Documentation & Sponsorship",
+          "members": [
+            {
+              "id": "s1",
+              "name": "Arya Anil",
+              "post": "Doc & Sponsorship Coordinator",
+              "img": "/teams/Arya Anil.jpg",
+              "insta": "https://instagram.com/_aary.a_?igshid=MGNiNDI5ZTU=",
+              "linkedin": ""
+            },
+            {
+              "id": "s2",
+              "name": "Sharon p k ",
+              "post": "Doc & Sponsorship Coordinator",
+              "img": "/teams/Sharon Pk.jpeg",
+              "insta": "https://instagram.com/_sha_r_o_n_",
+              "linkedin": ""
+            },
+            {
+              "id": "s3",
+              "name": "Manu Karthik K S",
+              "post": "Doc & Sponsorship Coordinator",
+              "img": "/teams/Manu Karthik K S.jpg",
+              "insta": "https://instagram.com/manugourisankaram?igshid=ZDdkNTZiNTM=",
+              "linkedin": ""
+            }      
+          ]
+        },
+        {
+          "name": "Transportation Team",
+          "members": [
+            {
+              "id": "tt1",
+              "name": "Amrutha A",
+              "post": "Transportation Coordinator",
+              "img": "/teams/Amrutha A.jpg",
+              "insta": "https://instagram.com/_amrutha__a_",
+              "linkedin": ""
+            }  
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Design Team",
+      "sections": [
+        {
+          "name": "Designers",
+          "members": [
+            {
+              "id": "d1",
+              "name": "Devaraj (DRJ)",
+              "post": "Design Lead Coordinator",
+              "img": "/teams/Drj.png",
+              "insta": "https://instagram.com/drj.____?igshid=MWYxNmZkY2Y=",
+              "linkedin": ""
+            },
+            {
+              "id": "d22",
+              "name": "Arjun Manoj",
+              "post": "Design Lead",
+              "img": "/teams/Arjun _Manoj.jpeg",
+              "insta": "https://instagram.com/arjunmanoj17?igshid=ZDdkNTZiNTM=",
+              "linkedin": ""
+            },
+            {
+              "id": "d2",
+              "name": "Gowri Vijayan",
+              "post": "Design Co-Coordinator",
+              "img": "/teams/Gowri.png",
+              "insta": "https://www.instagram.com/that_weird_artkid/",
+              "linkedin": "https://www.linkedin.com/in/gowri-vijayan-8664a7253"
+            },
+            {
+              "id": "d9",
+              "name": "Adhithiyan",
+              "post": "Design Lead",
+              "img": "/teams/Adhithyan.png",
+              "insta": "",
+              "linkedin": ""
+            },
+            {
+              "id": "d3",
+              "name": "Aswin George Thomas",
+              "post": "Design Lead",
+              "img": "/teams/Aswin.png",
+              "insta": "https://www.instagram.com/aswin_thomas_369/",
+              "linkedin": "https://www.linkedin.com/in/aswingt65/"
+            },
+            {
+              "id": "d4",
+              "name": "Joel Joey",
+              "post": "Design Lead",
+              "img": "/teams/Joel.png",
+              "insta": "https://www.instagram.com/whats_in_a___name____/",
+              "linkedin": ""
+            },
+            {
+              "id": "d5",
+              "name": "Saoud Abdul Azeez",
+              "post": "Design Lead",
+              "img": "/teams/Saoud.png",
+              "insta": "https://instagram.com/saoud_parayil?igshid=MWYxNmZkY2Y=",
+              "linkedin": ""
+            },
+            {
+              "id": "d6",
+              "name": "Joe Varghese Abraham",
+              "post": "Design Lead",
+              "img": "/teams/Joe.png",
+              "insta": "https://www.instagram.com/joevargheseabraham/",
+              "linkedin": ""
+            }
+          ]
+        },
+        {
+          "name": "Media Wing",
+          "members": [
+            {
+              "id": "v1",
+              "name": "Anandhu Ajith ",
+              "post": "Media Lead",
+              "img": "/teams/Anandhu Ajith.jpeg",
+              "insta": "",
+              "linkedin": ""
+            },
+            {
+              "id": "v2",
+              "name": "Abhiram",
+              "post": "Media Lead",
+              "img": "/teams/Abhiram.jpg",
+              "insta": "https://www.instagram.com/_.abiih",
+              "linkedin": ""
+            },
+            {
+              "id": "v3",
+              "name": "Mahith Tom Saji",
+              "post": "Media Lead",
+              "img": "/teams/MAHITH TOM SAJI.jpg",
+              "insta": "https://www.instagram.com/mahith.tom",
+              "linkedin": ""
+            },
+            {
+              "id": "v4",
+              "name": "Madhav",
+              "post": "Video-Editor Lead",
+              "img": "/teams/Madhav.png",
+              "insta": "",
+              "linkedin": ""
+            },
+            {
+              "id": "d9",
+              "name": "Adhithiyan",
+              "post": "Video-Editor Lead",
+              "img": "/teams/Adhithyan.png",
+              "insta": "",
+              "linkedin": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Web Team",
+      "sections": [
+        {
+          "name": "Developers",
+          "members": [
+            {
+              "id": "7",
+              "name": "Edwin liby",
+              "post": "Lead Developer / UI/UX",
+              "img": "/teams/Edwin.png",
+              "insta": "https://www.linkedin.com/in/edwin-liby-12b7a5220/",
+              "linkedin": "https://www.linkedin.com/in/edwin-liby-12b7a5220/"
+            },
+            {
+              "id": "8",
+              "name": "Gladson T Lalu",
+              "post": "Lead Developer",
+              "img": "/teams/Gladson.png",
+              "insta": "https://www.instagram.com/__gladson",
+              "linkedin": "https://in.linkedin.com/in/gladsontlalu"
             }
           ]
         }

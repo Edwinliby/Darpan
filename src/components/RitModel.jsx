@@ -62,16 +62,16 @@ export default function RitModel() {
   }, []);
 
   return (
-    <div className="flex justify-center items-center flex-col pt-12">
-      <h1 className="text-6xl font-bold text-center  text-white mt-2 font-clash tracking-wider px-4">
+    <div className="flex justify-center items-center flex-col lg:pt-12">
+      <h1 className="text-4xl md:text-6xl font-bold text-center text-white font-clash tracking-wider p-2 md:px-4">
         Explore Your Interests
       </h1>
 
-      <section class="flex flex-col items-center lg:flex-row lg:items-stretch justify-between  w-[90%] max-w-[70rem] lg:h-[70vh] h-[100vh] my-12">
+      <section class="flex flex-col items-center lg:flex-row lg:items-stretch justify-between w-[90%] max-w-[70rem] lg:h-[70vh] h-[100vh] mt-12">
         {itemList.map((item) => (
           <article
             key={item.id}
-            class="flex-card-container  bg-cover bg-no-repeat"
+            class="flex-card-container bg-cover bg-no-repeat"
             style={{
               backgroundImage: `url(${item.image})`,
             }}
