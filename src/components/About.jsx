@@ -22,7 +22,7 @@ export default function About() {
         y: 0,
         scrollTrigger: {
           trigger: trigger.current,
-          start: "top 20%",
+          start: window.innerWidth > 768 ? "top 80%" : "top 20%",
           end: "bottom 80%",
 
           ease: "power4.eae-InOut",
@@ -67,7 +67,7 @@ export default function About() {
         <span>Thinking what is</span>
         <span
           ref={trigger}
-          className="text-[4rem] sm:text-[5.5rem] md:text-[7.5rem] lg:text-[9.5rem] xl:text-[12.5rem] md:mt-4 lg:mt-8"
+          className="text-[4rem] sm:text-[5.5rem] md:text-[7.5rem] lg:text-[9.5rem] xl:text-[12.5rem] md:mt-4 lg:mt-12"
         >
           <span className="text-main_primary">DARPAN</span>
         </span>

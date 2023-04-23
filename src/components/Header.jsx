@@ -37,7 +37,8 @@ export default function Header() {
     <>
       <header
         className="w-full h-[4.5rem] flex items-center py-2 fixed z-[25] border-b-[1.5px] bg-soothing_black/60 border-gray/40 backdrop-blur-md transition-all duration-300 ease-in-out"
-        style={{ opacity: isVisible ? 1 : 0 }}
+        // style={{ hidden:block
+        style={{ transform: isVisible ? "translateY(0)" : "translateY(-100%)" }}
       >
         <div
           className="ml:2 md:ml-4 z-[26]"

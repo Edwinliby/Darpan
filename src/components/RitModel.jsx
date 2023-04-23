@@ -53,6 +53,12 @@ export default function RitModel() {
     IMAGES.forEach((image) => {
       image.addEventListener("click", addClass);
     });
+
+    return () => {
+      IMAGES.forEach((image) => {
+        image.removeEventListener("click", addClass);
+      });
+    };
   }, []);
 
   return (
@@ -74,7 +80,7 @@ export default function RitModel() {
               <h1 className=" text-2xl lg:text-4xl font-bold text-center uppercase text-white mt-2 font-clash absolute bottom-0 left-0 rotate-180 w-full py-4 px-2 ">
                 {item.title}
               </h1>
-              <Link href={`/events`}>
+              <Link href={`/events`} className="h-full w-full">
                 <div className="h-full w-full"></div>
               </Link>
             </div>
