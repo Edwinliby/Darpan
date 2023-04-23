@@ -10,7 +10,6 @@ import Faq from "@/components/Faq";
 import Clock from "@/components/Clock";
 import Map from "@/components/Map";
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/dist/all";
 import fsPromises from "fs/promises";
 import path from "path";
 // import SliderThree from "@/components/SliderThree";
