@@ -418,7 +418,7 @@
               "img": "/teams/Philip Varghese.jpg",
               "insta": "https://instagram.com/philip.varghese_hooman",
               "linkedin": ""
-            }     
+            }
           ]
         },
         {
@@ -426,6 +426,14 @@
           "members": [
             {
               "id": "i1",
+              "name": "Anaswara viswanath ",
+              "post": "Inaguration Coordinator",
+              "img": "/teams/Anaswara.jpg",
+              "insta": "https://www.instagram.com/anaswara_viswanath/",
+              "linkedin": ""
+            },
+            {
+              "id": "i2",
               "name": "Akhil Anil",
               "post": "Inaguration Coordinator",
               "img": "/teams/Akhil Anil.jpg",
@@ -433,25 +441,17 @@
               "linkedin": ""
             },
             {
-              "id": "i2",
+              "id": "i3",
               "name": "Aleena M.A ",
-              "post": "Games Coordinator",
+              "post": "Inaguration Coordinator",
               "img": "/teams/Aleena M.A.jpeg",
               "insta": "https://instagram.com/___july___miracle",
               "linkedin": ""
             },
             {
-              "id": "i3",
-              "name": "Anaswara viswanath ",
-              "post": "Games Coordinator",
-              "img": "/teams/Anaswara.jpg",
-              "insta": "https://www.instagram.com/anaswara_viswanath/",
-              "linkedin": ""
-            },
-            {
               "id": "i4",
               "name": "Adil A",
-              "post": "Games Coordinator",
+              "post": "Inaguration Coordinator",
               "img": "/teams/ADIL ALAMEEN.jpg",
               "insta": "https://www.instagram.com/Hackhunter",
               "linkedin": ""
@@ -459,11 +459,48 @@
             {
               "id": "i5",
               "name": "Anandhu S Nair",
-              "post": "Games Coordinator",
+              "post": "Inaguration Coordinator",
               "img": "/teams/anasth.jpg",
               "insta": "https://instagram.com/mr.classic.no_10?igshid=ZDdkNTZiNTM=",
               "linkedin": ""
-            }           
+            }
+          ]
+        },
+        {
+          "name": "Documentation & Sponsorship",
+          "members": [
+            {
+              "id": "s0",
+              "name": "Adithyanath S S",
+              "img": "/teams/adhityan_s.jpg",
+              "post": "Sponsorship Coordinator",
+              "insta": "",
+              "linkedin": ""
+            },
+            {
+              "id": "s1",
+              "name": "Arya Anil",
+              "post": "Doc & Sponsorship Coordinator",
+              "img": "/teams/Arya Anil.jpg",
+              "insta": "https://instagram.com/_aary.a_?igshid=MGNiNDI5ZTU=",
+              "linkedin": ""
+            },
+            {
+              "id": "s2",
+              "name": "Sharon p k ",
+              "post": "Sponsorship Coordinator",
+              "img": "/teams/Sharon Pk.jpeg",
+              "insta": "https://instagram.com/_sha_r_o_n_",
+              "linkedin": ""
+            },
+            {
+              "id": "s3",
+              "name": "Manu Karthik K S",
+              "post": "Sponsorship Coordinator",
+              "img": "/teams/Manu Karthik K S.jpg",
+              "insta": "https://instagram.com/manugourisankaram?igshid=ZDdkNTZiNTM=",
+              "linkedin": ""
+            }
           ]
         },
         {
@@ -476,36 +513,20 @@
               "img": "/teams/harith.jpg",
               "insta": "https://instagram.com/hari. _.99",
               "linkedin": ""
-            }  
+            }
           ]
         },
         {
-          "name": "Documentation & Sponsorship",
+          "name": "Stage and Venue",
           "members": [
             {
-              "id": "s1",
-              "name": "Arya Anil",
-              "post": "Doc & Sponsorship Coordinator",
-              "img": "/teams/Arya Anil.jpg",
-              "insta": "https://instagram.com/_aary.a_?igshid=MGNiNDI5ZTU=",
+              "id": "l2",
+              "name": "Ajesh H",
+              "post": "Stage & Venue Cordinator",
+              "img": "/teams/ajeesh.jpg",
+              "insta": "https://instagram.com/ajesh_1710?igshid=ZDdkNTZiNTM=",
               "linkedin": ""
-            },
-            {
-              "id": "s2",
-              "name": "Sharon p k ",
-              "post": "Doc & Sponsorship Coordinator",
-              "img": "/teams/Sharon Pk.jpeg",
-              "insta": "https://instagram.com/_sha_r_o_n_",
-              "linkedin": ""
-            },
-            {
-              "id": "s3",
-              "name": "Manu Karthik K S",
-              "post": "Doc & Sponsorship Coordinator",
-              "img": "/teams/Manu Karthik K S.jpg",
-              "insta": "https://instagram.com/manugourisankaram?igshid=ZDdkNTZiNTM=",
-              "linkedin": ""
-            }      
+            }
           ]
         },
         {
@@ -518,7 +539,15 @@
               "img": "/teams/Amrutha A.jpg",
               "insta": "https://instagram.com/_amrutha__a_",
               "linkedin": ""
-            }  
+            },
+            {
+              "id": "tt2",
+              "name": "Alen Philip",
+              "img": "/teams/alen_philip.jpg",
+              "post": "Transportation Coordinator",
+              "insta": "https://instagram.com/an_illustrator_007?igshid=ZDdkNTZiNTM=",
+              "linkedin": ""
+            }
           ]
         }
       ]
@@ -649,20 +678,22 @@
           "name": "Developers",
           "members": [
             {
-              "id": "7",
+              "id": "edwin",
               "name": "Edwin liby",
               "post": "Lead Developer / UI/UX",
               "img": "/teams/Edwin.png",
               "insta": "https://www.linkedin.com/in/edwin-liby-12b7a5220/",
-              "linkedin": "https://www.linkedin.com/in/edwin-liby-12b7a5220/"
+              "linkedin": "https://www.linkedin.com/in/edwin-liby-12b7a5220/",
+              "github": "https://github.com/Edwinliby"
             },
             {
-              "id": "8",
+              "id": "gladson",
               "name": "Gladson T Lalu",
               "post": "Lead Developer",
               "img": "/teams/Gladson.png",
               "insta": "https://www.instagram.com/__gladson",
-              "linkedin": "https://in.linkedin.com/in/gladsontlalu"
+              "linkedin": "https://in.linkedin.com/in/gladsontlalu",
+              "github": "https://github.com/gladson-lalu"
             }
           ]
         }

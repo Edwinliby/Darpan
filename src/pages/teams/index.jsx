@@ -50,11 +50,12 @@ function Team(props) {
                 </h1>
 
                 <div className="flex flex-wrap  justify-center gap-16 w-fit h-fit pt-6 rounded-sm">
-
                   {section.members.map((member) => (
-                    <div key={member.id} className=" shadow-2xl hover:shadow-main_primary transition-all duration-500 ease-in-out">
-                      <div
-                        className={index == 2 ? "relative teamCard" : "relative"}>
+                    <div
+                      key={member.id}
+                      className=" shadow-2xl hover:shadow-main_primary transition-all duration-500 ease-in-out"
+                    >
+                      <div>
                         <Image
                           src={member.img}
                           alt={member.name}
