@@ -49,7 +49,7 @@ function Team(props) {
                   {section.name}
                 </h1>
 
-                <div className="flex flex-wrap  justify-center gap-16 w-fit h-fit pt-6 rounded-sm">
+                <div className="flex flex-wrap justify-evenly gap-16 w-fit h-fit pt-6 rounded-sm">
                   {section.members.map((member) => (
                     <div
                       key={member.id}
@@ -61,7 +61,7 @@ function Team(props) {
                           alt={member.name}
                           width={300}
                           height={300}
-                          className="object-cover w-[20rem] h-[22rem] bg-black"
+                          className="object-cover w-[20rem] h-[22rem]"
                         />
                       </div>
                       <div className="flex flex-col p-2 bg-black bg-opacity-20 ">
@@ -100,7 +100,7 @@ function Team(props) {
                       </div>
                     </div>
                   ))}
-                </div>
+                </div>              
               </div>
             ))}
           </div>
