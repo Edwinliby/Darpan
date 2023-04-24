@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FaInstagram } from "react-icons/fa";
+import { FaInstagram, FaGithub } from "react-icons/fa";
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
@@ -73,14 +73,29 @@ function Team(props) {
                             {member.post}
                           </p>
                         </div>
-
-                        <div className="flex justify-end">
-                          <Link href={`${member.insta}`} className="">
-                            <FaInstagram
-                              size="2rem"
-                              className="text-white hover:text-[#9747ff] transition-all duration-500 ease-in-out"
-                            />
-                          </Link>
+                        <div className="flex justify-end pb-2">
+                          <div
+                            className={
+                              member.github
+                                ? "flex justify-between w-20"
+                                : "flex justify-end"
+                            }
+                          >
+                            {member.github && (
+                              <Link href={`${member.github}`} className="">
+                                <FaGithub
+                                  size="2rem"
+                                  className="text-white hover:text-[#9747ff] transition-all duration-500 ease-in-out"
+                                />
+                              </Link>
+                            )}
+                            <Link href={`${member.insta}`} className="">
+                              <FaInstagram
+                                size="2rem"
+                                className="text-white hover:text-[#9747ff] transition-all duration-500 ease-in-out"
+                              />
+                            </Link>
+                          </div>
                         </div>
                       </div>
                     </div>
