@@ -63,11 +63,11 @@ const Home = () => {
 
       {isLoaded && <Clock />}
 
-      <div className=" h-fit py-5 w-[40vh] sm:w-[55vh] md:w-[100vh] lg:w-[130vh] xl:w-[170vh]  mx-auto">
-        {/* <h1 className="text-[2.7rem] md:text-[4rem] text-white font-clash font-bold tracking-wider uppercase">
+      {/* <div className=" h-fit py-5 w-[40vh] sm:w-[55vh] md:w-[100vh] lg:w-[130vh] xl:w-[170vh]  mx-auto">
+        <h1 className="text-[2.7rem] md:text-[4rem] text-white font-clash font-bold tracking-wider uppercase">
           Events
-        </h1> */}
-        {/* <Slider {...settings}>
+        </h1>
+        <Slider {...settings}>
           {posts.map((post) => (
             <div
               key={post.id}
@@ -84,8 +84,8 @@ const Home = () => {
               </Link>
             </div>
           ))}
-        </Slider> */}
-      </div>
+        </Slider>
+      </div> */}
 
       <EventSlider />
 
