@@ -29,35 +29,35 @@ export default function About() {
         },
       }
     );
-    gsap.fromTo(
-      aboutdarpan.current,
-      { opacity: 0, y: 100 },
-      {
-        opacity: 1,
-        y: 0,
-        scrollTrigger: {
-          trigger: aboutdarpan.current,
-          start: "top 70%",
-          scrub: true,
-          ease: "expo.eae-InOut",
-        },
-      }
-    );
-    gsap.fromTo(
-      aboutaec.current,
-      { opacity: 0, y: 100 },
-      {
-        opacity: 1,
-        y: 0,
-        scrollTrigger: {
-          trigger: aboutaec.current,
-          start: "top 80%",
-          end: "bottom 80%",
-          scrub: true,
-          ease: "expo.eae-InOut",
-        },
-      }
-    );
+    // gsap.fromTo(
+    //   aboutdarpan.current,
+    //   { opacity: 0, y: 100 },
+    //   {
+    //     opacity: 1,
+    //     y: 0,
+    //     scrollTrigger: {
+    //       trigger: aboutdarpan.current,
+    //       start: "top 70%",
+    //       scrub: true,
+    //       ease: "expo.eae-InOut",
+    //     },
+    //   }
+    // );
+    // gsap.fromTo(
+    //   aboutaec.current,
+    //   { opacity: 0, y: 100 },
+    //   {
+    //     opacity: 1,
+    //     y: 0,
+    //     scrollTrigger: {
+    //       trigger: aboutaec.current,
+    //       start: "top 80%",
+    //       end: "bottom 80%",
+    //       scrub: true,
+    //       ease: "expo.eae-InOut",
+    //     },
+    // //   }
+    // );
   }, []);
 
   return (
