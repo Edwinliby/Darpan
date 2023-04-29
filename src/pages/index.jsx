@@ -12,12 +12,8 @@ import Map from "@/components/Map";
 import gsap from "gsap";
 import fsPromises from "fs/promises";
 import path from "path";
-// import SliderThree from "@/components/SliderThree";
 import RitModel from "@/components/RitModel";
 import EventSlider from "@/components/EventSlider";
-// import Slider from "react-slick";
-// import Image from "next/image";
-// import Link from "next/link";
 
 const Home = () => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -33,8 +29,6 @@ const Home = () => {
   }, []);
 
   const stagger = useRef(null);
-
-  // const posts = props.posts;
 
   return (
     <div className="bg-black h-fit">
@@ -63,34 +57,9 @@ const Home = () => {
 
       {isLoaded && <Clock />}
 
-      {/* <div className=" h-fit py-5 w-[40vh] sm:w-[55vh] md:w-[100vh] lg:w-[130vh] xl:w-[170vh]  mx-auto">
-        <h1 className="text-[2.7rem] md:text-[4rem] text-white font-clash font-bold tracking-wider uppercase">
-          Events
-        </h1>
-        <Slider {...settings}>
-          {posts.map((post) => (
-            <div
-              key={post.id}
-              className="flex justify-center border-0 hover:scale-110 transition-all duration-300 ease-in-out"
-            >
-              <Link href={`/events/${post.id}`}>
-              <Image
-                src={post.img}
-                alt={post.title}
-                width={500}
-                height={500}
-                className="object-cover p-2"
-              />
-              </Link>
-            </div>
-          ))}
-        </Slider>
-      </div> */}
-
       <EventSlider />
 
       <div className="bg-gradient-to-b from-primary to-transparent">
-        {/* <SliderThree /> */}
         <RitModel />
         <section id="about">
           <About />
