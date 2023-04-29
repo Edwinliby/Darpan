@@ -14,9 +14,6 @@ import "slick-carousel/slick/slick-theme.css";
 import { motion } from "framer-motion";
 import { Analytics } from "@vercel/analytics/react";
 import InitialLoader from "@/components/InitialLoader";
-import 'lightgallery/css/lightgallery.css';
-import 'lightgallery/css/lg-zoom.css';
-import 'lightgallery/css/lg-thumbnail.css';
 
 const font_chakra = Chakra_Petch({
   subsets: ["latin"],
