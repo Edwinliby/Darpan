@@ -1,10 +1,8 @@
 import Confetti from "react-confetti";
-import React, { useState, useRef, useEffect } from "react";
+import React, { useRef } from "react";
 import Image from "next/image";
 
 export default function Partical() {
-    const [height, setHeight] = useState(null);
-    const [width, setWidth] = useState(null);
     const confetiRef = useRef(null);
 
     return (
