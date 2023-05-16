@@ -88,6 +88,14 @@
               "linkedin": ""
             },
             {
+              "id": "ea3",
+              "name": "Afsal Muhammad N",
+              "post": "Technical Event Manager",
+              "img": "/teams/afsal.jpeg",
+              "insta": "https://instagram.com/a_fx.l?igshid=YmMyMTA2M2Y=",
+              "linkedin": ""
+            },
+            {
               "id": "e4",
               "name": "Preethi Sara George ",
               "post": "Technical Event Manager",
@@ -242,6 +250,14 @@
               "post": "Cultural Event Manager",
               "img": "/teams/abhishek krishnan.jpeg",
               "insta": "https://instagram.com/ab_h_ishek___",
+              "linkedin": ""
+            },
+            {
+              "id": "ce21",
+              "name": "Devika B ",
+              "post": "Cultural Event Manager",
+              "img": "/teams/Devika.jpg",
+              "insta": "https://instagram.com/__de__v__i_ka_?igshid=ZDdkhttps://instagram.com/__de__v__i_ka_?igshid=ZDdkNTZiNTM=NTZiNTM=",
               "linkedin": ""
             },
             {
@@ -405,6 +421,14 @@
               "img": "/teams/ALIYA BAISAL MATHEW.jpg",
               "insta": "https://instagram.com/aliya_baisal",
               "linkedin": ""
+            },
+            {
+              "id": "rg6",
+              "name": "Adithya Rajeev",
+              "post": "Registration Coordinator",
+              "img": "/teams/Adithya.jpg",
+              "insta": "https://instagram.com/ar__04___",
+              "linkedin": ""
             }
           ]
         },
@@ -446,6 +470,22 @@
               "post": "Inaguration Coordinator",
               "img": "/teams/Akhil Anil.jpg",
               "insta": "https://instagram.com/_spry_zen_",
+              "linkedin": ""
+            },
+            {
+              "id": "i7",
+              "name": "Jisha K",
+              "post": "Inaguration Coordinator",
+              "img": "/teams/Jisha K.jpg",
+              "insta": "https://instagram.com/_crazygirl__021",
+              "linkedin": ""
+            },
+            {
+              "id": "i6",
+              "name": "S Nithin ",
+              "post": "Inaguration Coordinator",
+              "img": "/teams/nithin.jpg",
+              "insta": "https://instagram.com/__the_exception_01__?igshid=ZDdkNTZiNTM=",
               "linkedin": ""
             },
             {
@@ -508,6 +548,30 @@
               "img": "/teams/Manu Karthik K S.jpg",
               "insta": "https://instagram.com/manugourisankaram?igshid=ZDdkNTZiNTM=",
               "linkedin": ""
+            },
+            {
+              "id": "s4",
+              "name": "Jitty K Abraham",
+              "post": "Sponsorship Coordinator",
+              "img": "/teams/jitty.jpg",
+              "insta": "https://instagram.com/krushitan_ishtam?igshid=ZDdkNTZiNTM=",
+              "linkedin": ""
+            },
+            {
+              "id": "s5",
+              "name": "Sneha Rachel George",
+              "post": "Sponsorship Coordinator",
+              "img": "/teams/senha.jpg",
+              "insta": "https://instagram.com/_voice.of.christ_",
+              "linkedin": ""
+            },
+            {
+              "id": "s6",
+              "name": "Reshma Sara Thomas",
+              "post": "Sponsorship Coordinator",
+              "img": "/teams/reshma.jpg",
+              "insta": "https://instagram.com/__r.e.s.h.m.a__",
+              "linkedin": ""
             }
           ]
         },
@@ -520,6 +584,19 @@
               "post": "Light & Sound Coordinator",
               "img": "/teams/harith.jpg",
               "insta": "https://instagram.com/hari. _.99",
+              "linkedin": ""
+            }
+          ]
+        },
+        {
+          "name": "Food Committee",
+          "members": [
+            {
+              "id": "l1",
+              "name": "Reshi Krishna P A ",
+              "post": "Food Committee Coordinator",
+              "img": "/teams/reshi.jpg",
+              "insta": "https://instagram.com/reshi_krishna_pa",
               "linkedin": ""
             }
           ]
