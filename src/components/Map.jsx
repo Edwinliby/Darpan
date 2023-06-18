@@ -10,7 +10,7 @@ function Map() {
         allowFullScreen=""
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
-        className="w-full h-[30rem] rounded-md"
+        className="w-full h-[30rem] rounded-md map"
       ></iframe>
     </div>
   );

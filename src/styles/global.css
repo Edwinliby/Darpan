@@ -15,6 +15,10 @@ html {
   /* outline: 1px red solid; */
 }
 
+.map {
+  filter: invert(100%)
+}
+
 ::-webkit-scrollbar {
   height: 0px;
   width: 0px;
