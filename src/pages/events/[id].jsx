@@ -55,7 +55,7 @@ function EventsDetails(props) {
               className="text-xl font-medium font-clash text-center"
               ref={subtitle}
             >
-              Darpan presents
+              Yukthi presents
             </p>
             <h1
               className="text-[3rem] xl:text-[4rem] font-clash font-semibold text-center"

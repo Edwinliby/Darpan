@@ -13,7 +13,7 @@ export default function EventSlider() {
   return (
     <div className="flex flex-col items-center justify-center h-fit pb-[80px] bg-gradient-to-b from-transparent to-primary mt-20">
       <h1 className="text-[2.7rem] leading-10 text-center md:text-[4rem] text-white font-clash font-bold tracking-wider">
-        Shades of Darpan
+        Shades of Yukthi
       </h1>
       <div className="flex flex-wrap gap-8 md:gap-16 lg:gap-20 pt-10 items-center justify-center px-10 mt-10">
         <div data-tilt className="w-fit relative scale-105">

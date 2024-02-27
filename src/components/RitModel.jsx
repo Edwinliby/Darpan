@@ -65,11 +65,11 @@ export default function RitModel() {
         Explore Your Interests
       </h1>
 
-      <section class="flex flex-col items-center lg:flex-row lg:items-stretch justify-between w-[90%] max-w-[70rem] lg:h-[70vh] h-[100vh] mt-12">
+      <section className="flex flex-col items-center lg:flex-row lg:items-stretch justify-between w-[90%] max-w-[70rem] lg:h-[70vh] h-[100vh] mt-12">
         {itemList.map((item) => (
           <article
             key={item.id}
-            class="flex-card-container bg-cover bg-no-repeat"
+            className="flex-card-container bg-cover bg-no-repeat"
             style={{
               backgroundImage: `url(${item.image})`,
             }}

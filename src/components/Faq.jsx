@@ -19,7 +19,7 @@ export default function Faq() {
               htmlFor="collapsible1"
               className="lbl-toggle block cursor-pointer font-semibold text-white/40 text-xl md:text-2xl p-7"
             >
-              What are the prerequisites for darpan?
+              What are the prerequisites for yukthi?
             </label>
 
             <div className="collapsible-content">

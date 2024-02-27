@@ -9,22 +9,22 @@ export default function NotFound() {
         src="/never-gonna.gif"
         width={400}
         height={400}
-        alt="logo"
+        alt="oopsie!!"
         className="w-[12rem] h-[12rem] xl:w-auto xl:h-auto"
       />
       <div className="flex flex-col gap-3">
         <h1 className="text-lg md:text-xl font-medium font-ibm">
           {" "}
-          <b className="text-3xl">Oops</b> page is not found !
+          <b className="text-3xl">Oops</b> not YukthiFul!
         </h1>
         <p className="text-sm font-medium font-ibm">
-          You just hit a route that doesn't exist...
+          Next time, use your yukthi to go somewhere that exists...
         </p>
         <Link
           className="text-sm font-medium font-ibm text-main_primary"
           href="/"
         >
-          Go back
+          Like this ;)
         </Link>
       </div>
     </div>

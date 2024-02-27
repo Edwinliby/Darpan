@@ -41,7 +41,7 @@ progress::-webkit-progress-bar {
 }
 
 progress::-webkit-progress-value {
-  background-color: #9747ff;
+  background-color: #CAFA19;
 }
 
 .hackNav:hover .navPageNo {
@@ -67,7 +67,7 @@ progress::-webkit-progress-value {
   object-fit: cover;
 }
 
-.vidDarpan {
+.vidYukthi {
   color: #ffffff;
   letter-spacing: -2.6vw;
   text-align: center;

@@ -100,7 +100,7 @@ export default function MyApp({ Component, pageProps }) {
               innerSize={12}
               outerSize={20}
               trailingSpeed={15}
-              color="151, 71, 255"
+              color="202, 250, 25"
               outerAlpha={0.7}
               innerScale={1.5}
               outerScale={2}

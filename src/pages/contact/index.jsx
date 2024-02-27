@@ -22,14 +22,14 @@ export default function Contact(props) {
   return (
     <div className="h-fit w-screen bg-black">
       <Head>
-        <title>Darpan23 - Contact</title>
+        <title>Yukthi - Contact</title>
       </Head>
       <Header id="Navbar" />
       {/* <progress max="100" value="0"></progress> */}
       <main className='pt-[5.5rem] bg-[url("/signup.jpg")] h-full'>
         <div className="flex flex-col text-center items-center justify-center h-full gap-2">
           <h1 className="text-5xl text-white font-clash font-semibold">
-            Darpan' 23&nbsp; Contact
+            Yukthi '24&nbsp; Contact
           </h1>
           <p className="text-2xl text-white font-clash">
             Feel free to contact us

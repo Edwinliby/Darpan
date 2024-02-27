@@ -34,7 +34,7 @@ const Home = () => {
   return (
     <div className="bg-black h-fit">
       <Head>
-        <title>Darpan</title>
+        <title>Yukthi</title>
       </Head>
 
       <Header id="navbar" />
@@ -45,7 +45,7 @@ const Home = () => {
           className="hidden xl:block italic relative w-full text-center top-[7rem] z-[10]"
         >
           <p className="text-white pl-[1.5rem] top-[6rem] uppercase font-clash font-bold text-[2.5rem] tracking-wide">
-            COLLEGE OF ENGINEERING ARANMULA
+            ST. THOMAS INSTITUTE FOR SCIENCE & TECHNOLOGY
           </p>
           <p className="text-white font-clash text-xl">PRESENTS</p>
         </div>
@@ -58,9 +58,9 @@ const Home = () => {
 
       {isLoaded && <Clock />}
 
-      <EventSlider />
+      {/* <EventSlider /> */}
 
-      <Partical/>
+      {/* <Partical/> */}
 
       <div className="bg-gradient-to-b from-primary to-transparent">
         <RitModel />

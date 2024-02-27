@@ -5,7 +5,7 @@ function Clock() {
     <div className="w-screen flex justify-center my-2 lg:mb-8">
       <div className="md:border border-gray/50 xl:mt-[8rem] pb-5 xl:pb-10 xl w-[100] xl:w-[35rem] flex flex-col justify-center items-center z-[10] text-white text-[3rem] md:text-[4rem] tracking-[1rem] font-clash">
         <Countdown
-          date={new Date("2023-04-26T00:00:00")}
+          date={new Date("2024-03-15T00:00:00")}
           className="text-[2rem] xl:text-[4rem]"
         />
 
@@ -31,12 +31,14 @@ function Clock() {
       <div className="hidden xl:block pl-4 border  min-w-min-[3rem] border-gray/50 p-3 mt-[8rem] text-white">
         <div className="flex flex-col gap-2 justify-center items-center h-[100%]">
           <span className="font-chakra text-[1.8rem]">
-            2023 <span className="font-clash">April</span>
+            2024 <span className="font-clash">March</span>
           </span>
           <span className="flex gap-2 text-[2rem] font-chakra font-bold">
-            26
+            15
             <b className="text-[12px]">TH</b>
-            27
+            16
+            <b className="text-[12px]">TH</b>
+            17
             <b className="text-[12px]">TH</b>
           </span>
         </div>

@@ -32,7 +32,7 @@ export default function Events({ posts, names }) {
   return (
     <div className="h-fit w-screen bg-soothing_black">
       <Head>
-        <title>Darpan23 - Events</title>
+        <title>Yukthi - Events</title>
       </Head>
       <Header id="navbar" />
       {/* <progress max="100" value="0"></progress> */}
@@ -40,7 +40,7 @@ export default function Events({ posts, names }) {
       <main>
         <div className='h-[15rem] md:h-[20rem] bg-[url("/banner.png")] object-fill text-white font-clash tracking-wide font-black flex flex-col items-center justify-center'>
           <span className="text-[1rem] pt-12 md:pt-16 md:text-[4rem]">
-            DARPAN' 23
+            YUKTHI '24
           </span>
           <span className="text-[2.5rem] tracking-wider">EVENTS</span>
         </div>
@@ -50,7 +50,7 @@ export default function Events({ posts, names }) {
             <span
               key={i}
               className="rounded-full px-4 py-[.3rem] hover:bg-white/20 transition-all duration-500 ease-in-out"
-              style={{ border: index === i ? "1.75px solid #9747ff" : "none" }}
+              style={{ border: index === i ? "1.75px solid #CAFA19" : "none" }}
               onClick={() => setIndex(i)}
             >
               {name}

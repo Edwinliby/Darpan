@@ -13,9 +13,9 @@ module.exports = {
       },
       colors: {
         soothing_black: "#0E1111",
-        main_primary: "#9747FF",
-        primary: "#1E0B37",
-        gray: "#868888",
+        main_primary: "#CAFA19",
+        primary: "#273201",
+        gray: "#3b4b02",
         footer: "#1B1B1B",
       },
       screens: {
