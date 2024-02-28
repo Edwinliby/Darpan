@@ -10,8 +10,7 @@
     "WORKSHOPS"
   ],
   "posts": [
-    [
-    ],
+    [],
     [],
     [
       {
@@ -28,7 +27,7 @@
         "regfee": "200",
         "enddate": "2023-04-27",
         "reglink": "https://docs.google.com/forms/d/e/1FAIpQLSchBNwrBZTHqgoxnNtv3K6FzBDMvZdD0umaixmTaxvh1KjVnw/viewform?usp=sf_link",
-        "reg": "Register Closed",
+        "reg": "Register Now",
         "ruleheader": "RULES",
         "rules": {
           "rule1": "📍 Minimum team count should be 3.",
@@ -227,6 +226,7 @@
         "enddate": "2023-04-25",
         "reglink": "https://docs.google.com/forms/d/e/1FAIpQLScrxNp05Hb0tBPRBiFfHbZgKuxkPBrqB6O6aDmMBrKyJSSXpQ/viewform?embedded=true",
         "reg": "Register Now",
+        "embed": true,
         "ruleheader": "RULES",
         "rules": {
           "rule1": "1. Contestants can use their personal laptops otherwise one shall be provided by the college",
@@ -323,8 +323,7 @@
         "pricepool": "cool swags",
         "regfee": "100",
         "enddate": "2023-04-26",
-        "reglink": "https://docs.google.com/forms/d/e/1FAIpQLSfCQddeZi6jbPDopaFgWaTIrO6CdFV3hg-g9RBIlSiRx4NPow/viewform?embedded=true",
-        "embed": true,
+        "reglink": "#",
         "reg": "Register Now",
         "ruleheader": "RULES",
         "rules": {
@@ -394,7 +393,7 @@
         "pricepool": false,
         "regfee": "100, refundable",
         "enddate": "2023-04-26",
-        "reglink": "https://reg.yukthi.org/ar-vr",
+        "reglink": "https://forms.gle/jk2TKNHmKYdo1KKz9",
         "reg": "Register Now",
         "ruleheader": "Guildelines",
         "rules": {
@@ -458,7 +457,7 @@
         "pricepool": false,
         "regfee": "100, refundable",
         "enddate": "2023-04-26",
-        "reglink": "https://www.yepdesk.com/embed/ai-ml-workshop/private/c309hbspvj",
+        "reglink": "https://forms.gle/gxwE9Vg1kNiCnpFXA",
         "reg": "Register Now",
         "ruleheader": "Guildelines",
         "rules": {
@@ -490,7 +489,7 @@
         "pricepool": false,
         "regfee": "100, refundable",
         "enddate": "2023-04-23",
-        "reglink": "https://www.yepdesk.com/embed/stock-trading-workshop/private/n72bmhmuas",
+        "reglink": "https://forms.gle/d4eDmBAXnPspkv2D7",
         "reg": "Register Now",
         "ruleheader": "Guildelines",
         "rules": {
@@ -554,7 +553,7 @@
         "pricepool": false,
         "regfee": "100, refundable",
         "enddate": "2023-04-27",
-        "reglink": "https://www.yepdesk.com/embed/plc-workshop/private/uekhfgevom",
+        "reglink": "https://forms.gle/pqr8Lk7zduKvghB4A",
         "reg": "Register Now",
         "ruleheader": "Guildelines",
         "rules": {
@@ -586,7 +585,7 @@
         "pricepool": false,
         "regfee": "100, refundable",
         "enddate": "2023-04-27",
-        "reglink": "https://www.yepdesk.com/embed/plc-workshop/private/uekhfgevom",
+        "reglink": "https://forms.gle/Wo9ELcaq2ko7edR68",
         "reg": "Register Now",
         "ruleheader": "Guildelines",
         "rules": {
@@ -618,7 +617,7 @@
         "pricepool": false,
         "regfee": "100, refundable",
         "enddate": "2023-04-27",
-        "reglink": "https://www.yepdesk.com/embed/plc-workshop/private/uekhfgevom",
+        "reglink": "https://forms.gle/6yp1YLCeoQEHA8hz7",
         "reg": "Register Now",
         "ruleheader": "Guildelines",
         "rules": {
