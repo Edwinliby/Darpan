@@ -1,15 +1,16 @@
 import React from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import Image from "next/image";
 import { Slant as Hamburger } from "hamburger-react";
 import { motion } from "framer-motion";
-// import { useAuthContext } from "@/context/auth-context";
 import Navlink from "@/components/Navlink";
 
 export default function Header() {
   const [isVisible, setIsVisible] = React.useState(true);
   const [isOpen, setOpen] = React.useState(false);
-  // const { signInWithGoogle, appState, signOut } = useAuthContext();
+
+  const router = useRouter();
 
   React.useEffect(() => {
     if (isOpen) {
@@ -35,32 +36,39 @@ export default function Header() {
 
   const routes = [
     {
-      'label': 'Events',
-      'action': '/events'
+      label: 'Home',
+      action: '/'
     },
     {
-      'label': 'About',
-      'action': '/#about'
+      label: 'Events',
+      action: '/events'
     },
     {
-      'label': 'FAQ',
-      'action': '/#faq'
+      label: 'About',
+      action: '/#about'
     },
     {
-      'label': 'Brochure',
-      'action': '/brochure.pdf'
+      label: 'FAQ',
+      action: '/#faq'
     },
     {
-      'label': 'Teams',
-      'action': '/teams'
+      label: 'Brochure',
+      action: '/brochure.pdf'
     },
+    {
+      label: 'Teams',
+      action: '/teams'
+    },
+    {
+      label: 'Contact',
+      action: '/contact'
+    }
   ]
 
   return (
     <>
       <header
         className="w-full h-[4.5rem] flex items-center py-2 fixed z-[25] border-b-[1.5px] bg-soothing_black/60 border-gray/40 backdrop-blur-md transition-all duration-300 ease-in-out"
-        // style={{ hidden:block
         style={{ transform: isVisible ? "translateY(0)" : "translateY(-100%)" }}
       >
         <div
@@ -90,31 +98,6 @@ export default function Header() {
             className="opacity-80"
           />
         </Link>
-
-        {/* <div className="absolute right-2 z-[26] hidden md:block">
-          <div className="relative bg-main_primary text-white w-fit text-left pl-4 pr-2 py-1 rounded-[4px]">
-            {appState.userAuth ? (
-              <span
-                className="text-white hover:text-black font-chakra tracking-wide font-bold text-base cursor-pointer transition-all duration-300 ease-in-out"
-                onClick={signOut}>
-                LOG OUT
-              </span>
-            ) : (
-              <span
-                className="text-white hover:text-black font-chakra tracking-wide font-bold text-base cursor-pointer transition-all duration-300 ease-in-out"
-                onClick={signInWithGoogle}>
-                LOG IN
-              </span>
-            )}
-            <Image
-              src="/edgeTriangleSvg.svg"
-              width={20}
-              height={20}
-              alt="edge"
-              className="absolute bottom-[-1px] left-[-2px] mix-blend-multiply"
-            />
-          </div>
-        </div> */}
         <progress max="100" value="0"></progress>
       </header>
 
@@ -140,21 +123,8 @@ export default function Header() {
               <div className="ml-4 border-l-[1.5px] border-gray/40 h-full"></div>
             </div>
             <div className="text-5xl font-clash font-black flex flex-col mt-14 ml-8 md:mt-12 gap-4 ">
-              <div className="relative bg-main_primary text-white w-fit text-left pl-2 pr-4 py-1 rounded-[4px]">
-                <Navlink name={"HOME"} link={"/"} setToggle={setOpen} />
-                {/* <Image
-                  src="/edgeTriangle.png"
-                  width={20}
-                  height={20}
-                  alt="edge"
-                  className="absolute bottom-[-1px] right-[-1px]"
-                /> */}
-                <p className="absolute right-[-2rem] top-[2px] text-[8px] font-bold text-main_primary">
-                  PAGE <br /> 01
-                </p>
-              </div>
               {routes.map((item, index) => {
-                return <div key={index} className="relative hackNav hover:bg-white hover:text-black text-white w-fit text-left pl-2 pr-4 py-1 rounded-[4px]">
+                return <div key={index} className={`relative ${item.action === router.pathname ? 'bg-main_primary' : 'hackNav hover:bg-white hover:text-black'} text-white w-fit text-left pl-2 pr-4 py-1 rounded-[4px]`}>
                   <Navlink name={item.label.toUpperCase()} link={item.action} setToggle={setOpen} />
                   <Image
                     src="/edgeTriangle.png"
@@ -164,7 +134,7 @@ export default function Header() {
                     className="absolute bottom-[-1px] right-[-1px]"
                   />
                   <p className="absolute right-[-2rem] top-[2px] text-[8px] font-bold text-transparent navPageNo">
-                    PAGE <br /> 0{index+2}
+                    PAGE <br /> 0{index+1}
                   </p>
                 </div>
               })}

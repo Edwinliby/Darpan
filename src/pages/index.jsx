@@ -1,5 +1,4 @@
 import { useRef, useEffect, useState } from "react";
-import Head from "next/head";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Video from "@/components/Video";
@@ -14,7 +13,7 @@ import fsPromises from "fs/promises";
 import path from "path";
 import RitModel from "@/components/RitModel";
 import EventSlider from "@/components/EventSlider";
-// import Partical from "@/components/Partical";
+import Title from "@/components/Head";
 
 const Home = () => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -33,9 +32,7 @@ const Home = () => {
 
   return (
     <div className="bg-black h-fit">
-      <Head>
-        <title>Yukthi</title>
-      </Head>
+      <Title title={'Yukthi'} description={'Solve. Create. Thrive'} />
 
       <Header id="navbar" />
 

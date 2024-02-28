@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Head from "next/head";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Title from "@/components/Head";
 
 function FormPage() {
   const [name, setName] = useState("");
@@ -25,9 +25,7 @@ function FormPage() {
 
   return (
     <div className="signup relative">
-      <Head>
-        <title>Sign Up</title>
-      </Head>
+      <Title title={'Sign Up - Yukthi'} description={'Sign Up to view your registrations'} />
       <Header />
 
       <form onSubmit={handleSubmit} className="h-fit  px-4 pb-8 pt-[6.5rem] font-chakra text-xl flex flex-col gap-6 items-center justify-center">

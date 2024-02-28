@@ -1,12 +1,12 @@
 import { useState } from "react";
 import { FaInstagram, FaGithub } from "react-icons/fa";
-import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import fsPromises from "fs/promises";
 import path from "path";
+import Title from "@/components/Head";
 
 function Team(props) {
   const [index, setIndex] = useState(0);
@@ -15,9 +15,7 @@ function Team(props) {
 
   return (
     <div className="h-fit w-screen bg-soothing_black">
-      <Head>
-        <title>Yukthi - Teams</title>
-      </Head>
+      <Title title={'Teams - Yukthi'} description={"We set the stage for Yukthi '24"} />
       <Header id="navbar" />
 
       <main>

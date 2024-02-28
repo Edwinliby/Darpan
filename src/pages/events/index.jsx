@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from "react";
-import Head from "next/head";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Image from "next/image";
@@ -8,6 +7,7 @@ import fsPromises from "fs/promises";
 import path from "path";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/all";
+import Title from "@/components/Head";
 
 export default function Events({ posts, names }) {
   const [index, setIndex] = useState(0);
@@ -31,9 +31,7 @@ export default function Events({ posts, names }) {
 
   return (
     <div className="h-fit w-screen bg-soothing_black">
-      <Head>
-        <title>Yukthi - Events</title>
-      </Head>
+      <Title title={'Events - Yukthi'} description={"See what's happening at Yukthi '24"} />
       <Header id="navbar" />
       {/* <progress max="100" value="0"></progress> */}
 

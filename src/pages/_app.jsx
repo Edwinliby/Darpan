@@ -1,10 +1,10 @@
 import React from "react";
-import Head from "next/head";
 import { Chakra_Petch } from "next/font/google";
 import { IBM_Plex_Mono } from "next/font/google";
 import { Bebas_Neue } from "next/font/google";
 import LocalFont from "next/font/local";
 import Loader from "@/components/Loader";
+import Title from "@/components/Head";
 import dynamic from "next/dynamic";
 import { useRouter } from "next/router";
 import "../styles/global.css";
@@ -83,9 +83,7 @@ export default function MyApp({ Component, pageProps }) {
 
   return (
     <>
-      <Head>
-        <link rel="shortcut icon" href="/favicon.ico" type="image/png" />
-      </Head>
+      <Title title={"Yukthi '24"} description={'Solve. Create. Thrive'} />
       {loading ? (
         <Loader />
       ) : (
