@@ -128,7 +128,7 @@ function EventsDetails(props) {
                 <button
                   className="relative bottom-5 bg-white text-black w-full rounded-full p-2 font-medium hover:bg-gray hover:text-white transition duration-300 ease-in-out"
                   onClick={() => {
-                    props.reg == "Register Closed" ? null : setPopUp(true);
+                    props.reg == "Register Closed" ? null : props.embed ? setPopUp(true) : window.open(props.reglink, '_blank');
                   }}
                 >
                   {props.reg}
@@ -164,7 +164,7 @@ function EventsDetails(props) {
 
       {popUp && (
         <div className="fixed top-0 left-0 w-full h-full bg-black/50 z-50 flex justify-center items-center animate-fadeIn ">
-          <div className="relative w-full h-full max-w-[90%] lg:max-w-[80%]  xl:max-w-[70%]   max-h-[90%] flex flex-col justify-center items-center">
+          <div className="relative bg-white rounded-md w-full h-full max-w-[90%] lg:max-w-[80%]  xl:max-w-[70%]   max-h-[90%] flex flex-col justify-center items-center">
             <div className="absolute top-0 right-0 p-4">
               <button
                 className="bg-transparent text-black rounded-full w-12 h-12 flex text-xl justify-center items-center font-semibold hover:bg-main_primary/90 hover:text-white transition duration-300 ease-in-out "
@@ -175,8 +175,7 @@ function EventsDetails(props) {
             </div>
             <iframe
               width="100%"
-              height="100%"
-              className="rounded-md"
+              height="90%"
               src={props.reglink}
             ></iframe>
           </div>
@@ -229,6 +228,7 @@ export async function getStaticProps(context) {
       register: post.reg,
       reglink: post.reglink,
       reg: post.reg,
+      embed: post.embed || false,
       rulehead: post.ruleheader,
       rule1: post.rules.rule1,
       rule2: post.rules.rule2,

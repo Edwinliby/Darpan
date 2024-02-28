@@ -2,7 +2,7 @@ import React from "react";
 import Navlink from "./Navlink";
 import Link from "next/link";
 import { FiArrowDownRight } from "react-icons/fi";
-import { FaInstagram, FaFacebookF } from "react-icons/fa";
+import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 import {AiOutlineGlobal} from "react-icons/ai"
 
 export default function Footer() {
@@ -62,10 +62,10 @@ export default function Footer() {
                 <FaInstagram size="3rem" />
               </Link>
               <Link
-                href="https://www.facebook.com/profile.php?id=100090947657195"
+                href="https://whatsapp.com/channel/0029VaNqRkpA2pLCJZ3oZ21G"
                 className="social-links flex items-center justify-center grow-[1] min-w-[5rem] min-h-[12rem] hover:text-main_primary"
               >
-                <FaFacebookF size="3rem" />
+                <FaWhatsapp size="3rem" />
               </Link>
             </div>
           </div>
