@@ -42,7 +42,7 @@ export default function Preloader() {
       >
         <div className="w-full h-full bg-black">
           <video autoPlay loop muted className="w-full h-full object-cover">
-            <source src="/preloader_loading.mp4" type="video/mp4" />
+            <source src="/preloader.mp4" type="video/mp4" />
           </video>
         </div>
       </motion.div>

@@ -10,6 +10,7 @@ module.exports = {
         chakra: ["var(--font-chakra)"],
         ibm: ["var(--font-ibm)"],
         bebas: ["var(--font-bebas)"],
+        akira: ["var(--font-akira)"]
       },
       colors: {
         soothing_black: "#0E1111",

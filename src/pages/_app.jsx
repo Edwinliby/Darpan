@@ -38,6 +38,11 @@ const font_clash_display = LocalFont({
   variable: "--font-clash-display",
 });
 
+const font_akira = LocalFont({
+  src: "../fonts/akira.otf",
+  variable: "--font-akira"
+})
+
 const AnimatedCursor = dynamic(() => import("react-animated-cursor"), {
   ssr: false,
 });
@@ -91,7 +96,7 @@ export default function MyApp({ Component, pageProps }) {
           transition={{ duration: 0.5 }}
         >
           <main
-            className={`${font_chakra.variable} ${font_clash_display.variable} ${font_ibm.variable} ${font_bebas.variable}`}
+            className={`${font_chakra.variable} ${font_clash_display.variable} ${font_akira.variable} ${font_ibm.variable} ${font_bebas.variable}`}
           >
             <Component {...pageProps} />
             <Analytics />

@@ -43,7 +43,7 @@ function Hero() {
     <div className="hero relative xl:hidden py-8 h-fit flex flex-col uppercase justify-center">
       <video
         ref={render}
-        src="/render.mp4"
+        src="/mobile.mp4"
         loop
         autoPlay
         muted

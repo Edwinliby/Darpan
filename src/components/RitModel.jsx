@@ -5,12 +5,12 @@ export default function RitModel() {
   const itemList = [
     {
       id: 1,
-      title: "Cultural",
-      image: "/slider/cultural.jpg",
+      title: "Hackathon",
+      image: "/slider/hackathon.jpg",
     },
     {
       id: 2,
-      title: "Events",
+      title: "Talks",
       image: "/slider/events.jpg",
     },
     {
@@ -62,7 +62,7 @@ export default function RitModel() {
   return (
     <div className="flex justify-center items-center flex-col lg:pt-12">
       <h1 className="text-4xl md:text-6xl font-bold text-center text-white font-clash tracking-wider p-2 md:px-4">
-        Explore Your Interests
+        something for all
       </h1>
 
       <section className="flex flex-col items-center lg:flex-row lg:items-stretch justify-between w-[90%] max-w-[70rem] lg:h-[70vh] h-[100vh] mt-12">

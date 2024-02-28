@@ -34,8 +34,8 @@ export default function About() {
   return (
     <div className="h-fit relative pt-4 px-2 xl:px-20  ">
       <div className="about flex flex-wrap text-white tracking-wide xl:tracking-[.5rem]  text-[2.7rem] sm:text-[4.3rem] md:text-[6rem] lg:text-[5.5rem] xl:text-[6.7rem]  leading-[3rem] md:leading-[5rem] font-clash font-bold mt-16">
-        <span>You might be</span>
-        <span>Thinking what is</span>
+        <span>Okay cool! But</span>
+        <span>hold on, what is</span>
         <span
           ref={trigger}
           className="text-[4rem] sm:text-[5.5rem] md:text-[7.5rem] lg:text-[9.5rem] xl:text-[12.5rem] md:mt-4 lg:mt-12"
@@ -68,7 +68,7 @@ export default function About() {
         </p>
 
         <video
-          src="/About.mp4"
+          src="/about.mp4"
           autoPlay
           loop
           muted
