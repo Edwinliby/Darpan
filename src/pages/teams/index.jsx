@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FaInstagram, FaGithub } from "react-icons/fa";
+import { FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
 import Image from "next/image";
 import Header from "@/components/Header";
@@ -9,7 +9,7 @@ import path from "path";
 import Title from "@/components/Head";
 
 function Team(props) {
-  const [index, setIndex] = useState(0);
+  const [index] = useState(0);
   const tabs = props.tabs;
   console.log("tabs", tabs);
 
@@ -27,7 +27,7 @@ function Team(props) {
         </div>
 
         <div className="text-[.8rem] md:text-[1rem] p-8 font-semibold font-chakra flex gap-4 md:gap-12 items-center justify-center text-white">
-          {tabs.map((tab, i) => (
+          {/* {tabs.map((tab, i) => (
             <span
               key={i}
               className="rounded-full px-4 py-[.3rem] hover:bg-white/20 transition-all duration-500 ease-in-out"
@@ -36,7 +36,7 @@ function Team(props) {
             >
               {tab.name}
             </span>
-          ))}
+          ))} */}
         </div>
 
         <div className="w-full h-fit pb-10 flex justify-center">
@@ -73,26 +73,29 @@ function Team(props) {
                         </div>
                         <div className="flex justify-end pb-2">
                           <div
-                            className={
-                              member.github
-                                ? "flex justify-between w-20"
-                                : "flex justify-end"
-                            }
+                            className={`flex ${member.github ? 'justify-between w-30' : 'justify-end'} space-x-2`}
+
                           >
                             {member.github && (
-                              <Link href={`${member.github}`} className="">
+                              <Link href={`https://github.com/${member.github}`}>
                                 <FaGithub
                                   size="2rem"
                                   className="text-white hover:text-[#CAFA19] transition-all duration-500 ease-in-out"
                                 />
                               </Link>
                             )}
-                            <Link href={`${member.insta}`} className="">
+                            {member.insta && <Link href={`https://instagram.com/${member.insta}`}>
                               <FaInstagram
                                 size="2rem"
                                 className="text-white hover:text-[#CAFA19] transition-all duration-500 ease-in-out"
                               />
-                            </Link>
+                            </Link>}
+                            {member.linkedin && <Link href={`https://linkedin.com/in/${member.linkedin}`}>
+                              <FaLinkedin
+                                size="2rem"
+                                className="text-white hover:text-[#CAFA19] transition-all duration-500 ease-in-out"
+                              />
+                            </Link>}
                           </div>
                         </div>
                       </div>

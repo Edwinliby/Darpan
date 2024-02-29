@@ -2,80 +2,101 @@
   "posts": [
     {
       "id": "1",
-      "title": "Darpan Coordinator",
-      "sub":"",
-      "name": "Ajish S",
-      "ph": "9447789825"
+      "title": "Convenor",
+      "sub":"Computer Science",
+      "name": "Muhammed R",
+      "ph": "7025662019"
     },
     {
       "id": "2",
-      "title": "Student Coordinator",
-      "sub":"",
-      "name": "Sherin V Thomas",
-      "ph": "7558003638"
+      "title": "Co Convenor",
+      "sub":"Computer Science",
+      "name": "Joel Johnson",
+      "ph": "9061234812"
     },
     {
       "id": "3",
-      "title": "Finance Coordinator",
-      "sub":"",
-      "name": "Gladson T Lalu",
-      "ph": "8086284556"
+      "title": "Operations Lead",
+      "sub":"Computer Science",
+      "name": "Muhammed Ziyan Ummalil",
+      "ph": "7012829471"
     },
     {
       "id": "4",
-      "title": "Sponsorship Coordinator",
-      "sub":"",
-      "name": "Adithyanath S S",
-      "ph": "9847565991"
+      "title": "Design Lead",
+      "sub":"Computer Science",
+      "name": "Abi Krishna",
+      "ph": "8606313088"
     },
     {
       "id": "5",
-      "title": "Cultural Event Manager",
-      "sub":"",
-      "name": "B S Adithya",
-      "ph": "7510556352"
+      "title": "UI/UX Lead",
+      "sub":"Computer Science",
+      "name": "Dev Nandan",
+      "ph": "9746568406"
     },
     {
       "id": "6",
-      "title": "Technical Event Manager",
-      "sub":"",
-      "name": "Albin Mathew Joseph",
-      "ph": "9961019157"
+      "title": "Marketing Lead",
+      "sub":"Computer Science",
+      "name": "Devadathan DR",
+      "ph": "9746568406"
     },
     {
       "id": "7",
-      "title": "Exhibition Coordinator",
-      "sub": "Civil Engineering",
-      "name": "Kasinath. P",
-      "ph": "6238216614"
+      "title": "Media Lead",
+      "sub": "Computer Science",
+      "name": "Jeevan Deepan",
+      "ph": "9995230251"
     },
     {
       "id": "8",
-      "title": "Exhibition Coordinator",
+      "title": "Technical Lead",
       "sub": "Computer Science",
-      "name": "Jeena Joy",
-      "ph": "8848046611"
+      "name": "Vishal Krishna",
+      "ph": "9074775013"
     },
     {
       "id": "9",
-      "title": "Exhibition Coordinator",
-      "sub": "Electronics & Communication",
-      "name": "Sneha S Nair",
-      "ph": "9645318060"
+      "title": "Competition Coordinator",
+      "sub": "Computer Science",
+      "name": "Karthik Shankar",
+      "ph": "526358955"
     },
     {
       "id": "10",
-      "title": "Exhibition Coordinator",
-      "sub": "Electrical & Electronics",
-      "name": "Aswin A S",
-      "ph": "9847151730"
+      "title": "Workshop Coordinator",
+      "sub": "Computer Science",
+      "name": "Aryan C",
+      "ph": "9526710136"
     },
     {
       "id": "11",
-      "title": "Public Relations & Enquiry",
+      "title": "Sponsorship Coordinator",
       "sub":"",
-      "name": "Kavya Mariya Simon",
-      "ph": "7306193692"
+      "name": "Darshan Kumar",
+      "ph": "8547851467"
+    },
+    {
+      "id": "12",
+      "title": "Ambience Coordinator",
+      "sub": "Civil Engineering",
+      "name": "Abhishek",
+      "ph": "8590958280"
+    },
+    {
+      "id": "13",
+      "title": "Student Coordinator",
+      "sub": "Computer Science",
+      "name": "Sabal krishna",
+      "ph": "7594880678"
+    },
+    {
+      "id": "14",
+      "title": "Finance Manager",
+      "sub": "Computer Science",
+      "name": "Saurabh Nandan",
+      "ph": "9496995240"
     }
   ]
 }

@@ -75,8 +75,7 @@ export default function Footer() {
       <div className="font-clash flex justify-between py-2 text-[10px] md:text-xs px-4 border-t-[1.5px] border-gray/40">
         <p>©2024 - YUKTHI STIST </p>
         <span className="flex gap-4">
-          <Link href="/404"><p>Terms & Conditions</p></Link>
-          <p>Privacy Policy</p>
+          <p>Template forked from <Link href={'https://github.com/Edwinliby/Darpan'}>darpan by @edwinliby</Link></p>
         </span>
       </div>
     </footer>

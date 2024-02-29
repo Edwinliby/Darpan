@@ -109,14 +109,14 @@ function EventsDetails(props) {
                       {props.c2name != false && <span>{props.c2name} :</span>}
                     </div>
                     <div className="flex flex-col text-white font-bold">
-                      <Link href={`tel:${props.c1number}`}>
+                      <Link href={`tel:+91${props.c1number}`}>
                         <span className="font-normal hover:text-main_primary transition duration-300 ease-in-out">
-                          {props.c1number}
+                          +91 {props.c1number}
                         </span>
                       </Link>
-                      <Link href={`tel:${props.c2number}`}>
+                      <Link href={`tel:+91${props.c2number}`}>
                         <span className="font-normal hover:text-main_primary transition duration-300 ease-in-out">
-                          {props.c2number}
+                          +91 {props.c2number}
                         </span>
                       </Link>
                     </div>

@@ -46,8 +46,8 @@ export default function Contact(props) {
               </h2>
               <span className="text-2xl font-chakra">
                 Ph no :{" "}
-                <Link href="tel:9447789825" className="hover:text-main_primary">
-                  {post.ph}
+                <Link href={`tel:+91${post.ph}`} className="hover:text-main_primary">
+                  +91 {post.ph}
                 </Link>
               </span>
             </div>

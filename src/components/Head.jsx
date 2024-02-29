@@ -7,7 +7,6 @@ export default function Title({ title, description }) {
 
     return <Head>
         <title>{title}</title>
-        <link rel="shortcut icon" href={`${domain}/favicon.ico`} type="image/png" />
 
         <meta name="title" content={title} />
         <meta name="description" content={description} />
