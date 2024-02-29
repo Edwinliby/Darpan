@@ -124,7 +124,7 @@ export default function Header() {
             </div>
             <div className="text-5xl font-clash font-black flex flex-col mt-14 ml-8 md:mt-12 gap-4 ">
               {routes.map((item, index) => {
-                return <div key={index} className={`relative ${item.action === router.pathname ? 'bg-main_primary' : 'hackNav hover:bg-white hover:text-black'} text-white w-fit text-left pl-2 pr-4 py-1 rounded-[4px]`}>
+                return <div key={index} className={`relative ${item.action === router.pathname ? 'bg-white text-black' : 'hackNav text-white hover:bg-white hover:text-black'} w-fit text-left pl-2 pr-4 py-1 rounded-[4px]`}>
                   <Navlink name={item.label.toUpperCase()} link={item.action} setToggle={setOpen} />
                   <Image
                     src="/edgeTriangle.png"
