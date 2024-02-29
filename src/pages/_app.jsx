@@ -14,6 +14,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { motion } from "framer-motion";
 import { Analytics } from "@vercel/analytics/react";
 import InitialLoader from "@/components/InitialLoader";
+import Title from "@/components/Head";
 
 const font_chakra = Chakra_Petch({
   subsets: ["latin"],
@@ -86,6 +87,7 @@ export default function MyApp({ Component, pageProps }) {
     <Head>
       <link rel="shortcut icon" href={`/favicon.ico`} type="image/png" />
     </Head>
+    <Title meta={pageProps.meta} />
       {/* <Title title={"Yukthi '24"} description={'Solve. Create. Thrive'} /> */}
       {loading ? (
         <Loader />
@@ -129,4 +131,22 @@ export default function MyApp({ Component, pageProps }) {
       )}
     </>
   );
+}
+
+export async function getStaticProps() {
+  const title = 'Yukthi';
+  const description = 'Solve. Create. Thrive';
+  const domain = "https://yukthi.org";
+  const url = `${domain}/`;
+
+  return {
+    props: {
+      meta: {
+        title,
+        description,
+        url,
+        image: `${domain}/twitter.png`,
+      },
+    },
+  };
 }

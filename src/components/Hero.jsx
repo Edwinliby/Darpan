@@ -52,7 +52,7 @@ function Hero() {
 
       <div className="text-white flex flex-col pt-[8rem] uppercase font-extrabold md:ml-[1rem] lg:ml-[2rem] px-5 ">
         <h1 ref={title} className="font-chakra sm:text-2xl opacity-0">
-          St. Thomas Insitute for Science & Technology presents
+          St. Thomas Institute for Science & Technology presents
         </h1>
         <div ref={subtitle} className="font-clash flex flex-wrap opacity-0">
           <span className="text-[4.5rem] sm:text-[6.5rem] md:text-[9rem] lg:text-[9rem]">

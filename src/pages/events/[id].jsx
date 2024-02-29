@@ -243,7 +243,7 @@ export async function getStaticProps(context) {
       rule11: post.rules.rule11,
       rule12: post.rules.rule12,
       rule13: post.rules.rule13,
-      mets: {
+      meta: {
         title: post.title,
         description: post.description,
         url: `${domain}/events/${id}`,
