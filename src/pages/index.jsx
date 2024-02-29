@@ -9,13 +9,11 @@ import Faq from "@/components/Faq";
 import Clock from "@/components/Clock";
 import Map from "@/components/Map";
 import gsap from "gsap";
-import fsPromises from "fs/promises";
-import path from "path";
 import RitModel from "@/components/RitModel";
 import EventSlider from "@/components/EventSlider";
 import Title from "@/components/Head";
 
-const Home = () => {
+const Home = ({ meta }) => {
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
@@ -32,7 +30,7 @@ const Home = () => {
 
   return (
     <div className="bg-black h-fit">
-      <Title title={'Yukthi'} description={'Solve. Create. Thrive'} />
+      <Title meta={meta}/>
 
       <Header id="navbar" />
 
@@ -81,11 +79,19 @@ const Home = () => {
 export default Home;
 
 export async function getStaticProps() {
-  const filePath = path.join(process.cwd(), "/data.json");
-  const jsonData = await fsPromises.readFile(filePath);
-  const objectData = JSON.parse(jsonData);
+  const title = 'Yukthi';
+  const description = 'Solve. Create. Thrive';
+  const domain = "https://yukthi.org";
+  const url = `${domain}/`;
 
   return {
-    props: objectData,
+    props: {
+      meta: {
+        title,
+        description,
+        url,
+        image: `${domain}/twitter.png`,
+      },
+    },
   };
 }

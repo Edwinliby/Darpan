@@ -9,7 +9,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/all";
 import Title from "@/components/Head";
 
-export default function Events({ posts, names }) {
+export default function Events({ posts, names, meta }) {
   const [index, setIndex] = useState(0);
   const individualPosts = posts[index];
   const animate = useRef(null);
@@ -31,7 +31,7 @@ export default function Events({ posts, names }) {
 
   return (
     <div className="h-fit w-screen bg-soothing_black">
-      <Title title={'Events - Yukthi'} description={"See what's happening at Yukthi '24"} />
+      <Title meta={meta} />
       <Header id="navbar" />
       {/* <progress max="100" value="0"></progress> */}
 
@@ -92,10 +92,21 @@ export async function getStaticProps() {
   const jsonData = await fsPromises.readFile(filePath);
   const objectData = JSON.parse(jsonData);
 
+  const title = 'Events - Yukthi';
+  const description = "See what's happening at Yukthi '24";
+  const domain = "https://yukthi.org";
+  const url = `${domain}/events`;
+
   return {
     props: {
       posts: objectData.posts,
       names: objectData.names,
+      meta: {
+        title,
+        description,
+        url,
+        image: `${domain}/twitter.png`,
+      },
     },
   };
 }

@@ -15,7 +15,7 @@ function Team(props) {
 
   return (
     <div className="h-fit w-screen bg-soothing_black">
-      <Title title={'Teams - Yukthi'} description={"We set the stage for Yukthi '24"} />
+      <Title meta={props.meta} />
       <Header id="navbar" />
 
       <main>
@@ -118,6 +118,18 @@ export async function getStaticProps() {
   const filePath = path.join(process.cwd(), "/teams.json");
   const jsonData = await fsPromises.readFile(filePath);
   const objectData = JSON.parse(jsonData);
+
+  const title = 'Teams - Yukthi';
+  const description = "We set the stage for Yukthi '24";
+  const domain = "https://yukthi.org";
+  const url = `${domain}/teams`;
+
+  objectData.meta = {
+    title,
+    description,
+    url,
+    image: `${domain}/twitter.png`,
+  }
 
   return {
     props: objectData,

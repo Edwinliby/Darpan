@@ -3,7 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Title from "@/components/Head";
 
-function FormPage() {
+function FormPage({meta}) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
@@ -25,7 +25,7 @@ function FormPage() {
 
   return (
     <div className="signup relative">
-      <Title title={'Sign Up - Yukthi'} description={'Sign Up to view your registrations'} />
+      <Title meta={meta} />
       <Header />
 
       <form onSubmit={handleSubmit} className="h-fit  px-4 pb-8 pt-[6.5rem] font-chakra text-xl flex flex-col gap-6 items-center justify-center">
@@ -84,6 +84,24 @@ function FormPage() {
       <Footer />
     </div>
   );
+}
+
+export async function getStaticProps() {
+  const title = 'Sign Up - Yukthi';
+  const description = 'Sign Up to view your registrations';
+  const domain = "https://yukthi.org";
+  const url = `${domain}/signup`;
+
+  return {
+    props: {
+      meta: {
+        title,
+        description,
+        url,
+        image: `${domain}/twitter.png`,
+      },
+    },
+  };
 }
 
 export default FormPage;

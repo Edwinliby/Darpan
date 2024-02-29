@@ -28,4 +28,22 @@ function Soon() {
     );
 }
 
+export async function getStaticProps() {
+    const title = 'Coming soon - Yukthi';
+    const description = 'Get ready to solve, create & thrive';
+    const domain = "https://yukthi.org";
+    const url = `${domain}/soon`;
+  
+    return {
+      props: {
+        meta: {
+          title,
+          description,
+          url,
+          image: `${domain}/twitter.png`,
+        },
+      },
+    };
+  }
+
 export default Soon;
