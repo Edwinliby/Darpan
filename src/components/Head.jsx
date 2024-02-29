@@ -1,28 +1,44 @@
 import Head from "next/head";
-import { useRouter } from "next/router";
 
-export default function Title({ title, description }) {
-    const router = useRouter()
-    const domain = "https://yukthi.org"
-
-    return <Head>
-        <title>{title}</title>
-
-        <meta name="title" content={title} />
-        <meta name="description" content={description} />
-
+export async function getServerSideProps(context) {
+    const title = 'Yukthi';
+    const description = 'Solve. Create. Thrive';
+    const domain = "https://yukthi.org";
+    const url = `${domain}${context.req.url}`;
+  
+    return {
+      props: {
+        meta: {
+          title,
+          description,
+          url,
+          image: `${domain}/twitter.png`,
+        },
+      },
+    };
+  }
+  
+  export default function Title({ meta }) {
+    return (
+      <Head>
+        <title>{meta.title}</title>
+        <meta name="title" content={meta.title} />
+        <meta name="description" content={meta.description} />
+  
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
-        <meta property="og:url" content={`${domain}${router.pathname}`} />
-        <meta property="og:title" content={title} />
-        <meta property="og:description" content={description} />
-        <meta property="og:image" content={`${domain}/twitter.png`} />
-
+        <meta property="og:url" content={meta.url} />
+        <meta property="og:title" content={meta.title} />
+        <meta property="og:description" content={meta.description} />
+        <meta property="og:image" content={meta.image} />
+  
         {/* Twitter */}
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content={`${domain}${router.pathname}`} />
-        <meta property="twitter:title" content={title} />
-        <meta property="twitter:description" content={description} />
-        <meta property="twitter:image" content={`${domain}/twitter.png`} />
-    </Head>
-}
+        <meta property="twitter:url" content={meta.url} />
+        <meta property="twitter:title" content={meta.title} />
+        <meta property="twitter:description" content={meta.description} />
+        <meta property="twitter:image" content={meta.image} />
+      </Head>
+    );
+  }
+  
