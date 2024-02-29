@@ -2,7 +2,7 @@ import React from "react";
 import Navlink from "./Navlink";
 import Link from "next/link";
 import { FiArrowDownRight } from "react-icons/fi";
-import { FaInstagram, FaFacebookF } from "react-icons/fa";
+import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 import {AiOutlineGlobal} from "react-icons/ai"
 
 export default function Footer() {
@@ -31,7 +31,7 @@ export default function Footer() {
             <div className="flex flex-col gap-2 w-[6rem]">
               <Navlink name={"Home"} link={"/"} />
               <Navlink name={"Events"} link={"/events"} />
-              <Navlink name={"Brochure"} link={"/Brochure.pdf"} />
+              <Navlink name={"Brochure"} link={"/brochure.pdf"} />
             </div>
             <div className="flex flex-col gap-2">
               <Navlink name={"Team"} link={"/teams"} />
@@ -62,10 +62,10 @@ export default function Footer() {
                 <FaInstagram size="3rem" />
               </Link>
               <Link
-                href="https://www.facebook.com/profile.php?id=100090947657195"
+                href="https://whatsapp.com/channel/0029VaNqRkpA2pLCJZ3oZ21G"
                 className="social-links flex items-center justify-center grow-[1] min-w-[5rem] min-h-[12rem] hover:text-main_primary"
               >
-                <FaFacebookF size="3rem" />
+                <FaWhatsapp size="3rem" />
               </Link>
             </div>
           </div>
@@ -75,8 +75,7 @@ export default function Footer() {
       <div className="font-clash flex justify-between py-2 text-[10px] md:text-xs px-4 border-t-[1.5px] border-gray/40">
         <p>©2024 - YUKTHI STIST </p>
         <span className="flex gap-4">
-          <Link href="/404"><p>Terms & Conditions</p></Link>
-          <p>Privacy Policy</p>
+          <p>Template forked from <Link href={'https://github.com/Edwinliby/Darpan'}>darpan by @edwinliby</Link></p>
         </span>
       </div>
     </footer>

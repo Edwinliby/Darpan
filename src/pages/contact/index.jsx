@@ -1,4 +1,3 @@
-import Head from "next/head";
 import React from "react";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
@@ -21,12 +20,9 @@ export default function Contact(props) {
 
   return (
     <div className="h-fit w-screen bg-black">
-      <Head>
-        <title>Yukthi - Contact</title>
-      </Head>
+      <Title meta={props.meta} />
       <Header id="Navbar" />
-      {/* <progress max="100" value="0"></progress> */}
-      <main className='pt-[5.5rem] bg-[url("/signup.jpg")] h-full'>
+      <main className='pt-[5.5rem] bg-[url("/contact.png")] h-full'>
         <div className="flex flex-col text-center items-center justify-center h-full gap-2">
           <h1 className="text-5xl text-white font-clash font-semibold">
             Yukthi '24&nbsp; Contact
@@ -50,8 +46,8 @@ export default function Contact(props) {
               </h2>
               <span className="text-2xl font-chakra">
                 Ph no :{" "}
-                <Link href="tel:9447789825" className="hover:text-main_primary">
-                  {post.ph}
+                <Link href={`tel:+91${post.ph}`} className="hover:text-main_primary">
+                  +91 {post.ph}
                 </Link>
               </span>
             </div>
@@ -65,11 +61,23 @@ export default function Contact(props) {
 
 import fsPromises from "fs/promises";
 import path from "path";
+import Title from "@/components/Head";
 export async function getStaticProps() {
   const filePath = path.join(process.cwd(), "contact.json");
   const jsonData = await fsPromises.readFile(filePath);
   const objectData = JSON.parse(jsonData);
 
+  const title = 'Contact - Yukthi';
+  const description = 'Feel free to contact us';
+  const domain = "https://yukthi.org";
+  const url = `${domain}/contact`;
+
+  objectData.meta = {
+    title,
+    description,
+    url,
+    image: `${domain}/twitter.png`,
+  }
   return {
     props: objectData,
   };

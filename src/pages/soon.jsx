@@ -1,15 +1,13 @@
 import React from "react";
-import Head from "next/head";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Image from "next/image";
+import Title from "@/components/Head";
 
 function Soon() {
     return (
         <div className="signup relative">
-            <Head>
-                <title>Yukthi '24 Teams</title>
-            </Head>
+            <Title title={'Coming soon - Yukthi'} description={"Get ready to solve, create & thrive."} />
             <Header />
             <main className="h-screen w-screen">
                 <div className="h-screen w-screen font-clash flex gap-4 flex-col items-center justify-center">
@@ -29,5 +27,23 @@ function Soon() {
         </div>
     );
 }
+
+export async function getStaticProps() {
+    const title = 'Coming soon - Yukthi';
+    const description = 'Get ready to solve, create & thrive';
+    const domain = "https://yukthi.org";
+    const url = `${domain}/soon`;
+  
+    return {
+      props: {
+        meta: {
+          title,
+          description,
+          url,
+          image: `${domain}/twitter.png`,
+        },
+      },
+    };
+  }
 
 export default Soon;

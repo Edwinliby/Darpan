@@ -3,10 +3,10 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Image from "next/image";
 import Link from "next/link";
-import Head from "next/head";
 import fsPromises from "fs/promises";
 import path from "path";
 import { gsap } from "gsap";
+import Title from "@/components/Head";
 
 function EventsDetails(props) {
   //create a pop up for the event Registration showing the embeded form
@@ -44,9 +44,7 @@ function EventsDetails(props) {
 
   return (
     <>
-      <Head>
-        <title>Event Details</title>
-      </Head>
+      <Title meta={props.meta}/>
       <section>
         <Header />
         <div className="h-fit pt-24 p-6 bg-black text-white">
@@ -111,14 +109,14 @@ function EventsDetails(props) {
                       {props.c2name != false && <span>{props.c2name} :</span>}
                     </div>
                     <div className="flex flex-col text-white font-bold">
-                      <Link href={`tel:${props.c1number}`}>
+                      <Link href={`tel:+91${props.c1number}`}>
                         <span className="font-normal hover:text-main_primary transition duration-300 ease-in-out">
-                          {props.c1number}
+                          +91 {props.c1number}
                         </span>
                       </Link>
-                      <Link href={`tel:${props.c2number}`}>
+                      <Link href={`tel:+91${props.c2number}`}>
                         <span className="font-normal hover:text-main_primary transition duration-300 ease-in-out">
-                          {props.c2number}
+                          +91 {props.c2number}
                         </span>
                       </Link>
                     </div>
@@ -128,7 +126,7 @@ function EventsDetails(props) {
                 <button
                   className="relative bottom-5 bg-white text-black w-full rounded-full p-2 font-medium hover:bg-gray hover:text-white transition duration-300 ease-in-out"
                   onClick={() => {
-                    props.reg == "Register Closed" ? null : setPopUp(true);
+                    props.reg == "Register Closed" ? null : props.embed ? setPopUp(true) : window.open(props.reglink, '_blank');
                   }}
                 >
                   {props.reg}
@@ -164,7 +162,7 @@ function EventsDetails(props) {
 
       {popUp && (
         <div className="fixed top-0 left-0 w-full h-full bg-black/50 z-50 flex justify-center items-center animate-fadeIn ">
-          <div className="relative w-full h-full max-w-[90%] lg:max-w-[80%]  xl:max-w-[70%]   max-h-[90%] flex flex-col justify-center items-center">
+          <div className="relative bg-white rounded-md w-full h-full max-w-[90%] lg:max-w-[80%]  xl:max-w-[70%]   max-h-[90%] flex flex-col justify-center items-center">
             <div className="absolute top-0 right-0 p-4">
               <button
                 className="bg-transparent text-black rounded-full w-12 h-12 flex text-xl justify-center items-center font-semibold hover:bg-main_primary/90 hover:text-white transition duration-300 ease-in-out "
@@ -174,9 +172,8 @@ function EventsDetails(props) {
               </button>
             </div>
             <iframe
-              width="100%"
-              height="100%"
-              className="rounded-md"
+              className="w-11/12 md:w-4/5"
+              height="85%"
               src={props.reglink}
             ></iframe>
           </div>
@@ -213,6 +210,8 @@ export async function getStaticProps(context) {
 
   const post = objectData.posts.flat().find((post) => post.id == id);
 
+  const domain = "https://yukthi.org";
+
   return {
     props: {
       title: post.title,
@@ -229,6 +228,7 @@ export async function getStaticProps(context) {
       register: post.reg,
       reglink: post.reglink,
       reg: post.reg,
+      embed: post.embed || false,
       rulehead: post.ruleheader,
       rule1: post.rules.rule1,
       rule2: post.rules.rule2,
@@ -243,6 +243,12 @@ export async function getStaticProps(context) {
       rule11: post.rules.rule11,
       rule12: post.rules.rule12,
       rule13: post.rules.rule13,
+      meta: {
+        title: post.title,
+        description: post.description,
+        url: `${domain}/events/${id}`,
+        image: `${domain}/twitter.png`,
+      }
     },
   };
 }

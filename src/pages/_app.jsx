@@ -1,11 +1,11 @@
 import React from "react";
-import Head from "next/head";
 import { Chakra_Petch } from "next/font/google";
 import { IBM_Plex_Mono } from "next/font/google";
 import { Bebas_Neue } from "next/font/google";
 import LocalFont from "next/font/local";
 import Loader from "@/components/Loader";
 import dynamic from "next/dynamic";
+import Head from "next/head";
 import { useRouter } from "next/router";
 import "../styles/global.css";
 import "../styles/styles.css";
@@ -14,6 +14,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { motion } from "framer-motion";
 import { Analytics } from "@vercel/analytics/react";
 import InitialLoader from "@/components/InitialLoader";
+import Title from "@/components/Head";
 
 const font_chakra = Chakra_Petch({
   subsets: ["latin"],
@@ -83,9 +84,11 @@ export default function MyApp({ Component, pageProps }) {
 
   return (
     <>
-      <Head>
-        <link rel="shortcut icon" href="/favicon.ico" type="image/png" />
-      </Head>
+    <Head>
+      <link rel="shortcut icon" href={`/favicon.ico`} type="image/png" />
+    </Head>
+    <Title meta={pageProps.meta} />
+      {/* <Title title={"Yukthi '24"} description={'Solve. Create. Thrive'} /> */}
       {loading ? (
         <Loader />
       ) : (
@@ -128,4 +131,22 @@ export default function MyApp({ Component, pageProps }) {
       )}
     </>
   );
+}
+
+export async function getStaticProps() {
+  const title = 'Yukthi';
+  const description = 'Solve. Create. Thrive';
+  const domain = "https://yukthi.org";
+  const url = `${domain}/`;
+
+  return {
+    props: {
+      meta: {
+        title,
+        description,
+        url,
+        image: `${domain}/twitter.png`,
+      },
+    },
+  };
 }

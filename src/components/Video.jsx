@@ -32,7 +32,7 @@ function Video() {
     tl.to(
       videoRef.current,
       {
-        filter: "grayscale(80%)",
+        filter: "sepla(50%)",
       },
       0
     );
@@ -40,7 +40,7 @@ function Video() {
 
   return (
     <div ref={triggerRef} className="video-section hidden xl:block">
-      <video ref={videoRef} src="/marvel.mp4" autoPlay muted></video>
+      <video ref={videoRef} src="/desktop.mp4" autoPlay loop muted></video>
       <div className="video-copy">
         <h1 ref={textRef} className="vidYukthi font-bebas">
           YUKTHI

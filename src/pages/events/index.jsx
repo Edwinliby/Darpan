@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from "react";
-import Head from "next/head";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Image from "next/image";
@@ -8,9 +7,11 @@ import fsPromises from "fs/promises";
 import path from "path";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/all";
+import Title from "@/components/Head";
 
-export default function Events({ posts, names }) {
+export default function Events({ posts, names, meta }) {
   const [index, setIndex] = useState(0);
+  const [loading, setLoading] = useState({})
   const individualPosts = posts[index];
   const animate = useRef(null);
 
@@ -31,9 +32,7 @@ export default function Events({ posts, names }) {
 
   return (
     <div className="h-fit w-screen bg-soothing_black">
-      <Head>
-        <title>Yukthi - Events</title>
-      </Head>
+      <Title meta={meta} />
       <Header id="navbar" />
       {/* <progress max="100" value="0"></progress> */}
 
@@ -60,23 +59,26 @@ export default function Events({ posts, names }) {
 
         <div className="flex flex-wrap justify-center gap-8 p-6">
           {individualPosts.length > 0 ? (
-            individualPosts.map((post) => (
-              <div
+            individualPosts.map((post) => {              
+
+              return <div
                 ref={animate}
-                className="relative w-[21rem] h-[20rem] hover:scale-105 rounded-md overflow-hidden hover:shadow-lg hover:shadow-main_primary/80 transition-all duration-500 ease-in-out"
+                className="relative flex justify-center items-center w-[21rem] h-[20rem] hover:scale-105 rounded-md overflow-hidden hover:shadow-lg hover:shadow-main_primary/80 transition-all duration-500 ease-in-out"
                 key={post.id}
               >
+                {loading[post.id] !== false ? <div className="spinner" /> : null}
                 <Link href={`/events/${post.id}`}>
                   <Image
                     src={post.img}
-                    width={500}
-                    height={500}
-                    alt="Event's Image"
+                    width={loading[post.id] !== false ? 0 : 500}
+                    height={loading[post.id] !== false ? 0 : 500}
+                    onLoad={() => setLoading(prevState => ({...prevState, [post.id]: false}))}
+                    alt={post.title}
                     className="cursor-pointer object-fill transform transition-all duration-500 ease-in-out"
                   />
                 </Link>
               </div>
-            ))
+            })
           ) : (
             <div className="text-white font-semibold font-chakra text-2xl py-8">
               Coming Soon...
@@ -94,10 +96,21 @@ export async function getStaticProps() {
   const jsonData = await fsPromises.readFile(filePath);
   const objectData = JSON.parse(jsonData);
 
+  const title = 'Events - Yukthi';
+  const description = "See what's happening at Yukthi '24";
+  const domain = "https://yukthi.org";
+  const url = `${domain}/events`;
+
   return {
     props: {
       posts: objectData.posts,
       names: objectData.names,
+      meta: {
+        title,
+        description,
+        url,
+        image: `${domain}/twitter.png`,
+      },
     },
   };
 }

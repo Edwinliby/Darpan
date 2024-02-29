@@ -27,6 +27,7 @@
         "enddate": "2023-04-25",
         "reglink": "https://app.formbricks.com/n3uRezbyO3",
         "reg": "Register Now",
+        "embed": true,
         "ruleheader": "Code of Conduct",
         "rules": {
             "rule1": "We are dedicated to providing a harassment-free experience for everyone, regardless of gender, gender identity and expression, age, sexual orientation, disability, physical appearance, body size, race, ethnicity, religion (or lack thereof), or technology choices.",

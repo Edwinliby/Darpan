@@ -1,23 +1,23 @@
 import { useState } from "react";
-import { FaInstagram, FaGithub } from "react-icons/fa";
-import Head from "next/head";
+import { FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
 import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import fsPromises from "fs/promises";
 import path from "path";
+import Title from "@/components/Head";
 
 function Team(props) {
-  const [index, setIndex] = useState(0);
+  const [index] = useState(0);
+  const [loading, setLoading] = useState({})
+
   const tabs = props.tabs;
   console.log("tabs", tabs);
 
   return (
     <div className="h-fit w-screen bg-soothing_black">
-      <Head>
-        <title>Yukthi - Teams</title>
-      </Head>
+      <Title meta={props.meta} />
       <Header id="navbar" />
 
       <main>
@@ -29,7 +29,7 @@ function Team(props) {
         </div>
 
         <div className="text-[.8rem] md:text-[1rem] p-8 font-semibold font-chakra flex gap-4 md:gap-12 items-center justify-center text-white">
-          {tabs.map((tab, i) => (
+          {/* {tabs.map((tab, i) => (
             <span
               key={i}
               className="rounded-full px-4 py-[.3rem] hover:bg-white/20 transition-all duration-500 ease-in-out"
@@ -38,7 +38,7 @@ function Team(props) {
             >
               {tab.name}
             </span>
-          ))}
+          ))} */}
         </div>
 
         <div className="w-full h-fit pb-10 flex justify-center">
@@ -56,11 +56,13 @@ function Team(props) {
                       className=" shadow-2xl hover:shadow-main_primary transition-all duration-500 ease-in-out"
                     >
                       <div>
+                        {loading[member.id] !== false ? <div className="w-[300px] h-[300px] flex justify-center items-center" ><div className="spinner"/></div> : null}
                         <Image
                           src={member.img}
                           alt={member.name}
-                          width={300}
-                          height={300}
+                          width={loading[member.id] !== false ? 0 : 300}
+                          height={loading[member.id] !== false ? 0 : 300}
+                          onLoad={() => setLoading(prevState => ({...prevState, [member.id]: false}))}
                           className="object-cover w-[20rem] h-[22rem]"
                         />
                       </div>
@@ -75,32 +77,35 @@ function Team(props) {
                         </div>
                         <div className="flex justify-end pb-2">
                           <div
-                            className={
-                              member.github
-                                ? "flex justify-between w-20"
-                                : "flex justify-end"
-                            }
+                            className={`flex ${member.github ? 'justify-between w-30' : 'justify-end'} space-x-2`}
+
                           >
                             {member.github && (
-                              <Link href={`${member.github}`} className="">
+                              <Link href={`https://github.com/${member.github}`}>
                                 <FaGithub
                                   size="2rem"
                                   className="text-white hover:text-[#CAFA19] transition-all duration-500 ease-in-out"
                                 />
                               </Link>
                             )}
-                            <Link href={`${member.insta}`} className="">
+                            {member.insta && <Link href={`https://instagram.com/${member.insta}`}>
                               <FaInstagram
                                 size="2rem"
                                 className="text-white hover:text-[#CAFA19] transition-all duration-500 ease-in-out"
                               />
-                            </Link>
+                            </Link>}
+                            {member.linkedin && <Link href={`https://linkedin.com/in/${member.linkedin}`}>
+                              <FaLinkedin
+                                size="2rem"
+                                className="text-white hover:text-[#CAFA19] transition-all duration-500 ease-in-out"
+                              />
+                            </Link>}
                           </div>
                         </div>
                       </div>
                     </div>
                   ))}
-                </div>              
+                </div>
               </div>
             ))}
           </div>
@@ -117,6 +122,18 @@ export async function getStaticProps() {
   const filePath = path.join(process.cwd(), "/teams.json");
   const jsonData = await fsPromises.readFile(filePath);
   const objectData = JSON.parse(jsonData);
+
+  const title = 'Teams - Yukthi';
+  const description = "We set the stage for Yukthi '24";
+  const domain = "https://yukthi.org";
+  const url = `${domain}/teams`;
+
+  objectData.meta = {
+    title,
+    description,
+    url,
+    image: `${domain}/twitter.png`,
+  }
 
   return {
     props: objectData,
