@@ -10,6 +10,8 @@ import Title from "@/components/Head";
 
 function Team(props) {
   const [index] = useState(0);
+  const [loading, setLoading] = useState({})
+
   const tabs = props.tabs;
   console.log("tabs", tabs);
 
@@ -54,11 +56,13 @@ function Team(props) {
                       className=" shadow-2xl hover:shadow-main_primary transition-all duration-500 ease-in-out"
                     >
                       <div>
+                        {loading[member.id] !== false ? <div className="w-[300px] h-[300px] flex justify-center items-center" ><div className="spinner"/></div> : null}
                         <Image
                           src={member.img}
                           alt={member.name}
-                          width={300}
-                          height={300}
+                          width={loading[member.id] !== false ? 0 : 300}
+                          height={loading[member.id] !== false ? 0 : 300}
+                          onLoad={() => setLoading(prevState => ({...prevState, [member.id]: false}))}
                           className="object-cover w-[20rem] h-[22rem]"
                         />
                       </div>
@@ -101,7 +105,7 @@ function Team(props) {
                       </div>
                     </div>
                   ))}
-                </div>              
+                </div>
               </div>
             ))}
           </div>

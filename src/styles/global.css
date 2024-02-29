@@ -24,6 +24,18 @@ html {
   width: 0px;
 }
 
+.spinner {
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: repeating-conic-gradient(#CAFA19 0 90deg,#000 0 180deg);
+  animation: l21 1s infinite linear;
+}
+
+@keyframes l21 {
+  100% {transform: rotate(.5turn)}
+}
+
 progress {
   position: fixed;
   top: 4.5rem;
