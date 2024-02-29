@@ -55,15 +55,15 @@ function Team(props) {
                       key={member.id}
                       className=" shadow-2xl hover:shadow-main_primary transition-all duration-500 ease-in-out"
                     >
+                      {loading[member.id] !== false ? <div className="w-[300px] h-[300px] flex justify-center items-center" ><div className="spinner"/></div> : null}
                       <div>
-                        {loading[member.id] !== false ? <div className="w-[300px] h-[300px] flex justify-center items-center" ><div className="spinner"/></div> : null}
                         <Image
                           src={member.img}
                           alt={member.name}
                           width={loading[member.id] !== false ? 0 : 300}
                           height={loading[member.id] !== false ? 0 : 300}
                           onLoad={() => setLoading(prevState => ({...prevState, [member.id]: false}))}
-                          className="object-cover w-[20rem] h-[22rem]"
+                          className={`object-cover ${loading[member.id] !== false ? 'w-[0rem] h-[0rem]' : 'w-[20rem] h-[22rem]'}`}
                         />
                       </div>
                       <div className="flex flex-col p-2 bg-black bg-opacity-20 ">
