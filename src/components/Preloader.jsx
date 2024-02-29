@@ -23,6 +23,7 @@ export default function Preloader() {
         <video
           ref={ref}
           autoPlay
+          playsInline
           loop
           muted
           className="w-full h-full object-cover"
@@ -41,7 +42,7 @@ export default function Preloader() {
         className="fixed top-0 left-0 w-full h-full z-50"
       >
         <div className="w-full h-full bg-black">
-          <video autoPlay loop muted className="w-full h-full object-cover">
+          <video autoPlay playsInline loop muted className="w-full h-full object-cover">
             <source src="/preloader.mp4" type="video/mp4" />
           </video>
         </div>

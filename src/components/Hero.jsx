@@ -46,6 +46,7 @@ function Hero() {
         src="/mobile.mp4"
         loop
         autoPlay
+        playsInline
         muted
         className="absolute top-0 left-0 w-full h-full object-cover bg-slate-300 opacity-50"
       ></video>

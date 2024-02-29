@@ -6,6 +6,7 @@ export default function InitialLoader() {
         autoPlay
         loop
         muted
+        playsInline
         className="w-[40rem] h-[40rem]"
       ></video>
     </div>

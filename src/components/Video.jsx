@@ -40,7 +40,7 @@ function Video() {
 
   return (
     <div ref={triggerRef} className="video-section hidden xl:block">
-      <video ref={videoRef} src="/desktop.mp4" autoPlay loop muted></video>
+      <video ref={videoRef} src="/desktop.mp4" autoPlay playsInline loop muted></video>
       <div className="video-copy">
         <h1 ref={textRef} className="vidYukthi font-bebas">
           YUKTHI
